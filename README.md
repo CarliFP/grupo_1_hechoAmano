@@ -1,4 +1,4 @@
-# grupo_1_tutiendaonline
+# grupo_1_hechoAmano
 
 MARKET-PLACE: 
 “HECHO A MANO”
