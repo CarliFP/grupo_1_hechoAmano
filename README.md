@@ -27,4 +27,4 @@ Emanuel Mercado, 22 años de edad, Argentina.
 
 Neri Cardozo, 20 años de edad, Argentina. 
 
-Carla Fresch Pons, 32 años de edad, de Uruguay. 
+Carla Fresch Pons, 32 años de edad, Uruguay. 
