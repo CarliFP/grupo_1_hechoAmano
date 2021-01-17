@@ -2,7 +2,9 @@
 
 HECHO A :hand:
  
+ 
 :heart_decoration: PRODUCTOS:  Venta artículos artesanales y vintage. Piezas únicas o personalizables, de distintos creadores independientes. De acuerdo a las siguientes categorías: 
+
 :one: Complementos (joyería, brazaletes, cinturones, etc.).
 
 :two: Arte (cuadros, esculturas, estatuas, figuras decorativas, etc, elaborados con distintas técnicas).
@@ -16,13 +18,20 @@ HECHO A :hand:
 :six: Ropa y calzado (prendas de vestir en diferentes estilos y calzado confeccionado a mano).
 
 
+
 :bust_in_silhouette: PÚBLICO OBJETIVO:  
 
 Personas adultas, viajeros frecuentes, nivel de ingresos relativamente altos, interesados en arte que aprecian los productos hechos a mano.
 
-Que se encuentren en cualquier punto de la República Argentina y deseen adquirir artículos artesanales únicos y/o personalizados, apoyando a creadores independientes.
+Que se encuentren en cualquier punto de la República Argentina y deseen adquirir artículos artesanales únicos y/o personalizados, apoyando a creadores 
+
+independientes.
+
+
 
 :mag: SITIOS WEB DE REFERENCIA: 
+
+
 :one: Por los productos que ofrecen y clientes a los que apuntan:  https://www.etsy.com/es/market/estados_unidos.
 
 :two: Por la estética que presentan y productos que ofrecen:  https://listado.mercadolibre.com.ar/artesanias-argentinas.
