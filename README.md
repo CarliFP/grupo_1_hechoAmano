@@ -3,7 +3,7 @@
 HECHO A :hand:
  
  
-:heart_decoration: PRODUCTOS:  Venta artículos artesanales y vintage. Piezas únicas o personalizables, de distintos creadores independientes. De acuerdo a las siguientes categorías: 
+:heart_decoration: PRODUCTOS:  Venta artículos artesanales y vintage. Piezas únicas o personalizables de distintos creadores independientes. De acuerdo a las siguientes categorías: 
 
 :one: Complementos (joyería, brazaletes, cinturones, etc.).
 
