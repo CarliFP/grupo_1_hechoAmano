@@ -1,9 +1,11 @@
 # grupo_1_hechoAmano
 
-HECHO A :hand:
+**HECHO A :hand:**
  
  
-:heart_decoration: PRODUCTOS:  Venta artículos artesanales y vintage. Piezas únicas o personalizables de distintos creadores independientes. De acuerdo a las siguientes categorías: 
+**:heart_decoration: PRODUCTOS:**  Venta artículos artesanales y vintage. Piezas únicas o personalizables de distintos creadores independientes. 
+
+De acuerdo a las siguientes categorías: 
 
 :one: Complementos (joyería, brazaletes, cinturones, etc.).
 
@@ -19,7 +21,7 @@ HECHO A :hand:
 
 
 
-:bust_in_silhouette: PÚBLICO OBJETIVO:  
+**:bust_in_silhouette: PÚBLICO OBJETIVO:** 
 
 Personas adultas, viajeros frecuentes, nivel de ingresos relativamente altos, interesados en arte que aprecian los productos hechos a mano.
 
@@ -29,7 +31,7 @@ independientes.
 
 
 
-:mag: SITIOS WEB DE REFERENCIA: 
+**:mag: SITIOS WEB DE REFERENCIA:**
 
 
 :one: Por los productos que ofrecen y clientes a los que apuntan:  https://www.etsy.com/es/market/estados_unidos.
@@ -43,7 +45,7 @@ independientes.
 :five: Por la estética y funcionalidades implementadas: http://arteencasa.com.uy.
 
 
-INTEGRANTES DEL GRUPO: 
+**INTEGRANTES DEL GRUPO:**
 
 :white_check_mark: Emanuel Mercado, 22 años de edad, Argentina.
 
