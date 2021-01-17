@@ -24,9 +24,7 @@ De acuerdo a las siguientes categorías:
 **:bust_in_silhouette: PÚBLICO OBJETIVO:** 
 
 Personas adultas, viajeros frecuentes, nivel de ingresos relativamente altos, interesados en arte que aprecian los productos hechos a mano.
-
 Que se encuentren en cualquier punto de la República Argentina y deseen adquirir artículos artesanales únicos y/o personalizados, apoyando a creadores 
-
 independientes.
 
 
