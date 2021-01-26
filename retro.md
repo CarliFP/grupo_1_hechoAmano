@@ -8,7 +8,7 @@ More of:
 
 Keep Doing: 
 <!--aquello que venimos haciendo y nos brinda valor-->
-
+1-Compromiso individual para venir cumpliendo con las responsabilidades que el equipo se propuso.
 Less of: 
 <!--aquello que no nos aporta el valor que esperábamos-->
 
