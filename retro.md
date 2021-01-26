@@ -15,3 +15,4 @@ Less of:
 Stop Doing: 
 <!--aquello que podemos eliminar-->
 
+Tablero: https://trello.com/b/gmSkWwgI/sprint-1
