@@ -2,6 +2,7 @@ Método Starfish:
 
 Start doing 
 <!--cosas innovadoras, aquellas que por curiosidad que queremos probar y/o soluciones comprobadas que deberíamos usar-->
+Queremos implementar un slider banner en la página del home. 
 
 More of: 
 <!--practicas que creemos que requiere más refinamiento y que nos gustan mucho por ello hay que darles más-->
