@@ -19,6 +19,9 @@ app.get('/', (req, res) => {
     //console.log("A: "+__dirname+"/views/index.html")
     //console.log("B: /Users/cfpons/Desktop/Liebre/views/index.html")
 });
+app.get('/productDetail', (req,res) => {
+    res.sendFile(path.resolve('./views/productDetail.html'));
+})
 
 app.get('/404', (req, res) => {
       res.send("Error página no encontrada", 404);
