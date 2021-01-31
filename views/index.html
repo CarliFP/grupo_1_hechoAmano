@@ -28,42 +28,45 @@
 
 </head>
 
-
 <body>
 
-    <header class="header">
-        
-         <!--PRINCIPAL NAV-BAR--> 
-        <nav class= "main-header-top-bar">
+    <header class="header">  
+         
+    <nav class= "header-top-navbar">
+
+        <div class= "logo">
             <img src="./img/logoEnBlanco(FCFCFC).png" alt="Logo de Hecho a Mano">
-        
+        </div>
+
          <!--SPACE FOR SEARCH NAV-BAR--> 
-            <form class="search-bar" action="#">
+        <div class= "search bar">
+            <form action="#">
                 <input type="text" placeholder="¿Qué estás buscando?" name="search">
                 <button type="submit"><i class="fas fa-search"></i></button>
             </form>
+        </div>
 
-        <nav  class= "first-nav-bar">
-
-            <ul class="right-navbar">
-                <li> <a href="#">Creá tu cuenta</a><i class="far fa-address-card"></i></li>
-                <li> <a href="#">Ingresá</a><i class="fas fa-sign-in-alt"></i></li>
-                <li> <a href="#"><i class="fas fa-shopping-cart"></i>
-                </li>
+        <!--FIRST NAVBAR-->
+        <div class ="first-navbar">
+        <ul class="right-navbar">
+                 <li> <a href="#">Creá tu cuenta</a><i class="far fa-address-card"></i></li>
+                 <li> <a href="#">Ingresá</a><i class="fas fa-sign-in-alt"></i></li>
+                 <li> <a href="#"><i class="fas fa-shopping-cart"></i></li>
             </ul>
-        </nav>
-
-    <!--SECOND NAV-BAR--> 
-
-    <nav  class= "second-nav-bar">
-        <ul class="buttom-navbar">
-            <li> <a href="#"><i class = "fa fa-bars burger"></i>Todo</a></li>
-            <li> <a href="#">Categorias</a></li>
-            </li>
-        </ul>
+        </div>    
     </nav>
 
-</header>
+
+    <!--SECOND NAV-BAR--> 
+        <nav  class= "second-nav-bar">
+             <ul class="buttom-navbar">
+                <li> <a href="#"><i class = "fa fa-bars burger"></i>Todo</a></li>
+                <li> <a href="#">Categorias</a></li>
+             </ul>
+        </nav>
+
+    </header>
+
     <!--SPACE FOR CAROUSEL SLIDE --> 
 <div id="Carousel" class="carousel-slide" data-ride="carousel">
 
@@ -72,7 +75,7 @@
             <li data-target="#Carousel" data-slide-to="0" class="active"></li>
             <li data-target="#Carousel" data-slide-to="1"></li>
              <li data-target="#Carousel" data-slide-to="2"></li>
-            </ol>
+        </ol>
             
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
@@ -87,31 +90,32 @@
         </div>
     </div>
             
- <!-- Controls -->
-    <a class="left carousel-control" href="#Carousel" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left"></span>
-    <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#Carousel" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right"></span>
-    <span class="sr-only">Next</span>
-    </a>
+    <!-- Controls -->
+         <a class="left carousel-control" href="#Carousel" data-slide="prev">
+             <span class="glyphicon glyphicon-chevron-left"></span>
+             <span class="sr-only">Previous</span>
+          </a>
+         <a class="right carousel-control" href="#Carousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+             <span class="sr-only">Next</span>
+        </a>
 </div>
+
 
 <!--MAIN-->
 
     <main>
 
+       <h2>Los más vendidos</h2>
         <section class= "los-mas-vendidos">
-
-            <h2>Los más vendidos</h2>
+           
 
             <article>
                 <img src="./img/img-1-C-mascarilla.png" alt="Tapabocas">
                 <div class="main-article1">
-                <h3>$250</h3>
-                <h4>Hasta 3 cuotas sin interés</h4>
-                <h4>Tapabocas (distinto colores y modelos)</h4>
+                    <h3>$250</h3>
+                    <h4>Hasta 3 cuotas sin interés</h4>
+                    <h4>Tapabocas (distinto colores y modelos)</h4>
                 </div>
             </article>
 
@@ -127,36 +131,36 @@
             <article>
                 <img src="./img/img2-A-linoleografía.png" alt="Linoleografía">
                 <div class= "main-article1">
-                <h3>$7.500</h3>
-                <h4>10% off</h4>
-                <h4>Linoleografía</h4>
+                    <h3>$7.500</h3>
+                    <h4>10% off</h4>
+                    <h4>Linoleografía</h4>
                 </div>
             </article>
 
             <article>
                 <img  src="./img/img2-C-accesorioCabello.png" alt="Turbante chic tejido a mano">
                 <div class="main-article1">
-                <h3>$1500</h3>
-                <h4>15% off en un pago con todas las tarjetas</h4>
-                <h4>Turbante chic tejido artesanal</h4>
+                    <h3>$1500</h3>
+                    <h4>15% off en un pago con todas las tarjetas</h4>
+                    <h4>Turbante chic tejido artesanal</h4>
                 </div>
             </article>
 
             <article>
-                <img  src="./img/img3-A-grabado.png" alt="Cuadro grabado en madera">
+                <img  src="./img/img3-A-grabadoMadera.png" alt="Cuadro grabado en madera">
                 <div class="main-article1">
-                <h3>$3500</h3>
-                <h4>Hasta 6 cuotas sin interés</h4>
-                <h4>Cuadro grabado en madera</h4>
+                    <h3>$3500</h3>
+                    <h4>Hasta 6 cuotas sin interés</h4>
+                    <h4>Cuadro grabado en madera</h4>
                 </div>
             </article>
 
             <article>
                 <img  src="./img/img4-C-cinturon.png" alt="Cinturón con hebilla labrada">
                 <div class="main-article1">
-                <h3>$1200</h3>
-                <h4>Hasta 6 cuotas sin interés</h4>
-                <h4>Cinturón con hebilla labrada</h4>
+                    <h3>$1200</h3>
+                    <h4>Hasta 6 cuotas sin interés</h4>
+                    <h4>Cinturón con hebilla labrada</h4>
                 </div>
             </article>
 
@@ -171,7 +175,7 @@
             <article>
                 <img src="./img/img2-C-accesorioCabello.png" alt="Turbante chic tejido a mano">
                 <div class="main-article2">
-                <h3>Complementos (joyería, accesorios y mucho más!)</h3>
+                    <h3>Complementos (joyería, accesorios y mucho más!)</h3>
                 </div>
 
             </article>
@@ -179,39 +183,40 @@
             <article>
                 <img src="./img/img2-C-accesorioCabello.png" alt="Turbante chic tejido a mano">
                 <div class="main-article2">
-                <h3>Arte (cuadros, esculturas, estatuas y figuras, elaborados con distintas técnicas).</h3>
+                     <h3>Arte (cuadros, esculturas, estatuas y figuras, elaborados con distintas técnicas).</h3>
                 </div>
             </article>
 
             <article>
                 <img src="./img/img2-C-accesorioCabello.png" alt="Turbante chic tejido a mano">
                 <div class="main-article2">
-                <h3>Hogar (velas, sahumerios, decoración, y mucho más!)</h3>
+                    <h3>Hogar (velas, sahumerios, decoración, y mucho más!)</h3>
                 </div>
             </article>
 
             <article>
                 <img src="./img/img2-C-accesorioCabello.png" alt="Turbante chic tejido a mano">
                 <div class="main-article2">
-                <h3>Juguetes para niños y de ingenio</h3>
+                    <h3>Juguetes para niños y de ingenio</h3>
                 </div>
             </article>
 
             <article>
                 <img src="./img/img2-C-accesorioCabello.png" alt="Turbante chic tejido a mano">
                 <div class="main-article2">
-                <h3>Cosmética (cremas, jabones y cuidado personal)</h3>
+                    <h3>Cosmética (cremas, jabones y cuidado personal)</h3>
                 </div>
             </article>
 
             <article>
                 <img src="./img/img2-C-accesorioCabello.png" alt="Turbante chic tejido a mano">
                 <div class="main-article">
-                <h3>Ropa y calzado (prendas de vestir en diferentes estilos y calzado confeccionado a mano)</h3>
+                    <h3>Ropa y calzado (prendas de vestir en diferentes estilos y calzado confeccionado a mano)</h3>
                 </div>
             </article>
 
         </section>
+
         <section class= "los-mas-vendidos">
 
             <h2>Destacados del mes</h2>
@@ -221,9 +226,9 @@
             <article>
                 <img src="./img/img-1-C-mascarilla.png" alt="Tapabocas">
                 <div class="main-article1">
-                <h3>$250</h3>
-                <h4>Hasta 3 cuotas sin interés</h4>
-                <h4>Tapabocas (distinto colores y modelos)</h4>
+                     <h3>$250</h3>
+                     <h4>Hasta 3 cuotas sin interés</h4>
+                     <h4>Tapabocas (distinto colores y modelos)</h4>
                 </div>
             </article>
 
@@ -239,55 +244,72 @@
             <article>
                 <img src="./img/img2-A-linoleografía.png" alt="Linoleografía">
                 <div class= "main-article1">
-                <h3>$7.500</h3>
-                <h4>10% off</h4>
-                <h4>Linoleografía</h4>
+                    <h3>$7.500</h3>
+                    <h4>10% off</h4>
+                    <h4>Linoleografía</h4>
                 </div>
             </article>
 
             <article>
                 <img  src="./img/img2-C-accesorioCabello.png" alt="Turbante chic tejido a mano">
                 <div class="main-article1">
-                <h3>$1500</h3>
-                <h4>15% off en un pago con todas las tarjetas</h4>
-                <h4>Turbante chic tejido artesanal</h4>
+                    <h3>$1500</h3>
+                    <h4>15% off en un pago con todas las tarjetas</h4>
+                    <h4>Turbante chic tejido artesanal</h4>
                 </div>
             </article>
 
             <article>
-                <img  src="./img/img3-A-grabado.png" alt="Cuadro grabado en madera">
+                <img  src="./img/img3-A-grabadoMadera.png" alt="Cuadro grabado en madera">
                 <div class="main-article1">
-                <h3>$3500</h3>
-                <h4>Hasta 6 cuotas sin interés</h4>
-                <h4>Cuadro grabado en madera</h4>
+                    <h3>$3500</h3>
+                    <h4>Hasta 6 cuotas sin interés</h4>
+                    <h4>Cuadro grabado en madera</h4>
                 </div>
             </article>
 
             <article>
                 <img  src="./img/img4-C-cinturon.png" alt="Cinturón con hebilla labrada">
                 <div class="main-article1">
-                <h3>$1200</h3>
-                <h4>Hasta 6 cuotas sin interés</h4>
-                <h4>Cinturón con hebilla labrada</h4>
+                    <h3>$1200</h3>
+                    <h4>Hasta 6 cuotas sin interés</h4>
+                    <h4>Cinturón con hebilla labrada</h4>
                 </div>
             </article>
 
         </section>
+    
+    <!--SOCIAL MEDIA-->
 
-    <div class="footer-social-media">
-        <h2>Encontranos también en:</h2>
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-facebook-f"></i>
+
+    <div class= "red-social-container">
+        <h4>Encontranos también en:</h4>
+        <a href="https://www.instagram.com/explore/tags/artesanias/"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/groups/188953441869265"><i class="fab fa-facebook-f"></i></a>
     </div>
 
+    <!--FOOTER-->
+    <footer>
+        <section>
+        <ul>
+            <li><a href="#">Medios de Pago</a></li>
+            <li><a href="#">¿Necesitás ayuda? Escribenos...</a></li>
+            <li><a href="#">CQuiénes Somos</a></li>
+        </ul>
+        </section>
+       
 
+        <section>
+        <ul>
+            <li>Privacidad</li>
+            <li>Copyright © 2020-2021 Hecho a Mano S.A.</li>
+            <li>Condiciones de uso</li>
+        </ul>    
+        </section>
 
-        <footer>
-            <section>
-                <p class= "copyright">Copyright © 2020-2021 Hecho a Mano S.A.</p>
-            </section>
-
-        </footer>
+    </footer>      
+           
+       
     </main>
 </body>
 </html>
