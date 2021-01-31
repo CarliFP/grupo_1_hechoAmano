@@ -50,3 +50,9 @@ independientes.
 :white_check_mark: Neri Cardozo, 20 años de edad, Argentina. 
 
 :white_check_mark: Carla Fresch Pons, 32 años de edad, Uruguay. 
+
+**REFERENCIAS PARA EL PRODUCT DETAIL**
+
+https://bbbootstrap.com/snippets/ecommerce-preview-product-images-80415691 Para el product images preview
+
+https://mdbootstrap.com/docs/b4/jquery/ecommerce/components/rating/ Para el heart rating

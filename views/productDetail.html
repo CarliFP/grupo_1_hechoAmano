@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <!--Viewport-->
+    <meta name= "viewport" content= "width=device-width, initial-scale=1">
+
+    <title>"Detalle de producto"</title>
+
+    <!--Css styles-->
+    <link href ="css/normalize.css" rel="stylesheet"> 
+    <link href ="css/stylesProductDetail.css" rel="stylesheet">
+
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/17c2d4139d.js" crossorigin="anonymous"></script> 
+    
+    <!--link Font-family Open Sans-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">   
+
+    <!-- Compiled and minified Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+    <!-- Minified JS library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Compiled and minified Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+
+</head>
+
+
+<body>
+
+    <header class="header">
+        
+         <!--PRINCIPAL NAV-BAR--> 
+        <nav class= "main-header-top-bar">
+            <img src="./img/logoEnBlanco(FCFCFC).png" alt="Logo de Hecho a Mano">
+        
+         <!--SPACE FOR SEARCH NAV-BAR--> 
+            <form class="search-bar" action="#">
+                <input type="text" placeholder="¿Qué estás buscando?" name="search">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+
+        <nav  class= "first-nav-bar">
+
+            <ul class="right-navbar">
+                <li> <a href="#">Creá tu cuenta</a><i class="far fa-address-card"></i></li>
+                <li> <a href="#">Ingresá</a><i class="fas fa-sign-in-alt"></i></li>
+                <li> <a href="#"><i class="fas fa-shopping-cart"></i>
+                </li>
+            </ul>
+        </nav>
+
+    <!--SECOND NAV-BAR--> 
+
+    <nav  class= "second-nav-bar">
+        <ul class="buttom-navbar">
+            <li> <a href="#"><i class = "fa fa-bars burger"></i>Todo</a></li>
+            <li> <a href="#">Categorias</a></li>
+            </li>
+        </ul>
+    </nav>
+</header>
+    <main>
+        <section class="productCategory">
+            <a href="#">Categoria de producto</a> > <a href="#">Subcategoria</a> > <a href="#">Segmento</a> > <a href="#">Subsegmento</a> > <a href="#">Producto</a>
+        </section>
+        <section class="product">
+            <div class="container-fluid px-sm-1 py-5 mx-auto">
+                <div class="row justify-content-center">
+                    <div class="d-flex">
+                        <div class="card">
+                            <div class="d-flex flex-column thumbnails">
+                                <div id="f1" class="tb tb-active"> <img class="thumbnail-img fit-image" src="./img/img-1-C-mascarilla.png"> </div>
+                                <div id="f2" class="tb"> <img class="thumbnail-img fit-image" src= "./img/img-1-C-mascarilla.png"> </div>
+                                <div id="f3" class="tb"> <img class="thumbnail-img fit-image" src="./img/img-1-C-mascarilla.png"> </div>
+                                <div id="f4" class="tb"> <img class="thumbnail-img fit-image" src="./img/img-1-C-mascarilla.png"> </div>
+                            </div>
+                            <fieldset id="f11" class="active">
+                                <div class="product-pic"> <img class="pic0" src="./img/img-1-C-mascarilla.png"> </div>
+                            </fieldset>
+                            <fieldset id="f21" class="">
+                                <div class="product-pic"> <img class="pic0" src="./img/img-1-C-mascarilla.png"> </div>
+                            </fieldset>
+                            <fieldset id="f31" class="">
+                                <div class="product-pic"> <img class="pic0" src="./img/img-1-C-mascarilla.png"> </div>
+                            </fieldset>
+                            <fieldset id="f41" class="">
+                                <div class="product-pic"> <img class="pic0" src="./img/img-1-C-mascarilla.png"> </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="productDetails">
+            <div class="productName">Nombre del producto</div>
+            <div class="productRating">
+            <ul class="rating interactive-rating mb-0">
+                <li>
+                  <i class="far fa-heart fa-sm text-primary"></i>
+                </li>
+                <li>
+                  <i class="far fa-heart fa-sm text-primary"></i>
+                </li>
+                <li>
+                  <i class="far fa-heart fa-sm text-primary"></i>
+                </li>
+                <li>
+                  <i class="far fa-heart fa-sm text-primary"></i>
+                </li>
+                <li>
+                  <i class="far fa-heart fa-sm text-primary"></i>
+                </li>
+              </ul>
+            </div>
+            <div class="productPrice">
+                <p>$1.300</p>
+        </div>
+        <div class="paymentMethods">
+            <a href="#">Ver los medios de pago</a>
+        </div>
+        </div>
+        </section>
+    </main>
+
+
+
+    <footer>
+        <section>
+            <div class="footer-social-media">
+                <h2>Encontranos también en:</h2>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-facebook-f"></i>
+            </div>
+        </section>
+
+            <section>
+                <p class= "copyright">Copyright © 2020-2021 Hecho a Mano S.A.</p>
+            </section>
+
+        </footer>
+    </main>
+</body>
+</html>
