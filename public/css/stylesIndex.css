@@ -70,7 +70,7 @@ main {
 }
 
 .logo {
-    width: 50%;
+    width: 45%;
 }
 
 .img-logoEnBlanco {
@@ -78,7 +78,7 @@ main {
 }
 
 .search-bar {
-    width: 50%; 
+    width: 45%; 
     margin-top: 25px; 
 }
 
@@ -159,9 +159,6 @@ img {
 
 /*ARTICLE*/
 
-article {
-    padding: 4px; 
-}
 
 article img {
  border: 1px solid #696969; 
@@ -171,6 +168,10 @@ article img {
     background-color: white; 
     padding: 15px;
     border: 1px solid #696969; 
+}
+
+.product {
+    width: 90%; 
 }
 
 /*descripcion solo disponible en tablet y desktop*/
@@ -274,6 +275,12 @@ footer {
        max-width: 25%; 
    }
 
+   /*PRODUCT*/
+   .product {
+       width: 45%;
+       flex-wrap: wrap; 
+   } 
+   
    /*CATEGORIAS*/
    
     .col {
@@ -286,7 +293,7 @@ footer {
         flex: 3;
     }
     .col.doble_sm {
-        flex: 2;
+        flex: 2; 
     }
 }
 
