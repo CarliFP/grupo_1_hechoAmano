@@ -15,9 +15,9 @@
     <!-- Font awesome -->
     <script src="https://kit.fontawesome.com/17c2d4139d.js" crossorigin="anonymous"></script> 
     
-    <!--link Font-family Open Sans-->
+    <!--link Font-family Roboto-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">   
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
 
     <!-- Compiled and minified Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
@@ -46,9 +46,9 @@
         <nav  class= "first-nav-bar">
 
             <ul class="right-navbar">
-                <li> <a href="#">Creá tu cuenta</a><i class="far fa-address-card"></i></li>
-                <li> <a href="#">Ingresá</a><i class="fas fa-sign-in-alt"></i></li>
-                <li> <a href="#"><i class="fas fa-shopping-cart"></i>
+                <li class="item-right-navbar"> <a href="#">Creá tu cuenta</a><i class="far fa-address-card"></i></li>
+                <li class="item-right-navbar"> <a href="#">Ingresá</a><i class="fas fa-sign-in-alt"></i></li>
+                <li class="item-right-navbar"   > <a href="#"><i class="fas fa-shopping-cart"></i>
                 </li>
             </ul>
         </nav>
@@ -57,8 +57,8 @@
 
     <nav  class= "second-nav-bar">
         <ul class="buttom-navbar">
-            <li> <a href="#"><i class = "fa fa-bars burger"></i>Todo</a></li>
-            <li> <a href="#">Categorias</a></li>
+            <li class="item-buttom-navbar"> <a href="#"><i class = "fa fa-bars burger"></i>Todo</a></li>
+            <li class="item-buttom-navbar"> <a href="#">Categorias</a></li>
             </li>
         </ul>
     </nav>
@@ -128,17 +128,36 @@
         </div>
         <div class="deliveryDetails">
             <div class="seller">Vendedor: <a href="#">El Pepe</a></div>
-            <div class="stockInfo">Stock: disponible</div>
+            <div class="stock">Stock: disponible</div>
             <div class="shippingCost">Envio a domicilio: $360</div>
             <div class="protectedPurchase">Compra Protegida: recibí el producto que esperabas o te devolvemos tu dinero. 
-                <br>
                 Mercado Puntos: Sumas 840 puntos. 
-                <br>
                 12 meses de garantía de fábrica</div>
             </div>
         </div>
         </section>
+        <section class="relatedProducts">
+            <h3 class="title">Quienes vieron esto tambien compraron</h3>
+                <div class="relatedProductsBar">
+                <a href="#" class="relatedProductsImages"> <img src="./img/img2-c-accesorioCabello.png"> <p class="relatedProductName">Accesorio cabello</p> <p class="relatedProductPrice">$690</p></a>
 
+            </div>
+                <div class="relatedProductsBar">
+                <a href="#" class="relatedProductsImages"> <img src="./img/img3-c-cueroCabello.png"> <p class="relatedProductName"> Cuero Cabello</p> <p class="relatedProductPrice">$900</p> </a>
+            </div>
+                <div class="relatedProductsBar">                
+                <a href="#" class="relatedProductsImages"> <img src="./img/img4-c-cinturon.png"> <p class="relatedProductName">Cinturon</p> <p class="relatedProductPrice">$1100</p></a>
+            </div>
+                
+            </div>
+        </section>
+        <section>
+            <div class="questionZone">
+                <h3 class="preguntas"> Preguntas </h3>
+                <textarea class="question" id="question" placeholder="Haz una pregunta"></textarea>
+                <button class="questionButton"  type="submit" id="question">Preguntar</button>
+            </div>
+        </section>
     </main>
 
 
