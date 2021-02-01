@@ -31,13 +31,27 @@ body {
 }
 
 h2 {
-    font-size: 24px; 
+    font-size: 20px; 
     color: #EFB116; 
     padding-top: 8px; 
     margin-left: 8px; 
 }
 
+h3 {
+    font-size: 14px;
+}
 
+h4 {
+    font-size: 12px; 
+}
+
+ul li {
+    list-style: none; 
+}
+
+a {
+    text-decoration: none; 
+}
 /*MAIN*/
 
 main {
@@ -98,7 +112,7 @@ main {
 
 /*SECOND NAV-BAR*/
 .container-todo-categorias {
-    background: #FCFCFC;  
+    background: #F4F4F4;  
 }
 
 header nav ul{
@@ -128,7 +142,7 @@ header nav li a.category-link i {
     padding: 2px 2px 2px 2px; 
     text-align: center; 
     margin-right: 5px; 
-    margin-left: 2px; 
+    margin-left: 8px; 
     background: #FACD48; 
 }
 
@@ -142,19 +156,87 @@ header nav li a.category-link i {
 img {
     width: 100%; 
 }
-section {
-    background: white; 
-}
 
 /*ARTICLE*/
 
+article {
+    padding: 4px; 
+}
+
+article img {
+ border: 1px solid #696969; 
+}
 
 .main-article1 {
     background-color: white; 
-    padding: 15px; 
+    padding: 15px;
+    border: 1px solid #696969; 
+}
+
+/*descripcion solo disponible en tablet y desktop*/
+.description {
+    display: none; 
 }
 
 
+/*ARTICLE CATEGORIAS*/
+.categoria {
+    display: flex; 
+    position: relative; 
+    height: auto;
+    padding: 4px; 
+} 
+
+.img-categoria {
+    opacity: 0.3;
+}
+
+ .segmento {
+    padding: 5px 5px 5px 5px; 
+    position: absolute; 
+    margin: auto; 
+    left: 0;
+    right: 0; 
+    top: 20px; 
+    text-align: center;
+ }
+
+/*SOCIAL MEDIA*/
+.red-social-container {
+    display: flex; 
+}
+
+.red-social-container a {
+    color: #696969;
+    text-align: center;  
+}
+
+/*FOOTER*/
+
+footer {
+    display: flex; 
+    background: white;
+    
+}
+
+.footer-top {
+    display: flex; 
+    background-color: #FDE6A3;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footer-top a{
+    text-decoration: none;
+    color: #696969;
+}
+
+
+.footer-buttom {
+    display: flex; 
+    background-color: #FACD48; 
+    color: white; 
+}
 
 
 /* Tablets */
@@ -162,10 +244,8 @@ section {
 /*col y row*/
 @media (min-width: 460px){
 
-
     .header-top-navbar {
         display: flex;
-        align-items: center; 
     }
 
    .first-navbar {
@@ -183,17 +263,19 @@ section {
          margin-left: 5px; 
     }
    .second-nav-bar {
-         max-width: 25%; 
+       max-width: 25%; 
    }
 
    .logo {
-        max-width: 25%;
+       max-width: 25%;
    }
 
    .search-bar {
        max-width: 25%; 
    }
 
+   /*CATEGORIAS*/
+   
     .col {
         flex:1;
     }
