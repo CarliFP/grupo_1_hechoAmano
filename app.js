@@ -9,7 +9,7 @@ const app = express();
 app.use(express.static("public"));
 
 app.listen (8000, () => {
-    console.log ("Levantando un servidor con Express: Puerto 3000")
+    console.log ("Levantando un servidor con Express: Puerto 8000")
 });
 
 app.get('/', (req, res) => {

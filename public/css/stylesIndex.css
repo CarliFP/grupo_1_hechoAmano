@@ -38,11 +38,11 @@ h2 {
 }
 
 h3 {
-    font-size: 14px;
+    font-size: 16px;
 }
 
 h4 {
-    font-size: 12px; 
+    font-size: 14px; 
 }
 
 ul li {
@@ -52,6 +52,11 @@ ul li {
 a {
     text-decoration: none; 
 }
+
+p {
+    font-size: 12px; 
+}
+
 /*MAIN*/
 
 main {
@@ -62,14 +67,15 @@ main {
 /*HEADER*/
 
 /*TOP-BAR*/
-.header-top-navbar {
+.header-top-navbar { 
+    height: 60px; 
     background: #FACD48;
     display: flex; 
-    padding: 15px 15px 15px 15px; 
     justify-content: space-between; 
 }
 
 .logo {
+    margin-left: 8px; 
     width: 45%;
 }
 
@@ -79,15 +85,14 @@ main {
 
 .search-bar {
     width: 45%; 
-    margin-top: 25px; 
 }
 
 .form-search-navbar {
     position: relative; 
+    margin-top: 20px; 
 }
 
 .form-search-navbar-input {
-    padding: 6px;
     width: 100%;
     height: 25px;
     border-radius: 3px;
@@ -108,6 +113,14 @@ main {
 /*solo disponible para tablets y desktop*/
 .first-navbar {
     display: none; 
+}
+
+.right-navbar i {
+    margin: 0; 
+}
+
+.right-navbar {
+    margin-top: 20px; 
 }
 
 /*SECOND NAV-BAR*/
@@ -245,14 +258,9 @@ footer {
 /*col y row*/
 @media (min-width: 460px){
 
-    .header-top-navbar {
-        display: flex;
-    }
-
    .first-navbar {
        display: flex; 
        max-width: 25%;
-       margin-top: 25px; 
    }
 
    .right-navbar a {
@@ -263,9 +271,10 @@ footer {
     .first-navbar li {
          margin-left: 5px; 
     }
-   .second-nav-bar {
+   
+    .second-nav-bar {
        max-width: 25%; 
-   }
+    }
 
    .logo {
        max-width: 25%;
@@ -278,7 +287,7 @@ footer {
    /*PRODUCT*/
    .product {
        width: 45%;
-       flex-wrap: wrap; 
+       flex-wrap:
    } 
    
    /*CATEGORIAS*/
@@ -298,7 +307,9 @@ footer {
 }
 
 @media (min-width: 768px){
-
+    .col {
+        flex:1;
+    }
    /*col y row*/
   .col.cuadruple_md {
     flex: 4;
