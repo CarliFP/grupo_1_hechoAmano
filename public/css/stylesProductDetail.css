@@ -9,6 +9,9 @@ body {
     color: #000;
     overflow-x: hidden;
 }
+/*HEADER*/
+
+/*TOP-BAR*/
 .header-top-navbar { 
     height: 60px; 
     background: #FACD48;
@@ -51,6 +54,8 @@ body {
     color: #696969; 
     border: none; 
 }
+
+/* FIRST-NAVBAR solo disponible para tablets y desktop*/
 .first-navbar {
     display: none; 
 }
@@ -63,6 +68,7 @@ body {
     margin-top: 20px; 
 }
 
+/*SECOND NAV-BAR*/
 .container-todo-categorias {
     background: #F4F4F4;  
 }
