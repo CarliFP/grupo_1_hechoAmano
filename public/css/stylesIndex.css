@@ -110,7 +110,7 @@ main {
     border: none; 
 }
 
-/*solo disponible para tablets y desktop*/
+/* FIRST-NAVBAR solo disponible para tablets y desktop*/
 .first-navbar {
     display: none; 
 }
@@ -166,46 +166,101 @@ header nav li a.category-link i {
 }
 
 /*SECTION*/
-img {
-    width: 100%; 
-}
+
+
 
 /*ARTICLE*/
 
-
-article img {
- border: 1px solid #696969; 
-}
-
 .main-article1 {
     background-color: white; 
-    padding: 15px;
-    border: 1px solid #696969; 
+    display: flex; 
+    justify-content: space-around; 
 }
 
-.product {
-    width: 90%; 
-}
 
 /*descripcion solo disponible en tablet y desktop*/
 .description {
     display: none; 
 }
 
+/*AJUSTAR IMG A DIV*/
+
+.product {
+    display: flex;
+    flex-basis: 100%;
+    flex-flow: column wrap;
+    background: white;
+    height: 250px;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+
+  .product .img-box {
+    position: relative;
+    width: 100%;
+    height: calc(100% - 50px);
+    border-bottom: 1px solid rgb(243, 243, 243);
+    overflow: hidden;
+  }
+  
+  .product .img-box img{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .main-article1 {
+      padding-top: 10px;
+  }
 
 /*ARTICLE CATEGORIAS*/
+
 .categoria {
+    margin: 0px;
+    height: 250px;
     display: flex; 
     position: relative; 
-    height: auto;
-    padding: 4px; 
+    background-color: white;
+    flex-grow: 0;
+    flex-shrink: 0;
 } 
 
-.img-categoria {
+.categoria .img-box .categ {
+    margin:0px; 
+}
+
+.categoria .img-box img {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-width: 100%;
+    max-height: 100%;
     opacity: 0.3;
 }
 
- .segmento {
+.segmento {
+    position: absolute;
+    margin: auto;
+    top: calc(50% - 10px);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2; 
+    padding: .8em 2em;
+    border-radius: 5px;
+    font-size: 1.2em;
+    text-align: center; 
+}
+
+
+ /*.segmento {
     padding: 5px 5px 5px 5px; 
     position: absolute; 
     margin: auto; 
@@ -213,7 +268,9 @@ article img {
     right: 0; 
     top: 20px; 
     text-align: center;
- }
+    width: 90%; 
+ }*/
+
 
 /*SOCIAL MEDIA*/
 .red-social-container {
@@ -228,12 +285,16 @@ article img {
 /*FOOTER*/
 
 footer {
+    text-align: center;
+    width: 100%;
     display: flex; 
     background: white;
     
 }
 
 .footer-top {
+    width: 100%;
+    margin: 0 auto;
     display: flex; 
     background-color: #FDE6A3;
     padding-top: 20px;
@@ -247,6 +308,8 @@ footer {
 
 
 .footer-buttom {
+    width: 100%;
+    margin: 0 auto;
     display: flex; 
     background-color: #FACD48; 
     color: white; 
@@ -257,6 +320,8 @@ footer {
 
 /*col y row*/
 @media (min-width: 460px){
+
+/*FIRT NAVBAR a partir de tablet*/
 
    .first-navbar {
        display: flex; 
@@ -285,13 +350,9 @@ footer {
    }
 
    /*PRODUCT*/
-   .product {
-       width: 45%;
-       flex-wrap:
-   } 
-   
+  
    /*CATEGORIAS*/
-   
+
     .col {
         flex:1;
     }
@@ -304,12 +365,27 @@ footer {
     .col.doble_sm {
         flex: 2; 
     }
+
+    .product {
+        display: flex;
+        flex-basis: calc(50% - 20px);
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
+    .categoria {
+        display: flex;
+        flex-basis: calc(50% - 2px);
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
+    
 }
 
 @media (min-width: 768px){
     .col {
         flex:1;
     }
+
    /*col y row*/
   .col.cuadruple_md {
     flex: 4;
@@ -320,8 +396,25 @@ footer {
   .col.doble_md {
     flex: 2;
   }
-}
 
+  .container {
+      flex-grow: 0;
+  }
+  .product {
+    display: flex;
+    flex-basis: calc(25% - 20px);
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+
+  .categoria {
+    display: flex;
+    flex-basis: calc(33% - 2px);
+    flex-grow: 0;
+    flex-shrink: 0;
+    }
+
+}
 
 /* Desktop */
 @media (min-width: 1200px){
@@ -337,5 +430,11 @@ footer {
     }
     .col.doble_lg {
         flex: 2;
+    }
+    .categoria {
+        display: flex;
+        flex-basis: calc(25% - 2px);
+        flex-grow: 0;
+        flex-shrink: 0;
     }
 }
