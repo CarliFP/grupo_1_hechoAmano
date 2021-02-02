@@ -175,12 +175,27 @@ header nav li a.category-link i {
     background-color: white; 
     display: flex; 
     justify-content: space-around; 
+    position: relative; 
+    padding: 10px; 
 }
 
+.price {
+    color: #353535; 
+    width: 50%;  
+    font-weight: 700;
+}
+
+.payment-method {
+    color:#008F39; 
+    font-size: 12px;
+    margin-left: 5px; 
+    width: 50%; 
+}
 
 /*descripcion solo disponible en tablet y desktop*/
 .description {
     display: none; 
+
 }
 
 /*AJUSTAR IMG A DIV*/
@@ -213,9 +228,7 @@ header nav li a.category-link i {
     max-width: 100%;
     max-height: 100%;
   }
-  .main-article1 {
-      padding-top: 10px;
-  }
+
 
 /*ARTICLE CATEGORIAS*/
 
@@ -260,21 +273,14 @@ header nav li a.category-link i {
 }
 
 
- /*.segmento {
-    padding: 5px 5px 5px 5px; 
-    position: absolute; 
-    margin: auto; 
-    left: 0;
-    right: 0; 
-    top: 20px; 
-    text-align: center;
-    width: 90%; 
- }*/
-
-
 /*SOCIAL MEDIA*/
 .red-social-container {
-    display: flex; 
+    text-align: center;
+    line-height : 25px;
+    width: 100%;
+    font-size: 24px;  
+    background: white; 
+    padding: 20px; 
 }
 
 .red-social-container a {
@@ -379,7 +385,16 @@ footer {
         flex-shrink: 0;
     }
     
-}
+    .description {
+        font-size: 12px; 
+        display: block; 
+        position: absolute; 
+        top: 35px; 
+        padding-bottom: 5px;
+        }
+    }
+
+
 
 @media (min-width: 768px){
     .col {
