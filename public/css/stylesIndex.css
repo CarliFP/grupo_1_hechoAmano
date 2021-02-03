@@ -5,6 +5,7 @@
     padding:0;
 }
 
+
 /*Mobile First*/
 /*col y row*/
 .container {
@@ -73,11 +74,20 @@ main {
 /*HEADER*/
 
 /*TOP-BAR*/
+/*
+.header {
+    margin: 0; 
+    position: fixed;
+    z-index: 100; 
+    width: 100%; 
+}
+*/
 .header-top-navbar { 
     height: 60px; 
     background: #FACD48;
     display: flex; 
     justify-content: space-between; 
+    width: 100%; 
 }
 
 .logo {
@@ -141,8 +151,15 @@ main {
 }
 
 /*SECOND NAV-BAR*/
-.container-todo-categorias {
-    background: #F4F4F4;  
+
+.second-nav-bar {
+    background-color: #F4F4F4; 
+}
+.container-todo-categorias { 
+    text-align: left;
+    height: 8px;
+    padding-top: 4px; 
+    width: 100%; 
 }
 
 header nav ul {
