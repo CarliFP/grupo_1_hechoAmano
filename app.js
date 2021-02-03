@@ -9,7 +9,7 @@ const app = express();
 app.use(express.static("public"));
 
 app.listen (8000, () => {
-    console.log ("Levantando un servidor con Express: Puerto 3000")
+    console.log ("Levantando un servidor con Express: Puerto 8000")
 });
 
 app.get('/', (req, res) => {
@@ -21,6 +21,10 @@ app.get('/', (req, res) => {
 });
 app.get('/productDetail', (req,res) => {
     res.sendFile(path.resolve('./views/productDetail.html'));
+})
+
+app.get('/productCart', (req,res) => {
+    res.sendFile(path.resolve('./views/productCart.html'));
 })
 
 app.get('/404', (req, res) => {
