@@ -633,6 +633,14 @@ footer .text-footer-black:hover {
         flex:1;
     }
 
+    .header {
+        height: 80px;
+    }
+
+    .header-top-navbar{
+        padding-top: 10px;
+    }
+
    /*col y row*/
   .col.cuadruple_md {
     flex: 4;
