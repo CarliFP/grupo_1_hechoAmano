@@ -19,13 +19,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
 
-    <!-- Compiled and minified Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
-    <!-- Minified JS library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!-- Compiled and minified Bootstrap JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
-
 </head>
 
 
@@ -33,7 +26,7 @@
 
     <header class="header">  
          
-        <nav class= "header-top-navbar">
+        <nav class= "header-top-navbar row container">
     
             <div class= "logo">
                 <img class="img-logoEnBlanco" src="./img/logoEnBlanco(FCFCFC).png" alt="Logo de Hecho a Mano">
@@ -50,31 +43,37 @@
             <!--FIRST NAVBAR-->
             <div class ="first-navbar">
             <ul class="right-navbar">
-                     <li> <a href="#">Registrate</a></li>
-                     <li> <a href="#">Ingresa</a></li>
-                     <li> <a href="#"><i class="fas fa-shopping-cart col"></i></li>
+                     <li> <a class= "text-link-nav" href="#">Registrate</a></li>
+                     <li> <a class= "text-link-nav" href="#">Ingresa</a></li>
+                     <li> <a class= "text-link-nav" href="#"><i class="fas fa-shopping-cart col"></i></li>
                 </ul>
             </div>    
         </nav>
     
-        <!--SECOND NAV-BAR--> 
-            <nav  class= "second-nav-bar">
-                <div class= "container-todo-categorias">
-                    <ul>
-                        <li> <a class="category-link" href="#"><i class = "fa fa-bars burger"></i></li>
-                         <li> <a class="category-link" href="#">Categorias</a></li>
-                    </ul>
-                </div>
-            </nav>
-    
-        </header>    
-        <main>
-        <section class="productCategory">
-            <a href="#">Categoria de producto</a> > <a href="#">Subcategoria</a> > <a href="#">Segmento</a> > <a href="#">Subsegmento</a> > <a href="#">Producto</a>
+    <!--SECOND NAV-BAR--> 
+    <nav class= "second-nav-bar row">
+        <div class="container container-todo-categorias">
+            <ul>
+                <li> <a class="category-link" href="#"><i class = "fa fa-bars burger"></i></li>
+                 <li> <a class="category-link" href="#categorias">Categorias</a></li>
+            </ul>
+        </div>
+    </nav>
+
+</header>
+    <!-- Categoria de producto     -->
+    <main>
+        <section>
+            <div class="productCategory">
+                <a href="#">Categoria de producto</a> > <a href="#">Subcategoria</a> > <a href="#">Segmento</a> > <a href="#">Subsegmento</a> > <a href="#">Producto</a>
+            </div>
         </section>
-        <section class="product">
+        <!-- Producto al que ingreso -->
+        <section class="mainProduct">
+            <article>
             <img class="mainProductImage" src="./img/img-1-C-mascarilla.png">
-            <section class="productDetails">
+            </article>
+                <div class="descriptionFields">
             <div class="productName">Nombre del producto</div>
             <div class="productRating">
             <ul class="rating interactive-rating mb-0">
@@ -94,78 +93,115 @@
                   <i class="far fa-heart fa-sm text-primary"></i>
                 </li>
               </ul>
-            <div class="productPrice">
-                <p>$1.300</p>
+            <article class="productDescription">
+        </div>  
+            <div class="productPrice"> $1.300
         </div>
-        <div class="paymentMethods">
+            <div class="paymentMethods">
             <a href="#">Ver los medios de pago</a>
         </div>
-        <div class="productDescription">
+            <div class="productDescription">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
             Eos suscipit corrupti veniam assumenda aliquid distinctio voluptate amet?
         </div>
-        </div>
-        <div class="deliveryDetails">
-            <div class="seller">Vendedor: <a href="#">El Pepe</a></div>
-            <div class="stock">Stock: disponible</div>
-            <div class="shippingCost">Envio a domicilio: $360</div>
-            <div class="protectedPurchase">Compra Protegida: recibí el producto que esperabas o te devolvemos tu dinero. 
-                Mercado Puntos: Sumas 840 puntos. 
-                12 meses de garantía de fábrica</div>
-            </div>
-        </section>
-        </section>
-        <section class="relatedProducts">
-            <h3 class="title">Quienes vieron esto tambien compraron</h3>
-                <div class="relatedProductsBar">
-                <a href="#" class="relatedProductsImages"> <img src="./img/img2-c-accesorioCabello.png"> <p class="relatedProductName">Accesorio cabello</p> <p class="relatedProductPrice">$690</p></a>
+    
+        <ul class="deliveryDetails">
+            <li class="seller">Vendedor: <a href="#">El Pepe</a></li>
+            <li class="stock">Stock: disponible</li>
+            <li class="shippingCost">Envio a domicilio: $360</li>
+        </ul>
+    </article>
+</section>
+</main>
+<!-- Productos relacionados -->
 
-        </div>
-                <div class="relatedProductsBar">
-                <a href="#" class="relatedProductsImages"> <img src="./img/img3-c-cueroCabello.png"> <p class="relatedProductName"> Cuero Cabello</p> <p class="relatedProductPrice">$900</p> </a>
-        </div>
-                <div class="relatedProductsBar">                
-                <a href="#" class="relatedProductsImages"> <img src="./img/img4-c-cinturon.png"> <p class="relatedProductName">Cinturon</p> <p class="relatedProductPrice">$1100</p></a>
-        </div>
-            <div class="relatedProductsBar">                
-            <a href="#" class="relatedProductsImages"> <img src="./img/img5-p-cepillodedientes.png"> <p class="relatedProductName">Cepillo de dientes</p> <p class="relatedProductPrice">$1100</p></a>
-        </div>   
-            </div>
-        </section>
-        <section>
-            <div class="questionZone">
-                <h3 class="preguntas"> Preguntas </h3>
-                <textarea class="question" id="question" placeholder="Haz una pregunta"></textarea>
-                <button class="questionButton"  type="submit" id="question">Preguntar</button>
-            </div>
-        </section>
-    </main>
+<div class="container row subtitle">
+    <h2>Productos relacionados</h2>
+</div>
+    
 
+<section class= "container row">
 
-
-    <footer>
-        <section>
-            <div class="footer-social-media">
-                <h2>Encontranos también en:</h2>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-facebook-f"></i>
-            </div>
-        </section>
-        <section class= "container"> 
-            <div>
-                <ul class = "footer-top col">
-                     <li><a href="#">Medios de Pago</a></li>
-                     <li><a href="#">¿Necesitás ayuda? Escribenos...</a></li>
-                     <li><a href="#">¿Quiénes Somos?</a></li>
-               </ul>
+    <article class="relatedProduct col">
+        <div class="img-box">
+            <img src="./img/img-1-C-mascarilla.png" alt="Tapabocas">
+        </div>
+            <div class="related-article1">
+                <h3 class="price">$250</h3>
+                <h4 class= "payment-method">Hasta 3 cuotas</h4>
+                <h4 class= "description">Tapabocas (distinto colores y modelos)</h4>
              </div>
-              
-        </section>
-            <section>
-                <p class= "copyright">Copyright © 2020-2021 Hecho a Mano S.A.</p>
-            </section>
+    </article>
 
-        </footer>
-    </main>
-</body>
-</html>
+    <article class="relatedProduct col">
+        <div class="img-box">
+            <img  src="./img/img1-A-pinturaArtesanalAcrílico.png" alt="Pintura Artesanal en acrílico">
+         </div>
+              <div class ="related-article1">
+                 <h3 class="price">$6500</h3>
+                 <h4 class= "payment-method">Hasta 12 cuotas</h4>
+                 <h4 class= "description">Cuadro Abstracto en Acrílico</h4>
+              </div>
+    </article>
+
+    <article class="relatedProduct col">
+        <div class="img-box">
+             <img src="./img/img2-A-linoleografía.png" alt="Linoleografía">
+         </div>
+            <div class= "related-article1">
+                 <h3 class ="price">$7.500</h3>
+                 <h4 class= "payment-method">10% off</h4>
+                 <h4 class= "description">Linoleografía</h4>
+             </div>
+    </article>
+
+    <article class="relatedProduct col">
+        <div class="img-box">
+            <img  src="./img/img2-C-accesorioCabello.png" alt="Turbante chic tejido a mano">
+         </div>
+             <div class="related-article1">
+                 <h3 class ="price">$1500</h3>
+                 <h4 class= "payment-method">15% off</h4>
+                 <h4 class= "description">Turbante chic tejido artesanal</h4>
+             </div>
+    </article>
+
+</section>
+
+    <!-- ICON -->
+    <div class = "whatsapp">
+        <a href="https://api.whatsapp.com/send/?phone=59891545444&text=%22Hola+%C2%A1+Hecho+a+%20Mano+!+Estoy+interesadx+en+.+.+.%22&app_absent=0" class="whatsapp" 
+        target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
+        </div>
+       
+    
+        <!--SOCIAL MEDIA-->
+    
+        <div class= "red-social-container">
+            <h4>Encontranos también en:</h4>
+            <a class= "text-footer-yellow" href="https://www.instagram.com/explore/tags/artesanias/"><i class="fab fa-instagram"></i></a>
+            <a class= "text-footer-yellow" href="https://www.facebook.com/groups/188953441869265"><i class="fab fa-facebook-f"></i></a>
+        </div>
+    
+        <!--FOOTER-->
+        <footer class="row">
+                <div class="row footer-top">
+                    <ul class="container row">
+                        <li class="col"><a class= "text-footer-yellow" href="#">Medios de Pago</a></li>
+                        <li class="col"><a class= "text-footer-yellow" href="#">¿Necesitás ayuda? </a></li>
+                        <li class="col"><a class= "text-footer-yellow" href="#">¿Quiénes Somos?</a></li>
+                   </ul>
+                 </div>
+    
+                 <div class="row footer-buttom">
+                    <ul class="container row">
+                        <li class="col text-footer-black">Privacidad</li>
+                        <li class="col text-footer-black">Copyright © 2020-2021 Hecho a Mano S.A.</li>
+                        <li class="col text-footer-black">Condiciones de uso</li>
+                    </ul>    
+                </div>
+    
+        </footer>      
+                
+      </body>
+    </html>
