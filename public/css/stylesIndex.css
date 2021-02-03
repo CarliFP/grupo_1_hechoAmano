@@ -62,6 +62,8 @@ p {
 main {
     width: 90%;
     margin: 0 auto;  
+    padding-top: 40px;
+    padding-bottom: 100px
 }
 
 .subtitle {
@@ -74,20 +76,23 @@ main {
 /*HEADER*/
 
 /*TOP-BAR*/
-/*
+
 .header {
-    margin: 0; 
+    margin: 0 0; 
     position: fixed;
+    top: 0;
     z-index: 100; 
     width: 100%; 
+    height: 60px;
+    background: #FACD48;
 }
-*/
+
 .header-top-navbar { 
-    height: 60px; 
     background: #FACD48;
     display: flex; 
     justify-content: space-between; 
     width: 100%; 
+    height: 100%; 
 }
 
 .logo {
@@ -147,14 +152,19 @@ main {
     color: white;
 }
 .text-link nav a {
-    transition: color 0.8s linear 0.2s;
+    transition: color 0.2s linear 0.2s;
 }
 
 /*SECOND NAV-BAR*/
 
 .second-nav-bar {
-    background-color: #F4F4F4; 
+    width: 100vw;
+    height: 30px;
+    background-color: white;
+    background: rgba(256, 256, 256, 0.95);
+    
 }
+
 .container-todo-categorias { 
     text-align: left;
     height: 8px;
@@ -180,7 +190,7 @@ header nav li {
     color: #FACD48; 
 }
 .category-link a {
-    transition: color 0.8s linear 0.2s;
+    transition: color 0.2s linear 0.2s;
 }
 
 header nav li a.category-link {
@@ -208,7 +218,7 @@ header nav li a.category-link i {
 .carousel {
     position: relative;
     box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
-    margin-top: 26px;
+    margin-top: 116px;
 }
 
 .carousel-inner {
@@ -399,17 +409,20 @@ header nav li a.category-link i {
     border: 1px solid #B3B3B3;
 } 
 
+article.categoria:hover {
+    background-color: #A3A3A3;
+} 
 
-.link-categ a {
+article a.link-categ{
+    height: 100%;
+    width: 100%;
     text-decoration: none;
     color: #353535; 
 }
-.link-categ:hover {
+
+a.link-categ:hover {
     color:#EFB116;
-}
-.link-categ a {
-    transition: color 0.8s linear 0.2s;
-}
+} 
 
 .categoria .img-box .categ {
     margin:0px; 
@@ -446,6 +459,8 @@ header nav li a.category-link i {
     text-emphasis: none;
     text-decoration: none; 
 }
+
+/* DESTACADOS */
 
 /*SOCIAL MEDIA*/
 .red-social-container {
@@ -499,7 +514,7 @@ footer {
     text-decoration: none;
     color: #353535; 
 }
-.text-footer-yellow:hover {
+footer .text-footer-yellow:hover {
     color:#EFB116;
 }
 .text-footer-yellow a {
@@ -513,7 +528,7 @@ footer {
 .text-footer-black a {
     text-decoration: none;
 }
-.text-footer-black:hover {
+footer .text-footer-black:hover {
     color: #353535;
 }
 .text-footer-black a {
@@ -561,7 +576,6 @@ footer {
     }
    
     .second-nav-bar {
-       max-width: 25%; 
     }
 
    .logo {
@@ -594,6 +608,7 @@ footer {
         flex-basis: calc(50% - 20px);
         flex-grow: 0;
         flex-shrink: 0;
+        box-shadow : 0px 0px 10px rgb(100, 100, 100);
     }
     .categoria {
         display: flex;
