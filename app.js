@@ -23,6 +23,10 @@ app.get('/productDetail', (req,res) => {
     res.sendFile(path.resolve('./views/productDetail.html'));
 })
 
+app.get('/productCart', (req,res) => {
+    res.sendFile(path.resolve('./views/productCart.html'));
+})
+
 app.get('/404', (req, res) => {
       res.send("Error página no encontrada", 404);
     //console.log ();
