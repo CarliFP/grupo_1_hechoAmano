@@ -42,9 +42,9 @@
         <!--FIRST NAVBAR-->
         <div class ="first-navbar">
         <ul class="right-navbar">
-                 <li> <a href="#">Registrate</a></li>
-                 <li> <a href="#">Ingresa</a></li>
-                 <li> <a href="#"><i class="fas fa-shopping-cart col"></i></li>
+                 <li> <a class= "text-link-nav" href="#">Registrate</a></li>
+                 <li> <a class= "text-link-nav" href="#">Ingresa</a></li>
+                 <li> <a class= "text-link-nav" href="#"><i class="fas fa-shopping-cart col"></i></li>
             </ul>
         </div>    
     </nav>
@@ -54,7 +54,7 @@
             <div class= "container-todo-categorias">
                 <ul>
                     <li> <a class="category-link" href="#"><i class = "fa fa-bars burger"></i></li>
-                     <li> <a class="category-link" href="#">Categorias</a></li>
+                     <li> <a class="category-link" href="#categorias">Categorias</a></li>
                 </ul>
             </div>
         </nav>
@@ -70,7 +70,10 @@
 
     <main class="row">
 
-       <h2 class="container row">Los más vendidos</h2>
+       <div class="container row subtitle">
+            <h2>Los más vendidos</h2>
+        </div>
+        
 
         <section class="container row">
             <article class ="product col">
@@ -130,57 +133,72 @@
 
         </section>
 
-         <h2 class= "container row">Categorías</h2>
+        <div class="container row subtitle">
+            <h2 id="categorias">Categorías</h2>
+        </div>
 
         <section class="container row">
 
             <article class ="categoria col" >
-                <a href="">
+                <a class="link-categ" href="">
                     <div class= "img-box categ">
-                        <img class="img-categoria" src="./img/img3-A-grabado.png" alt="Turbante chic tejido a mano">
-                        <h3 class="segmento">Complementos (joyería, accesorios y mucho más!)</h3>
+                        <img class="img-categoria" src="./img/vector-beauty.svg" alt="complementos">
+                        <h3 class="segmento">ACCESORIOS</h3>
                     </div>
                 </a>
             </article>
 
             <article class ="categoria col">
+                <a class="link-categ" href="">
                 <div class= "img-box categ">
-                    <img class ="img-categoria" src="./img/img3-A-grabado.png" alt="grabado">
-                     <h3 class="segmento">Arte (cuadros, esculturas, estatuas y figuras, elaborados con distintas técnicas).</h3>
+                    <img class ="img-categoria" src="./img/arte-vector.svg" alt="arte">
+                     <h3 class="segmento">ARTE</h3>
                 </div>
+            </a>
             </article>
 
             <article class ="categoria col">
+                <a class="link-categ" href="#">
                 <div class="img-box categ">
-                    <img class ="img-categoria" src="./img/img1-H-paloSanto.png" alt="jabon Natural">
-                    <h3 class="segmento">Hogar (velas, sahumerios, decoración, y mucho más!)</h3>
+                    <img class ="img-categoria" src="./img/deco-vector-hogar.svg" alt="hogar">
+                    <h3 class="segmento">HOGAR</h3>
                 </div>
+            </a>
             </article>
 
             <article class ="categoria col" >
+                <a class="link-categ" href="">
                 <div class="img-box categ">
-                    <img class ="img-categoria" src="./img/img4-H-close&openDeMadera.png" alt="close and open de madera">
-                    <h3 class="segmento">Juguetes para niños y de ingenio</h3>
+                    <img class ="img-categoria" src="./img/toy-vector.svg" alt="juguetes">
+                    <h3 class="segmento">JUEGOS</h3>
                 </div>
+            </a>
             </article>
  
             <article class ="categoria col">
+                <a class="link-categ" href="">
                 <div class="img-box categ">    
-                    <img class ="img-categoria" src="./img/img5-P-jabonNatural.png" alt="jabon natural">
-                    <h3 class="segmento">Cosmética (cremas, jabones y cuidado personal)</h3>
+                    <img class ="img-categoria" src="./img/toy-vector.svg" alt="cosmética">
+                    <h3 class="segmento">COSMÉTICA</h3>
                 </div>
+            </a>
             </article>
 
             <article class ="categoria col">
+                <a class="link-categ" href="">
                 <div class="img-box categ">
-                    <img class ="img-categoria" src="./img/img1-zapatosHechosAmano.png" alt="zapatos artesanales">
-                    <h3 class="segmento">Ropa y calzado (prendas de vestir en diferentes estilos y calzado confeccionado a mano)</h3>
+                    <img class ="img-categoria" src="./img/clothes-vector.svg" alt="ropa y calzado">
+                    <h3 class="segmento">ROPA Y CALZADO</h3>
                 </div>    
+            </a>
             </article>
 
         </section>
 
-            <h2 class="container row">Destacados del mes</h2>
+        <div class="container row subtitle">
+            <h2>Destacados del mes</h2>
+        </div>
+            
 
         <section class= "container row">
 
@@ -235,25 +253,25 @@
 
     <div class= "red-social-container">
         <h4>Encontranos también en:</h4>
-        <a href="https://www.instagram.com/explore/tags/artesanias/"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.facebook.com/groups/188953441869265"><i class="fab fa-facebook-f"></i></a>
+        <a class= "text-footer-yellow" href="https://www.instagram.com/explore/tags/artesanias/"><i class="fab fa-instagram"></i></a>
+        <a class= "text-footer-yellow" href="https://www.facebook.com/groups/188953441869265"><i class="fab fa-facebook-f"></i></a>
     </div>
 
     <!--FOOTER-->
     <footer class="row">
             <div class="row footer-top">
                 <ul class="container row">
-                    <li class="col"><a href="#">Medios de Pago</a></li>
-                    <li class="col"><a href="#">¿Necesitás ayuda? Escribenos...</a></li>
-                    <li class="col"><a href="#">¿Quiénes Somos?</a></li>
+                    <li class="col"><a class= "text-footer-yellow" href="#">Medios de Pago</a></li>
+                    <li class="col"><a class= "text-footer-yellow" href="#">¿Necesitás ayuda? Escribenos...</a></li>
+                    <li class="col"><a class= "text-footer-yellow" href="#">¿Quiénes Somos?</a></li>
                </ul>
              </div>
 
              <div class="row footer-buttom">
                 <ul class="container row">
-                    <li class="col">Privacidad</li>
-                    <li class="col">Copyright © 2020-2021 Hecho a Mano S.A.</li>
-                    <li class="col">Condiciones de uso</li>
+                    <li class="col text-footer-black">Privacidad</li>
+                    <li class="col tex-footer-black">Copyright © 2020-2021 Hecho a Mano S.A.</li>
+                    <li class="col text-footer-black">Condiciones de uso</li>
                 </ul>    
             </div>
 
