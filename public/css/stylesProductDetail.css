@@ -358,3 +358,10 @@ footer {
         flex: 2;
     }
 }
+/* Caja de preguntas */
+.questionBox {
+    height: 60px;
+}
+input {
+    text-align: center;
+}
