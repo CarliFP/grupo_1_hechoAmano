@@ -5,7 +5,6 @@
     padding:0;
 }
 
-
 /*Mobile First*/
 /*col y row*/
 .container {
@@ -145,15 +144,6 @@ main {
     margin-top: 20px; 
 }
 
-.text-link-nav a {
-    text-decoration: none;
-}
-.text-link-nav:hover {
-    color: white;
-}
-.text-link nav a {
-    transition: color 0.2s linear 0.2s;
-}
 
 /*SECOND NAV-BAR*/
 
@@ -161,8 +151,7 @@ main {
     width: 100vw;
     height: 30px;
     background-color: white;
-    background: rgba(256, 256, 256, 0.95);
-    
+    background: rgba(256, 256, 256, 0.95);    
 }
 
 .container-todo-categorias { 
@@ -180,17 +169,6 @@ header nav ul {
 header nav li {
    list-style-type: none;
    padding-right: 2px;
-
-}
-
-.category-link a {
-    text-decoration: none;
-}
-.category-link:hover {
-    color: #FACD48; 
-}
-.category-link a {
-    transition: color 0.2s linear 0.2s;
 }
 
 header nav li a.category-link {
@@ -332,8 +310,6 @@ header nav li a.category-link i {
 }
 
 /*SECTION*/
-
-
 
 /*ARTICLE*/
 
@@ -484,7 +460,6 @@ footer {
     width: 100%;
     display: flex; 
     background: white;
-    
 }
 
 .footer-top {
@@ -559,7 +534,7 @@ footer .text-footer-black:hover {
 /*col y row*/
 @media (min-width: 460px){
 
-/*FIRT NAVBAR a partir de tablet*/
+ /*FIRT NAVBAR a partir de tablet*/
 
    .first-navbar {
        display: flex; 
@@ -627,8 +602,7 @@ footer .text-footer-black:hover {
     }
 
 
-
-@media (min-width: 768px){
+@media (min-width: 768px) {
     .col {
         flex:1;
     }
@@ -669,6 +643,32 @@ footer .text-footer-black:hover {
     flex-shrink: 0;
     }
 
+
+    /*animation nav-bar*/
+    .text-link-nav a {
+        text-decoration: none;
+    }
+    .text-link-nav:hover {
+        color: white;
+    }
+    .text-link nav a {
+        transition: color 0.2s linear 0.2s;
+    }
+
+    .category-link a {
+        text-decoration: none;
+    }
+    .category-link:hover {
+        color: #FACD48; 
+    }
+    .category-link a {
+        transition: color 0.2s linear 0.2s;
+    }
+    
+    .red-social-container a:hover{
+        color: #FACD48; 
+
+    }
 }
 
 /* Desktop */
