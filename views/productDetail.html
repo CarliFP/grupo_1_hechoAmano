@@ -74,7 +74,7 @@
             <img class="mainProductImage" src="./img/img-1-C-mascarilla.png">
             </article>
                 <div class="descriptionFields">
-            <div class="productName">Nombre del producto</div>
+            <div class="productName"> <h2>Nombre del producto</h2></div>
             <div class="productRating">
             <ul class="rating interactive-rating mb-0">
                 <li>
@@ -113,6 +113,22 @@
     </article>
 </section>
 </main>
+
+<!-- Caja de preguntas -->
+<section class="questionField">
+    <h4 class="subtitle">¡Déjanos tu pregunta!</h4>
+    <div class="userData">
+        <form class="questionField" id="questionZone" action="/" method="POST">
+            <label for="name">Nombre completo</label>
+            <input type="text" name="name" placeholder="EJ: Juan Soto">
+            <label for="email"> Correo electronico</label>
+            <input type="email" name="email" placeholder="juan@soto.com">
+            <label for="question">Tu pregunta</label>
+            <input type="text" name="question" placeholder="¿El producto es personalizable?">
+            <label for="sendButton">¡Envianos tu pregunta!</label>
+            <button id="questionZone" type="submit" >Enviar</button>
+    </div>
+</section>
 <!-- Productos relacionados -->
 
 <div class="container row subtitle">
