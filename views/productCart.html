@@ -25,37 +25,37 @@
 
      <header class="header">  
          
-     <nav class= "header-top-navbar row">
+         <nav class= "header-top-navbar row container">
 
-         <div class= "logo col col.cuadruple_sm">
-            <img class="img-logoEnBlanco" src="./img/logoEnBlanco(FCFCFC).png" alt="Logo de Hecho a Mano">
-         </div>
+            <div class= "logo">
+                <img class="img-logoEnBlanco" src="./img/logoEnBlanco(FCFCFC).png" alt="Logo de Hecho a Mano">
+             </div>
 
-         <!--SPACE FOR SEARCH NAV-BAR--> 
-         <div class= "search-bar col col.cuadruple_sm">
-             <form class= "form-search-navbar" action="#">
-                <input class ="form-search-navbar-input" type="text" placeholder="¿Qué estás buscando?" name="search">
-                <button type="submit"><i class="fas fa-search"></i></button>
-             </form>
-         </div>
+             <!--SPACE FOR SEARCH NAV-BAR--> 
+             <div class= "search-bar">
+                <form class= "form-search-navbar" action="#">
+                    <input class ="form-search-navbar-input" type="text" placeholder="  ¿Qué estás buscando?" name="search">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+             </div>
 
-         <!--FIRST NAVBAR-->
-         <div class ="first-navbar col col.cuadruple_sm">
-         <ul class="right-navbar">
-             <li> <a href="#">Registrate</a></li>
-             <li> <a href="#">Ingresa</a></li>
-             <li> <a href="productCart"><i class="fas fa-shopping-cart col"></i></li>
-             <li class="nav-icon-cart-cuantity"> <a href="/productCart"><span><b>2</b></span></a></li>
-         </ul>
-         </div>    
-     </nav>
+             <!--FIRST NAVBAR-->
+             <div class ="first-navbar">
+                 <ul class="right-navbar">
+                    <li> <a class= "text-link-nav" href="#">Registrate</a></li>
+                    <li> <a class= "text-link-nav" href="#">Ingresa</a></li>
+                    <li> <a class= "text-link-nav" href="#"><i class="fas fa-shopping-cart col"></i></li>
+                    <li class="nav-icon-cart-cuantity"> <a href="/productCart"><span><b>2</b></span></a></li>
+                 </ul>
+             </div>    
+         </nav>
 
      <!--SECOND NAV-BAR--> 
-         <nav  class= "second-nav-bar row">
-             <div class= "container-todo-categorias row">
+         <nav class= "second-nav-bar row">
+             <div class="container container-todo-categorias">
                  <ul>
                      <li> <a class="category-link" href="#"><i class = "fa fa-bars burger"></i></li>
-                     <li> <a class="category-link" href="#">Categorias</a></li>
+                     <li> <a class="category-link" href="#categorias">Categorias</a></li>
                  </ul>
              </div>
          </nav>
@@ -199,13 +199,13 @@
              <div class="nav-menu-item3"><a href="#"> Revisio de pedido </a></div>
          </nav>
 
-         <div class="big-container">
+         <section class="big-container">
              <div class="item-cart1"><a href="/productCart">Mi carrito</a></div>
-             <div class="small-container"> 
+             <article class="small-container"> 
                  <section class="cart__item-container">
                      <article class="product1">
                          <img src="./img/img2-A-linoleografía.png" alt="Linoleografía">
-                         <div class= "main-article1">
+                         <div>
                              <h3 class ="price">$7.500</h3>
                              <h4 class= "payment-method">10% off</h4>
                              <h4 class= "description">Linoleografía</h4>
@@ -226,7 +226,7 @@
 
                      <article class="product2">
                          <img src="./img/img-1-C-mascarilla.png" alt="Tapabocas">
-                         <div class="main-article1">
+                         <div>
                              <h3 class ="price">$250</h3>
                              <h4 class= "payment-method">Hasta 3 cuotas sin interés</h4>
                              <h4 class= "description">Tapabocas (distinto colores y modelos)</h4>
@@ -247,99 +247,98 @@
              
                  </section>
                  <section class="summary">
-                     <article>Total general</article>
-                     <article>Tienes un cupon de descuento</article>
+                     <article class="price">Total general</article>
+                     <article class="price">Tienes un cupon de descuento</article>
                      <article class="value">
                          <div class="concepto">
-                             <div>Subtotal</div>
-                             <div>Envio</div>
-                             <div>Descuento</div>
+                             <div class="list">Subtotal</div>
+                             <div class="list">Envio</div>
+                             <div class="list">Descuento</div>
                          </div>
                          <div class="concepto">
-                            <div>$7.750</div>
-                            <div>A calcular</div>
-                            <div>$750</div>
+                            <div class="list">$7.750</div>
+                            <div class="list">A calcular</div>
+                            <div class="list">$750</div>
                          </div>
                      </article>
                      <article class="value">
-                        <div>Total general</div>
-                        <div>$7000</div>
+                        <div class="price">Total general</div>
+                        <div class="price">$7000</div>
                     </article>
                  </section>
-             </div>
-         </div>
+             </article>
+         </section>
          <section> 
-             <div>SUMAR A MI CARRITO</div>
-             <article class="product col col.doble_sm">
-                 <img  src="./img/img1-A-pinturaArtesanalAcrílico.png" alt="Pintura Artesanal en acrílico">
-                 <div class ="main-article1">
-                    <h3 class ="price">$6500</h3>
-                    <h4 class= "payment-method">Hasta 12 cuotas sin interés</h4>
-                    <h4 class= "description">Cuadro Abstracto en Acrílico</h4>
-                 </div>
-             </article>
-             <article class ="product col col.doble_sm">
-                <img  src="./img/img3-A-grabadoMadera.png" alt="Cuadro grabado en madera">
-                <div class="main-article1">
-                    <h3 class="price">$3500</h3>
-                    <h4 class="payment-method">Hasta 6 cuotas sin interés</h4>
-                    <h4 class="description">Cuadro grabado en madera</h4>
-                </div>
-             </article>
-
-             <article class ="product col col.doble_sm">
-             <img  src="./img/img1-A-pinturaArtesanalAcrílico.png" alt="Pintura Artesanal en acrílico">
-             <div class ="main-article1">
-                <h3 class="price">$6500</h3>
-                <h4 class= "payment-method">Hasta 12 cuotas sin interés</h4>
-                <h4 class= "description">Cuadro Abstracto en Acrílico</h4>
+             <div class="container row subtitle">
+                 <h2>SUMAR A MI CARRITO</h2>
              </div>
-             </article>
 
-             <article class ="product col col.doble_sm">
-             <img src="./img/img2-A-linoleografía.png" alt="Linoleografía">
-             <div class= "main-article1">
-                <h3 class="price">$7.500</h3>
-                <h4 class= "payment-method">10% off</h4>
-                <h4 class= "description">Linoleografía</h4>
-             </div>
-             </article>
+             <section class="container row">
+                 <article class ="product col">
+                     <div class= "img-box">
+                        <img  src="./img/img3-A-grabadoMadera.png" alt="Cuadro grabado en madera">
+                     </div>
+                     <div class="main-article1">
+                        <h3 class="price">$3500</h3>
+                        <h4 class="payment-method">Hasta 6 cuotas</h4>
+                        <h4 class="description">Cuadro grabado en madera<i class="fas fa-shopping-cart col"></i></h4>
+                     </div>
+                 </article>  
 
-             <article class ="product col col.doble_sm">
-             <img  src="./img/img2-C-accesorioCabello.png" alt="Turbante chic tejido a mano">
-             <div class="main-article1">
-                <h3 class="price">$1500</h3>
-                <h4 class= "payment-method">15% off en un pago</h4>
-                <h4 class= "description">Turbante chic tejido artesanal</h4>
-             </div>
-             </article>
+                 <article class ="product col">
+                     <div class= "img-box">
+                        <img  src="./img/img1-A-pinturaArtesanalAcrílico.png" alt="Pintura Artesanal en acrílico">
+                     </div>
+                     <div class ="main-article1">
+                        <h3 class="price">$6500</h3>
+                        <h4 class= "payment-method">Hasta 12 cuotas</h4>
+                        <h4 class= "description">Cuadro Abstracto en Acrílico<i class="fas fa-shopping-cart col"></i></h4>
+                     </div>
+                 </article>
+
+                 <article class ="product col">
+                     <div class= "img-box">
+                        <img src="./img/img2-A-linoleografía.png" alt="Linoleografía">
+                     </div>
+                     <div class= "main-article1">
+                        <h3 class="price">$7.500</h3>
+                        <h4 class= "payment-method">10% off</h4>
+                        <h4 class= "description">Linoleografía<i class="fas fa-shopping-cart col"></i></h4>
+                     </div>
+                 </article>
+
+                 <article class ="product col">
+                     <div class= "img-box">
+                        <img  src="./img/img2-C-accesorioCabello.png" alt="Turbante chic tejido a mano">
+                     </div>
+                     <div class="main-article1">
+                        <h3 class="price">$1500</h3>
+                        <h4 class= "payment-method">15% off</h4>
+                        <h4 class= "description">Turbante chic tejido artesanal<i class="fas fa-shopping-cart col"></i></h4>
+                     </div>
+                 </article>
+
+
          </section>
      </main>
-     <!--FOOTER-->
-     <footer class="container">
-         <section class= "container"> 
-             <div class = "footer-top col">
-                 <ul>
-                     <li><a href="#">Medios de Pago</a></li>
-                     <li><a href="#">¿Necesitás ayuda? Escribenos...</a></li>
-                     <li><a href="#">¿Quiénes Somos?</a></li>
+         <!--FOOTER-->
+         <footer class="row">
+             <div class="row footer-top">
+                 <ul class="container row">
+                    <li class="col"><a class= "text-footer-yellow" href="#">Medios de Pago</a></li>
+                    <li class="col"><a class= "text-footer-yellow" href="#">¿Necesitás ayuda? </a></li>
+                    <li class="col"><a class= "text-footer-yellow" href="#">¿Quiénes Somos?</a></li>
                  </ul>
              </div>
-              
-         </section>
-       
 
-         <section class="copyright container">
-             <div class = "footer-buttom col">
-                      <ul>
-                        <li>Privacidad</li>
-                        <li>Copyright © 2020-2021 Hecho a Mano S.A.</li>
-                     <li>Condiciones de uso</li>
+             <div class="row footer-buttom">
+                 <ul class="container row">
+                    <li class="col text-footer-black">Privacidad</li>
+                    <li class="col text-footer-black">Copyright © 2020-2021 Hecho a Mano S.A.</li>
+                    <li class="col text-footer-black">Condiciones de uso</li>
                  </ul>    
-            </div>
-         </section>
-
-     </footer>      
+             </div>
+     </footer>        
             
  </body>
  </html>
