@@ -6,7 +6,7 @@
     <!--Viewport-->
     <meta name= "viewport" content= "width=device-width, initial-scale=1">
 
-    <title>"Hecho a Mano"</title>
+    <title>"Carrito de compras"</title>
   
     <!--link para la fuente Roboto-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -14,6 +14,7 @@
 
     <!--Css styles-->
     <link href ="css/normalize.css" rel="stylesheet"> 
+    <link href ="css/stylesIndex.css" rel="stylesheet">
     <link href ="css/stylesProductCart.css" rel="stylesheet">
 
     <!-- Font awesome -->
@@ -194,21 +195,21 @@
      <main>
          <nav class="nav-menu">
              <div class="nav-menu-item1"><a href="/productCart"> CARRITO DE COMPRAS </a></div>
-             <div class="nav-menu-item2"><a href="#"> Informacion de envio </a></div>
+             <div class="nav-menu-item2"><a href="#"> Información de envío </a></div>
              <div class="nav-menu-item3"><a href="#"> Metodos de pago </a></div>
-             <div class="nav-menu-item3"><a href="#"> Revisio de pedido </a></div>
+             <div class="nav-menu-item3"><a href="#"> Revisión del pedido </a></div>
          </nav>
 
-         <section class="big-container">
-             <div class="item-cart1"><a href="/productCart">Mi carrito</a></div>
+         <section class="big-container-col">
+             <h2 class="item-cart1"><a href="/productCart">Mi carrito</a></h2>
              <article class="small-container"> 
-                 <section class="cart__item-container">
+                 <section class="cart-item-container">
                      <article class="product1">
                          <img src="./img/img2-A-linoleografía.png" alt="Linoleografía">
-                         <div>
+                         <div class="details">
                              <h3 class ="price">$7.500</h3>
                              <h4 class= "payment-method">10% off</h4>
-                             <h4 class= "description">Linoleografía</h4>
+                             <h4 class= "description-details">Linoleografía</h4>
                          </div>
                          <div class="ui-quantity-selector__container">
                             <form class="u-float-left" method="POST">
@@ -226,10 +227,10 @@
 
                      <article class="product2">
                          <img src="./img/img-1-C-mascarilla.png" alt="Tapabocas">
-                         <div>
+                         <div class="details">
                              <h3 class ="price">$250</h3>
                              <h4 class= "payment-method">Hasta 3 cuotas sin interés</h4>
-                             <h4 class= "description">Tapabocas (distinto colores y modelos)</h4>
+                             <h4 class= "description-details">Tapabocas (distinto colores y modelos)</h4>
                          </div>
                          <div class="ui-quantity-selector__container">
                             <form class="u-float-left" method="POST">
@@ -247,23 +248,23 @@
              
                  </section>
                  <section class="summary">
-                     <article class="price">Total general</article>
-                     <article class="price">Tienes un cupon de descuento</article>
+                     <h3 class="price">Total general</h3>
+                     <h3 class="price">¿Tienes un cupón de descuento?</h3>
                      <article class="value">
                          <div class="concepto">
-                             <div class="list">Subtotal</div>
-                             <div class="list">Envio</div>
-                             <div class="list">Descuento</div>
+                             <h4 class="list">Subtotal</h4>
+                             <h4 class="list">Envio</h4>
+                             <h4 class="list">Descuento</h4>
                          </div>
-                         <div class="concepto">
-                            <div class="list">$7.750</div>
-                            <div class="list">A calcular</div>
-                            <div class="list">$750</div>
+                         <div class="coste">
+                            <h4 class="list">$7.750</h4>
+                            <h4 class="list">A calcular</h4>
+                            <h4 class="list">$750</h4>
                          </div>
                      </article>
                      <article class="value">
                         <div class="price">Total general</div>
-                        <div class="price">$7000</div>
+                        <div class="total">$7000</div>
                     </article>
                  </section>
              </article>
