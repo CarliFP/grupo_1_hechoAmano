@@ -2,7 +2,7 @@
 
 main {
     margin: auto auto;
-    min-height: 350px;
+    min-height: 500px; 
 }
 
 .login {
@@ -11,7 +11,7 @@ main {
   }
   
 .login-screen {
-    margin-top: 50px;
+    margin-top: 100px;
     background-color: white; 
     padding: 20px;
     border-radius: 5px

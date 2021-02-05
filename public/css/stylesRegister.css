@@ -12,7 +12,7 @@ main {
 .main-form {
     width: 100%;
     background-color: white; 
-    margin-top: 40px;
+    margin-top: 100px;
     margin-bottom: 40px; 
     margin-left: 10px; 
     margin-right: 10px; 
@@ -103,11 +103,7 @@ h4 {
         margin-right: 100px; 
         box-shadow : 0px 0px 10px rgb(100, 100, 100);
     }
-    .btn-file a:hover {
-        background:#FDE6A3; 
-    } 
-    .btn-submit a:hover {
-        background:#FDE6A3; 
-    } 
+    
+
 
 }
