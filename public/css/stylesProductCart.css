@@ -55,6 +55,7 @@
     background-color: white;
     align-items: center;
     justify-content: space-between;
+    padding: 1px rgb(53, 53, 53) solid;
     background-color: rgb(234, 234, 234);
 }
 
@@ -66,7 +67,6 @@
     justify-content:space-between;
     position: relative;
     left: 0px;
-    background-color: rgb(179, 179, 179);
     max-width: 50%;
 }
 
@@ -77,13 +77,13 @@
 
 .ui-quantity-selector__container input {
     position: relative;
-    left:250px;
+    left:225px;
     width:15px;
 }
 
 .details {
         position: relative;
-        left:150px;
+        left:125px;
         width:15px;
         display: flex;
         flex-wrap: wrap;
@@ -94,11 +94,13 @@
 }
 
 .product1 img {
+    box-shadow: 0px 0px 10px rgb(100 100 100);
     position: relative;
     left:50px;
 }
 
 .product2 img {
+    box-shadow: 0px 0px 10px rgb(100 100 100);
     position: relative;
     left:50px;
 }
@@ -130,12 +132,12 @@
 .summary {
     display: flex;
     flex-direction:column;;
+    justify-content: space-between;
     align-items: center;
     margin-top:10px;
     margin-bottom:10px;
     position:relative;
     right: 250px;
-    justify-content: space-between;
     background-color: rgb(233, 233, 233);
     max-width: 100%;
 }
@@ -713,10 +715,9 @@ footer .text-footer-black:hover {
 
 /*col y row*/
 
-@media (max-width: 1070px) {
+@media (max-width: 1200px) {
 /*FIRT NAVBAR a partir de tablet*/
 .nav-menu {
-    flex-direction: column;
     align-items: center;
 }
 
@@ -922,7 +923,7 @@ footer .text-footer-black:hover {
 }
 .summary {
     flex-direction:column;
-    left:0px;
+    left:-50px;
     right: 0px;
     align-items: center;
 }
