@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+        <head>
+            <meta charset="utf-8">
+            <!--Viewport-->
+            <meta name= "viewport" content= "width=device-width, initial-scale=1">
+
+            <title>"Hecho a Mano"</title>
+        
+            <!--link para la fuente Roboto-->
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+            <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">    
+
+            <!--Css styles-->
+            <link href ="css/normalize.css" rel="stylesheet"> 
+            <link href ="css/stylesIndex.css" rel="stylesheet">
+            <link href ="css/stylesLogin.css" rel="stylesheet">
+
+            <!-- Font awesome -->
+            <script src="https://kit.fontawesome.com/17c2d4139d.js" crossorigin="anonymous"></script> 
+            
+        </head>
+
+    <body>
+
+        <header class="header">  
+            
+            <nav class= "header-top-navbar row container">
+
+                <div class= "logo">
+                    <img class="img-logoEnBlanco" src="./img/logoEnBlanco(FCFCFC).png" alt="Logo de Hecho a Mano">
+                </div>
+
+                <!--SPACE FOR SEARCH NAV-BAR--> 
+                <div class= "search-bar">
+                    <form class= "form-search-navbar" action="#">
+                        <input class ="form-search-navbar-input" type="text" placeholder="  ¿Qué estás buscando?" name="search">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+
+                <!--FIRST NAVBAR-->
+                <div class ="first-navbar">
+                <ul class="right-navbar">
+                        <li> <a class= "text-link-nav" href="#">Registrate</a></li>
+                        <li> <a class= "text-link-nav" href="#">Ingresa</a></li>
+                        <li> <a class= "text-link-nav" href="#"><i class="fas fa-shopping-cart col"></i></li>
+                    </ul>
+                </div>    
+            </nav>
+
+                 <!--SECOND NAV-BAR--> 
+            <nav class= "second-nav-bar row">
+                <div class="container container-todo-categorias">
+                    <ul>
+                        <li> <a class="category-link" href="#"><i class = "fa fa-bars burger"></i></li>
+                        <li> <a class="category-link" href="#categorias">Categorias</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+        </header>
+
+        <body> 
+            <main class="register">
+                <div class="login">
+                    <div class="login-screen">
+                        <div class="app-title">
+                            <h1>Ingresar</h1>
+                        </div>
+    
+                        <div class="login-form">
+                            <div class="container">
+                                <input type="text" class="login-field" value="" placeholder="Usuario" id="login-name" required>
+                                <label class="login-field" for="login-name"></label>
+                            </div>
+            
+                            <div class="container">
+                                <input type="password" class="login-field" value="" placeholder="Contraseña" id="login-pass" required>
+                                <label class="login" for="login-pass"></label>
+                            </div>
+                                <div class ="btn-enviar">
+                                    <a class="btn" href='/'>Enviar</a>
+                                </div>
+                            <a class="login-link" href="#">¿Perdiste tu contraseña?</a>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+        <!--FOOTER-->
+        <footer class="row">
+                <div class="row footer-top">
+                    <ul class="container row">
+                        <li class="col"><a class= "text-footer-yellow" href="#">Medios de Pago</a></li>
+                        <li class="col"><a class= "text-footer-yellow" href="#">¿Necesitás ayuda? </a></li>
+                        <li class="col"><a class= "text-footer-yellow" href="#">¿Quiénes Somos?</a></li>
+                </ul>
+                </div>
+
+                <div class="row footer-buttom">
+                    <ul class="container row">
+                        <li class="col text-footer-black">Privacidad</li>
+                        <li class="col text-footer-black">Copyright © 2020-2021 Hecho a Mano S.A.</li>
+                        <li class="col text-footer-black">Condiciones de uso</li>
+                    </ul>    
+                </div>
+        </footer>      
+            
+  </body>
+</html>

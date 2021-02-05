@@ -1,100 +1,167 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Bienvenidxs a MercadoLiebre</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-        <link rel="stylesheet" href="css/styles.css">
-    </head>
+
+        <head>
+            <meta charset="utf-8">
+            <!--Viewport-->
+            <meta name= "viewport" content= "width=device-width, initial-scale=1">
+
+            <title>"Hecho a Mano"</title>
+        
+            <!--link para la fuente Roboto-->
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+            <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">    
+
+            <!--Css styles-->
+            <link href ="css/normalize.css" rel="stylesheet"> 
+            <link href ="css/stylesIndex.css" rel="stylesheet">
+            <link href ="css/stylesRegister.css" rel="stylesheet">
+
+            <!-- Font awesome -->
+            <script src="https://kit.fontawesome.com/17c2d4139d.js" crossorigin="anonymous"></script> 
+            
+        </head>
+
     <body>
-        <header>
-            <div class="top-header">
-                <div class="logo"> 
-                    <img src="images/logo-mercado-liebre.svg" alt="Logo de MercadoLiebre">
-                </div>
-                <div class="form" action="#" method="GET">
-                    <div class="input">Buscar productos, marcas y más</div>
-                    <div class="submit"><i class="fa fa-search"></i></div>
-                </div>
-                <p><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#">Ofertas</a></li>
-                    <li><a href="#">Tiendas Oficiales</a></li>
-                    <li><a href="#">Vender</a></li>
-                    <li><a href="#">Ayuda</a></li>
-                </ul>
-                <ul>
-                    <li><a href="/register">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
-                    <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
-                    <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
-                </ul>
-            </nav>
-            <div class="burger-menu">
-                <i class="fa fa-bars burger"></i>
-            </div>
-        </header>
-        <main class="register">
-            <form action="/" method="POST">
-                <input type="text" name="name" placeholder="Nombre y apellido">
-                <input type="text" name="user" placeholder="Nombre de usuario">
-                <input type="email" name="email" placeholder="E-mail">
-                <br>
-                <label for="birth_date"><b>Fecha de nacimiento</b></label>
-                <br>
-                <input type="date" name="birth_date" id="birth_date">
-                <br>
-                <input type="text" name="addres" placeholder="Domicilio">
-                <h4>Perfil del usuario</h4>
-                <div class="profile">
-                    <input type="radio" name="profile" value="buy" id="buy">
-                    <label for="buy">Comprador</label>
-                    <input type="radio" name="profile" value="sell" id="sell">
-                    <label for="sell">Vendedor</label>
+
+        <header class="header">  
+            
+            <nav class= "header-top-navbar row container">
+
+                <div class= "logo">
+                    <img class="img-logoEnBlanco" src="./img/logoEnBlanco(FCFCFC).png" alt="Logo de Hecho a Mano">
                 </div>
 
-                <h4>Intereses</h4>
-                <div class="interests">
-                    <div>
-                        <input type="checkbox" name="interests" value="a" id="a">
-                        <label for="a">Electro</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" name="interests" value="b" id="b">
-                        <label for="b">Moda</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" name="interests" value="c" id="c">
-                        <label for="c">Hogar</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" name="interests" value="d" id="d">
-                        <label for="d">Juguetería</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" name="interests" value="e" id="e">
-                        <label for="e">Vida sana</label>
-                    </div>
+                <!--SPACE FOR SEARCH NAV-BAR--> 
+                <div class= "search-bar">
+                    <form class= "form-search-navbar" action="#">
+                        <input class ="form-search-navbar-input" type="text" placeholder="  ¿Qué estás buscando?" name="search">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                    </form>
                 </div>
-                
-                <h4>Elegí tu foto de usuario</h4>
-                <input type="file" name="avatar">
-                <br>
-                <br>
-                <input type="password" name="pass" placeholder="Elegí tu contraseña">
-                <input type="password" name="pass_confirm" placeholder="Confirmá tu contraseña">
-                <br>
-                <br>
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Borrar">
-                <br>
-                <br>
-            </form>
-        </main>
-        <footer>
-        </footer>
-    </body>
+
+                <!--FIRST NAVBAR-->
+                <div class ="first-navbar">
+                <ul class="right-navbar">
+                        <li> <a class= "text-link-nav" href="#">Registrate</a></li>
+                        <li> <a class= "text-link-nav" href="#">Ingresa</a></li>
+                        <li> <a class= "text-link-nav" href="#"><i class="fas fa-shopping-cart col"></i></li>
+                    </ul>
+                </div>    
+            </nav>
+
+                 <!--SECOND NAV-BAR--> 
+            <nav class= "second-nav-bar row">
+                <div class="container container-todo-categorias">
+                    <ul>
+                        <li> <a class="category-link" href="#"><i class = "fa fa-bars burger"></i></li>
+                        <li> <a class="category-link" href="#categorias">Categorias</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+        </header>
+
+        <body> 
+            <main class="register">
+                <form class="main-form" action="/" method="POST">
+    
+                    <div class= "title">
+                        <h4>Datos Personales</h4>
+                    </div>
+                    
+                    <div class="container-personal-information">
+                        <input class="personal-information-input" type="text" name="name" placeholder="Nombre y apellido">
+                        <input class="personal-information-input" type="text" name="user" placeholder="Nombre de usuario">
+                        <input class="personal-information-input" type="email" name="email" placeholder="E-mail">
+                        <input class="personal-information-input" type="date" name="birth_date" id="birth_date" max="2022-12-31">
+                        <input class="personal-information-input" type="text" name="addres" placeholder="Domicilio">
+                    </div>
+    
+    
+                        <div class= "title">
+                            <h4>Perfil del usuario</h4>
+                        </div>
+    
+                        <div class="profile">
+                            <input type="radio" name="profile" value="buy" id="buy">
+                            <label for="buy">Comprador</label>
+                            <input type="radio" name="profile" value="sell" id="sell">
+                            <label for="sell">Vendedor</label>
+                        </div>
+    
+                        <div class= "title">
+                            <h4>Intereses</h4>
+                        </div>
+    
+                        <div class="interests">
+                            <div>
+                                <input type="checkbox" name="interests" value="a" id="a">
+                                <label for="a">Electro</label>
+                            </div>
+                            <div>
+                                <input  type="checkbox" name="interests" value="b" id="b">
+                                <label for="b">Moda</label>
+                            </div>
+                            <div>
+                                <input  type="checkbox" name="interests" value="c" id="c">
+                                <label for="c">Hogar</label>
+                            </div>
+                            <div>
+                                <input  type="checkbox" name="interests" value="d" id="d">
+                                <label for="d">Juguetería</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="interests" value="e" id="e">
+                                <label for="e">Vida sana</label>
+                            </div>
+                        </div>
+    
+    
+                    <div class= "title">
+                        <h4>Elegi tu foto de usuario</h4>
+                    </div>
+    
+                    <div class = "file-upload">
+                        <!-- esto hace que se oculte y se pueda customizar, sino reaparece-->
+                        <input type="file" id="actual-btn" accept=".jpg" multiple hidden/>
+                        <!--boton custom-->
+                        <label class ="btn-file" for="actual-btn">Seleccionar avatar</label>
+                        <!--advertencia de archivo no subido-->
+                        <span id="file-chosen">No se eligió archivo</span>
+                    </div>
+    
+                    <div class="password">
+                        <input class="password-input" type="password" name="pass" placeholder="Elegí tu contraseña"> 
+                        <input class="password-input" type="password" name="pass_confirm" placeholder="Confirmá tu contraseña">
+                    </div>
+    
+                    <div class= "btn-submit">
+                        <input class= "submit-button" type="reset" value="Borrar">
+                        <input class="submit-button action" type="submit" value="Enviar">
+                    </div>
+    
+                </form>
+            </main>
+
+            <!--FOOTER-->
+            <footer class="row">
+                    <div class="row footer-top">
+                        <ul class="container row">
+                            <li class="col"><a class= "text-footer-yellow" href="#">Medios de Pago</a></li>
+                            <li class="col"><a class= "text-footer-yellow" href="#">¿Necesitás ayuda? </a></li>
+                            <li class="col"><a class= "text-footer-yellow" href="#">¿Quiénes Somos?</a></li>
+                    </ul>
+                    </div>
+
+                    <div class="row footer-buttom">
+                        <ul class="container row">
+                            <li class="col text-footer-black">Privacidad</li>
+                            <li class="col text-footer-black">Copyright © 2020-2021 Hecho a Mano S.A.</li>
+                            <li class="col text-footer-black">Condiciones de uso</li>
+                        </ul>    
+                    </div>
+            </footer>      
+            
+        </body>
 </html>
