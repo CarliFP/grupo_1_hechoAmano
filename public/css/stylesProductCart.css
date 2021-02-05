@@ -810,6 +810,7 @@ footer .text-footer-black:hover {
     text-align: center;
     flex-wrap: wrap;
     flex-grow: 2;
+    background-color: white;
 }
 
 .product1 img {
@@ -851,8 +852,9 @@ footer .text-footer-black:hover {
 
 .summary {
     flex-direction:column;
-    left:0px;
+    left:-50px;
     right: 500px;
+    background-color: white;
 }
 
     }
