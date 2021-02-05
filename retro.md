@@ -17,7 +17,7 @@ Queremos implementar un slider banner en la página del home.
 1-Compromiso individual para venir cumpliendo con las responsabilidades que el equipo se propuso.
 Less of: 
 <!--aquello que no nos aporta el valor que esperábamos-->
-1-Hasta el momento venimos sumando, no encontramos nada que no nos aporte valor.
+2-Hasta el momento venimos sumando, no encontramos nada que no nos aporte valor.
 
 :exclamation: Stop Doing: 
 <!--aquello que podemos eliminar-->
