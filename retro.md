@@ -30,6 +30,7 @@ Apoyarnos en nuestra fortaleza que es la organización y la buena comunicación,
 :star: Tablero: https://trello.com/b/gmSkWwgI/sprint-1
 
 
+
 :two: RETROSPECTIVA SPRINT 2
 
 :bookmark: Método Starfish:
@@ -39,7 +40,6 @@ Apoyarnos en nuestra fortaleza que es la organización y la buena comunicación,
 1.- Crear una rama individual para trabajar en el proyecto de GitHub.  
 2.- Hacer push cada vez que modificamos el proyecto, e implementar commit cada vez que agregamos algo relevante al proyecto. 
 3.- Hacer tags cada vez que incorporamos una nueva funcionalidad. 
-
 
 :exclamation: More of: 
 <!--practicas que creemos que requiere más refinamiento y que nos gustan mucho por ello hay que darles más-->
@@ -58,6 +58,6 @@ Apoyarnos en nuestra fortaleza que es la organización y la buena comunicación,
 <!--aquello que podemos eliminar-->
 1.- No tenemos nada que eliminar de aquello que venimos implementado.
 
-:white_check_mark: Conclusión: Aprendimos a trabajar mejor como grupo, dividiéndonos las tareas, reconociendo las fortalezas, debilidades de cada uno y en base a eso plantearnos objetivos realistas. 
+:white_check_mark: Conclusión: Aprendimos a trabajar mejor como grupo, dividiéndonos las tareas, reconociendo las fortalezas y debilidades de cada uno y en base a eso plantearnos objetivos realistas. 
 
 :star: Tablero para el Sprint 3: https://trello.com/b/H53wXOHh/sprint-3
