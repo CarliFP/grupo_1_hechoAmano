@@ -125,6 +125,12 @@ main {
   background: #E74B37;
 }
 
+.cuenta-registrada {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+
 
 @media (min-width: 361px) {
     .login-screen {
