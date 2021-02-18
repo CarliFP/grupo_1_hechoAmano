@@ -12,7 +12,7 @@ Weekly 18-2-2021
 :three:
 
 :white_check_mark: Carla
-:one:  Partials folder creada y archivos parciales.
+:one:  Partials folder creada y archivos parciales.<br>
 :two: seguir las recomendaciones (login link al home). 
 :three: Tendríamos que cada uno generar una rama para trabajar en git, porque tuve que resolver un conflicto en git por trabajar todos en la misma rama y me llevó tiempo.
 
