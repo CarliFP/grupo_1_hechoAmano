@@ -14,7 +14,7 @@ Weekly 18-2-2021<br>
 :white_check_mark: Carla <br>
 :one:  Partials folder creada y archivos parciales.<br>
 :two: seguir las recomendaciones (login link al home). <br>
-:three: Tendríamos que cada uno generar una rama para trabajar en git, porque tuve que resolver un conflicto en git por trabajar todos en la misma rama y me llevó tiempo.<br>
+:three: Tendríamos que cada uno generar una rama para trabajar en git, como fue propuesto al inicio, se generó un conflicto en git e insumió más tiempo su resolución. <br>
 <br>
 :white_check_mark: Neri <br>
 :one: <br>
