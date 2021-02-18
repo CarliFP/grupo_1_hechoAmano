@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+     <head>
+            <meta charset="utf-8">
+            <!--Viewport-->
+            <meta name= "viewport" content= "width=device-width, initial-scale=1">
+
+            <title>"Detalle de producto"</title>
+
+            <!--Css styles-->
+            <link href ="css/normalize.css" rel="stylesheet"> 
+            <link href ="css/stylesIndex.css" rel="stylesheet">
+            <link href ="css/stylesProductDetail.css" rel="stylesheet">
+
+            <!-- Font awesome -->
+            <script src="https://kit.fontawesome.com/17c2d4139d.js" crossorigin="anonymous"></script> 
+            
+            <!--link Font-family Roboto-->
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+            <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+        </head>
+
+
+    <body>
+        <%- include ('./partials/header') %>
+           <!-- Categoria de producto     -->
+    <main>
+        <section>
+            <div class="productCategory">
+                <a href="#">Categoria de producto</a> > <a href="#">Subcategoria</a> > <a href="#">Segmento</a> > <a href="#">Subsegmento</a> > <a href="#">Producto</a>
+            </div>
+        </section>
+        <!-- Producto al que ingreso -->
+        <section class="mainProduct">
+            <article>
+            <img class="mainProductImage" src="./img/img-1-C-mascarilla.png">
+            </article>
+                <div class="descriptionFields">
+            <div class="productName"> <h2>Nombre del producto</h2></div>
+            <div class="productRating">
+            <ul class="rating interactive-rating mb-0">
+                <li>
+                  <i class="far fa-heart fa-sm text-primary"></i>
+                </li>
+                <li>
+                  <i class="far fa-heart fa-sm text-primary"></i>
+                </li>
+                <li>
+                  <i class="far fa-heart fa-sm text-primary"></i>
+                </li>
+                <li>
+                  <i class="far fa-heart fa-sm text-primary"></i>
+                </li>
+                <li>
+                  <i class="far fa-heart fa-sm text-primary"></i>
+                </li>
+              </ul>
+            <article class="productDescription">
+        </div>  
+            <div class="productPrice"> $1.300
+        </div>
+            <div class="paymentMethods">
+            <a href="#">Ver los medios de pago</a>
+        </div>
+            <div class="productDescription">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Eos suscipit corrupti veniam assumenda aliquid distinctio voluptate amet?
+        </div>
+    
+        <ul class="deliveryDetails">
+            <li class="seller">Vendedor: <a href="#">El Pepe</a></li>
+            <li class="stock">Stock: disponible</li>
+            <li class="shippingCost">Envio a domicilio: $360</li>
+        </ul>
+    </article>
+</section>
+</main>
+
+<!-- Caja de preguntas -->
+<section class="questionField">
+    <h4 class="subtitle">¡Déjanos tu pregunta!</h4>
+    <div class="userData">
+        <form class="questionField" id="questionZone" action="/" method="POST">
+            <label for="name">Nombre completo</label>
+            <input type="text" name="name" placeholder="EJ: Juan Soto">
+            <label for="email"> Correo electronico</label>
+            <input type="email" name="email" placeholder="juan@soto.com">
+            <label for="question">Tu pregunta</label>
+            <input class="questionBox" type="text" name="question" placeholder="¿El producto es personalizable?">
+            <label for="sendButton">¡Envianos tu pregunta!</label>
+            <button class="questionBoxButton" id="questionZone" type="submit" >Enviar</button>
+    </div>
+</section>
+<!-- Productos relacionados -->
+
+<div class="container row subtitle">
+    <h2>Productos relacionados</h2>
+</div>
+    
+
+<section class= "container row">
+
+    <article class="relatedProduct col">
+        <div class="img-box">
+            <img src="./img/img-1-C-mascarilla.png" alt="Tapabocas">
+        </div>
+            <div class="related-article1">
+                <h3 class="price">$250</h3>
+                <h4 class= "payment-method">Hasta 3 cuotas</h4>
+                <h4 class= "description">Tapabocas (distinto colores y modelos)</h4>
+             </div>
+    </article>
+
+    <article class="relatedProduct col">
+        <div class="img-box">
+            <img  src="./img/img1-A-pinturaArtesanalAcrílico.png" alt="Pintura Artesanal en acrílico">
+         </div>
+              <div class ="related-article1">
+                 <h3 class="price">$6500</h3>
+                 <h4 class= "payment-method">Hasta 12 cuotas</h4>
+                 <h4 class= "description">Cuadro Abstracto en Acrílico</h4>
+              </div>
+    </article>
+
+    <article class="relatedProduct col">
+        <div class="img-box">
+             <img src="./img/img2-A-linoleografía.png" alt="Linoleografía">
+         </div>
+            <div class= "related-article1">
+                 <h3 class ="price">$7.500</h3>
+                 <h4 class= "payment-method">10% off</h4>
+                 <h4 class= "description">Linoleografía</h4>
+             </div>
+    </article>
+
+    <article class="relatedProduct col">
+        <div class="img-box">
+            <img  src="./img/img2-C-accesorioCabello.png" alt="Turbante chic tejido a mano">
+         </div>
+             <div class="related-article1">
+                 <h3 class ="price">$1500</h3>
+                 <h4 class= "payment-method">15% off</h4>
+                 <h4 class= "description">Turbante chic tejido artesanal</h4>
+             </div>
+    </article>
+
+</section>
+
+    <!-- ICON -->
+    <div class = "whatsapp">
+        <a href="https://api.whatsapp.com/send/?phone=59891545444&text=%22Hola+%C2%A1+Hecho+a+%20Mano+!+Estoy+interesadx+en+.+.+.%22&app_absent=0" class="whatsapp" 
+        target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
+        </div>
+       
+    
+        <!--SOCIAL MEDIA-->
+    
+        <div class= "red-social-container">
+            <h4>Encontranos también en:</h4>
+            <a class= "text-footer-yellow" href="https://www.instagram.com/explore/tags/artesanias/"><i class="fab fa-instagram"></i></a>
+            <a class= "text-footer-yellow" href="https://www.facebook.com/groups/188953441869265"><i class="fab fa-facebook-f"></i></a>
+        </div>
+    
+        <!--FOOTER-->
+        <%- include ('./partials/footer') %>
+      </body>
+    </html>

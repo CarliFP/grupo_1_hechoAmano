@@ -1,0 +1,367 @@
+/* Correcciones */
+main {
+    padding-bottom: 0px;
+}
+
+/* Categoria de producto */
+.productCategory {
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+/* Producto al que ingresó */
+
+.mainProduct{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.mainProductImage { 
+    width: 90%;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    align-items: center;
+}
+.descriptionFields {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.productRating {    
+    flex-wrap: wrap;
+    padding: 0;
+}
+.rating {
+    justify-content: center;
+}
+.productPrice {
+    color: #353535; 
+    font-weight: 700;
+}
+
+.productDescription{
+    display: flex;
+    flex-direction: column;
+}
+.productName {
+    font-size: 18px;
+    margin-bottom: 5px;
+    justify-content: center;
+}
+.rating {
+    list-style: none;
+    display: flex;
+    padding-inline-start: 0px;
+}
+
+/* Caja de preguntas */
+
+.questionField {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 95%;
+}
+.userData {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.questionBoxButton {
+    width: 15%;
+    align-self: center;
+}
+
+/* Productos relacionados */
+.relatedProduct {
+    display: flex;
+    flex-basis: 100%;
+    flex-flow: column wrap;
+    background: white;
+    height: 250px;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+
+  .relatedProduct .img-box {
+    position: relative;
+    width: 100%;
+    height: calc(100% - 50px);
+    border-bottom: 1px solid rgb(243, 243, 243);
+    overflow: hidden;
+  }
+  
+.related-article1 {
+    background-color: white; 
+    display: flex; 
+    justify-content: space-around; 
+    position: relative; 
+    padding: 10px; 
+}
+  
+  .relatedProduct .img-box img{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+.price {
+    color: #353535; 
+    width: 50%;  
+    font-weight: 700;
+}
+
+.payment-method {
+    color:#008F39; 
+    font-size: 12px;
+    margin-left: 5px; 
+    width: 50%; 
+}
+
+/*descripcion solo disponible en tablet y desktop*/
+.description {
+    display: none; 
+
+}
+
+/*SOCIAL MEDIA*/
+.red-social-container {
+    text-align: center;
+    line-height : 25px;
+    width: 100%;
+    font-size: 24px;  
+    background: white; 
+    padding: 20px; 
+}
+
+.red-social-container a {
+    color: #696969;
+    text-align: center;  
+}
+
+/*FOOTER*/
+
+footer {
+    text-align: justify;
+    width: 100%;
+    display: flex; 
+    background: white;
+    
+}
+
+.footer-top {
+    width: 100%;
+    margin: 0 auto;
+    display: flex; 
+    background-color: #FDE6A3;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footer-top a{
+    text-decoration: none;
+    color: #696969;
+}
+
+
+.footer-buttom {
+    width: 100%;
+    margin: 0 auto;
+    display: flex; 
+    background-color: #FACD48; 
+    color: white; 
+}
+
+.text-footer-yellow a {
+    text-decoration: none;
+    color: #353535; 
+}
+.text-footer-yellow:hover {
+    color:#EFB116;
+}
+.text-footer-yellow a {
+    transition: color 0.8s linear 0.2s;
+}
+
+.text-footer-black {
+    font-size: 10px; 
+}
+
+.text-footer-black a {
+    text-decoration: none;
+}
+.text-footer-black:hover {
+    color: #353535;
+}
+.text-footer-black a {
+    transition: color 0.8s linear 0.2s;
+}
+
+/*LOGO WHATSAPP*/
+.whatsapp {
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:40px;
+    background-color:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    z-index:100;
+  }
+  
+  .whatsapp-icon {
+    margin-top:13px;
+  }
+
+@media (min-width: 460px){
+
+/*FIRT NAVBAR a partir de tablet*/
+
+   .first-navbar {
+       display: flex; 
+       max-width: 25%;
+   }
+
+   .right-navbar a {
+        text-decoration: none; 
+        color: #696969;
+    }
+
+    .first-navbar li {
+         margin-left: 5px; 
+    }
+
+   .logo {
+       max-width: 25%;
+   }
+
+   .search-bar {
+    max-width: 25%; 
+}
+
+/* Productos relacionados */
+.relatedProduct {
+    display: flex;
+    flex-basis: calc(50% - 20px);
+    flex-grow: 0;
+    flex-shrink: 0;
+    box-shadow : 0px 0px 10px rgb(100, 100, 100);
+}
+.description {
+    font-size: 12px; 
+    display: block; 
+    position: absolute; 
+    top: 35px; 
+    padding-bottom: 5px;
+    }
+}
+
+
+@media (min-width: 768px){
+    .col {
+        flex:1;
+    }
+
+   /*col y row*/
+  .col.cuadruple_md {
+    flex: 4;
+  }
+  .col.triple_md {
+    flex: 3;
+  }
+  .col.doble_md {
+    flex: 2;
+  }
+
+  .container {
+      flex-grow: 0;
+  }
+  /* NAVBAR a partir de tablet */
+  .first-navbar {
+    display: flex; 
+    max-width: 25%;
+}
+    .right-navbar a {
+     text-decoration: none; 
+     color: #696969;
+ }
+    .first-navbar li {
+      margin-left: 5px; 
+ }
+ .header {
+    height: 80px;
+}
+    .logo {
+    max-width: 25%;
+}
+.search-bar {
+    max-width: 45%; 
+}
+
+/* Producto al que ingresó */
+.mainProduct{
+    flex-direction: row;
+    margin-top: 15px;
+}
+.descriptionFields {
+    width: 35%;
+    justify-content: flex-start;
+}
+.productDescription{
+    position: relative;
+    top: 50px;
+}
+.seller {
+    position: relative;
+    top: 75px;
+}
+.stock {
+    position: relative;
+    top: 100px;
+}
+.shippingCost {
+    position: relative;
+    top: 125px;
+}
+/* Productos relacioandos */
+  .relatedProduct {
+    display: flex;
+    flex-basis: calc(25% - 20px);
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+}
+
+/* Desktop */
+@media (min-width: 1200px){
+    .container {
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+    .col.cuadruple_lg {
+        flex: 4;
+    }
+    .col.triple_lg {
+        flex: 3;
+    }
+    .col.doble_lg {
+        flex: 2;
+    }
+}
+/* Caja de preguntas */
+.questionBox {
+    height: 60px;
+}
+input {
+    text-align: center;
+}

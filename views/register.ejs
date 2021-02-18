@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+        <head>
+            <meta charset="utf-8">
+            <!--Viewport-->
+            <meta name= "viewport" content= "width=device-width, initial-scale=1">
+
+            <title>"Hecho a Mano"</title>
+        
+            <!--link para la fuente Roboto-->
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+            <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">    
+
+            <!--Css styles-->
+            <link href ="css/normalize.css" rel="stylesheet"> 
+            <link href ="css/stylesIndex.css" rel="stylesheet">
+            <link href ="css/stylesRegister.css" rel="stylesheet">
+
+            <!-- Font awesome -->
+            <script src="https://kit.fontawesome.com/17c2d4139d.js" crossorigin="anonymous"></script> 
+            
+        </head>
+
+    <body>
+
+        <%- include ('./partials/header') %>
+
+        <body> 
+            <main class="register">
+
+                <form class="main-form" action="/" method="POST">
+
+                    <div class= "title">
+                        <h4>Datos Personales</h4>
+                    </div>
+                    
+                    <div class="container-personal-information">
+                        <input class="personal-information-input" type="text" name="name" placeholder="Nombre y apellido">
+                        <input class="personal-information-input" type="text" name="user" placeholder="Nombre de usuario">
+                        <input class="personal-information-input" type="email" name="email" placeholder="E-mail">
+                        <input class="personal-information-input" type="date" name="birth_date" id="birth_date" max="2022-12-31">
+                        <input class="personal-information-input" type="text" name="addres" placeholder="Domicilio">
+                    </div>
+    
+    
+                        <div class= "title">
+                            <h4>Perfil del usuario</h4>
+                        </div>
+    
+                        <div class="profile">
+                            <input type="radio" name="profile" value="buy" id="buy">
+                            <label for="buy">Comprador</label>
+                            <input type="radio" name="profile" value="sell" id="sell">
+                            <label for="sell">Vendedor</label>
+                        </div>
+    
+                        <div class= "title">
+                            <h4>Intereses</h4>
+                        </div>
+    
+                        <div class="interests">
+                            <div>
+                                <input type="checkbox" name="interests" value="a" id="a">
+                                <label for="a">Accesorios</label>
+                            </div>
+                            <div>
+                                <input  type="checkbox" name="interests" value="b" id="b">
+                                <label for="b">Arte</label>
+                            </div>
+                            <div>
+                                <input  type="checkbox" name="interests" value="c" id="c">
+                                <label for="c">Hogar</label>
+                            </div>
+                            <div>
+                                <input  type="checkbox" name="interests" value="d" id="d">
+                                <label for="d">Cosmética</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="interests" value="e" id="e">
+                                <label for="e">Ropa y calzado</label>
+                            </div>
+                        </div>
+    
+    
+                    <div class= "title">
+                        <h4>Elegi tu foto de usuario</h4>
+                    </div>
+    
+                    <div class = "file-upload">
+                        <!-- esto hace que se oculte y se pueda customizar, sino reaparece-->
+                        <input type="file" id="actual-btn" accept=".jpg" multiple hidden/>
+                        <!--boton custom-->
+                        <label class ="btn-file" for="actual-btn">Seleccionar avatar</label>
+                        <!--advertencia de archivo no subido-->
+                        <span id="file-chosen">No se eligió archivo</span>
+                    </div>
+    
+                    <div class="password">
+                        <input class="password-input" type="password" name="pass" placeholder="Elegí tu contraseña"> 
+                        <input class="password-input" type="password" name="pass_confirm" placeholder="Confirmá tu contraseña">
+                    </div>
+    
+                    <div class= "btn-submit">
+                        <input class= "submit-button" type="reset" value="Borrar">
+                        <input class="submit-button action" type="submit" value="Enviar">
+                    </div>
+    
+                </form>
+            </main>
+
+            <!--FOOTER-->
+            <%- include ('./partials/footer') %>    
+            
+        </body>
+</html>
