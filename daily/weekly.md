@@ -17,6 +17,6 @@ Weekly 18-2-2021
 :three: Tendríamos que cada uno generar una rama para trabajar en git, porque tuve que resolver un conflicto en git por trabajar todos en la misma rama y me llevó tiempo.
 
 :white_check_mark: Neri
-:one:
-:two:
-:three: 
+:one: Ayudé a hacer el reparto de tareas. <br>
+:two: Trabajar en mi branch para poder avanzar en mis tareas sin intervenir en la de los demás. <br>
+:three: Aún no tengo claro cómo trabajar con MVC, pero voy a repasarlo las veces necesarias para implementarlo correctamente.
