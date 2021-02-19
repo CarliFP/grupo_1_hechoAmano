@@ -10,6 +10,7 @@ const routesProductDetail = require ('./routes/productDetail.js');
 const routesProductCart = require ('./routes/productCart.js');
 const routesRegister = require ('./routes/register.js');
 const routesLogin = require ('./routes/login.js')
+const routesProductCreator = require ('./routes/productCreator.js')
 //routes
 
 app.set("view engine", "ejs");
@@ -31,7 +32,8 @@ app.use ('/product', routesProduct)
 app.use ('/productDetail', routesProductDetail);
 app.use ('/productCart', routesProductCart);
 app.use ('/login', routesLogin);
-app.use ('/register', routesRegister)
+app.use ('/register', routesRegister);
+app.use ('/productCreator', routesProductCreator);
 //routes
 
 //app.get('/', (req, res) => {
