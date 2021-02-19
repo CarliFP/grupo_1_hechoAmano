@@ -1,0 +1,32 @@
+input {
+    margin: 5px;
+}
+.sendButton {
+    background: blue;
+    color: white;
+    width: 90%;
+}
+.eraseButton {
+    background: red;
+    color: white;
+    width: 90%;
+}
+div .bar {
+    margin: 0px;
+    padding: 0px;
+}
+@media (min-width: 460px){
+ .sendButton, .eraseButton {
+     max-width: 360px;
+ }
+}
+
+@media (min-width: 768px){
+    .sendButton, .eraseButton {
+        margin-right: 800px;
+    }
+}
+
+@media (min-width: 1200px){
+
+}

@@ -1,6 +1,6 @@
 const productCreator = {
     detalle: (req,res) => {
-        res.render("Bienvenidos a la creación del producto ");
+        res.render('../views/productCreator');
     }
 }
 

@@ -6,7 +6,7 @@
    <!--Viewport-->
    <meta name= "viewport" content= "width=device-width, initial-scale=1">
 
-   <title>"Carrito de compras"</title>
+   <title>Creación de producto</title>
  
    <!--link para la fuente Roboto-->
    <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -15,7 +15,7 @@
    <!--Css styles-->
    <link href ="css/normalize.css" rel="stylesheet"> 
    <link href ="css/stylesIndex.css" rel="stylesheet">
-   <link href ="css/stylesProductCart.css" rel="stylesheet">
+   <link href ="css/stylesProductCreator.css" rel="stylesheet">
 
    <!-- Font awesome -->
    <script src="https://kit.fontawesome.com/17c2d4139d.js" crossorigin="anonymous"></script> 
@@ -26,11 +26,65 @@
 
    <%- include ('./partials/header') %>
 
-    <main>
+        <main class="productCreator">
+            <form action="/" method="POST">
+                <input type="text" name="name" placeholder="Nombre y apellido">
+                <input type="text" name="user" placeholder="Nombre de usuario">
+                <input type="email" name="email" placeholder="E-mail">
+                <br>
+                <label for="birth_date"><b>Fecha de nacimiento</b></label>
+                <br>
+                <input type="date" name="birth_date" id="birth_date">
+                <br>
+                <input type="text" name="addres" placeholder="Domicilio">
+                <h4>Perfil del usuario</h4>
+                <div class="profile">
+                    <input type="radio" name="profile" value="buy" id="buy">
+                    <label for="buy">Comprador</label>
+                    <input type="radio" name="profile" value="sell" id="sell">
+                    <label for="sell">Vendedor</label>
+                </div>
 
+                <h4>Intereses</h4>
+                <div class="interests">
+                    <div>
+                        <input type="checkbox" name="interests" value="a" id="a">
+                        <label for="a">Electro</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="interests" value="b" id="b">
+                        <label for="b">Moda</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="interests" value="c" id="c">
+                        <label for="c">Hogar</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="interests" value="d" id="d">
+                        <label for="d">Juguetería</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="interests" value="e" id="e">
+                        <label for="e">Vida sana</label>
+                    </div>
+                </div>
+                
+                <h4>Elegí tu foto de usuario</h4>
+                <input type="file" name="avatar">
+                <br>
+                <br>
+                <input type="password" name="pass" placeholder="Elegí tu contraseña">
+                <input type="password" name="pass_confirm" placeholder="Confirmá tu contraseña">
+                <br>
+                <br>
+                <input class="sendButton" type="submit" value="Enviar">
+                <input class="eraseButton" type="reset" value="Borrar">
+                <br>
+                <br>
+            </form>
     </main>
         <!--FOOTER-->
-        <%- include ('./partials/footer') %>
+    <%- include ('./partials/footer') %>
            
 </body>
 </html>
