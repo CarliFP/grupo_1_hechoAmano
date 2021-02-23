@@ -1,6 +1,9 @@
-input {
-    margin: 5px;
+main {
+    margin: 100px 0px;
+    display: inline-block;
+    text-align: center;
 }
+
 .sendButton {
     background: blue;
     color: white;
