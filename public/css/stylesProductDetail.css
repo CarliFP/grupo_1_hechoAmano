@@ -121,7 +121,9 @@ main {
    
     }
 
-
+.red-social-container {
+    margin-top: 40px; 
+}
 
 /* Productos relacionados */
 .relatedProduct {
