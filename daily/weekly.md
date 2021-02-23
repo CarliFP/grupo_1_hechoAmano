@@ -7,9 +7,9 @@
 Weekly 18-2-2021 <br>
 
 :white_check_mark: Emanuel <br>
-:one: <br>  Carpeta routes y  controllers creada, con sus respectivos ruteos y controllers basicos. Antes de usar el method render.
-:two: <br>  Seguir con mis tareas de Trello, mejorar la views de productCart.
-:three: <br>  Utilizar de manera adecuada mi branch de git, para no pisar ni estropear el trabajo de mis compañeros.
+:one:  Carpeta routes y  controllers creada, con sus respectivos ruteos y controllers basicos. Antes de usar el method render. <br>
+:two:  Seguir con mis tareas de Trello, mejorar la views de productCart. <br>
+:three:  Utilizar de manera adecuada mi branch de git, para no pisar ni estropear el trabajo de mis compañeros. <br>
 
 :white_check_mark: Carla <br>
 :one:  Partials folder creada y archivos parciales. <br>
