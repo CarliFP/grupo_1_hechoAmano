@@ -17,17 +17,22 @@ main {
     display: flex;
     flex-direction: column;
     text-align: center;
+    background: white; 
 }
 .mainProductImage { 
-    width: 90%;
+    width: 50%;
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
     align-items: center;
+    margin: 20px; 
 }
 .descriptionFields {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    padding: 20px;
+    margin: 20px; 
+    border: 1px solid #D8D8D8; 
 }
 .productRating {    
     flex-wrap: wrap;
@@ -58,21 +63,65 @@ main {
 
 /* Caja de preguntas */
 
-.questionField {
+.questionField-form {
     display: flex;
     flex-direction: column;
     text-align: center;
     width: 95%;
 }
+.questionField {
+    background: white;
+    border: 1px solid #D8D8D8; 
+    padding: 20px; 
+}
+
+.questionBox {
+    text-anchor: 35px; 
+}
+.input-detail {
+    border: none;
+    border-bottom:rgb(100, 100, 100) solid 1px; 
+    padding: 5px; 
+    margin: 8px; 
+}
+
+.label-detail {
+    text-align: left; 
+    margin-left: 8px; 
+}
+
 .userData {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .questionBoxButton {
-    width: 15%;
-    align-self: center;
+    min-width: 20vw;
+    max-width: 20%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;  
+    border-radius: 4px;
+    border: none;
+    background: #EFB116;
+    color: white; 
+
 }
+
+.submit-button {
+    min-width: 20vw;
+    max-width: 20%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;  
+    border-radius: 4px;
+    border: none;
+    background: #EBEBEB; 
+    color: black; 
+   
+    }
+
+
 
 /* Productos relacionados */
 .relatedProduct {
@@ -89,7 +138,7 @@ main {
     position: relative;
     width: 100%;
     height: calc(100% - 50px);
-    border-bottom: 1px solid rgb(243, 243, 243);
+    border-bottom: 1px solid #D8D8D8; 
     overflow: hidden;
   }
   

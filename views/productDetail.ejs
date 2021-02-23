@@ -11,72 +11,88 @@
         <%- include ('./partials/header') %>
            <!-- Categoria de producto     -->
     <main>
+
         <section>
             <div class="productCategory">
                 <a href="#">Categoria de producto</a> > <a href="#">Subcategoria</a> > <a href="#">Segmento</a> > <a href="#">Subsegmento</a> > <a href="#">Producto</a>
             </div>
         </section>
+
         <!-- Producto al que ingreso -->
         <section class="mainProduct">
             <article>
-            <img class="mainProductImage" src="./img/img-1-C-mascarilla.png">
+                <img class="mainProductImage" src="./img/img-1-C-mascarilla.png">
             </article>
                 <div class="descriptionFields">
-            <div class="productName"> <h2>Nombre del producto</h2></div>
-            <div class="productRating">
-            <ul class="rating interactive-rating mb-0">
-                <li>
-                  <i class="far fa-heart fa-sm text-primary"></i>
-                </li>
-                <li>
-                  <i class="far fa-heart fa-sm text-primary"></i>
-                </li>
-                <li>
-                  <i class="far fa-heart fa-sm text-primary"></i>
-                </li>
-                <li>
-                  <i class="far fa-heart fa-sm text-primary"></i>
-                </li>
-                <li>
-                  <i class="far fa-heart fa-sm text-primary"></i>
-                </li>
-              </ul>
+                    <div class="productName"> 
+                        <h2>Nombre del producto</h2>
+                    </div>
+                        <div class="productRating">
+                            <ul class="rating interactive-rating mb-0">
+                                <li>
+                                <i class="far fa-heart fa-sm text-primary"></i>
+                                </li>
+                                <li>
+                                <i class="far fa-heart fa-sm text-primary"></i>
+                                </li>
+                                <li>
+                                <i class="far fa-heart fa-sm text-primary"></i>
+                                </li>
+                                <li>
+                                <i class="far fa-heart fa-sm text-primary"></i>
+                                </li>
+                                <li>
+                                <i class="far fa-heart fa-sm text-primary"></i>
+                                </li>
+                            </ul>
+                        </div>
+
             <article class="productDescription">
-        </div>  
-            <div class="productPrice"> $1.300
-        </div>
-            <div class="paymentMethods">
-            <a href="#">Ver los medios de pago</a>
-        </div>
-            <div class="productDescription">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-            Eos suscipit corrupti veniam assumenda aliquid distinctio voluptate amet?
-        </div>
+        
+                <div class="productPrice"> 
+                    <p>$1.300</p>
+                </div>
+
+                <div class="paymentMethods">
+                     <a href="#">Ver los medios de pago</a>
+                </div>
+
+                <div class="productDescription">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                     Eos suscipit corrupti veniam assumenda aliquid distinctio voluptate amet?</p>
+                </div>
     
-        <ul class="deliveryDetails">
-            <li class="seller">Vendedor: <a href="#">El Pepe</a></li>
-            <li class="stock">Stock: disponible</li>
-            <li class="shippingCost">Envio a domicilio: $360</li>
-        </ul>
-    </article>
-</section>
-</main>
+                <div>
+                   <ul class="deliveryDetails">
+                        <li class="seller">Vendedor: <a href="#">El Pepe</a></li>
+                        <li class="stock">Stock:</li>
+                        <li class="shippingCost">Envio a domicilio: $360</li>
+                    </ul> 
+                </div>
+                
+            </article>
+        </section>
 
 <!-- Caja de preguntas -->
-<section class="questionField">
-    <h4 class="subtitle">¡Déjanos tu pregunta!</h4>
-    <div class="userData">
-        <form class="questionField" id="questionZone" action="/" method="POST">
-            <label for="name">Nombre completo</label>
-            <input type="text" name="name" placeholder="EJ: Juan Soto">
-            <label for="email"> Correo electronico</label>
-            <input type="email" name="email" placeholder="juan@soto.com">
-            <label for="question">Tu pregunta</label>
-            <input class="questionBox" type="text" name="question" placeholder="¿El producto es personalizable?">
-            <label for="sendButton">¡Envianos tu pregunta!</label>
-            <button class="questionBoxButton" id="questionZone" type="submit" >Enviar</button>
-    </div>
-</section>
+        <section class="questionField">
+            <h4 class="subtitle">¡Déjanos tu pregunta!</h4>
+            <div class="userData">
+                <form class="questionField-form" id="questionZone" action="/" method="POST">
+
+                    <label class ="label-detail" for="email"> Correo electronico</label>
+                    <input class ="input-detail" type="email" name="email" placeholder="juan@soto.com">
+
+                    <label class ="label-detail" for="question">¿Quieres personalizar tu producto?</label>
+                    <input class ="input-detail questionBox" type="text" name="question" placeholder="Lo haremos especial para vos...">
+
+                    <div class= "buttom">
+                        <buttom class= "submit-button" id="submit-button" type="submit">Borrar</buttom>
+                        <button class="questionBoxButton" id="questionZone" type="submit" >Enviar</button>
+                    </div>
+
+                </form>
+            </div>
+        </section>
 <!-- Productos relacionados -->
 
 <div class="container row subtitle">
@@ -131,6 +147,7 @@
     </article>
 
 </section>
+</main>
 
     <!-- ICON -->
     <div class = "whatsapp">
