@@ -83,6 +83,11 @@ h4 {
     background:#EFB116;
 }
 
+.button {
+  display: flex; 
+  align-self: flex-end;
+}
+
 .btn-file {
         background-color:#EFB116;
         color: white;
