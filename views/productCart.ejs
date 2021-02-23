@@ -3,22 +3,8 @@
 
  <head>
     <meta charset="utf-8">
-    <!--Viewport-->
-    <meta name= "viewport" content= "width=device-width, initial-scale=1">
-
-    <title>"Carrito de compras"</title>
-  
-    <!--link para la fuente Roboto-->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">    
-
-    <!--Css styles-->
-    <link href ="css/normalize.css" rel="stylesheet"> 
-    <link href ="css/stylesIndex.css" rel="stylesheet">
+    <%- include ('./partials/head') %>
     <link href ="css/stylesProductCart.css" rel="stylesheet">
-
-    <!-- Font awesome -->
-    <script src="https://kit.fontawesome.com/17c2d4139d.js" crossorigin="anonymous"></script> 
       
  </head>
 
@@ -244,9 +230,9 @@
              <section class="container row">
                  <article class ="product col">
                      <div class= "img-box">
-                        <a href="http://localhost:8000/productDetail">
-                        <img  src="./img/img3-A-grabadoMadera.png" alt="Cuadro grabado en madera">
-                    </a>
+                        <a href="/productDetail">
+                            <img  src="./img/img3-A-grabadoMadera.png" alt="Cuadro grabado en madera">
+                         </a>
                      </div>
                      <div class="main-article1">
                         <h3 class="price">$3500</h3>
@@ -257,9 +243,9 @@
 
                  <article class ="product col">
                      <div class= "img-box">
-                        <a href="http://localhost:8000/productDetail">
-                        <img  src="./img/img1-A-pinturaArtesanalAcrílico.png" alt="Pintura Artesanal en acrílico">
-                    </a>
+                        <a href="/productDetail">
+                            <img  src="./img/img1-A-pinturaArtesanalAcrílico.png" alt="Pintura Artesanal en acrílico">
+                         </a>
                      </div>
                      <div class ="main-article1">
                         <h3 class="price">$6500</h3>
@@ -270,9 +256,9 @@
 
                  <article class ="product col">
                      <div class= "img-box">
-                        <a href="http://localhost:8000/productDetail">
-                        <img src="./img/img2-A-linoleografía.png" alt="Linoleografía">
-                    </a>
+                        <a href="/productDetail">
+                            <img src="./img/img2-A-linoleografía.png" alt="Linoleografía">
+                        </a>
                      </div>
                      <div class= "main-article1">
                         <h3 class="price">$7.500</h3>
@@ -283,9 +269,9 @@
 
                  <article class ="product col">
                      <div class= "img-box">
-                        <a href="http://localhost:8000/productDetail">
-                        <img  src="./img/img2-C-accesorioCabello.png" alt="Turbante chic tejido a mano">
-                    </a>
+                        <a href="/productDetail">
+                            <img  src="./img/img2-C-accesorioCabello.png" alt="Turbante chic tejido a mano">
+                        </a>
                      </div>
                      <div class="main-article1">
                         <h3 class="price">$1500</h3>
