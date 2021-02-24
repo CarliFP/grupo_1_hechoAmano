@@ -23,6 +23,7 @@ h4 {
     padding: 5px; 
 }
 
+
 section {
     background: white; 
 }
@@ -49,6 +50,20 @@ div .bar {
     align-items: center;
     justify-items: normal;
 }
+
+.productDescription {
+    width: 250px; 
+}
+
+.productName {
+    width: 250px; 
+}
+
+textarea {
+    font-family: Arial;
+    color: grey; 
+}
+
 main input {
     margin: 5px;
     box-shadow: 3px 3px lightgrey;
