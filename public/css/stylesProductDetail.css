@@ -6,7 +6,7 @@ main {
 /* Categoria de producto */
 .productCategory {
     display: block;
-    margin-top: 10px;
+    margin-top: 80px;
     margin-bottom: 10px;
     width: 100%;
 }
@@ -301,7 +301,6 @@ footer {
   }
 
 @media (min-width: 460px){
-
     .button-comprar {
         min-width: 20vw;
         max-width: 20%;
@@ -314,6 +313,7 @@ footer {
     }
     
     .button-agregar {
+        margin-top: 150px; 
         min-width: 20vw;
         max-width: 20%;
         padding: 5px;  
