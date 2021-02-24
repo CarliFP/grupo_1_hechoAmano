@@ -37,12 +37,14 @@ section {
 .sendButton {
     background: #EFB116;
     color: white;
-    width: 250px; 
+    width: 265px; 
+    padding: 5px; 
 }
 .eraseButton {
     background: #FDE6A3; 
     color: white;
-    width: 250px; 
+    width: 265px; 
+    padding: 5px; 
 }
 div .bar {
     margin: 0px;
