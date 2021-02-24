@@ -44,6 +44,7 @@ main {
 .productPrice {
     color: #353535; 
     font-weight: 700;
+    margin-bottom: 5px; 
 }
 
 .productDescription{
