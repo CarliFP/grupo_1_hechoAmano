@@ -57,6 +57,10 @@ main {
     margin-bottom: 5px;
     justify-content: center;
 }
+
+.bannerMl {
+    margin: 5px; 
+}  
 .rating {
     list-style: none;
     display: flex;
