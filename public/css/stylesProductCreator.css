@@ -28,6 +28,12 @@ section {
     background: white; 
 }
 
+
+.detail {
+    width: 250px; 
+    padding: 5px;
+}
+
 .sendButton {
     background: #EFB116;
     color: white;
@@ -57,11 +63,13 @@ div .bar {
 
 .productName {
     width: 250px; 
+    padding: 5px; 
 }
 
 textarea {
     font-family: Arial;
     color: grey; 
+    padding: 5px; 
 }
 
 main input {
