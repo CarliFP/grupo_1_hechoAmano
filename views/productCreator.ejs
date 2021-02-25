@@ -9,26 +9,23 @@
 
    <%- include ('./partials/header') %>
 
-        <main class="productCreator">
-            <form action="/" method="POST">
+        <main>          
+            <section>
+                
+            <form class="productCreator" action="/" method="POST">
+                <h4>¿Querés modificar un producto ya creado?</h4>
+                <select name="product">
+                    <option value="Elegir" id="AF">Elegir opción</option>
+                    <option value="producto001" id="001">producto001</option>
+                    <option value="producto002" id="002">producto002</option>
+                    <option value="producto003" id="003">producto003</option>
+                    <option value="producto004" id="004">producto004</option>
+                    <option value="producto005" id="005">producto005</option>
                 <input type="text" name="productName" placeholder="Nombre del producto">
-                <input type="text" name="productDescription" placeholder="Nombre de usuario">
-                <input type="email" name="email" placeholder="E-mail">
-                <br>
-                <label for="birth_date"><b>Fecha de nacimiento</b></label>
-                <br>
-                <input type="date" name="birth_date" id="birth_date">
-                <br>
-                <input type="text" name="addres" placeholder="Domicilio">
-                <h4>Perfil del usuario</h4>
-                <div class="profile">
-                    <input type="radio" name="profile" value="buy" id="buy">
-                    <label for="buy">Comprador</label>
-                    <input type="radio" name="profile" value="sell" id="sell">
-                    <label for="sell">Vendedor</label>
-                </div>
-
-                <h4>Intereses</h4>
+                <input type="text" name="productDescription" placeholder="Descripción">
+                <h4>Subí la/s foto/s del producto</h4>
+                <input type="file" name="productFile">                
+                <h4>Categoría</h4>
                 <div class="interests">
                     <div>
                         <input type="checkbox" name="interests" value="a" id="a">
@@ -51,20 +48,36 @@
                         <label for="e">Vida sana</label>
                     </div>
                 </div>
-                
-                <h4>Elegí tu foto de usuario</h4>
-                <input type="file" name="avatar">
-                <br>
-                <br>
-                <input type="password" name="pass" placeholder="Elegí tu contraseña">
-                <input type="password" name="pass_confirm" placeholder="Confirmá tu contraseña">
-                <br>
-                <br>
+                <h4>Colores</h4>
+                <div class="interests">
+                    <div>
+                        <input type="checkbox" name="interests" value="a" id="a">
+                        <label for="a">Blanco</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="interests" value="b" id="b">
+                        <label for="b">Negro</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="interests" value="c" id="c">
+                        <label for="c">Rojo</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="interests" value="d" id="d">
+                        <label for="d">Azul</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="interests" value="e" id="e">
+                        <label for="e">Otro/s</label>
+                    </div>
+                </div>
+                <input style="width: 13%;" type="number" name="price" placeholder="Precio">
                 <input class="sendButton" type="submit" value="Enviar">
                 <input class="eraseButton" type="reset" value="Borrar">
                 <br>
                 <br>
             </form>
+        </section>
     </main>
         <!--FOOTER-->
     <%- include ('./partials/footer') %>
