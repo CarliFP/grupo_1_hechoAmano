@@ -1,17 +1,50 @@
 main {
     margin: 100px 0px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    background: #EBEBEB; 
+}
+
+.title {
+    background: white;  
+}
+
+h1 {
+    color:  #EFB116;
+    padding: 5px; 
+}
+
+h4 {
+    color: black; 
+    padding: 5px; 
+}
+
+
+section {
+    background: white; 
+}
+
+
+.detail {
+    width: 250px; 
+    padding: 5px;
 }
 
 .sendButton {
-    background: blue;
+    background: #EFB116;
     color: white;
-    width: 90%;
+    width: 265px; 
+    padding: 5px; 
 }
 .eraseButton {
-    background: red;
+    background: #FDE6A3; 
     color: white;
-    width: 90%;
+    width: 265px; 
+    padding: 5px; 
 }
 div .bar {
     margin: 0px;
@@ -25,6 +58,22 @@ div .bar {
     align-items: center;
     justify-items: normal;
 }
+
+.productDescription {
+    width: 250px; 
+}
+
+.productName {
+    width: 250px; 
+    padding: 5px; 
+}
+
+textarea {
+    font-family: Arial;
+    color: grey; 
+    padding: 5px; 
+}
+
 main input {
     margin: 5px;
     box-shadow: 3px 3px lightgrey;

@@ -6,14 +6,17 @@
 </head>
 
 <body>
-
-   <%- include ('./partials/header') %>
-
-        <main>          
-            <section>
-                
+        <main>     
+        
+            <section>   
+            <div class="title">
+                <img src ="./img/logoEn-amarillo-.png">
+                <h1>FORMULARIO DE CREACIÓN DE PRODUCTO</h1>   
+                <h4>Ingreso exclusivo con clave administrador</h4>
+                <input type="password" class="login-field" value="" placeholder="Contraseña" id="login-pass" required>
+                <input class="submit-button" type="submit" value="Enviar">
             <form class="productCreator" action="/" method="POST">
-                <h4>¿Querés modificar un producto ya creado?</h4>
+                <h4>¿Querés modificar un producto?</h4>
                 <select name="product">
                     <option value="Elegir" id="AF">Elegir opción</option>
                     <option value="producto001" id="001">producto001</option>
@@ -21,19 +24,36 @@
                     <option value="producto003" id="003">producto003</option>
                     <option value="producto004" id="004">producto004</option>
                     <option value="producto005" id="005">producto005</option>
-                <input type="text" name="productName" placeholder="Nombre del producto">
-                <input type="text" name="productDescription" placeholder="Descripción">
-                <h4>Subí la/s foto/s del producto</h4>
-                <input type="file" name="productFile">                
-                <h4>Categoría</h4>
-                <div class="interests">
+                </select>
+                <input class="submit-button" type="submit" value="Modificar">
+
+                <h4>¿Querés eliminar un producto?</h4> 
+                <select name="product">
+                    <option value="Elegir" id="AF">Elegir opción</option>
+                    <option value="producto001" id="001">producto001</option>
+                    <option value="producto002" id="002">producto002</option>
+                    <option value="producto003" id="003">producto003</option>
+                    <option value="producto004" id="004">producto004</option>
+                    <option value="producto005" id="005">producto005</option>
+                </select>
+                <input class="submit-button" type="submit" value="Eliminar">
+                <h6>*ATENCIÓN! no es posible modificar esta accion.</h6>
+
+                    <h4>¿Querés crear un nuevo producto?</h4>
+
+                    <input class= "productName" type="text" name="productName" placeholder="Nombre del producto">
+                    <textarea class="productDescription" cols="30" rows="5">Escribe aquí la descripción del producto...</textarea>
+                    <h4>Subí la/s foto/s del producto</h4>
+                    <input type="file" name="productFile">                
+                    <h4>Categoría</h4>
+                    <div class="interests">
                     <div>
                         <input type="checkbox" name="interests" value="a" id="a">
-                        <label for="a">Electro</label>
+                        <label for="a">Accesorios</label>
                     </div>
                     <div>
                         <input type="checkbox" name="interests" value="b" id="b">
-                        <label for="b">Moda</label>
+                        <label for="b">Arte</label>
                     </div>
                     <div>
                         <input type="checkbox" name="interests" value="c" id="c">
@@ -41,11 +61,15 @@
                     </div>
                     <div>
                         <input type="checkbox" name="interests" value="d" id="d">
-                        <label for="d">Juguetería</label>
+                        <label for="d">Juegos</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="interests" value="d" id="d">
+                        <label for="d">Cosmética</label>
                     </div>
                     <div>
                         <input type="checkbox" name="interests" value="e" id="e">
-                        <label for="e">Vida sana</label>
+                        <label for="e">Ropa y Calzado</label>
                     </div>
                 </div>
                 <h4>Colores</h4>
@@ -70,17 +94,19 @@
                         <input type="checkbox" name="interests" value="e" id="e">
                         <label for="e">Otro/s</label>
                     </div>
-                </div>
-                <input style="width: 13%;" type="number" name="price" placeholder="Precio">
-                <input class="sendButton" type="submit" value="Enviar">
+                </div> 
+                <input class ="detail" type="number" name="price" placeholder="$$ Precio">
+                <input class ="detail" type="number" name="price" placeholder="Medio de pago disponible">
+                <input class ="detail" type="number" name="price" placeholder="Vendedor">
+                <input class ="detail" type="number" name="price" placeholder="Stock">
+                <input  class ="detail" type="number" name="cost" placeholder="Costo de envío">
+               
                 <input class="eraseButton" type="reset" value="Borrar">
+                <input class="sendButton" type="submit" value="Enviar">
                 <br>
                 <br>
             </form>
         </section>
     </main>
-        <!--FOOTER-->
-    <%- include ('./partials/footer') %>
-           
 </body>
 </html>
