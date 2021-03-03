@@ -13,8 +13,8 @@
 
 :exclamation: Keep Doing: 
 <!--aquello que venimos haciendo y nos brinda valor-->
-1.- La división de tareas por Trello.
-2.- Incorporar cada uno una rama para trabaja en Git. 
+1.- La división de tareas por Trello. <br>
+2.- Incorporar cada uno una rama para trabajar en Git. 
 
 :exclamation: Less of: 
 <!--aquello que no nos aporta el valor que esperábamos-->
@@ -24,7 +24,7 @@
 <!--aquello que podemos eliminar-->
 1.-  Evitar dilaciones en la asignación de las tareas una vez inicia el sprint. 
 
-:white_check_mark: Conclusión: Nuestro desafío será seguir manteniendo el entusiasmo y motivación en este sprint donde las tareas incrementan su complejidad, donde las tareas además están entrelazadas y debemos trabajar coordinadamente para el éxito del proyecto. 
+:white_check_mark: Conclusión: Nuestro desafío será seguir manteniendo el entusiasmo y motivación en este sprint donde las tareas incrementan su complejidad,y además están entrelazadas y debemos trabajar coordinadamente para el éxito del proyecto. 
 
 :star: Tablero para el Sprint 3: https://trello.com/b/9968OLoZ/sprint-4
 
