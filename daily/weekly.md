@@ -1,4 +1,33 @@
-:bookmark: Weekly
+:bookmark: Weekly SPRINT 3
+
+:one: ¿Qué he hecho desde la última reunión de sincronización para ayudar al equipo a cumplir su objetivo? <br>
+:two: ¿Qué voy a hacer a partir de este momento para ayudar al equipo a cumplir su objetivo? <br>
+:three: ¿Qué impedimentos tengo o voy a tener que nos impidan conseguir nuestro objetivo? <br>
+
+Weekly 3-3-2021 <br>
+
+:white_check_mark: Emanuel <br>
+:one:  <br>
+:two:  <br>
+:three: <br>
+
+:white_check_mark: Carla <br>
+:one: Organice las tareas que tengo organizadas para poder cumplimentarlas en tiempo y forma. <br>
+:two: Estaré atenta y me mantendré comunicada con el equipo para que podamos entre todos resolver este sprint, donde se suman muchos conocimientos nuevos. <br>
+:three: Tengo algunas complicaciones de horarios esta semana por eso me reservé el fin de semana para poder cumplir con mis tareas, y la próxima semana ajustar detalles con el equipo. <br>
+
+:white_check_mark: Neri <br>
+:one: <br>
+:two:  <br>
+:three: <br>
+
+
+<br>
+<br>
+
+
+
+:bookmark: Weekly SPRINT 2
 
 :one: ¿Qué he hecho desde la última reunión de sincronización para ayudar al equipo a cumplir su objetivo? <br>
 :two: ¿Qué voy a hacer a partir de este momento para ayudar al equipo a cumplir su objetivo? <br>
