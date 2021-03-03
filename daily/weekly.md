@@ -12,9 +12,9 @@ Weekly 3-3-2021 <br>
 :three: <br>
 
 :white_check_mark: Carla <br>
-:one: Organice las tareas que tengo organizadas para poder cumplimentarlas en tiempo y forma. <br>
-:two: Estaré atenta y me mantendré comunicada con el equipo para que podamos entre todos resolver este sprint, donde se suman muchos conocimientos nuevos. <br>
-:three: Tengo algunas complicaciones de horarios esta semana por eso me reservé el fin de semana para poder cumplir con mis tareas, y la próxima semana ajustar detalles con el equipo. <br>
+:one: Organice las tareas que tengo asignadas para poder cumplimentarlas en tiempo y forma. <br>
+:two: Estaré atenta y me mantendré comunicada con el equipo para resolver entre todos cualquier dificultad que se presente. <br>
+:three: Continuar profundizando los conocimientos adquiridos para poder aplicarlos correctamente. <br>
 
 :white_check_mark: Neri <br>
 :one: <br>
