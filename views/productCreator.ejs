@@ -6,12 +6,15 @@
 </head>
 
 <body>
-
-   <%- include ('./partials/header') %>
-
-        <main>          
-            <section>
-                
+        <main>     
+        
+            <section>   
+            <div class="title">
+                <img src ="./img/logoEn-amarillo-.png">
+                <h1>FORMULARIO DE CREACIÓN DE PRODUCTO</h1>   
+                <h4>Ingreso exclusivo con clave administrador</h4>
+                <input type="password" class="login-field" value="" placeholder="Contraseña" id="login-pass" required>
+                <input class="submit-button" type="submit" value="Enviar">
             <form class="productCreator" action="/" method="POST">
                 <h4>¿Querés modificar un producto ya creado?</h4>
                 <select name="product">
@@ -79,8 +82,5 @@
             </form>
         </section>
     </main>
-        <!--FOOTER-->
-    <%- include ('./partials/footer') %>
-           
 </body>
 </html>

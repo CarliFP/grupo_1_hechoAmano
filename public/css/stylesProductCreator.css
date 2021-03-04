@@ -1,15 +1,39 @@
 main {
     margin: 100px 0px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    background: #EBEBEB; 
+}
+
+.title {
+    background: white;  
+}
+
+h1 {
+    color:  #EFB116;
+    padding: 5px; 
+}
+
+h4 {
+    color: black; 
+    padding: 5px; 
+}
+
+section {
+    background: white; 
 }
 
 .sendButton {
-    background: blue;
+    background: #EFB116;
     color: white;
     width: 90%;
 }
 .eraseButton {
-    background: red;
+    background: #FDE6A3; 
     color: white;
     width: 90%;
 }
