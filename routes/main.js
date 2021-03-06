@@ -5,6 +5,10 @@ const router = express.Router ();
 
 router.get('/', mainController.index);
 
+router.get('/login', mainController.login);
+
+router.get('/register', mainController.register);
+
 router.get('/404', mainController.notFound);
 
 module.exports = router;
