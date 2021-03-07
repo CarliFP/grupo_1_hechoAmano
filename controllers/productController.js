@@ -4,7 +4,9 @@ const path = require ("path");
 const productController = {
 
     index: (req,res) => {
-        
+        let vendidos = products.filter(product => product.status == 'vendidos'); 
+		let destacados = products.filter(product => product.status == 'destacados');
+		res.render('products', {destacados, vendidos})	
     },
 
     detail: (req,res) => {

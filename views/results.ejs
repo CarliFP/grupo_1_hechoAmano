@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+        <head>
+            <%- include ('./partials/head') %>   
+        </head>
+
+        <body> 
+            <%- include ('./partials/header') %>
+            <h2>RESULTADOS DE BÚSQUEDA</h2>
+            <main class= "container row">
+                <section class="container column">
+                    <% if (products.length) { %>
+                        <% for (product of products) { %>
+                <section class="container row">
+                    <article class ="product col">
+                        <div class= "img-box">
+                    <a href="'/<%=product.id %> /detail'">
+                        <img  src="../img/<%=product.image %> " alt="<%= product.name %> ">
+                    </a>    
+                    </div>
+                        <div class="main-article1">
+                            <h3 class="price">$ <%= product.price %> </h3>
+                            <h4 class="payment-method">Hasta <%= product.payment %>cuotas</h4>
+                            <h4 class="description"><%= product.name %> </h4>
+                        </div>
+                    </article>
+                </section>
+            </div>
+            <% } %>	
+        <% } else { %>
+            <div>
+                <h2 style="color: tomato;">No hay productos que coincidan con esa búsqueda</h2>
+            </div>
+        <% } %>
+            </main>
+
+        <!--FOOTER-->
+        <%- include ('./partials/footer') %>
+            
+  </body>
+</html>

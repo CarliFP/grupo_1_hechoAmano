@@ -51,62 +51,22 @@
                 <div class="container row subtitle">
                     <h2>Los más vendidos</h2>
                 </div>
-            
 
                 <section class="container row">
-                    <article class ="product col">
-                        <div class= "img-box">
-                    <a href="/product/productDetail">
-                        <img  src="../img/img3-A-grabadoMadera.png" alt="Cuadro grabado en madera">
-                    </a>    
-                    </div>
-                        <div class="main-article1">
-                            <h3 class="price">$3500</h3>
-                            <h4 class="payment-method">Hasta 6 cuotas</h4>
-                            <h4 class="description">Cuadro grabado en madera</h4>
-                        </div>
-                    </article> 
-
-                    <article class ="product col">
-                        <div class= "img-box">
-                    <a href="/product/productDetail">
-                            <img  src="../img/img1-A-pinturaArtesanalAcrílico.png" alt="Pintura Artesanal en acrílico">
-                </a>
-                        </div>
-                        <div class ="main-article1">
-                            <h3 class="price">$6500</h3>
-                            <h4 class= "payment-method">Hasta 12 cuotas</h4>
-                            <h4 class= "description">Cuadro Abstracto en Acrílico</h4>
-                        </div>
-                    </article>
-
-                    <article class ="product col">
-                        <div class= "img-box">
-                            <a href="/product/productDetail">
-                            <img src="../img/img2-A-linoleografía.png" alt="Linoleografía">
-                        </a>
-                        </div>
-                        <div class= "main-article1">
-                            <h3 class="price">$7.500</h3>
-                            <h4 class= "payment-method">10% off</h4>
-                            <h4 class= "description">Linoleografía</h4>
-                        </div>
-                    </article>
-
-                    <article class ="product col">
-                        <div class= "img-box">
-                            <a href="/product/productDetail">
-                            <img  src="../img/img2-C-accesorioCabello.png" alt="Turbante chic tejido a mano">
-                        </a>
-                        </div>
-                        <div class="main-article1">
-                            <h3 class="price">$1500</h3>
-                            <h4 class= "payment-method">15% off</h4>
-                            <h4 class= "description">Turbante chic tejido artesanal</h4>
-                        </div>
-                    </article>
-
-
+                    <% for (product of vendidos) { %> 
+                        <article class ="product col">
+                            <div class= "img-box">
+                                <a href="'/<%= product.id %> /detail'">                               
+                                  <img  src="../img/<%= product.image %> " alt="<%= product.name %> ">
+                                </a>    
+                             </div>
+                            <div class="main-article1">
+                                <h3 class="price">$ <%= product.price %> </h3>
+                                <h4 class="payment-method">Hasta <%= product.payment %>  cuotas</h4>
+                                <h4 class="description"><%= product.name %> </h4>
+                            </div>
+                        </article> 
+                        <% } %> 
                 </section>
 
                     <div class="container row subtitle">
@@ -116,7 +76,7 @@
             <section class="container row">
 
                     <article class ="categoria col" >
-                        <a class="link-categ" href="">
+                        <a class="link-categ" href="/accesorios">
                             <div class= "img-box categ">
                                 <img class="img-categoria" src="../img/vector-beauty.svg" alt="complementos">
                                 <h3 class="segmento">ACCESORIOS</h3>
@@ -125,7 +85,7 @@
                     </article>
 
                     <article class ="categoria col">
-                        <a class="link-categ" href="">
+                        <a class="link-categ" href="/arte">
                             <div class= "img-box categ">
                                 <img class ="img-categoria" src="../img/arte-vector.svg" alt="arte">
                                 <h3 class="segmento">ARTE</h3>
@@ -134,7 +94,7 @@
                     </article>
 
                 <article class ="categoria col">
-                    <a class="link-categ" href="#">
+                    <a class="link-categ" href="/hogar">
                         <div class="img-box categ">
                             <img class ="img-categoria" src="../img/deco-vector-hogar.svg" alt="hogar">
                             <h3 class="segmento">HOGAR</h3>
@@ -143,7 +103,7 @@
                 </article>
 
                 <article class ="categoria col" >
-                    <a class="link-categ" href="">
+                    <a class="link-categ" href="/juegos">
                         <div class="img-box categ">
                             <img class ="img-categoria" src="../img/toy-vector.svg" alt="juguetes">
                             <h3 class="segmento">JUEGOS</h3>
@@ -152,7 +112,7 @@
                 </article>
     
                 <article class ="categoria col">
-                    <a class="link-categ" href="">
+                    <a class="link-categ" href="/cosmetica">
                         <div class="img-box categ">    
                             <img class ="img-categoria" src="../img/cosmetic-vector.svg" alt="cosmética">
                             <h3 class="segmento">COSMÉTICA</h3>
@@ -161,7 +121,7 @@
                 </article>
 
                 <article class ="categoria col">
-                    <a class="link-categ" href="">
+                    <a class="link-categ" href="/ropaYcalzado">
                         <div class="img-box categ">
                             <img class ="img-categoria" src="../img/clothes-vector.svg" alt="ropa y calzado">
                             <h3 class="segmento">ROPA Y CALZADO</h3>
@@ -175,62 +135,23 @@
                     <h2>Destacados del mes</h2>
                 </div>
                 
+                <section class="container row">
 
-            <section class= "container row">
-
-                <article class="product col">
-                    <div class ="img-box">
-                        <a href="/product/productDetail">
-                        <img src="../img/img-1-C-mascarilla.png" alt="Tapabocas">
-                    </a>
-                    </div>
+                    <% for (product of destacados) { %> 
+                    <article class ="product col">
+                        <div class= "img-box">
+                            <a href="'/<%= product.id %> /detail'">                               
+                              <img  src="../img/<%= product.image %> " alt="<%= product.name %> ">
+                            </a>    
+                         </div>
                         <div class="main-article1">
-                            <h3 class ="price">$250</h3>
-                            <h4 class= "payment-method">Hasta 3 cuotas</h4>
-                            <h4 class= "description">Tapabocas (distinto colores y modelos)</h4>
+                            <h3 class="price">$ <%= product.price %> </h3>
+                            <h4 class="payment-method">Hasta <%= product.payment %>  cuotas</h4>
+                            <h4 class="description"><%= product.name %> </h4>
                         </div>
-                </article>
-
-                <article class="product col">
-                    <div class ="img-box">
-                        <a href="/product/productDetail">
-                        <img  src="../img/img1-A-pinturaArtesanalAcrílico.png" alt="Pintura Artesanal en acrílico">
-                    </a>
-                    </div>
-                        <div class ="main-article1">
-                            <h3 class ="price">$6500</h3>
-                            <h4 class= "payment-method">Hasta 12 cuotas</h4>
-                            <h4 class= "description">Cuadro Abstracto en Acrílico</h4>
-                        </div>
-                </article>
-
-                <article class="product col">
-                    <div class ="img-box">
-                        <a href="/product/productDetail">
-                        <img src="../img/img2-A-linoleografía.png" alt="Linoleografía">
-                    </a>
-                    </div>
-                        <div class= "main-article1">
-                            <h3 class ="price">$7.500</h3>
-                            <h4 class= "payment-method">10% off</h4>
-                            <h4 class= "description">Linoleografía</h4>
-                        </div>
-                </article>
-
-                <article class="product col">
-                    <div class ="img-box">
-                        <a href="/product/productDetail">
-                        <img  src="../img/img2-C-accesorioCabello.png" alt="Turbante chic tejido a mano">
-                    </a>
-                    </div>
-                        <div class="main-article1">
-                            <h3 class ="price">$1500</h3>
-                            <h4 class= "payment-method">15% off</h4>
-                            <h4 class= "description">Turbante chic tejido artesanal</h4>
-                        </div>
-                </article>
-
-            </section>
+                    </article> 
+                    <% }  %>
+                </section>
         </main>
 
         <!-- ICON -->
