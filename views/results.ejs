@@ -7,24 +7,23 @@
 
         <body> 
             <%- include ('./partials/header') %>
-            <h2>RESULTADOS DE BÚSQUEDA</h2>
+            <h2 style="margin-top: 150px">RESULTADOS DE BÚSQUEDA:<%= search %></h2>
             <main class= "container row">
-                <section class="container column">
+                <section class= "container row">
                     <% if (products.length) { %>
                         <% for (product of products) { %>
-                <section class="container row">
-                    <article class ="product col">
-                        <div class= "img-box">
-                    <a href="'/<%=product.id %> /detail'">
-                        <img  src="../img/<%=product.image %> " alt="<%= product.name %> ">
-                    </a>    
-                    </div>
-                        <div class="main-article1">
-                            <h3 class="price">$ <%= product.price %> </h3>
-                            <h4 class="payment-method">Hasta <%= product.payment %>cuotas</h4>
-                            <h4 class="description"><%= product.name %> </h4>
-                        </div>
-                    </article>
+                            <article class ="product col">
+                                <div class= "img-box">
+                                    <a href="'/<%= product.id %> /detail'">                               
+                                      <img  src="../img/<%= product.image %> " alt="<%= product.name %> ">
+                                    </a>    
+                                 </div>
+                                <div class="main-article1">
+                                    <h3 class="price">$ <%= product.price %> </h3>
+                                    <h4 class="payment-method">Hasta <%= product.payment %>  cuotas</h4>
+                                    <h4 class="description"><%= product.name %> </h4>
+                                </div>
+                            </article> 
                 </section>
             </div>
             <% } %>	
