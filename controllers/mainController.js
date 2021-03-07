@@ -13,6 +13,16 @@ const mainController = {
 		res.render('index', {destacados, vendidos})	
     },
 
+    search: (req, res) => {
+		const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+		let search = req.query.keywords;
+		let productsToSearch = products.filter(product => product.name.toLowerCase().includes(search));	
+		res.render('results', { 
+			products: productsToSearch, 
+			search,
+		});
+	},
+
     login:(req,res) => {
         res.render('login');
     },

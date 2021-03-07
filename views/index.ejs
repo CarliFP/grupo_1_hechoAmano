@@ -49,24 +49,25 @@
         <main class="row">
 
                 <div class="container row subtitle">
-                    <h2>Los más vendidos</h2>
+                    <h2>Los más vendidos </h2>
                 </div>
 
                 <section class="container row">
-                    <% for (product of vendidos) { %> 
-                        <article class ="product col">
-                            <div class= "img-box">
-                                <a href="'/<%= product.id %> /detail'">                               
-                                  <img  src="../img/<%= product.image %> " alt="<%= product.name %> ">
-                                </a>    
-                             </div>
-                            <div class="main-article1">
-                                <h3 class="price">$ <%= product.price %> </h3>
-                                <h4 class="payment-method">Hasta <%= product.payment %>  cuotas</h4>
-                                <h4 class="description"><%= product.name %> </h4>
-                            </div>
-                        </article> 
-                        <% } %> 
+                    
+                    <% for (let i = 0; i < (vendidos.length > 4 ? 4 : vendidos.length); i++) { %> 
+                    <article class ="product col">
+                        <div class= "img-box">
+                            <a href="'/<%= vendidos[i].id %> /detail'">                               
+                              <img  src="../img/<%= vendidos[i].image %> " alt="<%= vendidos[i].name %> ">
+                            </a>    
+                         </div>
+                        <div class="main-article1">
+                            <h3 class="price">$ <%= vendidos[i].price %> </h3>
+                            <h4 class="payment-method">Hasta <%= vendidos[i].payment %>  cuotas</h4>
+                            <h4 class="description"><%= vendidos[i].name %> </h4>
+                        </div>
+                    </article> 
+                    <% } %> 
                 </section>
 
                     <div class="container row subtitle">
@@ -137,20 +138,21 @@
                 
                 <section class="container row">
 
-                    <% for (product of destacados) { %> 
-                    <article class ="product col">
-                        <div class= "img-box">
-                            <a href="'/<%= product.id %> /detail'">                               
-                              <img  src="../img/<%= product.image %> " alt="<%= product.name %> ">
-                            </a>    
-                         </div>
-                        <div class="main-article1">
-                            <h3 class="price">$ <%= product.price %> </h3>
-                            <h4 class="payment-method">Hasta <%= product.payment %>  cuotas</h4>
-                            <h4 class="description"><%= product.name %> </h4>
-                        </div>
-                    </article> 
-                    <% }  %>
+                    <% for (let i = 0; i < (vendidos.length > 4 ? 4 : vendidos.length); i++) { %> 
+                        <article class ="product col">
+                            <div class= "img-box">
+                                <a href="'/<%= destacados[i].id %> /detail'">                               
+                                  <img  src="../img/<%= destacados[i].image %> " alt="<%= destacados[i].name %> ">
+                                </a>    
+                             </div>
+                            <div class="main-article1">
+                                <h3 class="price">$ <%= destacados[i].price %> </h3>
+                                <h4 class="payment-method">Hasta <%= destacados[i].payment %>  cuotas</h4>
+                                <h4 class="description"><%= destacados[i].name %> </h4>
+                            </div>
+                        </article> 
+                        <% } %> 
+
                 </section>
         </main>
 
