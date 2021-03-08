@@ -14,14 +14,14 @@
 
         <section>
             <div class="productCategory">
-                <a href="#"><%= product.category %></a> > <a href="#"><%= product.name %> </a>
+                <a href="#"></a><%= product.category %></a> > <a href="#"><%= product.name %> </a>
             </div>
         </section>
 
         <!-- Producto al que ingreso -->
         <section class="mainProduct">
             <article>
-                <img class="mainProductImage" src= "../img/<%= product.image%>">
+                <img class="mainProductImage" src="../img/<%= product.image %>">
             </article>  
                 <div class="descriptionFields">
                     <div class="productName"> 
@@ -49,10 +49,10 @@
 
             <article class="productDescription">
                 <div class="productPrice"> 
-                    <a href ="#"><h3 class="price-detail">$ <% product.price %> </h3></a>
+                   <h3 class="price-detail">$ <%= product.price %></h3>
                 </div>
                 <div class="paymentMethods">
-                    <a href="#">Hasta <%= product.payment %> cuotas sin interés</a>
+                    Hasta <%= product.payment %> cuotas sin interés
                 </div>
                 <div class ="bannerMl">
                      <img src="https://imgmp.mlstatic.com/org-img/banners/ar/medios/125X125.jpg" 
@@ -61,14 +61,14 @@
                 </div>
 
                 <div class="productDescription">
-                    <p class="description"><%= product.description %> </p>
+                    <p class="description"><%= product.description %></p>
                 </div>
     
                 <div>
                    <ul class="deliveryDetails">
-                        <li class="seller">Vendedor: <a href="#"><% product.seller %> </a></li>
-                        <li class="stock">Stock: <a href ="#">disponible <%= product.stock %>  unidades</a></li>
-                        <li class="shippingCost">Envio a domicilio: <a href ="#">$ <%= product.shipping %> </a></li>
+                        <li class="seller">Vendedor: <% product.seller %></li>
+                        <li class="stock">Stock: disponible <%= product.stock %>  unidades</li>
+                        <li class="shippingCost">Envio a domicilio: $ <%= product.shipping %></li>
                     </ul> 
                 </div>
 
@@ -102,6 +102,14 @@
                 </form>
             </div>
         </section>
+        <div>
+        <h4>SECCIÓN SOLO DISPONIBLE PARA EL ADMINISTRADOR</h4>
+        <a href="/products/edit/<%= product.id %>" class="action-button edit"><button style= "background: blue; color: white">EDITAR PRODUCTO</button></a>
+						<form action="/products/<%= product.id %>?_method=DELETE" method="POST">
+							<button style= "background: tomato; color: white" type="submit" class="action-button delete">ELIMINAR</button>
+                            <p>Atención! La acción de eliminar es irrreversible</p>
+						</form>
+        </div>
         <!-- Productos relacionados -->
 
         <div class="container row subtitle">
@@ -124,10 +132,10 @@
                         <h4 class="description"><%= product[i].name %> </h4>
                     </div>
                 </article> 
-                <% } %> 
-
-           
+                <% } %>
         </section>
+        
+
     </main>
 
     <!-- ICON -->

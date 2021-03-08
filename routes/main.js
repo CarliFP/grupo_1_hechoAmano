@@ -13,7 +13,7 @@ router.get('/register', mainController.register);
 
 router.get('/product', mainController.todos);
 
-
+router.get('/listEdit', mainController.todos);
 
 router.get('/accesorios', mainController.accesorios);
 

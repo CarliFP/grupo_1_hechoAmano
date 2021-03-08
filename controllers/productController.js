@@ -57,12 +57,61 @@ const productController = {
 		res.redirect('/product'); 
 	},
 
-    edit: (req,res) => {
-        
-    },
-    update: (req,res) => {
-       
-    },
+    edit: (req, res) => {
+		let productId = req.params.id
+		let productToEdit = products.find(product => product.id == req.params.id);
+		res.render('productEdit',{productToEdit, productId});
+	},
+
+    update: (req, res) => {
+
+		const productsData = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+
+		let id = req.params.id;
+		let productToEdit = productsData.find(product => product.id == id)
+		let image;
+
+		if(req.file != undefined) {
+			image = req.file.filename;
+		}
+		else {
+			image = productToEdit.image; 
+		};
+
+		productToEdit.name = req.body.name
+		productToEdit.id = parseInt(req.params.id)
+		productToEdit.image = image
+		productToEdit.price = parseInt(req.body.price)
+		productToEdit.discount = parseInt(req.body.discount)
+		productToEdit.category = req.body.category
+		productToEdit.description = req.body.description
+
+		/*
+		productToEdit = {
+			id: productToEdit.id,
+			...req.body,
+			image: image,
+	
+		}
+		*/
+
+		/*
+		let newProducts =  products.map(product => {
+			if (product.id == productToEdit.id) {
+				return product = {...productToEdit};
+			}
+			return product;
+		})
+			*/
+
+	
+
+		//fs.writeFileSync(productsFilePath, JSON.stringify(newProducts, null, ' ')); 
+		//res.redirect('/'); 
+
+		fs.writeFileSync(productsFilePath, JSON.stringify(products, null, ' ')); 
+		res.send('Producto Editado');
+	},
     destroy: (req,res) => {
        
     },
