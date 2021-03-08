@@ -11,6 +11,24 @@ router.get('/login', mainController.login);
 
 router.get('/register', mainController.register);
 
+router.get('/product', mainController.todos);
+
+
+
+router.get('/accesorios', mainController.accesorios);
+
+router.get('/arte', mainController.arte);
+
+router.get('/hogar', mainController.hogar);
+
+router.get('/juegos', mainController.juegos);
+
+router.get('/cosmetica', mainController.cosmetica);
+
+router.get('/vestimenta', mainController.vestimenta);
+
 router.get('/404', mainController.notFound);
+
+
 
 module.exports = router;

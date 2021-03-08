@@ -1,6 +1,11 @@
-const express = require ('express');
-const path = require ('path');
+const express = require('express');
+const path = require('path');
 const app = express(); 
+// ************ Require's ************
+const createError = require('http-errors');
+//const cookieParser = require('cookie-parser');
+//const logger = require('morgan');
+const methodOverride =  require('method-override'); // Pasar poder usar los métodos PUT y DELETE
 
 //routes
 const routesMain = require ('./routes/main.js');
@@ -17,6 +22,12 @@ const routesUsers = require ('./routes/users.js');
 //routes
 
 app.set("view engine", "ejs");
+
+app.use(express.urlencoded({ extended: false }));
+//app.use(logger('dev'));
+app.use(express.json());
+//app.use(cookieParser());
+app.use(methodOverride('_method')); // Pasar poder pisar el method="POST" en el formulario por PUT y DELETE
 
 //console.log (express)
 //console.log (path)

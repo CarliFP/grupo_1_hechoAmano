@@ -29,10 +29,8 @@ router.get('/create', productController.create);
 //Acción de creación (a donde se envía el formulario)
 const uploadFile = multer({storage: storage}); //aquí se almacena la ejecución
 
-//router.post('/', uploadFile.single('image'), productsController.store);
-
+router.post('/', uploadFile.single('image'), productController.store);
 //en el medio va el nombre name dado en el formulario 
-
 
 //Formulario de edición de productos
 router.get('/:id/edit', productController.edit); // puede ser edith/id cuidado de no solaparse

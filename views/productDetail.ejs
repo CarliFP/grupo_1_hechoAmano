@@ -9,23 +9,23 @@
 
     <body>
         <%- include ('./partials/header') %>
-           <!-- Categoria de producto     -->
+           <!-- Categoria de producto -->
     <main>
 
         <section>
             <div class="productCategory">
-                <a href="#">Categoria de producto</a> > <a href="#">Subcategoria</a> > <a href="#">Segmento</a> > <a href="#">Subsegmento</a> > <a href="#">Producto</a>
+                <a href="#"><%= product.category %></a> > <a href="#"><%= product.name %> </a>
             </div>
         </section>
 
         <!-- Producto al que ingreso -->
         <section class="mainProduct">
             <article>
-                <img class="mainProductImage" src="../img/img-1-C-mascarilla.png">
-            </article>
+                <img class="mainProductImage" src= "../img/<%= product.image%>">
+            </article>  
                 <div class="descriptionFields">
                     <div class="productName"> 
-                        <a href ="#"><h2>Nombre del producto</h2></a>
+                        <a href=""></a><h2><%= product.name %> </h2></a>
                     </div>
                         <div class="productRating">
                             <ul class="rating interactive-rating mb-0">
@@ -48,12 +48,11 @@
                         </div>
 
             <article class="productDescription">
-        
                 <div class="productPrice"> 
-                    <a href ="#"><h3 class="price-detail">$1.300</h3></a>
+                    <a href ="#"><h3 class="price-detail">$ <% product.price %> </h3></a>
                 </div>
                 <div class="paymentMethods">
-                    <a href="#">Hasta 6 cuotas sin interés / 5% off</a>
+                    <a href="#">Hasta <%= product.payment %> cuotas sin interés</a>
                 </div>
                 <div class ="bannerMl">
                      <img src="https://imgmp.mlstatic.com/org-img/banners/ar/medios/125X125.jpg" 
@@ -62,17 +61,17 @@
                 </div>
 
                 <div class="productDescription">
-                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                     Eos suscipit corrupti veniam assumenda aliquid distinctio voluptate amet?</p>
+                    <p class="description"><%= product.description %> </p>
                 </div>
     
                 <div>
                    <ul class="deliveryDetails">
-                        <li class="seller">Vendedor: <a href="#">El Pepe</a></li>
-                        <li class="stock">Stock: <a href ="#">disponible 5 unidades</a></li>
-                        <li class="shippingCost">Envio a domicilio: <a href ="#">$360</a></li>
+                        <li class="seller">Vendedor: <a href="#"><% product.seller %> </a></li>
+                        <li class="stock">Stock: <a href ="#">disponible <%= product.stock %>  unidades</a></li>
+                        <li class="shippingCost">Envio a domicilio: <a href ="#">$ <%= product.shipping %> </a></li>
                     </ul> 
                 </div>
+
                 
                 <div class="comprar-button">
                     <button class="button-agregar" id="questionZone" type="submit" >Agregar al carrito</button>
@@ -112,58 +111,22 @@
 
         <section class= "container row">
 
-            <article class="relatedProduct col">
-                <div class="img-box">
-                    <a href="/productDetail"></a>
-                        <img src="../img/img-1-C-mascarilla.png" alt="Tapabocas">
-                     </a>
-                </div>
-                    <div class="related-article1">
-                        <h3 class="price">$250</h3>
-                        <h4 class= "payment-method">Hasta 3 cuotas</h4>
-                        <h4 class= "description">Tapabocas (distinto colores y modelos)</h4>
+            <% for (let i = 0; i < (product.length > 4 ? 4 : product.length); i++) { %> 
+                <article class="relatedProduct col">
+                    <div class= "img-box">
+                        <a href="product/<%=product[i].id%>/detail">                               
+                          <img  src="../img/<%= product[i].image %> " alt="<%= product[i].name %> ">
+                        </a>    
+                     </div>
+                     <div class="related-article1">
+                        <h3 class="price">$ <%= product[i].price %> </h3>
+                        <h4 class="payment-method">Hasta <%= product[i].payment %>  cuotas</h4>
+                        <h4 class="description"><%= product[i].name %> </h4>
                     </div>
-            </article>
+                </article> 
+                <% } %> 
 
-            <article class="relatedProduct col">
-                <div class="img-box">
-                    <a href="/productDetail">
-                         <img  src="../img/img1-A-pinturaArtesanalAcrílico.png" alt="Pintura Artesanal en acrílico">
-                    </a>
-                </div>
-                    <div class ="related-article1">
-                        <h3 class="price">$6500</h3>
-                        <h4 class= "payment-method">Hasta 12 cuotas</h4>
-                        <h4 class= "description">Cuadro Abstracto en Acrílico</h4>
-                    </div>
-            </article>
-
-            <article class="relatedProduct col">
-                <div class="img-box">
-                    <a href="/productDetail">
-                        <img src="../img/img2-A-linoleografía.png" alt="Linoleografía">
-                    </a>
-                </div>
-                    <div class= "related-article1">
-                        <h3 class ="price">$7.500</h3>
-                        <h4 class= "payment-method">10% off</h4>
-                        <h4 class= "description">Linoleografía</h4>
-                    </div>
-            </article>
-
-            <article class="relatedProduct col">
-                <div class="img-box">
-                    <a href="/productDetail">
-                        <img  src="../img/img2-C-accesorioCabello.png" alt="Turbante chic tejido a mano">
-                    </a>
-                </div>
-                    <div class="related-article1">
-                        <h3 class ="price">$1500</h3>
-                        <h4 class= "payment-method">15% off</h4>
-                        <h4 class= "description">Turbante chic tejido artesanal</h4>
-                    </div>
-            </article>
-
+           
         </section>
     </main>
 

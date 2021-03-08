@@ -57,7 +57,7 @@
                     <% for (let i = 0; i < (vendidos.length > 4 ? 4 : vendidos.length); i++) { %> 
                     <article class ="product col">
                         <div class= "img-box">
-                            <a href="'/<%= vendidos[i].id %> /detail'">                               
+                            <a href="product/<%=vendidos[i].id%>/detail">                               
                               <img  src="../img/<%= vendidos[i].image %> " alt="<%= vendidos[i].name %> ">
                             </a>    
                          </div>
@@ -141,7 +141,7 @@
                     <% for (let i = 0; i < (vendidos.length > 4 ? 4 : vendidos.length); i++) { %> 
                         <article class ="product col">
                             <div class= "img-box">
-                                <a href="'/<%= destacados[i].id %> /detail'">                               
+                                <a href="product/<%=destacados[i].id%>/detail">                                
                                   <img  src="../img/<%= destacados[i].image %> " alt="<%= destacados[i].name %> ">
                                 </a>    
                              </div>
