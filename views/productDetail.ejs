@@ -21,7 +21,7 @@
         <!-- Producto al que ingreso -->
         <section class="mainProduct">
             <article>
-                <img class="mainProductImage" src="../img/<%= product.image %>">
+                <img src="/img/<%= product.image %>" class="mainProductImage">
             </article>  
                 <div class="descriptionFields">
                     <div class="productName"> 
@@ -104,8 +104,8 @@
         </section>
         <div>
         <h4>SECCIÓN SOLO DISPONIBLE PARA EL ADMINISTRADOR</h4>
-        <a href="/products/edit/<%= product.id %>" class="action-button edit"><button style= "background: blue; color: white">EDITAR PRODUCTO</button></a>
-						<form action="/products/<%= product.id %>?_method=DELETE" method="POST">
+        <a href="/product/<%= product.id %>/edit?_method=EDIT" class="action-button edit"><button style= "background: blue; color: white">EDITAR PRODUCTO</button></a>
+						<form action="/product/<%= product.id %>?_method=DELETE" method="POST">
 							<button style= "background: tomato; color: white" type="submit" class="action-button delete">ELIMINAR</button>
                             <p>Atención! La acción de eliminar es irrreversible</p>
 						</form>
