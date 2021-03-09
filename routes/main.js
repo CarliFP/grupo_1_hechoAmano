@@ -17,6 +17,9 @@ router.get('/listEdit', mainController.todos);
 
 
 /*CATEGORIAS*/ 
+
+router.get('/vestimenta', mainController.vestimenta);
+
 router.get('/accesorios', mainController.accesorios);
 
 router.get('/arte', mainController.arte);
@@ -26,8 +29,6 @@ router.get('/hogar', mainController.hogar);
 router.get('/juegos', mainController.juegos);
 
 router.get('/cosmetica', mainController.cosmetica);
-
-router.get('/vestimenta', mainController.vestimenta);
 
 /*NOT FOUND*/ 
 
