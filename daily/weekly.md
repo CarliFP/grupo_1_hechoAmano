@@ -17,9 +17,9 @@ Weekly 3-3-2021 <br>
 :three: Continuar profundizando los conocimientos adquiridos para poder aplicarlos correctamente. <br>
 
 :white_check_mark: Neri <br>
-:one: <br>
-:two:  <br>
-:three: <br>
+:one: Me encargué de cargar los JSON ya que son indispensables para el trabajo de mis compañeros.<br>
+:two: Determiné que hay temas y procesos con los que no me afiancé aún así que preferí dejar esa tarea a otros compañeros para no ralentizar el proceso del proyecto.  <br>
+:three:En base al tiempo que pude aportar y los conocimientos que pude absorber elegí hacer tareas más simples sin dejar de dar soporte a mis compañeros cuando lo necesitaban. <br>
 
 
 <br>
