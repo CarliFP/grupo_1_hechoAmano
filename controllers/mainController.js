@@ -25,23 +25,25 @@ const mainController = {
 		res.render('product', {products})
     },
 
-    arte: (req, res) => {
-        const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
-        let arte = products.filter(product => product.category == 'arte'); 
-		res.render('arte', {arte})
-    },
 
     /*CATEGORIAS FALTA CREAR LAS VIEWS AUN NO FUNCIONA*/ 
+
+    arte: (req, res) => {
+        const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+        let product = products.filter(product => product.category == 'arte'); 
+		res.render('arte', {product})
+    },
+
     accesorios: (req, res) => {
         const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
-        let accesorios = products.filter(product => product.category == 'accesorios'); 
-		res.render('accesorios', {accesorios})
+        let product = products.filter(product => product.category == 'accesorios'); 
+		res.render('accesorios', {product})
     },
 
     hogar: (req, res) => {
         const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
-        let hogar = products.filter(product => product.category == 'hogar'); 
-		res.render('hogar', {hogar})
+        let product = products.filter(product => product.category == 'hogar'); 
+		res.render('hogar', {product, products})
     },
     juegos: (req, res) => {
         const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
@@ -51,14 +53,14 @@ const mainController = {
 
     cosmetica: (req, res) => {
         const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
-        let cosmetica = products.filter(product => product.category == 'cosmetica'); 
-		res.render('cosmetica', {cosmetica})
+        let product = products.filter(product => product.category == 'cosmetica'); 
+		res.render('cosmetica', {product})
     },
 
     vestimenta: (req, res) => {
         const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
-        let cosmetica = products.filter(product => product.category == 'ropa-y-calzado'); 
-		res.render('vestimenta', {vestimenta})
+        let product = products.filter(product => product.category == 'ropa-y-calzado'); 
+		res.render('vestimenta', {product})
     },
 
     login:(req,res) => {

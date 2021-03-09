@@ -46,9 +46,17 @@ const productController = {
 			imagen = 'default-image-png.png'
 		}
 		else {
-			imagen = req.file.file;
+			imagen = req.file.filename;
 		}
-		nuevoProducto.imagen = imagen;
+
+			var propValue;
+			for(var propName in imagen) {
+				propValue = imagen[propName]
+			
+				console.log(propName,propValue);
+			}
+
+		nuevoProducto.image = imagen;
 		
 		products.push(nuevoProducto); 
 
