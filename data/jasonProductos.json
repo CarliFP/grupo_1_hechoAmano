@@ -348,7 +348,6 @@
   "stock": 2,
   "shipping": 340,
   "payment": 3
-<<<<<<< HEAD
  },
  {
   "name": "dada",
@@ -390,7 +389,5 @@
   "description": "nada",
   "id": 28,
   "discount": null
-=======
->>>>>>> c806cbe15afe77cfa63bded4088898f8e3d05cac
  }
 ]
