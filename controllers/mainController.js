@@ -26,7 +26,7 @@ const mainController = {
     },
 
 
-    /*CATEGORIAS FALTA CREAR LAS VIEWS AUN NO FUNCIONA*/ 
+    /*CATEGORIAS*/ 
 
     arte: (req, res) => {
         title = 'ARTE'; 
@@ -77,8 +77,10 @@ const mainController = {
         res.render('register');
     },
 
+    /*ERROR 404 AUN NO PROBADA*/ 
+
     notFound:(req, res) => {
-        res.render("Error página no encontrada", 404);
+        res.render('ERROR PÁGINA NO ENCONTRADA', 404);
 }
 }
 
