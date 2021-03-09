@@ -49,12 +49,12 @@ const productController = {
 			imagen = req.file.filename;
 		}
 
-			var propValue;
+			/*var propValue;
 			for(var propName in imagen) {
 				propValue = imagen[propName]
 			
 				console.log(propName,propValue);
-			}
+			}*/
 
 		nuevoProducto.image = imagen;
 		
@@ -87,14 +87,15 @@ const productController = {
 			image: image,
 		};
 		
-		let newProducts = products.map(product => {
+	
+		let nuevoProducto = products.map(product => {
 			if (product.id == productToEdit.id) {
 				return product = {...productToEdit};
 			}
 			return product;
 		})
 
-		fs.writeFileSync(productsFilePath, JSON.stringify(newProducts, null, ' '));
+		fs.writeFileSync(productsFilePath, JSON.stringify(nuevoProducto, null, ' '));
 		res.redirect('/product');
 	},
     

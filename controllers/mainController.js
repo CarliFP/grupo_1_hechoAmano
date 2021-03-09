@@ -29,38 +29,44 @@ const mainController = {
     /*CATEGORIAS FALTA CREAR LAS VIEWS AUN NO FUNCIONA*/ 
 
     arte: (req, res) => {
+        title = 'ARTE'; 
         const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
         let product = products.filter(product => product.category == 'arte'); 
-		res.render('arte', {product})
+		res.render('category', {product})
     },
 
     accesorios: (req, res) => {
+        title = "ACCESORIOS"; 
         const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
         let product = products.filter(product => product.category == 'accesorios'); 
-		res.render('accesorios', {product})
+		res.render('category', {product})
     },
 
     hogar: (req, res) => {
+        title = "HOGAR"; 
         const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
         let product = products.filter(product => product.category == 'hogar'); 
-		res.render('hogar', {product, products})
+		res.render('category', {product})
     },
     juegos: (req, res) => {
+        title = "JUEGOS"; 
         const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
-        let juegos = products.filter(product => product.category == 'juegos'); 
-		res.render('juegos', {juegos})
+        let product = products.filter(product => product.category == 'juegos'); 
+		res.render('category', {product})
     },
 
     cosmetica: (req, res) => {
+        title = "COSMÉTICA"; 
         const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
         let product = products.filter(product => product.category == 'cosmetica'); 
-		res.render('cosmetica', {product})
+		res.render('category', {product})
     },
 
     vestimenta: (req, res) => {
+        title = "ROPA Y CALZADO"
         const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
         let product = products.filter(product => product.category == 'ropa-y-calzado'); 
-		res.render('vestimenta', {product})
+		res.render('category', {product})
     },
 
     login:(req,res) => {
