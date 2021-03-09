@@ -105,7 +105,7 @@
         <div>
         <h4>SECCIÓN SOLO DISPONIBLE PARA EL ADMINISTRADOR</h4>
         <a href="/product/<%= product.id %>/edit?_method=EDIT" class="action-button edit"><button style= "background: blue; color: white">EDITAR PRODUCTO</button></a>
-						<form action="/product/<%= product.id %>?_method=DELETE" method="POST">
+						<form action="/product/<%= product.id %>/delete?_method=DELETE" method="POST" >
 							<button style= "background: tomato; color: white" type="submit" class="action-button delete">ELIMINAR</button>
                             <p>Atención! La acción de eliminar es irrreversible</p>
 						</form>
