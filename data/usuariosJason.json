@@ -1,0 +1,41 @@
+[
+    {
+     "id": 1,
+     "name": "Neri Cardozo",
+     "user": "Neri",
+     "email": "neri1412@hotmail.com",
+     "birth_date": "2000-09-15",
+     "addres":"Cisneros 5552",
+     "profile": "sell",
+     "interests": "Accesorios",
+     "image": " ",
+     "pass": "admin123",
+     "pass_confirm": "admin123"
+    },    
+    {
+    "id": 2,
+    "name": "Carla Pons",
+    "user": "Carli",
+    "email": "carlafreschpons@gmail.com@hotmail.com",
+    "birth_date": "2000-01-01",
+    "addres":"Calle falsa 123",
+    "profile": "sell",
+    "interests": "Accesorios",
+    "image": " ",
+    "pass": "admin123",
+    "pass_confirm": "admin123"
+    },
+    {
+    "id": 3,
+    "name": "Emanuel Mercado",
+    "user": "Ema",
+    "email": "ema150798@gmail.com",
+    "birth_date": "2000-01-01",
+    "addres":"Calle falsa 123",
+    "profile": "sell",
+    "interests": "Accesorios",
+    "image": " ",
+    "pass": "admin123",
+    "pass_confirm": "admin123"
+    }
+] 
