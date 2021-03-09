@@ -1,10 +1,10 @@
 [
  {
   "id": 1,
-  "name": "Pintura de acrílico artesanal",
-  "seller": "Carla López ",
-  "price": "",
-  "stock": "",
+  "name": "Pintura de acrílico artesanal ",
+  "seller": "Carla López  ",
+  "price": "1000",
+  "stock": "78",
   "shipping": "",
   "payment": "",
   "category": "arte",
@@ -28,17 +28,16 @@
  },
  {
   "id": 3,
-  "name": "Palo santo",
-  "price": 100,
-  "discount": 50,
+  "name": "Palo santo!!! nuevo",
+  "seller": "José López ",
+  "price": "456",
+  "stock": "",
+  "shipping": "",
+  "payment": "",
   "category": "hogar",
-  "status": "destacados",
-  "description": "Palo santo",
+  "status": "",
   "image": "img1-h-paloSanto.png",
-  "seller": "José López",
-  "stock": 2,
-  "shipping": 340,
-  "payment": 3
+  "description": ""
  },
  {
   "id": 4,
@@ -348,32 +347,16 @@
   "payment": 3
  },
  {
-  "name": "dada",
-  "seller": "dd",
-  "price": 45,
-  "stock": 56,
-  "shipping": 45,
-  "payment": 45,
-  "category": "arte",
-  "status": "destacados",
-  "description": "dadad",
-  "id": 26,
-  "discount": null,
-  "imagen": "default-image.png"
- },
- {
-  "name": "Nada",
-  "seller": "Ema",
-  "price": 500,
-  "stock": 5,
-  "shipping": 500,
-  "payment": 12,
-  "category": "accesorios",
-  "status": "vendidos",
-  "description": "Esta es una prueba del creator.",
   "id": 27,
-  "discount": null,
-  "imagen": "default-image.png"
+  "name": "Nada  de Nada !!! ",
+  "seller": "Ema  ",
+  "price": "",
+  "stock": "",
+  "shipping": "",
+  "payment": "",
+  "category": "accesorios",
+  "status": "",
+  "description": ""
  },
  {
   "name": "fdg",

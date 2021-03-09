@@ -1,32 +1,32 @@
 
-:two: RETROSPECTIVA SPRINT 3
+:three: RETROSPECTIVA SPRINT 3 <br>
 
-:bookmark: Método Starfish:
+:bookmark: Método Starfish:<br>
 
-:exclamation: Start doing 
+:exclamation: Start doing <br>
 <!--cosas innovadoras, aquellas que por curiosidad que queremos probar y/o soluciones comprobadas que deberíamos usar-->
-1.- 
+1.- No tenemos nuevas soluciones a implementar. 
 
-:exclamation: More of: 
+:exclamation: More of: <br>
 <!--practicas que creemos que requiere más refinamiento y que nos gustan mucho por ello hay que darles más-->
 1.- Continuar mejorando la periodicidad de los scrums diarios (sigue siendo un punto a mejorar desde el último sprint).
 
-:exclamation: Keep Doing: 
+:exclamation: Keep Doing: <br>
 <!--aquello que venimos haciendo y nos brinda valor-->
 1.- La división de tareas por Trello. <br>
-2.- Incorporar cada uno una rama para trabajar en Git. 
+2.- Incorporar cada uno una rama para trabajar en Git. <br>
 
-:exclamation: Less of: 
+:exclamation: Less of: <br>
 <!--aquello que no nos aporta el valor que esperábamos-->
-1.- No encontramos nada que no nos aporte el valor esperado.
+1.- No encontramos nada que no nos aporte el valor esperado.<br>
 
-:exclamation: Stop Doing: 
+:exclamation: Stop Doing: <br>
 <!--aquello que podemos eliminar-->
-1.-  Evitar dilaciones en la asignación de las tareas una vez inicia el sprint. 
+1.-  Evitar dilaciones en la asignación de las tareas una vez inicia el sprint. <br>
 
-:white_check_mark: Conclusión: Nuestro desafío será seguir manteniendo el entusiasmo y motivación en este sprint donde las tareas incrementan su complejidad,y además están entrelazadas y debemos trabajar coordinadamente para el éxito del proyecto. 
+:white_check_mark: Conclusión: Nuestro desafío será seguir manteniendo el entusiasmo y motivación en este sprint donde las tareas incrementan su complejidad,y además están entrelazadas y debemos trabajar coordinadamente para el éxito del proyecto. <br>
 
-:star: Tablero para el Sprint 3: https://trello.com/b/9968OLoZ/sprint-4
+:star: Tablero para el Sprint 4: https://trello.com/b/9968OLoZ/sprint-4 <br>
 
 <br>
 <br>

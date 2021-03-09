@@ -66,7 +66,7 @@ const productController = {
 		let id = req.params.id;
 		let productToEdit = products.find(product => product.id == id)
 		let image
-		
+
 		if(req.file != undefined){
 			image = req.file.filename
 		} else {
@@ -87,7 +87,7 @@ const productController = {
 		})
 
 		fs.writeFileSync(productsFilePath, JSON.stringify(newProducts, null, ' '));
-		res.redirect('/');
+		res.redirect('/product');
 	},
     
   	destroy : (req, res) => {

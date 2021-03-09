@@ -9,7 +9,7 @@ Weekly 3-3-2021 <br>
 :white_check_mark: Emanuel <br>
 :one: Ayude con la organizacion interna del proyecto, aportando la mayor cantidad de asistencia posible. <br>
 :two: Profundizar lo maximo posible en todos los conceptos y procedimentos para poder aportar mayor asistencia tecnica dentro del grupo. <br>
-:three: No dedicarle el tiempo que descearia al proyecto, me impulsa a usar el poco tiempo libre de manera mas eficiente. <br>
+:three: No dedicarle el tiempo que desearia al proyecto, me impulsa a usar el poco tiempo libre de manera mas eficiente. <br>
 
 :white_check_mark: Carla <br>
 :one: Organice las tareas que tengo asignadas para poder cumplimentarlas en tiempo y forma. <br>
