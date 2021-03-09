@@ -1,17 +1,16 @@
 [
  {
   "id": 1,
-  "name": "Pintura de acrílico",
-  "price": 100,
-  "discount": 50,
+  "name": "Pintura de acrílico artesanal",
+  "seller": "Carla López ",
+  "price": "",
+  "stock": "",
+  "shipping": "",
+  "payment": "",
   "category": "arte",
-  "status": "destacados",
-  "description": "Pintura de acrílico",
+  "status": "",
   "image": "img1-A-pinturaArtesanalAcrílico.png",
-  "seller": "José López",
-  "stock": 2,
-  "shipping": 340,
-  "payment": 3
+  "description": ""
  },
  {
   "id": 2,
@@ -77,7 +76,7 @@
   "category": "arte",
   "status": "destacados",
   "description": "Linoleografía",
-  "image": "img2-A-linoleografia.png",
+  "image": "img2-A-linoleografía.png",
   "seller": "José López",
   "stock": 2,
   "shipping": 340,
@@ -169,17 +168,16 @@
  },
  {
   "id": 13,
-  "name": "Cuero cabello?",
-  "price": 100,
-  "discount": 50,
+  "name": "Hebilla Cuero cabello",
+  "seller": "José López ",
+  "price": "",
+  "stock": "",
+  "shipping": "",
+  "payment": "",
   "category": "cosmetica",
-  "status": "vendidos",
-  "description": "Cuero cabello?",
+  "status": "",
   "image": "img3-C-cueroCabello.png",
-  "seller": "José López",
-  "stock": 2,
-  "shipping": 340,
-  "payment": 3
+  "description": ""
  },
  {
   "id": 14,

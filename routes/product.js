@@ -33,10 +33,10 @@ router.post('/', uploadFile.single('image'), productController.store);
 //en el medio va el nombre name dado en el formulario 
 
 //Formulario de edición de productos
-router.get('/edit/:id', productController.edit); // puede ser edith/id cuidado de no solaparse
+router.get('/:id/edit', productController.edit); // puede ser edith/id cuidado de no solaparse
 
 //Acción de edición (a donde se envía el formulario):
-router.put('/:id', productController.update); 
+router.put('/:id/put', productController.update); 
 
 //Acción de borrado
 router.delete('/:id/delete', productController.destroy); 
