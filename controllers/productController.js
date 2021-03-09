@@ -95,15 +95,13 @@ const productController = {
 
 	},
     
-    destroy: (req,res) => {
-       
-    },
-
-    //cart:(req,res) => {
-        //res.render('productCart');
-    //},
-    
-
-}
+  	destroy : (req, res) => {
+		let id =  req.params.id;
+		let finalProducts = products.filter(product=> product.id != id);
+		fs.writeFileSync(productsFilePath, JSON.stringify(finalProducts, null, ' ')); 
+		//res.send('Producto eliminado');
+		res.redirect('/'); 
+		}
+    }
 
 module.exports = productController;

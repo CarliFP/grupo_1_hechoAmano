@@ -348,19 +348,5 @@
   "stock": 2,
   "shipping": 340,
   "payment": 3
- },
- {
-  "name": "dada",
-  "seller": "dd",
-  "price": 45,
-  "stock": 56,
-  "shipping": 45,
-  "payment": 45,
-  "category": "arte",
-  "status": "destacados",
-  "description": "dadad",
-  "id": 26,
-  "discount": null,
-  "imagen": "default-image.png"
  }
 ]
