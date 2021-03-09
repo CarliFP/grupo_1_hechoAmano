@@ -43,7 +43,7 @@ const productController = {
 		let imagen; 
 		
 		if (!req.file) {
-			imagen = 'default-image.png'
+			imagen = 'default-image-png.png'
 		}
 		else {
 			imagen = req.file.file;
