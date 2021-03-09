@@ -15,6 +15,8 @@ router.get('/product', mainController.todos);
 
 router.get('/listEdit', mainController.todos);
 
+
+/*CATEGORIAS*/ 
 router.get('/accesorios', mainController.accesorios);
 
 router.get('/arte', mainController.arte);
@@ -26,6 +28,8 @@ router.get('/juegos', mainController.juegos);
 router.get('/cosmetica', mainController.cosmetica);
 
 router.get('/vestimenta', mainController.vestimenta);
+
+/*NOT FOUND*/ 
 
 router.get('/404', mainController.notFound);
 

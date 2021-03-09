@@ -118,12 +118,11 @@
             
 
         <section class= "container row">
-
             <% for (let i = 0; i < (product.length > 4 ? 4 : product.length); i++) { %> 
                 <article class="relatedProduct col">
                     <div class= "img-box">
                         <a href="product/<%=product[i].id%>/detail">                               
-                          <img  src="../img/<%= product[i].image %> " alt="<%= product[i].name %> ">
+                          <img  src= "/img/<%= product[i].image %> " alt="<%= product[i].name %> ">
                         </a>    
                      </div>
                      <div class="related-article1">
@@ -134,8 +133,6 @@
                 </article> 
                 <% } %>
         </section>
-        
-
     </main>
 
     <!-- ICON -->

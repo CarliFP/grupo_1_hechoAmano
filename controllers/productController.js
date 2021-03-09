@@ -4,7 +4,6 @@ const fs = require('fs');
 const { parse } = require("path");
 
 const productsFilePath = path.join(__dirname, '../data/jasonProductos.json');
-
 const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
 const productController = {
@@ -78,40 +77,24 @@ const productController = {
 			image = productToEdit.image; 
 		};
 
+        productToEdit.id = parseInt(req.params.id)
 		productToEdit.name = req.body.name
-		productToEdit.id = parseInt(req.params.id)
-		productToEdit.image = image
+        productToEdit.image = image
 		productToEdit.price = parseInt(req.body.price)
 		productToEdit.discount = parseInt(req.body.discount)
-		productToEdit.category = req.body.category
-		productToEdit.description = req.body.description
-
-		/*
-		productToEdit = {
-			id: productToEdit.id,
-			...req.body,
-			image: image,
-	
-		}
-		*/
-
-		/*
-		let newProducts =  products.map(product => {
-			if (product.id == productToEdit.id) {
-				return product = {...productToEdit};
-			}
-			return product;
-		})
-			*/
-
-	
-
-		//fs.writeFileSync(productsFilePath, JSON.stringify(newProducts, null, ' ')); 
-		//res.redirect('/'); 
+        productToEdit.category = req.body.category
+        productToEdit.description = req.body.description
+        productToEdit.seller = req.body.seller
+        productToEdit.stock = parseInt(req.body.stock)
+        productToEdit.shipping = parseInt(req.body.shipping)
+        productToEdit.payment = parseInt(req.body.payment)
+        nuevoProducto.status = req.body.status
 
 		fs.writeFileSync(productsFilePath, JSON.stringify(products, null, ' ')); 
-		res.send('Producto Editado');
+        res.redirect('/product'); 
+
 	},
+    
     destroy: (req,res) => {
        
     },
