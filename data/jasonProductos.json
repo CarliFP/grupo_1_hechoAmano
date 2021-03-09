@@ -362,5 +362,32 @@
   "id": 26,
   "discount": null,
   "imagen": "default-image.png"
+ },
+ {
+  "name": "Nada",
+  "seller": "Ema",
+  "price": 500,
+  "stock": 5,
+  "shipping": 500,
+  "payment": 12,
+  "category": "accesorios",
+  "status": "vendidos",
+  "description": "Esta es una prueba del creator.",
+  "id": 27,
+  "discount": null,
+  "imagen": "default-image.png"
+ },
+ {
+  "name": "fdg",
+  "seller": "Ema",
+  "price": null,
+  "stock": 54,
+  "shipping": 54,
+  "payment": 54,
+  "category": "arte",
+  "status": "",
+  "description": "nada",
+  "id": 28,
+  "discount": null
  }
 ]
