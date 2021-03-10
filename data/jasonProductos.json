@@ -358,19 +358,5 @@
   "status": "",
   "image": "1615325565955_img_.png",
   "description": ""
- },
- {
-  "name": "PRUEBA",
-  "seller": "CARLA ",
-  "price": 567,
-  "stock": 67,
-  "shipping": 65,
-  "payment": 45,
-  "category": "arte",
-  "status": "destacados",
-  "description": "DADA",
-  "id": 27,
-  "discount": null,
-  "image": "1615334920187_img_.png"
  }
 ]
