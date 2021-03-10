@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-     <head>
+        <head>
             <%- include ('./partials/head') %>
             <link href ="/css/stylesProductDetail.css" rel="stylesheet">
         </head>
@@ -102,13 +102,14 @@
                 </form>
             </div>
         </section>
+
         <div>
-        <h4>SECCIÓN SOLO DISPONIBLE PARA EL ADMINISTRADOR</h4>
-        <a href="/product/<%= product.id %>/edit?_method=EDIT" class="action-button edit"><button style= "background: blue; color: white">EDITAR PRODUCTO</button></a>
-						<form action="/product/<%= product.id %>/delete?_method=DELETE" method="POST" >
-							<button style= "background: tomato; color: white" type="submit" class="action-button delete">ELIMINAR</button>
-                            <p>Atención! La acción de eliminar es irrreversible</p>
-						</form>
+            <h4>SECCIÓN SOLO DISPONIBLE PARA EL ADMINISTRADOR</h4>
+            <a href="/product/<%= product.id %>/edit?_method=EDIT" class="action-button edit"><button style= "background: blue; color: white">EDITAR PRODUCTO</button></a>
+                            <form action="/product/<%= product.id %>/delete?_method=DELETE" method="POST" >
+                                <button style= "background: tomato; color: white" type="submit" class="action-button delete">ELIMINAR</button>
+                                <p>Atención! La acción de eliminar es irrreversible</p>
+                            </form>
         </div>
         <!-- Productos relacionados -->
 
@@ -116,22 +117,21 @@
             <h2>Productos relacionados</h2>
         </div>
             
-
         <section class= "container row">
-            <% for (let i = 0; i < (product.length > 4 ? 4 : product.length); i++) { %> 
+            <% for (let i = 0; i < (destacados.length > 4 ? 4 : destacados.length); i++) { %> 
                 <article class="relatedProduct col">
                     <div class= "img-box">
-                        <a href="product/<%=product[i].id%>/detail">                               
-                          <img  src= "/img/<%= product[i].image %> " alt="<%= product[i].name %> ">
+                        <a href="product/<%=destacados[i].id%>/detail">                               
+                          <img  src= "/img/<%= destacados[i].image %> " alt="<%= destacados[i].name %> ">
                         </a>    
                      </div>
                      <div class="related-article1">
-                        <h3 class="price">$ <%= product[i].price %> </h3>
-                        <h4 class="payment-method">Hasta <%= product[i].payment %>  cuotas</h4>
-                        <h4 class="description"><%= product[i].name %> </h4>
+                        <h3 class="price">$ <%= destacados[i].price %> </h3>
+                        <h4 class="payment-method">Hasta <%= destacados[i].payment %>  cuotas</h4>
+                        <h4 class="description"><%= destacados[i].name %> </h4>
                     </div>
                 </article> 
-                <% } %>
+            <% } %>
         </section>
     </main>
 

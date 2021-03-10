@@ -38,7 +38,7 @@ router.post('/', upload.single('image'), productController.store);
 router.get('/:id/edit', productController.edit); // puede ser edith/id cuidado de no solaparse
 
 //Acción de edición (a donde se envía el formulario):
-router.put('/:id/put', productController.update); 
+router.put('/:id/put', upload.single('image'), productController.update); 
 
 //Acción de borrado
 router.delete('/:id/delete', productController.destroy); 
