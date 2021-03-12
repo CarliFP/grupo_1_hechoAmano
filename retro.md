@@ -1,3 +1,38 @@
+:three: RETROSPECTIVA SPRINT 4 <br>
+
+:bookmark: Método Starfish:<br>
+
+:exclamation: Start doing <br>
+<!--cosas innovadoras, aquellas que por curiosidad que queremos probar y/o soluciones comprobadas que deberíamos usar-->
+1.- No tenemos nuevas soluciones a implementar, sino profundizar en el trabajo cada uno en su branch.
+
+:exclamation: More of: <br>
+<!--practicas que creemos que requiere más refinamiento y que nos gustan mucho por ello hay que darles más-->
+1.- Tener reuniones más frecuentes, pasar de las weekly a daily, dado que la complejidad del trabajo comienza a aumentar. 
+
+:exclamation: Keep Doing: <br>
+<!--aquello que venimos haciendo y nos brinda valor-->
+1.- La división de tareas por Trello. <br>
+2.- Mantenernos comunicados y colaborando entre nosotros. Continuar con la celeridad de asignación de tareas.<br>
+
+:exclamation: Less of: <br>
+<!--aquello que no nos aporta el valor que esperábamos-->
+1.- No encontramos nada que no nos aporte el valor esperado.<br>
+
+:exclamation: Stop Doing: <br>
+<!--aquello que podemos eliminar-->
+1.- Elaborar las consultas y/o dudas previamente para una mayor celeridad en la reuniones de grupo y centrarnos en la resolución de las dificultades. <br>
+
+:white_check_mark: Conclusión: Nuestro desafío será continuar trabajando de manera organizada, con un código claro y limpio para facilitar el trabajo colaborativo. <br>
+
+:star: Tablero para el Sprint 5: (AGREGA NUEVO TABLERO!!!!) <br>
+
+<br>
+<br>
+
+
+
+
 
 :three: RETROSPECTIVA SPRINT 3 <br>
 
