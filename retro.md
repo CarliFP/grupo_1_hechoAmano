@@ -13,7 +13,7 @@
 :exclamation: Keep Doing: <br>
 <!--aquello que venimos haciendo y nos brinda valor-->
 1.- La división de tareas por Trello. <br>
-2.- Mantenernos comunicados y colaborando entre nosotros. Continuar con la celeridad de asignación de tareas.<br>
+2.- Mantenernos comunicados y colaborando entre nosotros.<br>
 
 :exclamation: Less of: <br>
 <!--aquello que no nos aporta el valor que esperábamos-->
@@ -21,7 +21,7 @@
 
 :exclamation: Stop Doing: <br>
 <!--aquello que podemos eliminar-->
-1.- Elaborar las consultas y/o dudas previamente para una mayor celeridad en la reuniones de grupo y centrarnos en la resolución de las dificultades. <br>
+1.- Elaborar las consultas y/o dudas previamente para una mayor celeridad en la reuniones de grupo y centrarnos en la resolución de las dificultades. No dilatar la asignación de tareas. <br>
 
 :white_check_mark: Conclusión: Nuestro desafío será continuar trabajando de manera organizada, con un código claro y limpio para facilitar el trabajo colaborativo. <br>
 
