@@ -14,17 +14,16 @@
  },
  {
   "id": 2,
-  "name": "Mascarilla",
-  "price": 100,
-  "discount": 50,
+  "name": "Mascarilla ",
+  "seller": "José López ",
+  "price": "",
+  "stock": "",
+  "shipping": "",
+  "payment": "",
   "category": "ropa-y-calzado",
-  "status": "destacados",
-  "description": "Mascarilla",
+  "status": "",
   "image": "img-1-C-mascarilla.png",
-  "seller": "José López",
-  "stock": 2,
-  "shipping": 340,
-  "payment": 3
+  "description": ""
  },
  {
   "id": 3,
@@ -208,17 +207,16 @@
  },
  {
   "id": 16,
-  "name": "Buzo",
-  "price": 100,
-  "discount": 50,
+  "name": "Buzo ",
+  "seller": "José López ",
+  "price": "",
+  "stock": "",
+  "shipping": "",
+  "payment": "",
   "category": "ropa-y-calzado",
-  "status": "vendidos",
-  "description": "Buzo",
+  "status": "",
   "image": "img3-RC-buzo.png",
-  "seller": "José López",
-  "stock": 2,
-  "shipping": 340,
-  "payment": 3
+  "description": ""
  },
  {
   "id": 17,
@@ -345,18 +343,5 @@
   "stock": 2,
   "shipping": 340,
   "payment": 3
- },
- {
-  "id": 26,
-  "name": "!!!!!DE PRUEBA!!!       ",
-  "seller": "CARLA    ",
-  "price": "",
-  "stock": "",
-  "shipping": "",
-  "payment": "",
-  "category": "arte",
-  "status": "",
-  "image": "1615325565955_img_.png",
-  "description": ""
  }
 ]

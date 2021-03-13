@@ -74,11 +74,12 @@ const productController = {
     update: (req, res) => {
 		let id = req.params.id;
 		let productToEdit = products.find(product => product.id == id)
-		let image
+		let image;
 
 		if(req.file != undefined){
 			image = req.file.filename
-		} else {
+		}
+		else {
 			image = productToEdit.image
 		}
 
