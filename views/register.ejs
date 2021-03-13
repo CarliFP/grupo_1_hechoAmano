@@ -12,18 +12,97 @@
 
             <main class="register">
 
-                <form class="main-form" action="/" method="POST">
-
+                <form class="main-form" action="users/register" method="POST" enctype="multipart/form-data">
                     <div class= "title">
                         <h4>Datos Personales</h4>
                     </div>
                     
                     <div class="container-personal-information">
-                        <input class="personal-information-input" type="text" name="name" placeholder="Nombre y apellido">
-                        <input class="personal-information-input" type="text" name="user" placeholder="Nombre de usuario">
-                        <input class="personal-information-input" type="email" name="email" placeholder="E-mail">
-                        <input class="personal-information-input" type="date" name="birth_date" id="birth_date" max="2022-12-31">
-                        <input class="personal-information-input" type="text" name="addres" placeholder="Domicilio">
+                        <input  class="personal-information-input"
+                                type="text" 
+                                name="name" 
+                                placeholder="Nombre y apellido"
+                                value = "<%= locals.oldData ? oldData.name : null%>" >
+
+                        <% if (locals.errors && errors.name) { %> 
+                            <div class ="text-danger">
+                                <%= errors.name.msg %> 
+                            </div>
+                        <% } %> 
+
+                        <input  class="personal-information-input is-invalid" 
+                                type="text" 
+                                name="user" 
+                                placeholder="Nombre de usuario"
+                                value = "<%= locals.oldData ? oldData.user : null%>" >
+
+                        <% if (locals.errors && errors.user) { %> 
+                            <div class ="text-danger">
+                                <%= errors.user.msg %> 
+                            </div>
+                        <% } %> 
+
+                        <input class="personal-information-input" 
+                                type="email" 
+                                name="email" 
+                                placeholder="E-mail"
+                                value = "<%= locals.oldData ? oldData.email : null%>">
+
+                        <% if (locals.errors && errors.email) { %> 
+                            <div class ="text-danger">
+                                <%= errors.email.msg %> 
+                            </div>
+                        <% } %> 
+
+                        <input class="personal-information-input" 
+                                type="date" 
+                                name="birth_date" 
+                                id="birth_date" 
+                                max="2022-12-31"
+                                value = "<%= locals.oldData ? oldData.birth_date : null%>">
+
+                        <% if (locals.errors && errors.birth_date) { %> 
+                            <div class ="text-danger">
+                                <%= errors.birth_date.msg %> 
+                            </div>
+                        <% } %> 
+
+                        <input class="personal-information-input"
+                                 type="text" 
+                                 name="address" 
+                                 placeholder="Domicilio"
+                                 value = "<%= locals.oldData ? oldData.address : null%>">
+                                 
+                        <% if (locals.errors && errors.address) { %> 
+                            <div class ="text-danger">
+                                <%= errors.address.msg %> 
+                            </div>
+                        <% } %> 
+
+                        <select 
+                            class = "personal-information-input" 
+                            name = "country"
+                        >
+                            <option value = "">Elegí un país</option>
+
+                            <%      let countries = ['Argentina', 'Bolivia', 'Paraguay', 'Brasil', 'Uruguay', 
+                                    'Chile','Colombia','Peru', 'Venezuela']; 
+                            %> 
+
+                            <% for (const oneCountry of countries) { %>
+
+                                <option 
+                                    value ="<%= oneCountry %> "
+                                    <%= locals.oldData && (oneCountry === oldData.country) ? 'selected' : null %>     
+                                 > <%= oneCountry %> </option>
+                            <% } %> 
+
+                        </select>
+                        <% if (locals.errors && errors.country) { %> 
+                            <div class ="text-danger">
+                                <%= errors.country.msg %> <!-- VER AQUÍ POR QUÉ NO SE EJECUTA EL ERROR-->
+                            </div>
+                        <% } %> 
                     </div>
     
     
@@ -72,11 +151,18 @@
     
                     <div class = "file-upload">
                         <!-- esto hace que se oculte y se pueda customizar, sino reaparece-->
-                        <input type="file" id="actual-btn" accept=".jpg" multiple hidden/>
+                        <input type="file" name= 'avatar' id="actual-btn">
                         <!--boton custom-->
-                        <label class ="btn-file" for="actual-btn">Seleccionar avatar</label>
+
+                        <% if (locals.errors && errors.avatar) { %> 
+                            <div class ="text-danger">
+                                <%= errors.avatar.msg %> <!-- VER AQUÍ POR QUÉ NO SE EJECUTA EL ERROR-->
+                            </div>
+                        <% } %> 
+
+                        <!--label class ="btn-file" for="actual-btn">Seleccionar avatar</label>-->
                         <!--advertencia de archivo no subido-->
-                        <span id="file-chosen">No se eligió archivo</span>
+                        <!--span id="file-chosen">No se eligió archivo</span> -->
                     </div>
     
                     <div class="password">
