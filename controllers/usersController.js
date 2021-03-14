@@ -8,8 +8,9 @@ const { RSA_NO_PADDING } = require("constants");
 const usersController = {
 
     register:(req,res) => {
-        return res.send("Bienvenidos al usuario nº " + req.params.idUsers);
+        return res.send("Bienvenidos al usuario nº " + req.params.id);
     },
+
     processRegister:(req,res) => {
         //return res.send('viniste por post');
         //return res.send(req.body);
@@ -52,16 +53,49 @@ const usersController = {
     },
 
     login:(req,res) => {
+        //console.log(req.session)
         return res.send('login');
     },
 
-    loginProcess: (req, res) => {
-       // let userToLogin = User.findByField('email', req.body.email); 
-        return res.send(req.body); 
+    loginProcess: (req, res) => { //agregarle las validaciones como en el register.
 
-        console.log(req.body); 
-    
-    }   
+       let userToLogin = User.findByField('email', req.body.email); 
+
+       if (userToLogin) {
+           let isOkpass = bcryptjs.compareSync(req.body.pass, userToLogin.pass)
+           if (isOkpass) {
+               delete userToLogin.pass; 
+               req.session.userLogged = userToLogin; 
+                return res.send('puedes ingresar'); // vista de perfil de usuario
+           }
+           return res.render ('login', {
+               errors: {
+                   email: {
+                       msg: 'Las credenciales son inválidas'
+                   }
+               }
+           })
+       }
+       
+       if (userToLogin) {
+            return res.send(userToLogin)
+       }
+       return res.render('login', {
+           errors: {
+               email: {
+                   msg: 'Email no encontrado'
+               }
+           }
+       })
+    },   
+
+    profile: (req, res) => {
+        console.log('estas en profile');
+        console.log('sesion')
+  
+        return res.render('userProfile')
+
+    }
 
 }
 module.exports = usersController;

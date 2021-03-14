@@ -12,7 +12,6 @@ const uploadFile = require('../middlewares/multerMiddleware');
 
 //Formulario de Registro:
 
-
 router.get('/register', usersController.register);
 
 //Procesar el registro:
@@ -29,5 +28,6 @@ router.post('/login', usersController.loginProcess);
 
 
 //Perfil del usuario
-//router.get('/profile/:userId', usersController.profile); 
+router.get('/:id/profile/', usersController.profile); 
+
 module.exports = router;

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+        <head>
+            <%- include ('./partials/head') %>
+            <link href ="/css/stylesRegister.css" rel="stylesheet">   
+        </head>
+
+    <body>
+
+        <%- include ('./partials/header') %>
+
+            <main class="register">
+
+                <form class="main-form" action="users/register" method="POST" enctype="multipart/form-data">
+                    <div class= "title">
+                        <h4>Mis datos</h4>
+                    </div>
+                    
+                    <div class= "pic-profile">
+                        <img src="../img/banner1.png">
+                    </div>
+
+                    <div class="container-personal-information">
+                        <p class= "personal-information-input"> NOMBRE COMPLETO </p> 
+                        <p class= "personal-information-input"> username </p> 
+                        <p class= "personal-information-input"> email </p> 
+                        <p class= "personal-information-input"> fecha de nacimiento </p> 
+                        <p class= "personal-information-input"> address </p> 
+                        <p class= "personal-information-input"> country </p> 
+
+    
+                        <div class= "title">
+                            <h4>Perfil</h4>
+                        </div>
+    
+                        <div class="profile">
+                            <p class= "personal-information-input"> vende/compra </p> 
+                        </div>
+    
+                        <!--muestra solo si es comprador-->
+                        <div class= "title">
+                            <h4>Mis Intereses</h4>
+                        </div>
+    
+                        <div class="interests">
+                            <p class="peronal-information-input">Intereses</p>
+                        </div>
+    
+    
+                        <div class= "title">
+                            <h4>¿Deseas cambiar tu contraseña?</h4>
+                        </div>
+                    <div class="password">
+                        <input class="password-input" type="password" name="pass" placeholder="Elegí tu nueva contraseña"> 
+                    </div>
+    
+                    <div class= "btn-submit">
+                        <input class= "submit-button" type="reset" value="Eliminar mi perfil">
+                        <input class="submit-button action" type="submit" value="Editar">
+                    </div>
+    
+                </form>
+            </main>
+
+            <!--FOOTER-->
+            <%- include ('./partials/footer') %>    
+            
+        </body>
+</html>

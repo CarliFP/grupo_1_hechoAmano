@@ -120,5 +120,47 @@
   "pass": "$2a$10$C3yu5pEs7h7vdWOHW.XJSua4mvVs6BHg8SGvJ4QLnJNU4WCi8F3OC",
   "pass_confirm": "$2a$10$vXdQMC1/ddPzAqp8uANPXeKtbNtOPUZ9sT4nqfJ5bQxfY4iEow3uO",
   "avatar": "1615681212709_img.jpg"
+ },
+ {
+  "id": 10,
+  "name": "PruebaLogin",
+  "user": "Login",
+  "email": "login@dh.com.ar",
+  "birth_date": "1111-02-22",
+  "address": "Av. Italia",
+  "country": "Uruguay ",
+  "profile": "buy",
+  "interests": "a",
+  "pass": "$2a$10$IWL8cLjX5AWuhEX21JaIkOvvjuipYhA9Rud2qpycyCkdCm7Iq.6nG",
+  "pass_confirm": "$2a$10$Av6ca5VWB7ZDVTQzYjDjLumTMvxr9.NCraN0AXkxoZiq85RWipVPO",
+  "avatar": "1615740427110_img.png"
+ },
+ {
+  "id": 11,
+  "name": "CARLA FRESCH PONS",
+  "user": "dadad",
+  "email": "carlafreschpons@hotmail.com",
+  "birth_date": "1111-01-01",
+  "address": "Av. Italia",
+  "country": "Uruguay ",
+  "profile": "sell",
+  "interests": "e",
+  "pass": "$2a$10$NWauPdLLLEM0ybBx11B/3eAac85wUe.zVPlMLR7b0SW/PFgQI/xN.",
+  "pass_confirm": "$2a$10$6CAQsQSisIgjB7liaU6RX.PjGGOZSlSf/OC6Jr80Srt.YsOrl.C2W",
+  "avatar": "1615741194855_img.png"
+ },
+ {
+  "id": 12,
+  "name": "dadad",
+  "user": "Carli",
+  "email": "prueba@dh.com",
+  "birth_date": "1111-02-22",
+  "address": "Av. Italia",
+  "country": "Uruguay ",
+  "profile": "sell",
+  "interests": "e",
+  "pass": "$2a$10$3.lKEce3S0bAd7iGrcnHOu7widgK3AvB7sZi27Esq5OWT82RwtuGy",
+  "pass_confirm": "$2a$10$ovfw1q0zgw/6GicAooa9VueaWOogG91XjMQ6yKk4DjwiFbhlZ33b.",
+  "avatar": "1615741348793_img.png"
  }
 ]
