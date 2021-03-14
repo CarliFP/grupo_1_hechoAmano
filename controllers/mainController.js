@@ -25,6 +25,9 @@ const mainController = {
 		res.render('product', {products})
     },
 
+    mediosDePago: (req, res) => {
+        res.render('mediosDePago'); 
+    },
 
     /*CATEGORIAS*/ 
 

@@ -39,7 +39,7 @@ app.use(express.static("public"));
 app.use ('/', routesMain);
 app.use ('/product', routesProduct);
 app.use ('/productCart', routesCart);
-app.use ('/users', routesUsers);
+app.use ('/users',  routesUsers);
 
 
 //temporal

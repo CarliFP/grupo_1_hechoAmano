@@ -15,6 +15,8 @@ router.get('/product', mainController.todos);
 
 router.get('/listEdit', mainController.todos);
 
+router.get('/mediosDePago', mainController.mediosDePago);
+
 
 /*CATEGORIAS*/ 
 
