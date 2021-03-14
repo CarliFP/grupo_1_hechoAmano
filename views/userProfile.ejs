@@ -18,16 +18,16 @@
                     </div>
                     
                     <div class= "pic-profile">
-                        <img src="../img/banner1.png">
+                        <img src="../img/avatar/<%= user.avatar %> ">
                     </div>
 
                     <div class="container-personal-information">
-                        <p class= "personal-information-input"> NOMBRE COMPLETO </p> 
-                        <p class= "personal-information-input"> username </p> 
-                        <p class= "personal-information-input"> email </p> 
-                        <p class= "personal-information-input"> fecha de nacimiento </p> 
-                        <p class= "personal-information-input"> address </p> 
-                        <p class= "personal-information-input"> country </p> 
+                        <p class= "personal-information-input"> <%= user.name %>  </p> 
+                        <p class= "personal-information-input"> <%= user.user %>  </p> 
+                        <p class= "personal-information-input"> <%= user.email %>  </p> 
+                        <p class= "personal-information-input"> <%= user.birth_date %>  </p> 
+                        <p class= "personal-information-input"> <%= user.address %>  </p> 
+                        <p class= "personal-information-input"> <%= user.country %>  </p> 
 
     
                         <div class= "title">
@@ -35,7 +35,7 @@
                         </div>
     
                         <div class="profile">
-                            <p class= "personal-information-input"> vende/compra </p> 
+                            <p class= "personal-information-input"> <%= user.profile %>  </p> 
                         </div>
     
                         <!--muestra solo si es comprador-->
@@ -44,7 +44,7 @@
                         </div>
     
                         <div class="interests">
-                            <p class="peronal-information-input">Intereses</p>
+                            <p class="peronal-information-input"><%= user.interestes%> </p>
                         </div>
     
     

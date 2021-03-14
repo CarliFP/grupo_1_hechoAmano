@@ -64,9 +64,10 @@ const usersController = {
        if (userToLogin) {
            let isOkpass = bcryptjs.compareSync(req.body.pass, userToLogin.pass)
            if (isOkpass) {
-               delete userToLogin.pass; 
-               req.session.userLogged = userToLogin; 
-                return res.send('puedes ingresar'); // vista de perfil de usuario
+
+               delete userToLogin.pass; // se elimina por seguridad
+               req.session.userLogged = userToLogin;   //sesion se destruye solo si cierro navegador
+                return res.redirect('/users/profile'); // vista de perfil de usuario
            }
            return res.render ('login', {
                errors: {
@@ -90,10 +91,11 @@ const usersController = {
     },   
 
     profile: (req, res) => {
-        console.log('estas en profile');
-        console.log('sesion')
-  
-        return res.render('userProfile')
+        //console.log('estas en profile');
+        //console.log('sesion')
+        return res.render('userProfile', {
+            user: req.session.userLogged,
+        })
 
     }
 
