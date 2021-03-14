@@ -25,7 +25,7 @@
 
 :white_check_mark: Conclusión: Nuestro desafío será continuar trabajando de manera organizada, con un código claro y limpio para facilitar el trabajo colaborativo. <br>
 
-:star: Tablero para el Sprint 5: (AGREGA NUEVO TABLERO!!!!) <br>
+:star: Tablero para el Sprint 5: https://trello.com/b/KIVplBzW/sprint-5 <br>
 
 <br>
 <br>
