@@ -12,7 +12,8 @@
 
             <main class="register">
 
-                <form class="main-form" action="users/register" method="POST" enctype="multipart/form-data">
+                <div class="main-form" action="users/register" method="POST" enctype="multipart/form-data">
+
                     <div class= "title">
                         <h4>Mis datos</h4>
                     </div>
@@ -51,6 +52,9 @@
                         <div class= "title">
                             <h4>¿Deseas cambiar tu contraseña?</h4>
                         </div>
+                        
+                    </div>
+
                     <div class="password">
                         <input class="password-input" type="password" name="pass" placeholder="Elegí tu nueva contraseña"> 
                     </div>
@@ -60,11 +64,11 @@
                         <input class="submit-button action" type="submit" value="Editar">
                     </div>
     
-                </form>
+                </div>
             </main>
 
             <!--FOOTER-->
             <%- include ('./partials/footer') %>    
             
-        </body>
+    </body>
 </html>

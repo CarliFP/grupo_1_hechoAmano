@@ -8,14 +8,17 @@ const session = require('express-session')
 const usersController = require('../controllers/usersController');
 const validations = require('../middlewares/validations');
 const uploadFile = require('../middlewares/multerMiddleware'); 
-const guestMidd = require('../middlewares/guestMidd');
+
+/*VER ESTAS DOS NO FUNCIONAN*/ 
+const guest = require('../middlewares/guest');
+const auth = require('../middlewares/auth');
 
 
 //router.get('/:idUsers', usersController.usuario);
 
 //Formulario de Registro:
 
-router.get('/register',guestMidd , usersController.register);
+router.get('/register', guest, usersController.register);
 
 //Procesar el registro:
 
@@ -24,13 +27,13 @@ router.post('/register', uploadFile.single('avatar'), validations, usersControll
 
 
 //Formulario de login
-router.get('/login',guestMidd, usersController.login);  
+router.get('/login', guest, usersController.login);  
 
 //Procesar el login
 router.post('/login', usersController.loginProcess); 
 
 
 //Perfil del usuario
-router.get('/profile', usersController.profile); 
+router.get('/profile', auth, usersController.profile); 
 
 module.exports = router;
