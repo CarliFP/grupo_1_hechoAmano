@@ -25,15 +25,18 @@ router.get('/register', guest, usersController.register);
 router.post('/register', uploadFile.single('avatar'), validations, usersController.processRegister);
 //avatar en el form 'avatar'
 
-
 //Formulario de login
 router.get('/login', guest, usersController.login);  
 
 //Procesar el login
 router.post('/login', usersController.loginProcess); 
 
+//Cerrar sesión
+router.get('/logout', usersController.logout); 
 
 //Perfil del usuario
 router.get('/profile', auth, usersController.profile); 
+
+
 
 module.exports = router;

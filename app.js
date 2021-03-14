@@ -1,6 +1,7 @@
 const express = require('express');
 const path = require('path');
 const session = require('express-session'); 
+const userLoggedM = require('./middlewares/userLoggedM'); 
 const app = express(); 
 
 
@@ -38,6 +39,9 @@ app.use(session({
     saveUninitialized: false,
 
 })); 
+
+app.use(userLoggedM); //va después de inicializar sesión, porque se tiene que iniciar la sesión primero
+
 
 //console.log (express)
 //console.log (path)

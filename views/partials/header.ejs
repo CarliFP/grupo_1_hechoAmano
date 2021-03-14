@@ -18,24 +18,35 @@
             </form>
         </div>
 
-        <!--FIRST NAVBAR-->
-        <div class ="first-navbar">
-        <ul class="right-navbar">
-                <li> <a class= "text-link-nav" href="/register">Registrate</a></li>
-                <li> <a class= "text-link-nav" href="/login">Ingresa</a></li>
-                <li> <a class= "text-link-nav" href="/productCart"><i class="fas fa-shopping-cart col"></i></li>
-            </ul>
-        </div>    
-    </nav>
+            <!--FIRST NAVBAR-->
+            <div class ="first-navbar">
+            <ul class="right-navbar">
+             <% if (!locals.isLogged) { %> 
+                    <li> <a class= "text-link-nav" href="/register">Registrate</a></li>
+                    <li> <a class= "text-link-nav" href="/login">Ingresá</a></li>
+                    <li> <a class= "text-link-nav" href="/productCart"><i class="fas fa-shopping-cart col"></i></li>
+                </ul>
+            </div>    
+        </nav>
+                <div class ="first-navbar">
+                    <ul class="right-navbar">
+                        <% } else { %> 
+                            <li> <a class= "text-link-nav" href="/profile">Hola, <%= locals.userLogged.user %> </a></li>
+                            <li> <a class= "text-link-nav avatar" href="/profile"><img src="/img/avatar/<%= locals.userLogged.avatar %>" alt= "foto del usuario"> </a></li>
+                            <li> <a class= "text-link-nav" href="/productCart"><i class="fas fa-shopping-cart col"></i></li>
+                        <% } %> 
+                        </ul>
+                    </div>    
+                </nav>
+        
+            <!--SECOND NAV-BAR--> 
+        <nav class= "second-nav-bar row">
+            <div class="container container-todo-categorias">
+                <ul>
+                    <li> <a class="category-link" href="#"><i class = "fa fa-bars burger"></i></li>
+                    <li> <a class="category-link" href="#categorias">Categorias</a></li>
+                </ul>
+            </div>
+        </nav>
 
-         <!--SECOND NAV-BAR--> 
-    <nav class= "second-nav-bar row">
-        <div class="container container-todo-categorias">
-            <ul>
-                <li> <a class="category-link" href="#"><i class = "fa fa-bars burger"></i></li>
-                <li> <a class="category-link" href="#categorias">Categorias</a></li>
-            </ul>
-        </div>
-    </nav>
-
-</header>
+    </header>

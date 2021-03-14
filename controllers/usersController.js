@@ -97,6 +97,13 @@ const usersController = {
             user: req.session.userLogged,
         })
 
+    },
+    
+    /*FALTA DARLE FUNCIONALIDAD AL BOTÓN CERRAR SESIÓN CON ESTE MÉTODO*/
+    logout: (req, res) => {
+        req.session.destroy(); 
+        console.log(req.session);
+        return res.redirect('/')
     }
 
 }
