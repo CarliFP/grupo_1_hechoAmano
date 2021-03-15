@@ -1,4 +1,4 @@
-:bookmark: Weekly SPRINT 3
+:bookmark: Weekly SPRINT 4
 
 :one: ¿Qué he hecho desde la última reunión de sincronización para ayudar al equipo a cumplir su objetivo? <br>
 :two: ¿Qué voy a hacer a partir de este momento para ayudar al equipo a cumplir su objetivo? <br>
