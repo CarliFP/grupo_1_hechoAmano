@@ -1,41 +1,69 @@
 [
-    {
-     "id": 1,
-     "name": "Neri Cardozo",
-     "user": "Neri",
-     "email": "neri1412@hotmail.com",
-     "birth_date": "2000-09-15",
-     "addres":"Cisneros 5552",
-     "profile": "sell",
-     "interests": "Accesorios",
-     "image": " ",
-     "pass": "admin123",
-     "pass_confirm": "admin123"
-    },    
-    {
-    "id": 2,
-    "name": "Carla Pons",
-    "user": "Carli",
-    "email": "carlafreschpons@gmail.com@hotmail.com",
-    "birth_date": "2000-01-01",
-    "addres":"Calle falsa 123",
-    "profile": "sell",
-    "interests": "Accesorios",
-    "image": " ",
-    "pass": "admin123",
-    "pass_confirm": "admin123"
-    },
-    {
-    "id": 3,
-    "name": "Emanuel Mercado",
-    "user": "Ema",
-    "email": "ema150798@gmail.com",
-    "birth_date": "2000-01-01",
-    "addres":"Calle falsa 123",
-    "profile": "sell",
-    "interests": "Accesorios",
-    "image": " ",
-    "pass": "admin123",
-    "pass_confirm": "admin123"
-    }
-] 
+ {
+  "id": 1,
+  "name": "Neri Cardozo",
+  "user": "Neri",
+  "email": "neri1412@hotmail.com",
+  "birth_date": "2000-09-15",
+  "addres": "Cisneros 5552",
+  "profile": "sell",
+  "interests": "Accesorios",
+  "image": " ",
+  "pass": "admin123",
+  "pass_confirm": "admin123"
+ },
+ {
+  "id": 2,
+  "name": "Carla Pons",
+  "user": "Carli",
+  "email": "carlafreschpons@gmail.com@hotmail.com",
+  "birth_date": "2000-01-01",
+  "addres": "Calle falsa 123",
+  "profile": "sell",
+  "interests": "Accesorios",
+  "image": " ",
+  "pass": "admin123",
+  "pass_confirm": "admin123"
+ },
+ {
+  "id": 3,
+  "name": "Emanuel Mercado",
+  "user": "Ema",
+  "email": "ema150798@gmail.com",
+  "birth_date": "2000-01-01",
+  "addres": "Calle falsa 123",
+  "profile": "sell",
+  "interests": "Accesorios",
+  "image": " ",
+  "pass": "admin123",
+  "pass_confirm": "admin123"
+ },
+ {
+  "id": 4,
+  "name": "CARLA FRESCH PONS",
+  "user": "Car",
+  "email": "carlafreschpons@gmail.com",
+  "birth_date": "1988-05-22",
+  "address": "Av. Italia",
+  "country": "Uruguay ",
+  "profile": "sell",
+  "interests": "cosmética",
+  "pass": "$2a$10$foyENUNcb8M3bK2k9wqvd.fPLpfAufxGz6ypNGZXMs390DWZjnFMy",
+  "pass_confirm": "$2a$10$mO838jDwDXpehdVfQ/wp8e2QtUtrJrcnH8fQLVYPDXQARGRzd1Wg.",
+  "avatar": "1615746974621_img.png"
+ },
+ {
+  "id": 5,
+  "name": "carla",
+  "user": "car",
+  "email": "Freschpons@gmail.com",
+  "birth_date": "1988-05-22",
+  "address": "Av. Italia",
+  "country": "Uruguay ",
+  "profile": "sell",
+  "interests": "accesorios",
+  "pass": "$2a$10$gVdLh.JqBegfob4uLmQsN.JbFTBjgHFXV4zclVes7K3SMv.8hfB02",
+  "pass_confirm": "$2a$10$6TiUSjirx6awtFZIE28sKOQlmgxR9Zfd.KiYeH.wGVTIwBXzik0MK",
+  "avatar": "1615747834437_img.png"
+ }
+]

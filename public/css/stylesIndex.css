@@ -130,6 +130,12 @@ main {
     border: none; 
 }
 
+.avatar img {
+    width: 25%;
+    border-radius: 4px;
+    border: 2px solid  #FDE6A3; 
+}
+
 /* FIRST-NAVBAR solo disponible para tablets y desktop*/
 
 .first-navbar {
