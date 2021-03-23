@@ -1,6 +1,13 @@
 const { body } = require('express-validator'); 
 const path = require('path'); 
 const validations = [
+    body('pass').custom((value, {req}) => {
+        if (req.body.pass === req.body.pass_confirm) {
+            return true;
+          } else {
+            throw new Error ('Las contraseñas no son iguales')
+          }
+    }),
     body('name').notEmpty().withMessage('Tienes que escribir tu nombre completo'),
     body('user').notEmpty().withMessage('Tienes que escribir tu nombre de usuario'),
     body('email')

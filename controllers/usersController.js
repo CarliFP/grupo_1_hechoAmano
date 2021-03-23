@@ -8,7 +8,7 @@ const { RSA_NO_PADDING } = require("constants");
 const usersController = {
 
     register:(req,res) => {
-        return res.send("Bienvenidos al usuario nº " + req.params.id);
+        res.render('register');
     },
 
     processRegister:(req,res) => {
@@ -37,34 +37,37 @@ const usersController = {
                 });
             }
 
+
+            delete req.body.pass_confirm
+
             //console.log(req.body, req.file); 
             let userToCreate = {
                 ...req.body,
                 avatar: req.file.filename,
                 pass: bcryptjs.hashSync(req.body.pass, 10),
-                pass_confirm : bcryptjs.hashSync(req.body.pass_confirm, 10), 
             }
             /* ACÁ HAY QUE VER COMO CONFIRMAR LA CONTRASEÑA PORQUE TENEMOS PASS Y PASS_CONFIRM CON COMPARE? */
 
-            //console.log(userToCreate); 
+            console.log(userToCreate); 
 
         let userCreated = User.create(userToCreate);
         return res.redirect('/login'); 
     },
 
     login:(req,res) => {
-        //console.log(req.session)
-        return res.send('login');
+        res.render('login');
     },
 
     loginProcess: (req, res) => { //agregarle las validaciones como en el register.
 
        let userToLogin = User.findByField('email', req.body.email); 
 
+
+
        if (userToLogin) {
            let isOkpass = bcryptjs.compareSync(req.body.pass, userToLogin.pass)
-           if (isOkpass) {
 
+           if (isOkpass) {
                delete userToLogin.pass; // se elimina por seguridad
                req.session.userLogged = userToLogin;   //sesion se destruye solo si cierro navegador
                 return res.redirect('/users/profile'); // vista de perfil de usuario

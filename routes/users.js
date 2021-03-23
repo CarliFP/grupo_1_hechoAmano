@@ -26,7 +26,7 @@ router.post('/register', uploadFile.single('avatar'), validations, usersControll
 //avatar en el form 'avatar'
 
 //Formulario de login
-router.get('/login', guest, usersController.login);  
+router.get('/login', guest, usersController.login); 
 
 //Procesar el login
 router.post('/login', usersController.loginProcess); 

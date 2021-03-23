@@ -12,7 +12,7 @@
 
             <main class="register">
 
-                <form class="main-form" action="users/register" method="POST" enctype="multipart/form-data">
+                <form class="main-form" action="/users/register" method="POST" enctype="multipart/form-data">
                     <div class= "title">
                         <h4>Datos Personales</h4>
                     </div>
@@ -168,6 +168,13 @@
                     <div class="password">
                         <input class="password-input" type="password" name="pass" placeholder="Elegí tu contraseña"> 
                         <input class="password-input" type="password" name="pass_confirm" placeholder="Confirmá tu contraseña">
+
+                        <% if (locals.errors && errors.pass) { %> 
+                            <div class ="text-danger">
+                                <%= errors.pass.msg %> 
+                            </div>
+                        <% } %> 
+                        
                     </div>
     
                     <div class= "btn-submit">

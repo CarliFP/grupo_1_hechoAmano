@@ -71,15 +71,7 @@ const mainController = {
         let product = products.filter(product => product.category == 'ropa-y-calzado'); 
 		res.render('category', {product})
     },
-
-    login:(req,res) => {
-        res.render('login');
-    },
-
-    register:(req,res) => {
-        res.render('register');
-    },
-
+    
     /*ERROR 404 AUN NO PROBADA*/ 
 
     notFound:(req, res) => {
