@@ -7,7 +7,7 @@
 
 Weekly 27-3-2021
 
-✅ Emanuel
+✅ Emanuel <br>
 1️⃣ <br>
 2️⃣ <br>
 3️⃣ <br>
@@ -17,7 +17,7 @@ Weekly 27-3-2021
 2️⃣ Venimos atrasados y avanzaré este fin de semana en implementar las cookies. <br>
 3️⃣ Redistribución clara de las tareas y asignación en el trello. <br>
 
-✅ Neri
+✅ Neri <br>
 1️⃣ <br>
 2️⃣ <br>
 3️⃣ <br>
