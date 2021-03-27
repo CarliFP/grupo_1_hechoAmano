@@ -37,6 +37,9 @@ router.get('/logout', usersController.logout);
 //Perfil del usuario
 router.get('/profile', auth, usersController.profile); 
 
+//Eliminar usuario
+router.post('/profile/delete', usersController.deleteUserById); 
+
 
 
 module.exports = router;

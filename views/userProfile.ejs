@@ -60,9 +60,18 @@
                     </div>
     
                     <div class= "btn-submit">
-                        <input class= "submit-button" type="reset" value="Eliminar mi perfil">
-                        <input class= "submit-button" type="reset" value="Cerrar sesión">
-                        <input class="submit-button action" type="submit" value="Editar">
+
+                            <form action="/users/profile/delete?_method=DELETE" method="POST" >   
+                                <button class= "submit-button" type="submit">Eliminar perfil</button>
+                                <p>Atención la acción de eliminar es irreversible!</p>
+                            </form>
+
+                            <a href ="/users/logout">
+                                <input class= "submit-button" type="reset" value="Cerrar sesión">
+                            </a>
+
+                            <input class="submit-button action" type="submit" value="Editar">
+
                     </div>
     
                 </div>

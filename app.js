@@ -7,7 +7,7 @@ const app = express();
 
 // ************ Require's ************
 const createError = require('http-errors');
-//const cookieParser = require('cookie-parser');
+const cookieParser = require('cookie-parser');
 //const logger = require('morgan');
 const methodOverride =  require('method-override'); // Pasar poder usar los métodos PUT y DELETE
 
@@ -30,7 +30,6 @@ app.set("view engine", "ejs");
 app.use(express.urlencoded({ extended: false }));
 //app.use(logger('dev'));
 app.use(express.json());
-//app.use(cookieParser());
 app.use(methodOverride('_method')); // Pasar poder pisar el method="POST" en el formulario por PUT y DELETE
 
 app.use(session({
@@ -41,6 +40,7 @@ app.use(session({
 })); 
 
 app.use(userLoggedM); //va después de inicializar sesión, porque se tiene que iniciar la sesión primero
+app.use(cookieParser());
 
 
 //console.log (express)
@@ -53,7 +53,7 @@ app.use(express.static("public"));
 app.use ('/', routesMain);
 app.use ('/product', routesProduct);
 app.use ('/productCart', routesCart);
-app.use ('/users',  routesUsers);
+app.use ('/users', routesUsers);
 
 
 //temporal

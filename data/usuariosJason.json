@@ -51,5 +51,55 @@
   "pass": "$2a$10$foyENUNcb8M3bK2k9wqvd.fPLpfAufxGz6ypNGZXMs390DWZjnFMy",
   "pass_confirm": "$2a$10$mO838jDwDXpehdVfQ/wp8e2QtUtrJrcnH8fQLVYPDXQARGRzd1Wg.",
   "avatar": "1615746974621_img.png"
+ },
+ {
+  "id": 5,
+  "name": "laura",
+  "user": "lau",
+  "email": "laura@dh.com",
+  "birth_date": "1111-01-01",
+  "address": "Av. Italia",
+  "country": "Uruguay ",
+  "profile": "buy",
+  "interests": "arte",
+  "pass": "$2a$10$G2dhYywpH1Y5pRcRs2fRMuOY8kwlfiPdEa9Kem2Kz4yOe9CeG8hOa",
+  "avatar": "1616861832626_img.png"
+ },
+ {
+  "id": 6,
+  "name": "laura",
+  "user": "lau",
+  "email": "holalaura@dh.com",
+  "birth_date": "1111-01-01",
+  "address": "Av. Italia",
+  "country": "Brasil ",
+  "pass": "$2a$10$qJRi6.mxxUZrKbIvkM3l4uptiVZJ594unnhWUzKPMYIqYf6LBVTxy",
+  "avatar": "1616861929263_img.png"
+ },
+ {
+  "id": 7,
+  "name": "soy",
+  "user": "soy",
+  "email": "soy@dh.com",
+  "birth_date": "1111-01-01",
+  "address": "Av. Italia",
+  "country": "Brasil ",
+  "profile": "sell",
+  "interests": "accesorios",
+  "pass": "$2a$10$EoWeEqvVfc9JEVjg8See4uT9iVsc3fg1op0LYS.AGfweaaWhB02bq",
+  "avatar": "1616863292362_img.png"
+ },
+ {
+  "id": 8,
+  "name": "CARLA",
+  "user": "CARLA",
+  "email": "CARLA@CARLA.CARLA",
+  "birth_date": "1111-01-01",
+  "address": "Av. Italia",
+  "country": "Colombia ",
+  "profile": "buy",
+  "interests": "accesorios",
+  "pass": "$2a$10$Fz9qehS.N2eDFJk2iiESeO2hqmZ04y4.rmOqz7n/gImXhuBSufsvW",
+  "avatar": "1616865039215_img.png"
  }
 ]

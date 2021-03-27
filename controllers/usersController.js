@@ -51,7 +51,7 @@ const usersController = {
             console.log(userToCreate); 
 
         let userCreated = User.create(userToCreate);
-        return res.redirect('/login'); 
+        return res.redirect('/users/login'); 
     },
 
     login:(req,res) => {
@@ -97,17 +97,23 @@ const usersController = {
         //console.log('estas en profile');
         //console.log('sesion')
         return res.render('userProfile', {
-            user: req.session.userLogged,
+            user: req.session.userLogged
         })
 
     },
     
-    /*FALTA DARLE FUNCIONALIDAD AL BOTÓN CERRAR SESIÓN CON ESTE MÉTODO*/
     logout: (req, res) => {
         req.session.destroy(); 
         console.log(req.session);
         return res.redirect('/')
+    },
+
+    deleteUserById: (req, res) => {
+        delete userToLogin; 
+		res.redirect('/'); 
     }
 
-}
+    }; 
+
+
 module.exports = usersController;
