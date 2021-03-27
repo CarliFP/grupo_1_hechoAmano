@@ -12,10 +12,10 @@ Weekly 27-3-2021
 2️⃣ <br>
 3️⃣ <br>
 
-✅ Carla
-1️⃣ Desde la última reunión donde asignamos tentativamente las tareas, sujetas a modificación mientras avancemos individualmente con el estudio, avance en el registro y login. Realice algunas mejoras y corrección de errores.
-2️⃣ Venimos atrasados y avanzaré este fin de semana en implementar las cookies. 
-3️⃣ Redistribución clara de las tareas y asignación en el trello. 
+✅ Carla <br>
+1️⃣ Desde la última reunión donde asignamos tentativamente las tareas, sujetas a modificación mientras avancemos individualmente con el estudio, avance en el registro y login. Realice algunas mejoras y corrección de errores. <br>
+2️⃣ Venimos atrasados y avanzaré este fin de semana en implementar las cookies. <br>
+3️⃣ Redistribución clara de las tareas y asignación en el trello. <br>
 
 ✅ Neri
 1️⃣ <br>
