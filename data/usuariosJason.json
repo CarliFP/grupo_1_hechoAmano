@@ -51,53 +51,5 @@
   "pass": "$2a$10$foyENUNcb8M3bK2k9wqvd.fPLpfAufxGz6ypNGZXMs390DWZjnFMy",
   "pass_confirm": "$2a$10$mO838jDwDXpehdVfQ/wp8e2QtUtrJrcnH8fQLVYPDXQARGRzd1Wg.",
   "avatar": "1615746974621_img.png"
- },
- {
-  "id": 5,
-  "name": "carla",
-  "user": "car",
-  "email": "Freschpons@gmail.com",
-  "birth_date": "1988-05-22",
-  "address": "Av. Italia",
-  "country": "Uruguay ",
-  "profile": "sell",
-  "interests": "accesorios",
-  "pass": "$2a$10$gVdLh.JqBegfob4uLmQsN.JbFTBjgHFXV4zclVes7K3SMv.8hfB02",
-  "pass_confirm": "$2a$10$6TiUSjirx6awtFZIE28sKOQlmgxR9Zfd.KiYeH.wGVTIwBXzik0MK",
-  "avatar": "1615747834437_img.png"
- },
- {
-  "id": 6,
-  "name": "CARLAA",
-  "user": "asdasd",
-  "email": "dsfsdf@asdasd.asd",
-  "birth_date": "2000-12-12",
-  "address": "asdjhaskjdasd",
-  "country": "Paraguay ",
-  "profile": "buy",
-  "interests": [
-   "accesorios",
-   "cosmética"
-  ],
-  "pass": "$2a$10$jHOleNNgS/PcPKm8w6Y8vOxN1Jz8Mg7kqV8iUAgNQzfIgALUzC1H.",
-  "pass_confirm": "$2a$10$IiLIkN9zkuquxIcgCkugcO0kIGRr.0fjSH0hazKYDhksWCE9fNtpC",
-  "avatar": "1616518057842_img.png"
- },
- {
-  "id": 7,
-  "name": "CARLA FRESCH PONS",
-  "user": "barbi",
-  "email": "barbi@gmail.com",
-  "birth_date": "2020-12-12",
-  "address": "rasd 12",
-  "country": "Paraguay ",
-  "profile": "buy",
-  "interests": [
-   "hogar",
-   "cosmética"
-  ],
-  "pass": "$2a$10$WbHRr.6DsJZOo2x.WyrbjOuIXMykUlufCLpX8M5Df3C8m7w0ZULTW",
-  "pass_confirm": "123456",
-  "avatar": "1616520846285_img.png"
  }
 ]
