@@ -1,3 +1,27 @@
+
+🔖 Weekly SPRINT 5
+
+1️⃣ ¿Qué he hecho desde la última reunión de sincronización para ayudar al equipo a cumplir su objetivo? <br>
+2️⃣ ¿Qué voy a hacer a partir de este momento para ayudar al equipo a cumplir su objetivo? <br>
+3️⃣ ¿Qué impedimentos tengo o voy a tener que nos impidan conseguir nuestro objetivo? <br>
+
+Weekly 27-3-2021
+
+✅ Emanuel
+1️⃣ <br>
+2️⃣ <br>
+3️⃣ <br>
+
+✅ Carla
+1️⃣ Desde la última reunión donde asignamos tentativamente las tareas, sujetas a modificación mientras avancemos individualmente con el estudio, avance en el registro y login. Realice algunas mejoras y corrección de errores.
+2️⃣ Venimos atrasados y avanzaré este fin de semana en implementar las cookies. 
+3️⃣ Redistribución clara de las tareas y asignación en el trello. 
+
+✅ Neri
+1️⃣ <br>
+2️⃣ <br>
+3️⃣ <br>
+
 :bookmark: Weekly SPRINT 4
 
 :one: ¿Qué he hecho desde la última reunión de sincronización para ayudar al equipo a cumplir su objetivo? <br>
