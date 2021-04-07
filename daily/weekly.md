@@ -8,9 +8,9 @@
 Weekly 27-3-2021
 
 ✅ Emanuel <br>
-1️⃣ <br>
-2️⃣ <br>
-3️⃣ <br>
+1️⃣ Desde la ultima reunion me puse a repasar todas las clases necesarias para poder tener las herramientas necesarias para contribuir con el proyecto. <br>
+2️⃣ Continuar con el repaso, ya aplicandolo sobre el proyecto porque se acerca la entrega del sprint. <br>
+3️⃣ No haber estado al dia con el modulo 5, me dificulto mucho poder aplicar conocimientos que no tenia bien asimilados. <br>
 
 ✅ Carla <br>
 1️⃣ Desde la última reunión donde asignamos tentativamente las tareas, sujetas a modificación mientras avancemos individualmente con el estudio, avance en el registro y login. Realice algunas mejoras y corrección de errores. <br>
