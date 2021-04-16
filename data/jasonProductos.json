@@ -1,16 +1,16 @@
 [
  {
   "id": 1,
-  "name": "Pintura de acrílico artesanal ",
-  "seller": "Carla López  ",
-  "price": "1000",
-  "stock": "78",
+  "name": "Pintura de acrílico artesanal  ",
+  "seller": "Carla López   ",
+  "price": "",
+  "stock": "8",
   "shipping": "",
   "payment": "",
   "category": "arte",
   "status": "",
-  "image": "img1-A-pinturaArtesanalAcrílico.png",
-  "description": ""
+  "description": "",
+  "image": "img1-A-pinturaArtesanalAcrílico.png"
  },
  {
   "id": 2,

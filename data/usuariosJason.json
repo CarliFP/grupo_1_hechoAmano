@@ -101,5 +101,24 @@
   "interests": "accesorios",
   "pass": "$2a$10$Fz9qehS.N2eDFJk2iiESeO2hqmZ04y4.rmOqz7n/gImXhuBSufsvW",
   "avatar": "1616865039215_img.png"
+ },
+ {
+  "id": 9,
+  "name": "Josue Emanuel Mercado",
+  "user": "Emam16",
+  "email": "ema_dvr_2013@live.com",
+  "birth_date": "1998-07-15",
+  "address": "Escobio",
+  "country": "Argentina ",
+  "profile": "buy",
+  "interests": [
+   "accesorios",
+   "arte",
+   "hogar",
+   "cosmética",
+   "ropa y calzado"
+  ],
+  "pass": "$2a$10$2Ypx6Id4Ii8Zs9F/oplGJuo9PNK0hBTaM1AIRl2je/SRApcIkhsw2",
+  "avatar": "1618330339996_img.jpg"
  }
 ]

@@ -9,7 +9,7 @@ const usersController = require('../controllers/usersController');
 const validations = require('../middlewares/validations');
 const uploadFile = require('../middlewares/multerMiddleware'); 
 
-/*VER ESTAS DOS NO FUNCIONAN*/ 
+
 const guest = require('../middlewares/guest');
 const auth = require('../middlewares/auth');
 

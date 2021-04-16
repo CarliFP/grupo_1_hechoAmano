@@ -79,30 +79,31 @@
                             </div>
                         <% } %> 
 
+                        
+                        <!-- <label for="pais">Pais de nacimiento</label> -->
                         <select 
-                            class = "personal-information-input" 
-                            name = "country"
-                        >
-                            <option value = "">Elegí un país</option>
-
-                            <%      let countries = ['Argentina', 'Bolivia', 'Paraguay', 'Brasil', 'Uruguay', 
-                                    'Chile','Colombia','Peru', 'Venezuela']; 
-                            %> 
-
+                            name="country"
+                            id=""
+                            class = "personal-information-input">
+                            <option value="">Elegi un pais</option>
+                            <%
+                                let countries = ['Argentina', 'Bolivia', 'Brasil', 'Colombia', 'Chile', 'Ecuador', 'Paraguay',
+                                'Peru', 'Peru', 'Uruguay', 'Venezuela'];
+                            %>
                             <% for (const oneCountry of countries) { %>
-
-                                <option 
-                                    value ="<%= oneCountry %> "
-                                    <%= locals.oldData && (oneCountry === oldData.country) ? 'selected' : null %>     
-                                 > <%= oneCountry %> </option>
-                            <% } %> 
-
+                                 <option 
+                                    value="<%= oneCountry %>"
+                                    <%= locals.oldData && (oneCountry === oldData.country) ? 'selected' : null %> 
+                                    ><%= oneCountry %></option>
+                            <% } %>
                         </select>
-                        <% if (locals.errors && errors.country) { %> 
+                        <% if (locals.errors && errors.country) { %>
                             <div class ="text-danger">
-                                <%= errors.country.msg %> <!-- VER AQUÍ POR QUÉ NO SE EJECUTA EL ERROR-->
+                                <%= errors.country.msg %>
                             </div>
-                        <% } %> 
+                        <% } %>
+                        
+                        
                     </div>
     
     

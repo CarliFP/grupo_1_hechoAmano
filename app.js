@@ -2,6 +2,7 @@ const express = require('express');
 const path = require('path');
 const session = require('express-session'); 
 const userLoggedM = require('./middlewares/userLoggedM'); 
+// const recordameMiddleware = require('./middlewares/recordameMiddleware');
 const app = express(); 
 
 
@@ -37,10 +38,12 @@ app.use(session({
     resave: false,
     saveUninitialized: false,
 
-})); 
+}));
+
+app.use(cookieParser());
 
 app.use(userLoggedM); //va después de inicializar sesión, porque se tiene que iniciar la sesión primero
-app.use(cookieParser());
+
 
 
 //console.log (express)
@@ -55,6 +58,7 @@ app.use ('/product', routesProduct);
 app.use ('/productCart', routesCart);
 app.use ('/users', routesUsers);
 
+// app.use(recordameMiddleware); //SOLO FUNCIONA DESPUES DE SESSION PORQUE LA EXISTENCIA O NO DE recordame DEPENDE DE SESSION
 
 //temporal
 //app.use ('/productDetail', routesProductDetail);

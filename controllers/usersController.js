@@ -8,6 +8,7 @@ const { RSA_NO_PADDING } = require("constants");
 const usersController = {
 
     register:(req,res) => {
+        // res.cookie('testing', 'Hola mundo', {maxAge: 1000 * 30});
         res.render('register');
     },
 
@@ -21,7 +22,7 @@ const usersController = {
             return res.render('register', {
                 errors: resultValidation.mapped(), // mapped convierte un array en un objeto literal con propiedades
                 oldData: req.body // xa que si se renueva el formulario porque falto un dato conserve el resto, value ver.
-                //ver no me funciona EN COUNTRY
+                //ver no me funciona EN COUNTRY // Solucionado
             })     
         }
             //retorna error si el usuario ya se registró por mail
@@ -55,10 +56,14 @@ const usersController = {
     },
 
     login:(req,res) => {
+        // console.log(req.cookies);
+        // console.log(req.cookies.testing);
         res.render('login');
     },
 
     loginProcess: (req, res) => { //agregarle las validaciones como en el register.
+
+        // return res.send(req.body);
 
        let userToLogin = User.findByField('email', req.body.email); 
 
@@ -70,6 +75,9 @@ const usersController = {
            if (isOkpass) {
                delete userToLogin.pass; // se elimina por seguridad
                req.session.userLogged = userToLogin;   //sesion se destruye solo si cierro navegador
+               if(req.body.remember) {
+                res.cookie('userEmail', req.body.email, { maxAge: (1000 * 60) * 2})
+               }
                 return res.redirect('/users/profile'); // vista de perfil de usuario
            }
            return res.render ('login', {
@@ -95,7 +103,8 @@ const usersController = {
 
     profile: (req, res) => {
         //console.log('estas en profile');
-        //console.log('sesion')
+        //console.log('sesion');
+        // console.log(req.cookies.userEmail);
         return res.render('userProfile', {
             user: req.session.userLogged
         })
@@ -103,6 +112,7 @@ const usersController = {
     },
     
     logout: (req, res) => {
+        res.clearCookie('userEmail');
         req.session.destroy(); 
         console.log(req.session);
         return res.redirect('/')
