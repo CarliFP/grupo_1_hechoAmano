@@ -1,3 +1,39 @@
+:three: RETROSPECTIVA SPRINT 5 <br>
+
+:bookmark: Método Starfish:<br>
+
+:exclamation: Start doing <br>
+<!--cosas innovadoras, aquellas que por curiosidad que queremos probar y/o soluciones comprobadas que deberíamos usar-->
+1.- Continuar trabajando de manera organizada cada uno en su branch. 
+
+:exclamation: More of: <br>
+<!--practicas que creemos que requiere más refinamiento y que nos gustan mucho por ello hay que darles más-->
+1.- Requiere más refinamiento porque facilita el trabajo implementar las daily del Scrum con mayor frecuencia, al menos una vez más por semana. 
+2.- Mantenernos comunicados en este Sprint que tuvimos mayor dificultad y colaborando entre nosotros.<br>
+
+:exclamation: Keep Doing: <br>
+<!--aquello que venimos haciendo y nos brinda valor-->
+1.- La división de tareas por Trello. <br>
+
+:exclamation: Less of: <br>
+<!--aquello que no nos aporta el valor que esperábamos-->
+1.- No estar al día con las practicas del curso que facilitan implementar los desafíos que plantea el sprint.<br>
+
+:exclamation: Stop Doing: <br>
+<!--aquello que podemos eliminar-->
+1.- Debemos asignar las tareas lo más pronto posible. <br>
+2.- Manternos comunicados ante circunstancias personales y comprometidos con el grupo. <br>
+
+:white_check_mark: Conclusión: Retomar la modalidad y organización de los sprints anteriores donde estuvimos mejor organizados y comunicados.  <br>
+
+:star: Tablero para el Sprint 5: (agregar!!). <br>
+
+<br>
+<br>
+
+
+
+
 :three: RETROSPECTIVA SPRINT 4 <br>
 
 :bookmark: Método Starfish:<br>

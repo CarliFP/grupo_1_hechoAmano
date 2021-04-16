@@ -17,8 +17,10 @@ Weekly 27-3-2021
 2️⃣ Venimos atrasados y avanzaré este fin de semana en implementar las cookies. <br>
 3️⃣ Redistribución clara de las tareas y asignación en el trello. <br>
 
-✅ Neri <br> (ausente por vacaciones). 
-
+✅ Neri <br> 
+1️⃣ Desde la última reunión no pude aportar lo que esperaba debido a problemas y falta de compromiso con el grupo, pretendo volver a contribuir de la mejor manera estando ya al día con la cursada y con el grupo. <br>
+2️⃣ Voy a dedicarle más tiempo de forma diaria al proyecto para completar los entregables a tiempo. <br>
+3️⃣ Considero que fue una desconexión personal con el grupo y no estoy muy al tanto con las dificultades que hubo en general, espero ser de más ayuda a futuro. <br>
 
 :bookmark: Weekly SPRINT 4
 
