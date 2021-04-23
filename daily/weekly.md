@@ -1,3 +1,25 @@
+🔖 Weekly SPRINT 6
+
+1️⃣ ¿Qué he hecho desde la última reunión de sincronización para ayudar al equipo a cumplir su objetivo?
+2️⃣ ¿Qué voy a hacer a partir de este momento para ayudar al equipo a cumplir su objetivo?
+3️⃣ ¿Qué impedimentos tengo o voy a tener que nos impidan conseguir nuestro objetivo?
+
+Weekly 23-4-2021
+
+✅ Emanuel
+1️⃣ <br>
+2️⃣ <br>
+3️⃣ <br>
+
+✅ Carla
+1️⃣ <br>
+2️⃣ <br>
+3️⃣ <br>
+
+✅ Neri
+1️⃣ <br>
+2️⃣ <br>
+3️⃣ <br>
 
 🔖 Weekly SPRINT 5
 
