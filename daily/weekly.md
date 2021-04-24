@@ -1,22 +1,22 @@
-🔖 Weekly SPRINT 6
+🔖 Weekly SPRINT 6<br>
+<br>
+1️⃣ ¿Qué he hecho desde la última reunión de sincronización para ayudar al equipo a cumplir su objetivo?<br>
+2️⃣ ¿Qué voy a hacer a partir de este momento para ayudar al equipo a cumplir su objetivo?<br>
+3️⃣ ¿Qué impedimentos tengo o voy a tener que nos impidan conseguir nuestro objetivo?<br>
 
-1️⃣ ¿Qué he hecho desde la última reunión de sincronización para ayudar al equipo a cumplir su objetivo?
-2️⃣ ¿Qué voy a hacer a partir de este momento para ayudar al equipo a cumplir su objetivo?
-3️⃣ ¿Qué impedimentos tengo o voy a tener que nos impidan conseguir nuestro objetivo?
+Weekly 23-4-2021<br>
 
-Weekly 23-4-2021
-
-✅ Emanuel
+✅ Emanuel<br>
 1️⃣ <br>
 2️⃣ <br>
 3️⃣ <br>
 
-✅ Carla
-1️⃣ <br>
-2️⃣ <br>
-3️⃣ <br>
+✅ Carla<br>
+1️⃣ <br>Desde la retrospectiva, finalice el repaso de base de datos para poder avanzar con el sprint. 
+2️⃣ <br>Estar al día con las tareas que tengo asignadas en el Trello y dar soporte a mis compañeros en lo que necesiten.
+3️⃣ <br>Resolver errores al vincular la  base de datos de MYSQL Workbench a  XAMPP (phpMyAdmin) que es el programa que utilizan mis compañeros. 
 
-✅ Neri
+✅ Neri<br>
 1️⃣ <br>
 2️⃣ <br>
 3️⃣ <br>
