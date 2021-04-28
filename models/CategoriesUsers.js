@@ -1,7 +1,7 @@
 module.exports = (sequelize, dataTypes) => {
-    let alias = 'Sections';
+    let alias = 'CategoriesUsers';
     let cols = {
-        idSections: {
+        idCategoriesUsers: {
             type: dataTypes.INTEGER,
             primaryKey: true,
             autoIncrement: true
@@ -17,8 +17,8 @@ module.exports = (sequelize, dataTypes) => {
         deletedAt: false
     }
 
-    const Sections = sequelize.define(alias, cols, config); 
+    const CategoriesUsers = sequelize.define(alias, cols, config); 
  
-    return Sections
+    return CategoriesUsers
 };
 
