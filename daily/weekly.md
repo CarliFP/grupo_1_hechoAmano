@@ -1,10 +1,13 @@
 🔖 Weekly SPRINT 6<br>
+
+:heavy_exclamation_mark: ALERT equipo Docente! El PDF del Diagrama Entidad Relación se encuentra dentro de la carpeta Wireframe -> DiagramaER-HechoAmano.<br>
+
 <br>
 1️⃣ ¿Qué he hecho desde la última reunión de sincronización para ayudar al equipo a cumplir su objetivo?<br>
 2️⃣ ¿Qué voy a hacer a partir de este momento para ayudar al equipo a cumplir su objetivo?<br>
 3️⃣ ¿Qué impedimentos tengo o voy a tener que nos impidan conseguir nuestro objetivo?<br>
 
-Weekly 23-4-2021<br>
+Weekly 23-4-2021 18:30 horas<br>
 
 ✅ Emanuel<br>
 1️⃣ <br>
@@ -22,7 +25,7 @@ Weekly 23-4-2021<br>
 3️⃣ <br>
 
 
-Weekly 27-4-2021<br>
+Weekly 27-4-2021 19:00 horas<br>
 
 ✅ Emanuel<br>
 1️⃣ <br>
