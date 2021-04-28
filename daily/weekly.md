@@ -21,6 +21,25 @@ Weekly 23-4-2021<br>
 2️⃣ <br>
 3️⃣ <br>
 
+
+Weekly 27-4-2021<br>
+
+✅ Emanuel<br>
+1️⃣ <br>
+2️⃣ <br>
+3️⃣ <br>
+
+✅ Carla<br>
+1️⃣ Desde la última reunión armé el DER (Diagrama Entidad Relación MySQL) con las modificaciones que conversamos en el equipo. <br>
+2️⃣ Avanzar con la implementación de las relaciones en sequelize. <br>
+3️⃣ Me surgieron dudas puntualmente respecto del Shopping Cart en el DER a partir de las sugerencias de Neri, aún no tengo claro cuál sería la solución más adecuada para implementar en nuestra aplicación, que sea también escalable a futuro, lo que evacuaremos con el equipo docente.<br>
+
+✅ Neri<br>
+1️⃣ <br>
+2️⃣ <br>
+3️⃣ <br>
+
+
 🔖 Weekly SPRINT 5
 
 1️⃣ ¿Qué he hecho desde la última reunión de sincronización para ayudar al equipo a cumplir su objetivo? <br>
