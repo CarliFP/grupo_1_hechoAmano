@@ -1,7 +1,25 @@
 🔖 Weekly SPRINT 6<br>
 
 :heavy_exclamation_mark: ALERT equipo Docente! El PDF del Diagrama Entidad Relación se encuentra dentro de la carpeta Wireframe -> DiagramaER-HechoAmano.<br>
+:heavy_exclamation_mark: ALERT equipo Docente! En el archivo config.js de database nuestra contraseña por defecto no es root.<br>
 
+<br>
+Weekly 27-4-2021 19:00 horas<br>
+
+✅ Emanuel<br>
+1️⃣ <br>
+2️⃣ <br>
+3️⃣ <br>
+
+✅ Carla<br>
+1️⃣ Desde la última reunión armé el DER (Diagrama Entidad Relación MySQL)
+2️⃣ Avanzar con la implementación de las relaciones en sequelize. <br>
+3️⃣ Me surgieron dudas puntualmente respecto del Shopping Cart en el DER a partir de las sugerencias de Neri, aún no tengo claro cuál sería la solución más adecuada para implementar en nuestra aplicación, que sea también escalable a futuro, lo que evacuaremos con el equipo docente.<br>
+
+✅ Neri<br>
+1️⃣ <br>
+2️⃣ <br>
+3️⃣ <br>
 <br>
 1️⃣ ¿Qué he hecho desde la última reunión de sincronización para ayudar al equipo a cumplir su objetivo?<br>
 2️⃣ ¿Qué voy a hacer a partir de este momento para ayudar al equipo a cumplir su objetivo?<br>
@@ -18,24 +36,6 @@ Weekly 23-4-2021 18:30 horas<br>
 1️⃣ Desde la retrospectiva, finalice el repaso de base de datos para poder avanzar con el sprint.  <br>
 2️⃣ Estar al día con las tareas que tengo asignadas en el Trello y dar soporte a mis compañeros en lo que necesiten. <br>
 3️⃣ Resolver errores al vincular la  base de datos de MYSQL Workbench a  XAMPP (phpMyAdmin) que es el programa que utilizan mis compañeros.  <br>
-
-✅ Neri<br>
-1️⃣ <br>
-2️⃣ <br>
-3️⃣ <br>
-
-
-Weekly 27-4-2021 19:00 horas<br>
-
-✅ Emanuel<br>
-1️⃣ <br>
-2️⃣ <br>
-3️⃣ <br>
-
-✅ Carla<br>
-1️⃣ Desde la última reunión armé el DER (Diagrama Entidad Relación MySQL) con las modificaciones que conversamos en el equipo. <br>
-2️⃣ Avanzar con la implementación de las relaciones en sequelize. <br>
-3️⃣ Me surgieron dudas puntualmente respecto del Shopping Cart en el DER a partir de las sugerencias de Neri, aún no tengo claro cuál sería la solución más adecuada para implementar en nuestra aplicación, que sea también escalable a futuro, lo que evacuaremos con el equipo docente.<br>
 
 ✅ Neri<br>
 1️⃣ <br>
