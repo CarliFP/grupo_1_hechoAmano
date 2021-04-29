@@ -1,7 +1,7 @@
 module.exports = (sequelize, dataTypes) => {
-    let alias = 'Sections';
+    let alias = 'TypeUser';
     let cols = {
-        idSections: {
+        idTypeUser: {
             type: dataTypes.INTEGER,
             primaryKey: true,
             autoIncrement: true
@@ -17,8 +17,8 @@ module.exports = (sequelize, dataTypes) => {
         deletedAt: false
     }
 
-    const Sections = sequelize.define(alias, cols, config); 
+    const TypeUser = sequelize.define(alias, cols, config); 
  
-    return Sections
+    return TypeUser
 };
 

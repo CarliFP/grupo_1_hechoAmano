@@ -1,7 +1,7 @@
 module.exports = (sequelize, dataTypes) => {
     let alias = 'Products';
     let cols = {
-        idProduct: {
+        idProducts: {
             type: dataTypes.INTEGER,
             primaryKey: true,
             autoIncrement: true
@@ -45,8 +45,9 @@ module.exports = (sequelize, dataTypes) => {
             foreignKey: 'idSection'
         });
 
-    };
+
  
     return Products
 };
 
+}
