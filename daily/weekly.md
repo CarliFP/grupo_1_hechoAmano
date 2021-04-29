@@ -14,7 +14,7 @@ Weekly 27-4-2021 19:00 horas<br>
 ✅ Carla<br>
 1️⃣ Desde la última reunión armé el DER (Diagrama Entidad Relación MySQL)
 2️⃣ Avanzar con la implementación de las relaciones en sequelize. <br>
-3️⃣ Me surgieron dudas puntualmente respecto del Shopping Cart en el DER a partir de las sugerencias de Neri, aún no tengo claro cuál sería la solución más adecuada para implementar en nuestra aplicación, que sea también escalable a futuro, lo que evacuaremos con el equipo docente.<br>
+3️⃣ Me surgieron dudas puntualmente respecto de las órdenes de compra en el DER a partir de las sugerencias de Neri, aún no tengo claro cuál sería la solución más adecuada para implementar en nuestra aplicación, que sea también escalable a futuro, lo que evacuaremos con el equipo docente.<br>
 
 ✅ Neri<br>
 1️⃣ <br>
