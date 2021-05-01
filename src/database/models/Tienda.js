@@ -14,7 +14,6 @@ module.exports = (sequelize, DataTypes) => {
     }
   };
   Tienda.init({
-    idTienda: DataTypes.INTEGER,
     ranking: DataTypes.STRING,
     location: DataTypes.STRING,
     name: DataTypes.STRING

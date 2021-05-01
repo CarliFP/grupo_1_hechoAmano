@@ -10,11 +10,36 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
-      // define association here
+      //Un usuario pertenece a una tienda
+      this.belongsTo(models.Tienda,{
+        as: 'Tienda',
+        foreignKey: 'idTienda'
+      });
+
+      //Un usuario pertenece a un tipo de usuario
+      this.belongsTo(models.TypeUser,{
+          as: 'TipoDeUsuario',
+          foreignKey: 'idTypeUser'
+      });
+
+      //Un usuario pertenece a un país
+      this.belongsTo(models.Countries,{
+        as: 'Countries',
+        foreignKey: 'idCountries'
+    });
+
+      //Un usuario tiene muchas categorias de interes
+      this.belongsToMany(models.Categories, { 
+        through: 'CategoriesUsers',
+        foreignKey: 'idUsers',
+        otherKey: 'idCategories',
+        timestamps: false
+    })
+      
     }
-  };
+
+    }
   Users.init({
-    idUsers: DataTypes.INTEGER,
     name: DataTypes.STRING,
     email: DataTypes.STRING,
     birth_date: DataTypes.DATE,
