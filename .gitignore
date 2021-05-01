@@ -4,3 +4,10 @@ package-lock.json
 .DS_Store
 DS_Store
 prueba.js
+--Categories.js
+--CategoriesUsers.js
+--Countries.js
+--Products.js
+--Sections.js
+--TypeUser.js
+--Users.js
