@@ -2,11 +2,83 @@ const express = require ("express");
 const path = require ("path");
 const fs = require('fs'); 
 const { parse } = require("path");
+let db = require("../database/models");
 
 const productsFilePath = path.join(__dirname, '../data/jasonProductos.json');
 const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
 const productController = {
+
+	list: function (req, res) {
+        db.Countries.findAll()
+            .then(countries=> {
+                res.render("listCountries", {countries:countries})
+            });
+    },
+
+	guardado: function (req, res) {
+        // res.send(req.body)
+        db.Countries.create({
+            name: req.body.name
+       })
+        res.redirect("/product")
+    },
+
+	crear: function (req, res) {
+		return res.render("creacionCountries")
+	},
+
+	guardado: function (req, res) {
+        // res.send(req.body)
+        db.Countries.create({
+            name: req.body.name
+       })
+        res.redirect("/product/list")
+    },
+
+	detalle: function (req, res) {
+        db.Countries.findByPk(req.params.id)
+            .then(function(countrie) {
+                // res.send(movie.actors)
+                res.render("detalleCountrie", {countrie:countrie})
+            })
+    },
+
+	borrar: function (req, res) {
+        db.Countries.destroy({
+            where: {
+                idCountries: req.params.id
+            }
+        })
+        res.redirect("/product/list");
+    },
+	editar: function (req, res) {
+		db.Countries.findByPk(req.params.id)
+		.then(countries=> {
+			res.render("editCountries", {countries:countries})
+		});
+    },
+    actualizar: function (req, res) {
+        // res.send(req.body)
+        db.Countries.update({
+                ...req.body
+                // title: req.body.title,
+                // rating: req.body.rating,
+                // awards: req.body.awards,
+                // release_date: req.body.release_date,
+                // length: req.body.length,
+                // genre_id: req.body.genre_id},
+                // res.send(req.params.id),
+            },
+            {   
+                where: {idCountries: req.params.id}
+            })
+                .then(function() {
+                    res.redirect("/product/" + req.params.id)
+                });
+        // res.send({...req.body})
+        // res.redirect("/peliculas/" + req.params.id)
+    },
 
     index: (req,res) => {
         let vendidos = products.filter(product => product.status == 'vendidos'); 

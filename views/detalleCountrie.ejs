@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <nav>
+            <p>Mi sitio</p>
+            <ul>
+                <li>
+                    <a href="/product/crear">Crear Countrie</a>
+                </li>
+                <li>
+                    <a href="/product/list">Ver Countries</a>
+                </li>
+            </ul>
+        </nav>
+        <%- include('./partials/header') %> 
+            <h1><%=countrie.name%></h1>
+            <a href="/product/editar/<%=countrie.idCountries%>">
+                <button>Editar</button>
+            </a>
+            <form action="/product/borrar/<%=countrie.idCountries%>" method="POST">
+                <button type="submit">Borrar</button>
+            </form>
+        <%- include('./partials/footer') %> 
