@@ -10,8 +10,23 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
-      // define association here
+     
+      //Una orden pertenece a un usuario
+      this.belongsTo(models.Users,{
+        as: 'Usuario',
+        foreignKey: 'Users_idUsers'
+    });
+
+     //Una orden tiene muchos productos -> muchos a muchos con Products 
+     this.belongsToMany(models.Products, { 
+      through: 'OrderProducts',
+      foreignKey: 'idProducts',
+      otherKey: 'idOrders',
+      timestamps: false
+  })
+
     }
+
   };
   Orders.init({
     idUser: DataTypes.INTEGER,

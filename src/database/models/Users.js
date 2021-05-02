@@ -28,6 +28,7 @@ module.exports = (sequelize, DataTypes) => {
         foreignKey: 'idCountries'
     });
 
+
       //Un usuario tiene muchas categorias de interes
       this.belongsToMany(models.Categories, { 
         through: 'CategoriesUsers',
