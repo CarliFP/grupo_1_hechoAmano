@@ -25,8 +25,8 @@ const upload = multer({storage: storage}); //aquí se almacena la ejecución
 router.get('/', productController.index); 
 // Temps
 router.get('/list', productController.list); 
-router.get('/crear', productController.crear);
-router.get('/:id', productController.detalle);
+// router.get('/crear', productController.crear);
+router.get('/detalle/:id', productController.detalle);
 router.post('/crear', productController.guardado);
 router.get("/editar/:id", productController.editar);
 router.post("/editar/:id", productController.actualizar);

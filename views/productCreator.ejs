@@ -47,23 +47,21 @@
                                 <input type="number" id="payment" name="payment" placeholder="Ej: 150" class="form-input">
                             </div>
                             <div class="col-12 col-md-6">
-                                <label for="category" class="form-label">Categoría:</label>
-                                <select name="category" id="category" class="form-input">
+                                <label for="category" class="form-label">Categoria</label>
+                                <select name="category" required>
                                     <option value="">Elegí</option>
-                                    <option value="arte">Arte</option>
-                                    <option value="accesorios">Accesorios</option>
-                                    <option value="ropa-y-calzado">Ropa y calzado</option>
-                                    <option value="cosmetica">Cosmética</option>
-                                    <option value="juegos">Juegos</option>
-                                    <option value="hogar">Hogar</option>
+                                    <% categories.forEach(categorie => { %>
+                                    <option value="<%= categorie.idCategories %>"><%= categorie.name %></option>
+                                    <% }); %>
                                 </select>
                             </div>
                             <div class="col-12 col-md-6">
-                                <label for="status" class="form-label">Sección en el index:</label>
-                                <select name="status" id="status" class="form-input">
+                                <label for="section" class="form-label">Sección en el index:</label>
+                                <select name="section" required>
                                     <option value="">Elegí</option>
-                                    <option value="destacados">destacados</option>
-                                    <option value="vendidos">vendidos</option>
+                                    <% sections.forEach(section => { %>
+                                    <option value="<%= section.idSections %>"><%= section.name %></option>
+                                    <% }); %>
                                 </select>
                             </div>
                             <div class="col-12">

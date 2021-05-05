@@ -8,7 +8,7 @@
   "shipping": "",
   "payment": "",
   "category": "arte",
-  "status": "",
+  "status": "destacados",
   "description": "",
   "image": "img1-A-pinturaArtesanalAcrílico.png"
  },
@@ -343,5 +343,19 @@
   "stock": 2,
   "shipping": 340,
   "payment": 3
+ },
+ {
+  "name": "Nada",
+  "seller": "Ema",
+  "price": null,
+  "stock": 45,
+  "shipping": 54,
+  "payment": 121,
+  "category": "arte",
+  "status": "destacados",
+  "description": "",
+  "id": 26,
+  "discount": null,
+  "image": "1620087637181_img_.jpg"
  }
 ]
