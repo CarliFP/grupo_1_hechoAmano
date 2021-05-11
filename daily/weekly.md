@@ -7,9 +7,9 @@
 Weekly 27-4-2021 19:00 horas<br>
 
 ✅ Emanuel<br>
-1️⃣ <br>
-2️⃣ <br>
-3️⃣ <br>
+1️⃣ Implementar proyectos paralelos para lograr asimilar todo el material. <br>
+2️⃣ Avanzar con mis tareas de TRELLO. <br>
+3️⃣ . <br>
 
 ✅ Carla<br>
 1️⃣ Desde la última reunión armé el DER (Diagrama Entidad Relación MySQL)
@@ -28,9 +28,9 @@ Weekly 27-4-2021 19:00 horas<br>
 Weekly 23-4-2021 18:30 horas<br>
 
 ✅ Emanuel<br>
-1️⃣ <br>
-2️⃣ <br>
-3️⃣ <br>
+1️⃣ Ponerme al dia con los ejercicios de playground. <br>
+2️⃣ Avanzar en paralelo con el aprendizaje e inplementacion de los modelos para llegar bien a mis tareas de Trello. <br>
+3️⃣ No lograr asimilar bien el conocimiento de los ejercicios, que no me permitan trabajar bien cuando llegue al CRUD. <br>
 
 ✅ Carla<br>
 1️⃣ Desde la retrospectiva, finalice el repaso de base de datos para poder avanzar con el sprint.  <br>
