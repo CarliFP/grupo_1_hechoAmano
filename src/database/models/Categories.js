@@ -20,10 +20,16 @@ module.exports = (sequelize, DataTypes) => {
     }
   };
   Categories.init({
+    idCategories: {
+      type: DataTypes.INTEGER,
+      primaryKey: true,
+      autoIncrement: true
+    },
     name: DataTypes.STRING
   }, {
     sequelize,
-    modelName: 'Categories',
+    modelName: 'Categories', 
+    timestamps: false
   });
   return Categories;
 };

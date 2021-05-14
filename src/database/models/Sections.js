@@ -14,10 +14,16 @@ module.exports = (sequelize, DataTypes) => {
     }
   };
   Sections.init({
+    idSections: {
+      type: DataTypes.INTEGER,
+      primaryKey: true,
+      autoIncrement: true
+    },
     name: DataTypes.STRING
   }, {
     sequelize,
     modelName: 'Sections',
+    timestamps: false
   });
   return Sections;
 };

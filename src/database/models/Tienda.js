@@ -14,12 +14,18 @@ module.exports = (sequelize, DataTypes) => {
     }
   };
   Tienda.init({
+    idTienda: {
+      type: DataTypes.INTEGER,
+      primaryKey: true,
+      autoIncrement: true
+  },
     ranking: DataTypes.STRING,
     location: DataTypes.STRING,
     name: DataTypes.STRING
   }, {
     sequelize,
     modelName: 'Tienda',
+    timestamps: false
   });
   return Tienda;
 };

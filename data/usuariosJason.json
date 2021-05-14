@@ -120,5 +120,48 @@
   ],
   "pass": "$2a$10$2Ypx6Id4Ii8Zs9F/oplGJuo9PNK0hBTaM1AIRl2je/SRApcIkhsw2",
   "avatar": "1618330339996_img.jpg"
+ },
+ {
+  "id": 10,
+  "name": "",
+  "user": "",
+  "email": "",
+  "birth_date": "",
+  "address": "",
+  "country": "",
+  "pass": "$2a$10$At6Lz0pfz63UOvMnm1NJA.mYEIt3KflUPWadaGDqrDMVvEDUicnTC",
+  "avatar": "1620874757978_img.jpg"
+ },
+ {
+  "id": 11,
+  "name": "Josue Emanuel Mercado",
+  "user": "Emam16",
+  "email": "ema150798@gmail.com",
+  "birth_date": "1998-07-15",
+  "address": "Escobio",
+  "country": "1",
+  "profile": "2",
+  "interests": [
+   "3",
+   "4"
+  ],
+  "pass": "$2a$10$GSbSnX4P2qUbXfRfaP6QWOM/p.LSj4YIHRmglHO0DFODkxFYmR6Ne",
+  "avatar": "1620952983591_img.jpg"
+ },
+ {
+  "id": 12,
+  "name": "Josue Emanuel Mercado",
+  "user": "Emam16",
+  "email": "ema150798@gmail.com",
+  "birth_date": "1998-07-15",
+  "address": "Escobio",
+  "country": "1",
+  "profile": "2",
+  "interests": [
+   "3",
+   "4"
+  ],
+  "pass": "$2a$10$ZCHREGJWeewatZX9lpbq0evhAYBl1vyV4XtOZvFRhiHGUWahmg/Je",
+  "avatar": "1620953077601_img.jpg"
  }
 ]

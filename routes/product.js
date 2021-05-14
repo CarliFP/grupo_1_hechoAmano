@@ -3,7 +3,35 @@ const express = require('express');
 const router = express.Router();
 const path = require('path'); 
 const multer = require('multer'); 
-const fs = require('fs'); 
+const fs = require('fs');
+
+const { body } = require('express-validator'); 
+const validations = [
+    body('name').notEmpty().withMessage('Tienes que escribir un nombre del producto'),
+    body('seller').notEmpty().withMessage('Tienes que escribir tu nombre de vendedor'),
+    body('price').notEmpty().withMessage('Tienes que ingresar un precio'),
+    body('stock').notEmpty().withMessage('Tienes que ingresar el stock'),
+    body('shipping').notEmpty().withMessage('Tienes que ingresar el costo de envio'),
+    body('payment').notEmpty().withMessage('Tienes que ingresar la cantidad de cuotas'),
+    body('category').notEmpty().withMessage('Tienes que elegir una categoria'),
+    body('section').notEmpty().withMessage('Tienes que elegir la seccion'),
+    body('image').custom((value, {req}) => {
+        let file = req.file
+        let acceptedExtensions = ['.jpg', '.png', '.gif'];
+       
+        if (!file) {
+            throw new Error ('Tienes que subir una imagen')
+        }
+        else {
+            let fileExtension = path.extname(file.originalname); 
+            if (!acceptedExtensions.includes(fileExtension)) {
+            throw new Error (`Las extensiones de archivo permitidas son ${acceptedExtensions.join(', ')}`);
+            }
+        }
+        return true; 
+    })
+    //no hay validacioens específicas para este campo
+];
 
 // ************ Controller Require ************
 const productController = require('../controllers/productController');
@@ -22,11 +50,10 @@ const upload = multer({storage: storage}); //aquí se almacena la ejecución
 
 
 // Listado de productos
-router.get('/', productController.index); 
+router.get('/', productController.index);
+
 // Temps
 router.get('/list', productController.list); 
-// router.get('/crear', productController.crear);
-router.get('/detalle/:id', productController.detalle);
 
 //Detalle de un producto particular
 router.get('/:id/detail', productController.detail); 
@@ -35,7 +62,7 @@ router.get('/:id/detail', productController.detail);
 router.get('/create', productController.create); 
 
 //Acción de creación (a donde se envía el formulario)
-router.post('/', upload.single('image'), productController.store);
+router.post('/', upload.single('image'), validations, productController.store);
 //en el medio va el nombre name dado en el formulario 
 
 //Formulario de edición de productos

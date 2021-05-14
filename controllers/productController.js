@@ -1,8 +1,9 @@
 const express = require ("express");
 const path = require ("path");
+const {validationResult} = require('express-validator'); 
 const fs = require('fs'); 
 const { parse } = require("path");
-let db = require("../database/models");
+let db = require("../src/database/models");
 // const Products = require("../database/models/Products");
 
 // const productsFilePath = path.join(__dirname, '../data/jasonProductos.json');
@@ -29,7 +30,7 @@ const productController = {
             })
     },
 
-	detalle: function (req, res) {
+	detail: function (req, res) {
 		let Allproducts = db.Products.findAll();
 
         let Oneproduct = db.Products.findByPk(req.params.id, {
@@ -53,11 +54,11 @@ const productController = {
         //     })
     },
 
-    detail: (req,res) => {
-		let destacados = products; 
-        let product = products.find(product => product.id == req.params.id)
-        res.render('productDetail',{product, destacados})
-        },
+    // detail: (req,res) => {
+	// 	let destacados = products; 
+    //     let product = products.find(product => product.id == req.params.id)
+    //     res.render('productDetail',{product, destacados})
+    //     },
         
 
     create: (req,res) => {
@@ -79,22 +80,40 @@ const productController = {
 		// })
     },
 
-    store: (req, res) => {
-		// res.send(req.body)
-        db.Products.create({
-			name: req.body.name,
-            seller: req.body.seller,
-            price: req.body.price,
-            stock: req.body.stock,
-            shipping: req.body.shipping,
-			description: req.body.description,
-            payment: req.body.payment,
-			idCategory: req.body.category,
-			idSection: req.body.section,
-			image: req.file.filename
-		}).then(()=>{
-			res.redirect("/product")
-		})
+    store: async (req, res) => {
+
+		const resultValidation = validationResult(req);
+
+		// res.send(validationResult(req));
+
+        if (resultValidation.errors.length > 0)
+			{
+				// res.send("Algo falta");
+				res.redirect('/product/create')
+				// {
+				// errors: resultValidation.mapped(), // mapped convierte un array en un objeto literal con propiedades
+				// oldData: req.body // Ya que si se renueva el formulario porque falto un dato conserve el resto, value ver.
+				// })
+
+			} else {
+				// res.send(req.body)
+				await db.Products.create({
+					name: req.body.name,
+					seller: req.body.seller,
+					price: req.body.price,
+					stock: req.body.stock,
+					shipping: req.body.shipping,
+					description: req.body.description,
+					payment: req.body.payment,
+					idCategory: req.body.category,
+					idSection: req.body.section,
+					image: req.file.filename
+					
+				}).then(function(product){
+					// res.send(req.body);
+					res.redirect("/product/list");
+				})
+			}
 
 		// En mi rama no lo borre porque lo considero util (Ema).
 
@@ -157,6 +176,26 @@ const productController = {
 	},
 
     update: (req, res) => {
+		
+		db.Products.update({
+			// ...req.body
+			name: req.body.name,
+			seller: req.body.seller,
+			price: req.body.price,
+			stock: req.body.stock,
+			shipping: req.body.shipping,
+			description: req.body.description,
+			payment: req.body.payment,
+			idCategory: req.body.category,
+			idSection: req.body.section,
+			image: req.file.filename
+		},
+		{   
+			where: {idProducts: req.params.id}
+		})
+			.then(function() {
+				res.redirect('/product/list')
+			});
 		// let id = req.params.id;
 		// let productToEdit = products.find(product => product.id == id)
 		// let image;
@@ -185,27 +224,8 @@ const productController = {
 		// fs.writeFileSync(productsFilePath, JSON.stringify(nuevoProducto, null, ' '));
 		// res.redirect('/product');
 		// res.send(req.body)
-		db.Products.update({
-					// ...req.body
-					name: req.body.name,
-					seller: req.body.seller,
-					price: req.body.price,
-					stock: req.body.stock,
-					shipping: req.body.shipping,
-					description: req.body.description,
-					payment: req.body.payment,
-					idCategory: req.body.category,
-					idSection: req.body.section,
-					image: req.file.filename
-				},
-				{   
-					where: {idProducts: req.params.id}
-				})
-					.then(function() {
-						res.redirect('/product')
-					});
-			// res.send({...req.body})
-			// res.redirect("/peliculas/" + req.params.id)
+		// res.send({...req.body})
+		// res.redirect("/peliculas/" + req.params.id)
 	},
     
   	destroy : (req, res) => {
@@ -219,7 +239,7 @@ const productController = {
                 idProducts: req.params.id
             }
         })
-        res.redirect('/product'); 
+        res.redirect('/product/list'); 
 		}
     }
 

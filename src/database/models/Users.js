@@ -17,8 +17,8 @@ module.exports = (sequelize, DataTypes) => {
       });
 
       //Un usuario pertenece a un tipo de usuario
-      this.belongsTo(models.TypeUser,{
-          as: 'TipoDeUsuario',
+      this.belongsTo(models.TypeUsers,{
+          as: 'TypeUsers',
           foreignKey: 'idTypeUser'
       });
 
@@ -41,6 +41,11 @@ module.exports = (sequelize, DataTypes) => {
 
     }
   Users.init({
+    idUsers: {
+      type: DataTypes.INTEGER,
+      primaryKey: true,
+      autoIncrement: true
+    },
     name: DataTypes.STRING,
     email: DataTypes.STRING,
     birth_date: DataTypes.DATE,
@@ -54,6 +59,7 @@ module.exports = (sequelize, DataTypes) => {
   }, {
     sequelize,
     modelName: 'Users',
+    timestamps: false
   });
   return Users;
 };

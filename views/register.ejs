@@ -86,17 +86,15 @@
                             id=""
                             class = "personal-information-input">
                             <option value="">Elegi un pais</option>
-                            <%
-                                let countries = ['Argentina', 'Bolivia', 'Brasil', 'Colombia', 'Chile', 'Ecuador', 'Paraguay',
-                                'Peru', 'Uruguay', 'Venezuela'];
-                            %>
-                            <% for (const oneCountry of countries) { %>
-                                 <option 
-                                    value="<%= oneCountry %>"
-                                    <%= locals.oldData && (oneCountry === oldData.country) ? 'selected' : null %> 
-                                    ><%= oneCountry %></option>
+                            <% for (const oneCountry of countries) { %>   
+                                <option
+                                    value="<%= oneCountry.idCountries %>"
+                                    <%= locals.oldData && (oneCountry.name === oldData.country) ? 'selected' : null %>>
+                                    <%= oneCountry.name %>
+                                </option>
                             <% } %>
                         </select>
+
                         <% if (locals.errors && errors.country) { %>
                             <div class ="text-danger">
                                 <%= errors.country.msg %>
@@ -107,43 +105,46 @@
                     </div>
     
     
-                        <div class= "title">
-                            <h4>Perfil del usuario</h4>
-                        </div>
+                    <div class= "title">
+                        <h4>Perfil del usuario</h4>
+                    </div>
     
-                        <div class="profile">
-                            <input type="radio" name="profile" value="buy" id="comprador">
-                            <label for="comprador">Comprador</label>
-                            <input type="radio" name="profile" value="sell" id="vendedor">
-                            <label for="vendedor">Vendedor</label>
-                        </div>
+                    <div class="profile">
+                            <% typeUsers.forEach(typeUser => { %>
+                            <input type="radio" name="profile" value="<%= typeUser.idTypeUser %>" id="<%= typeUser.name %>">
+                            <label for="<%= typeUser.idTypeUser %>"><%= typeUser.name %></label>
+                            <% }); %>
+                    </div>
     
-                        <div class= "title">
-                            <h4>Intereses</h4>
-                        </div>
+                    <div class= "title">
+                        <h4>Intereses</h4>
+                    </div>
     
-                        <div class="interests">
-                            <div>
-                                <input type="checkbox" name="interests" value="accesorios" id="a">
-                                <label for="a">Accesorios</label>
-                            </div>
-                            <div>
-                                <input  type="checkbox" name="interests" value="arte" id="b">
-                                <label for="b">Arte</label>
-                            </div>
-                            <div>
-                                <input  type="checkbox" name="interests" value="hogar" id="c">
-                                <label for="c">Hogar</label>
-                            </div>
-                            <div>
-                                <input  type="checkbox" name="interests" value="cosmética" id="d">
-                                <label for="d">Cosmética</label>
-                            </div>
-                            <div>
-                                <input type="checkbox" name="interests" value="ropa y calzado" id="e">
-                                <label for="e">Ropa y calzado</label>
-                            </div>
+                    <div class="interests">
+
+                        <div>
+                            <% categories.forEach(category => { %>
+                            <input type="checkbox" name="interests" value="<%= category.idCategories %>" id="<%= category.name %>">
+                            <label for="<%= category.name %>"><%= category.name %></label>
+                            <% }); %>
                         </div>
+
+                    </div>
+
+                    <select 
+                        name="tienda"
+                        id=""
+                        class = "personal-information-input">
+                        <option value="">Elegi tu tienda</option>
+                        <% for (const oneTienda of tiendas) { %>   
+                            <option
+                                value="<%= oneTienda.idTienda %>"
+                                <%= locals.oldData && (oneTienda.name === oldData.tienda) ? 'selected' : null %>>
+                                <%= oneTienda.name %>
+                            </option>
+                        <% } %>
+                    </select>
+
     
     
                     <div class= "title">
