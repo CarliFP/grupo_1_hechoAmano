@@ -26,7 +26,7 @@
 
 :white_check_mark: Conclusión: Retomar la modalidad y organización de los sprints anteriores donde estuvimos mejor organizados y comunicados.  <br>
 
-:star: Tablero para el Sprint 5: (agregar!!). <br>
+:star: Tablero para el Sprint 6: https://trello.com/b/PZiOGvCh/sprint-6. <br>
 
 <br>
 <br>

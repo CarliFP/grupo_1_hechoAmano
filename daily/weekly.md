@@ -1,6 +1,7 @@
 🔖 Weekly SPRINT 6<br>
 
-:heavy_exclamation_mark: ALERT equipo Docente! El PDF del Diagrama Entidad Relación se encuentra dentro de la carpeta Wireframe -> DiagramaER-HechoAmano.<br>
+:heavy_exclamation_mark: ALERT equipo Docente! El PDF del Diagrama Entidad Relación se encuentra dentro de la carpeta Wireframe -> DiagramaER-HechoAmano.<br> 
+:heavy_exclamation_mark: ALERT equipo Docente! La base de datos poblada es el archivo StructureConProductos.sql <br>
 :heavy_exclamation_mark: ALERT equipo Docente! En el archivo config.js de database nuestra contraseña por defecto no es root.<br>
 
 <br>
