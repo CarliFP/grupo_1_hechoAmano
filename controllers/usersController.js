@@ -171,9 +171,10 @@ const usersController = {
     },
 
     edit: (req, res) => {
-        // res.send(user)
-        
+
         let user = req.session.userLogged;
+
+        // res.send(user)
 
         // res.cookie('testing', 'Hola mundo', {maxAge: 1000 * 30});
         let pedidoCategories = db.Categories.findAll();

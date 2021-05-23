@@ -48,6 +48,8 @@ const storage = multer.diskStorage({
 
 const upload = multer({storage: storage}); //aquí se almacena la ejecución
 
+const auth = require('../middlewares/auth');
+
 
 // Listado de productos
 router.get('/', productController.index);
@@ -56,7 +58,7 @@ router.get('/', productController.index);
 router.get('/:id/detail', productController.detail); 
 
 //Formulario de creación de productos
-router.get('/create', productController.create); 
+router.get('/create', auth, productController.create); 
 
 //Acción de creación (a donde se envía el formulario)
 router.post('/', upload.single('image'), validations, productController.store);
