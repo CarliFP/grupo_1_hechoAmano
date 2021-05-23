@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: localhost:3306
--- Tiempo de generación: 23-05-2021 a las 01:13:02
+-- Tiempo de generación: 23-05-2021 a las 01:11:17
 -- Versión del servidor: 5.7.24
 -- Versión de PHP: 7.2.19
 
@@ -32,18 +32,6 @@ CREATE TABLE `categories` (
   `name` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
---
--- Volcado de datos para la tabla `categories`
---
-
-INSERT INTO `categories` (`idCategories`, `name`) VALUES
-(1, 'Accesorios'),
-(2, 'Arte'),
-(3, 'Hogar'),
-(4, 'Juegos'),
-(5, 'Cosmetica'),
-(6, 'Ropa y calzado');
-
 -- --------------------------------------------------------
 
 --
@@ -56,14 +44,6 @@ CREATE TABLE `categoriesusers` (
   `idCategories` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
---
--- Volcado de datos para la tabla `categoriesusers`
---
-
-INSERT INTO `categoriesusers` (`idCategoriesUsers`, `idUsers`, `idCategories`) VALUES
-(1, 1, 3),
-(2, 2, 5);
-
 -- --------------------------------------------------------
 
 --
@@ -74,21 +54,6 @@ CREATE TABLE `countries` (
   `idCountries` int(11) NOT NULL,
   `name` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Volcado de datos para la tabla `countries`
---
-
-INSERT INTO `countries` (`idCountries`, `name`) VALUES
-(1, 'Argentina'),
-(2, 'Bolivia'),
-(3, 'Brasil'),
-(4, 'Colombia'),
-(5, 'Chile'),
-(6, 'Ecuador'),
-(7, 'Paraguay'),
-(8, 'Peru'),
-(9, 'Uruguay');
 
 -- --------------------------------------------------------
 
@@ -140,37 +105,6 @@ CREATE TABLE `products` (
   `idTienda` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
---
--- Volcado de datos para la tabla `products`
---
-
-INSERT INTO `products` (`idProducts`, `name`, `seller`, `price`, `stock`, `payment`, `image`, `description`, `shipping`, `discount`, `idCategory`, `idSection`, `idTienda`) VALUES
-(1, 'Pintura de acrílico artesanal', 'Carla López', '200.00', 7, 3, 'img1-A-pinturaArtesanalAcrílico.png', 'pintura acrílica artesanal', '200.00', '15', 2, 1, 1),
-(2, 'Mascarilla', 'José López', '200.00', 7, 3, 'img-1-C-mascarilla.png', 'mascarilla personalizada con logo', '200.00', NULL, 6, 1, 1),
-(3, 'Palo santo!!! nuevo', 'José López', '200.00', 7, 3, 'img1-h-paloSanto.png', 'aromas naturales', '200.00', '15', 3, 1, 1),
-(4, 'Apila los gatos!', 'José López', '100.00', 2, 3, 'img1-j-apilaLosGatos.png', 'Apila los gatos!', '340.00', '50', 4, 2, 1),
-(5, 'Zapatos', 'José López', '100.00', 2, 3, 'img1-zapatosHechosAmano.png', 'Zapatos', '340.00', '50', 6, 2, 1),
-(6, 'Linoleografía', 'José López', '100.00', 2, 3, 'img2-A-linoleografía.png', 'Linoleografía', '340.00', '15', 2, 2, 1),
-(7, 'Accesorio de cabello', 'José López', '100.00', 2, 3, 'img2-C-accesorioCabello.png', 'Accesorio de cabello', '340.00', '50', 1, 2, 1),
-(8, 'Hierbas veganas', 'José López', '100.00', 2, 3, 'img2-h-hierbasVeganas.png', 'Hierbas veganas', '340.00', '50', 1, 2, 1),
-(9, 'Bloques de letras', 'José López', '100.00', 2, 3, 'img2-j-bloquesDeLetras.png', 'Bloques de letras', '340.00', '50', 4, 1, 1),
-(10, 'Remera de lino', 'José López', '100.00', 2, 3, 'img2-RC-remerasdeLino.png', 'Remera de lino', '340.00', '50', 6, 2, 1),
-(11, 'Grabado', 'José López', '100.00', 2, 3, 'img3-A-grabado.png', 'Grabado', '340.00', '50', 2, 2, 1),
-(12, 'Grabado de madera', 'José López', '100.00', 2, 3, 'img3-A-grabadoMadera.png', 'Grabado de madera', '340.00', '50', 2, 1, 1),
-(13, 'Hebilla Cuero cabello', 'José López', '367.00', 200, 6, 'img3-C-cueroCabello.png', 'hebilla cuero natural', '456.00', NULL, 1, 1, 1),
-(14, 'Soporte para cepillo de dientes', 'José López', '100.00', 2, 3, 'img3-h-soporteParaCepilloDeDientes.png', 'Soporte para cepillo de dientes', '340.00', '50', 3, 2, 1),
-(15, 'Matryoshka de gallinas', 'José López', '100.00', 2, 3, 'img3-j-matryoshkaGallina.png', 'Matryoshka de gallinas', '340.00', '50', 2, 1, 1),
-(16, 'Buzo', 'José López', '1500.00', 10, 3, 'img3-RC-buzo.png', 'buzo talle único con logo impreso a elección', '340.00', NULL, 6, 2, 1),
-(17, 'Figuras en madera', 'José López', '100.00', 2, 3, 'img4-A_figurasEnMadera.png', 'Figuras en madera', '340.00', '50', 4, 1, 1),
-(18, 'Cinturón', 'José López', '100.00', 2, 3, 'img4-C-cinturon.png', 'Cinturón', '340.00', '50', 6, 1, 1),
-(19, 'Señal de madera', 'José López', '100.00', 2, 3, 'img4-h-close&openDeMadera.png', 'Señal de madera', '340.00', '50', 3, 1, 1),
-(20, 'Ardilla de la Era del Hielo', 'José López', '100.00', 2, 3, 'img4-j-ardillaEraDelHielo.png', 'Ardilla de la Era del Hielo', '340.00', '50', 2, 1, 1),
-(21, 'Jeans', 'José López', '100.00', 2, 3, 'img4-RC-jeans.png', 'Jeans', '340.00', '50', 6, 1, 1),
-(22, 'Cepillo de dientes', 'José López', '100.00', 2, 3, 'img5-P-cepillodedientes.png', 'Cepillo de dientes', '340.00', '50', 5, 2, 1),
-(23, 'Jabón antibacteriano', 'José López', '100.00', 2, 3, 'img5-P-jabonantibaPteriano.png', 'Jabón antibacteriano', '340.00', '50', 5, 1, 1),
-(24, 'Jabón natural', 'José López', '100.00', 2, 3, 'img5-P-jabonNatural.png', 'Jabón natural', '340.00', '50', 5, 1, 1),
-(25, 'Peines de Bambú', 'José López', '100.00', 2, 3, 'img5-P-peinesdeBambu.png', 'Peines de Bambú', '340.00', '50', 1, 1, 1);
-
 -- --------------------------------------------------------
 
 --
@@ -181,14 +115,6 @@ CREATE TABLE `sections` (
   `idSections` int(11) NOT NULL,
   `name` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Volcado de datos para la tabla `sections`
---
-
-INSERT INTO `sections` (`idSections`, `name`) VALUES
-(1, 'Destacados'),
-(2, 'Vendidos');
 
 -- --------------------------------------------------------
 
@@ -203,13 +129,6 @@ CREATE TABLE `tiendas` (
   `location` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
---
--- Volcado de datos para la tabla `tiendas`
---
-
-INSERT INTO `tiendas` (`idTienda`, `name`, `ranking`, `location`) VALUES
-(1, 'Jose Lopez', 'platinium', 'Argentina');
-
 -- --------------------------------------------------------
 
 --
@@ -221,14 +140,6 @@ CREATE TABLE `typeuser` (
   `name` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
---
--- Volcado de datos para la tabla `typeuser`
---
-
-INSERT INTO `typeuser` (`idTypeUser`, `name`) VALUES
-(1, 'sell'),
-(2, 'buy');
-
 -- --------------------------------------------------------
 
 --
@@ -239,14 +150,6 @@ CREATE TABLE `typeusers` (
   `idTypeUser` int(11) NOT NULL,
   `name` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Volcado de datos para la tabla `typeusers`
---
-
-INSERT INTO `typeusers` (`idTypeUser`, `name`) VALUES
-(1, 'Comprador'),
-(2, 'Vendedor');
 
 -- --------------------------------------------------------
 
@@ -267,14 +170,6 @@ CREATE TABLE `users` (
   `pass` varchar(200) NOT NULL,
   `Tienda_idTienda` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Volcado de datos para la tabla `users`
---
-
-INSERT INTO `users` (`idUsers`, `name`, `email`, `birth_date`, `address`, `avatar`, `user`, `idTypeUser`, `idCountry`, `pass`, `Tienda_idTienda`) VALUES
-(1, 'CARLA', 'CARLA@CARLA.CARLA', '1111-01-01', 'Av. Italia', '1616865039215_img.png', 'CARLA', 1, 4, '$2a$10$Fz9qehS.N2eDFJk2iiESeO2hqmZ04y4.rmOqz7n/gImXhuBSufsvW', 1),
-(2, 'Emanuel Mercado', 'ema_dvr_2013@live.com', '1998-07-15 00:00:00', 'Escobio', '1621731073952_img.jpg', 'Emam16', 1, 2, '$2a$10$Y3EFLaMcbkJDebOAOn6ZGOMe9E1oLrx4lY5oo/LIZcJC2b35AV33m', 1);
 
 --
 -- Índices para tablas volcadas
@@ -365,19 +260,19 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT de la tabla `categories`
 --
 ALTER TABLE `categories`
-  MODIFY `idCategories` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `idCategories` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `categoriesusers`
 --
 ALTER TABLE `categoriesusers`
-  MODIFY `idCategoriesUsers` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `idCategoriesUsers` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `countries`
 --
 ALTER TABLE `countries`
-  MODIFY `idCountries` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `idCountries` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `orderproducts`
@@ -395,37 +290,37 @@ ALTER TABLE `orders`
 -- AUTO_INCREMENT de la tabla `products`
 --
 ALTER TABLE `products`
-  MODIFY `idProducts` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+  MODIFY `idProducts` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `sections`
 --
 ALTER TABLE `sections`
-  MODIFY `idSections` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `idSections` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `tiendas`
 --
 ALTER TABLE `tiendas`
-  MODIFY `idTienda` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `idTienda` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `typeuser`
 --
 ALTER TABLE `typeuser`
-  MODIFY `idTypeUser` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `idTypeUser` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `typeusers`
 --
 ALTER TABLE `typeusers`
-  MODIFY `idTypeUser` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `idTypeUser` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `users`
 --
 ALTER TABLE `users`
-  MODIFY `idUsers` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `idUsers` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- Restricciones para tablas volcadas

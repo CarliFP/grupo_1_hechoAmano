@@ -17,6 +17,7 @@ const validations = [
     body('birth_date').notEmpty().withMessage('Tienes que ingresa tu fecha de nacimiento'),
     body('address').notEmpty().withMessage('Tienes que escribir tu domicilio'),
     body('country').notEmpty().withMessage('Tienes que ingresar tu país'),
+    body('tienda').notEmpty().withMessage('Tienes que elegir una tienda'),
     body('pass').notEmpty().withMessage('Tienes que elegir una contraseña'),
     body('avatar').custom((value, {req}) => {
         let file = req.file

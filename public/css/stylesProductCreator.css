@@ -79,6 +79,11 @@ main input {
     box-shadow: 3px 3px lightgrey;
 }
 
+.text-danger {
+    color: #DD4B39;
+    font-weight: bold; 
+}
+
 @media (min-width: 460px){
  .sendButton, .eraseButton {
      max-width: 360px;

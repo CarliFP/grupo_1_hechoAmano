@@ -13,7 +13,7 @@ module.exports = (sequelize, DataTypes) => {
       //Un usuario pertenece a una tienda
       this.belongsTo(models.Tienda,{
         as: 'Tienda',
-        foreignKey: 'idTienda'
+        foreignKey: 'Tienda_idTienda'
       });
 
       //Un usuario pertenece a un tipo de usuario
@@ -25,7 +25,7 @@ module.exports = (sequelize, DataTypes) => {
       //Un usuario pertenece a un país
       this.belongsTo(models.Countries,{
         as: 'Countries',
-        foreignKey: 'idCountries'
+        foreignKey: 'idCountry'
     });
 
 

@@ -11,37 +11,40 @@ let db = require("../src/database/models");
 
 const productController = {
 
-	index: (req,res) => {
-        let vendidos = products.filter(product => product.status == 'vendidos'); 
-		let destacados = products.filter(product => product.status == 'destacados');
+	index: async (req,res) => {
+		let vendidos = await db.Products.findAll(
+			{where: {
+			  idSection: 2
+		  }}
+		  );
+	  
+		  let destacados = await db.Products.findAll(
+			{where: {
+			  idSection: 1
+		  }}
+		  );
+
+        // let vendidos = products.filter(product => product.status == 'vendidos'); 
+		// let destacados = products.filter(product => product.status == 'destacados');
 		res.render('product', {destacados, vendidos})	
     },
 
-	list: function (req, res) {
-        // db.Countries.findAll()
-			// .then(countries => {
-		// db.Categories.findAll()
-			// .then(categories => {
-		db.Products.findAll()
-            .then(products => {
-				// res.send({products})	
-				res.render('product', {products})	
-                // res.render("listCountries", {countries})
-            })
-    },
-
 	detail: function (req, res) {
-		let Allproducts = db.Products.findAll();
+		let ProductsDestacados = db.Products.findAll(
+			{where: {
+			  idSection: 1
+		  }}
+		  );
 
         let Oneproduct = db.Products.findByPk(req.params.id, {
 			    include: [{association: "Categoria"}, {association: "Seccion"}]
 			});
 
-		Promise.all([Allproducts, Oneproduct])
-            .then(function([products, product]) {
+		Promise.all([ProductsDestacados, Oneproduct])
+            .then(function([destacados, product]) {
                 // res.send(genres.name);
                 // res.send(genres[1].name);
-                res.render("productDetail", {products, product});
+                res.render("productDetail", {destacados, product});
 				// res.send({categories, sections})
             })
         // db.Products.findByPk(req.params.id, {
@@ -81,39 +84,42 @@ const productController = {
     },
 
     store: async (req, res) => {
+		let categories = await db.Categories.findAll();
+
+        let sections = await db.Sections.findAll();
+
 
 		const resultValidation = validationResult(req);
 
 		// res.send(validationResult(req));
 
-        if (resultValidation.errors.length > 0)
+        if (resultValidation.errors.length > 0) {
+			// res.send(resultValidation.mapped());
+			res.render('productCreator',
 			{
-				// res.send("Algo falta");
-				res.redirect('/product/create')
-				// {
-				// errors: resultValidation.mapped(), // mapped convierte un array en un objeto literal con propiedades
-				// oldData: req.body // Ya que si se renueva el formulario porque falto un dato conserve el resto, value ver.
-				// })
-
-			} else {
-				// res.send(req.body)
-				await db.Products.create({
-					name: req.body.name,
-					seller: req.body.seller,
-					price: req.body.price,
-					stock: req.body.stock,
-					shipping: req.body.shipping,
-					description: req.body.description,
-					payment: req.body.payment,
-					idCategory: req.body.category,
-					idSection: req.body.section,
-					image: req.file.filename
+			errors: resultValidation.mapped(), // mapped convierte un array en un objeto literal con propiedades
+			oldData: req.body, // Ya que si se renueva el formulario porque falto un dato conserve el resto, value ver.
+			categories, sections
+			})}
+		else {
+			// res.send(req.body)
+			await db.Products.create({
+				name: req.body.name,
+				seller: req.body.seller,
+				price: req.body.price,
+				stock: req.body.stock,
+				shipping: req.body.shipping,
+				description: req.body.description,
+				payment: req.body.payment,
+				idCategory: req.body.category,
+				idSection: req.body.section,
+				image: req.file.filename
 					
-				}).then(function(product){
-					// res.send(req.body);
-					res.redirect("/product/list");
-				})
-			}
+			}).then(function(){
+				// res.send(req.body);
+				res.redirect("/product");
+			})
+		}
 
 		// En mi rama no lo borre porque lo considero util (Ema).
 
@@ -175,27 +181,46 @@ const productController = {
             })
 	},
 
-    update: (req, res) => {
+    update: async (req, res) => {
 		
-		db.Products.update({
-			// ...req.body
-			name: req.body.name,
-			seller: req.body.seller,
-			price: req.body.price,
-			stock: req.body.stock,
-			shipping: req.body.shipping,
-			description: req.body.description,
-			payment: req.body.payment,
-			idCategory: req.body.category,
-			idSection: req.body.section,
-			image: req.file.filename
-		},
-		{   
-			where: {idProducts: req.params.id}
-		})
-			.then(function() {
-				res.redirect('/product/list')
+		let categories = await db.Categories.findAll();
+
+        let sections = await db.Sections.findAll();
+
+
+		const resultValidation = validationResult(req);
+
+		// res.send(validationResult(req));
+
+        if (resultValidation.errors.length > 0) {
+			// res.send(resultValidation.mapped());
+			res.render('productEdit',
+			{
+			errors: resultValidation.mapped(), // mapped convierte un array en un objeto literal con propiedades
+			oldData: req.body, // Ya que si se renueva el formulario porque falto un dato conserve el resto, value ver.
+			categories, sections
+			})}
+		else {db.Products.update({
+				// ...req.body
+				name: req.body.name,
+				seller: req.body.seller,
+				price: req.body.price,
+				stock: req.body.stock,
+				shipping: req.body.shipping,
+				description: req.body.description,
+				payment: req.body.payment,
+				idCategory: req.body.category,
+				idSection: req.body.section,
+				image: req.file.filename
+			},
+			{   
+				where: {idProducts: req.params.id}
+			}).then(function() {
+					res.redirect('/product');
 			});
+		}
+		
+
 		// let id = req.params.id;
 		// let productToEdit = products.find(product => product.id == id)
 		// let image;
@@ -239,7 +264,7 @@ const productController = {
                 idProducts: req.params.id
             }
         })
-        res.redirect('/product/list'); 
+        res.redirect('/product'); 
 		}
     }
 

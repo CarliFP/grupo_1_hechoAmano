@@ -118,18 +118,17 @@
         </div>
             
         <section class= "container row">
-            <!-- Aqui hay que volver a crear la diferencias entre destacados y vendidos -->
-            <% for (let i = 0; i < (products.length > 4 ? 4 : products.length); i++) { %> 
+            <% for (let i = 0; i < (destacados.length > 4 ? 4 : destacados.length); i++) { %> 
                 <article class="relatedProduct col">
                     <div class= "img-box">
-                        <a href="product/<%=products[i].id%>/detail">                               
-                          <img  src= "/img/<%= products[i].image %> " alt="<%= products[i].name %> ">
+                        <a href="/product/<%=destacados[i].idProducts%>/detail">                               
+                          <img  src= "/img/<%= destacados[i].image %> " alt="<%= destacados[i].name %> ">
                         </a>    
                      </div>
                      <div class="related-article1">
-                        <h3 class="price">$ <%= products[i].price %> </h3>
-                        <h4 class="payment-method">Hasta <%= products[i].payment %>  cuotas</h4>
-                        <h4 class="description"><%= products[i].name %> </h4>
+                        <h3 class="price">$ <%= destacados[i].price %> </h3>
+                        <h4 class="payment-method">Hasta <%= destacados[i].payment %>  cuotas</h4>
+                        <h4 class="description"><%= destacados[i].name %> </h4>
                     </div>
                 </article> 
             <% } %>

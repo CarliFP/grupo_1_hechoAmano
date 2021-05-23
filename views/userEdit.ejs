@@ -12,7 +12,7 @@
 
             <main class="register">
 
-                <form class="main-form" action="/users/register" method="POST" enctype="multipart/form-data">
+                <form class="main-form" action="/users/<%=user.idUsers%>/put?_method=PUT" method="POST" enctype="multipart/form-data">
                     <div class= "title">
                         <h4>Datos Personales</h4>
                     </div>
@@ -22,7 +22,7 @@
                                 type="text" 
                                 name="name" 
                                 placeholder="Nombre y apellido"
-                                value = "<%= locals.oldData ? oldData.name : null%>" >
+                                value = "<%= locals.oldData ? oldData.name : user.name%>" >
 
                         <% if (locals.errors && errors.name) { %> 
                             <div class ="text-danger">
@@ -34,7 +34,7 @@
                                 type="text" 
                                 name="user" 
                                 placeholder="Nombre de usuario"
-                                value = "<%= locals.oldData ? oldData.user : null%>" >
+                                value = "<%= locals.oldData ? oldData.user : user.user%>" >
 
                         <% if (locals.errors && errors.user) { %> 
                             <div class ="text-danger">
@@ -46,7 +46,7 @@
                                 type="email" 
                                 name="email" 
                                 placeholder="E-mail"
-                                value = "<%= locals.oldData ? oldData.email : null%>">
+                                value = "<%= locals.oldData ? oldData.email : user.email%>">
 
                         <% if (locals.errors && errors.email) { %> 
                             <div class ="text-danger">
@@ -59,7 +59,7 @@
                                 name="birth_date" 
                                 id="birth_date" 
                                 max="2022-12-31"
-                                value = "<%= locals.oldData ? oldData.birth_date : null%>">
+                                value = "<%= locals.oldData ? oldData.birth_date : user.birth_date%>">
 
                         <% if (locals.errors && errors.birth_date) { %> 
                             <div class ="text-danger">
@@ -71,7 +71,7 @@
                                  type="text" 
                                  name="address" 
                                  placeholder="Domicilio"
-                                 value = "<%= locals.oldData ? oldData.address : null%>">
+                                 value = "<%= locals.oldData ? oldData.address : user.address%>">
                                  
                         <% if (locals.errors && errors.address) { %> 
                             <div class ="text-danger">
@@ -89,7 +89,7 @@
                             <% for (const oneCountry of countries) { %>   
                                 <option
                                     value="<%= oneCountry.idCountries %>"
-                                    <%= locals.oldData && (oneCountry.name === oldData.country) ? 'selected' : null %>>
+                                    <%= locals.oldData && (oneCountry.name === oldData.country) ? 'selected' : user.idCountry %>>
                                     <%= oneCountry.name %>
                                 </option>
                             <% } %>
@@ -139,17 +139,11 @@
                         <% for (const oneTienda of tiendas) { %>   
                             <option
                                 value="<%= oneTienda.idTienda %>"
-                                <%= locals.oldData && (oneTienda.name === oldData.tienda) ? 'selected' : null %>>
+                                <%= locals.oldData && (oneTienda.name === oldData.tienda) ? 'selected' : user.Tienda_idTienda %>>
                                 <%= oneTienda.name %>
                             </option>
                         <% } %>
                     </select>
-
-                    <% if (locals.errors && errors.tienda) { %>
-                        <div class ="text-danger">
-                            <%= errors.tienda.msg %>
-                        </div>
-                    <% } %>
 
     
     
@@ -164,7 +158,7 @@
 
                         <% if (locals.errors && errors.avatar) { %> 
                             <div class ="text-danger">
-                                <%= errors.avatar.msg %> <!-- VER AQUÍ POR QUÉ NO SE EJECUTA EL ERROR-->
+                                <%= errors.avatar.msg %>
                             </div>
                         <% } %> 
 
@@ -187,7 +181,7 @@
     
                     <div class= "btn-submit">
                         <input class= "submit-button" type="reset" value="Borrar">
-                        <input class="submit-button action" type="submit" value="Enviar">
+                        <button type="submit" class= "submit-button">Guardar cambios</button>
                     </div>
     
                 </form>

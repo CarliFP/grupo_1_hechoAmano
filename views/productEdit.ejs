@@ -22,28 +22,94 @@
                     <form action="/product/<%=product.idProducts%>/put?_method=PUT" method="POST" enctype="multipart/form-data">                       
                          <div class="col-12 col-md-6">
                             <label for="name" class="form-label">Nombre del producto:</label>
-                            <input type="text" id="name" name="name" placeholder="Ej: nombre del producto" class="form-input" value="<%= product.name %> ">
+                            <input type="text"
+                            id="name" name="name"
+                            placeholder="Ej: nombre del producto"
+                            class="form-input"
+                            value = "<%= locals.oldData ? oldData.name : product.name%> ">
                         </div>
+
+                        <% if (locals.errors && errors.name) { %> 
+                            <div class ="text-danger">
+                                <%= errors.name.msg %> 
+                            </div>
+                        <% } %> 
+
                         <div class="col-12 col-md-6">
                             <label for="seller" class="form-label">Vendedor:</label>
                             <input type="text" id="seller" name="seller" placeholder="Ej: Vendedor" class="form-input" value="<%= product.seller %> ">
                         </div>
+
+                        <% if (locals.errors && errors.seller) { %> 
+                            <div class ="text-danger">
+                                <%= errors.seller.msg %> 
+                            </div>
+                        <% } %> 
+
                         <div class="col-12 col-md-6">
                             <label for="price" class="form-label">Precio del producto:</label>
-                            <input type="number" id="price" name="price" placeholder="Ej: 5678" class="form-input" value="<%= product.price %> ">
+                            <input type="number"
+                            id="price"
+                            name="price"
+                            placeholder="Ej: 5678"
+                            class="form-input"
+                            value = "<%= locals.oldData ? oldData.price : product.price%> ">
                         </div>
+                        
+                        <% if (locals.errors && errors.price) { %> 
+                            <div class ="text-danger">
+                                <%= errors.price.msg %> 
+                            </div>
+                        <% } %> 
+
                         <div class="col-12 col-md-6">
                             <label for="stock" class="form-label">Stock:</label>
-                            <input type="number" id="stock" name="stock" placeholder="Ej: 6" class="form-input" value="<%= product.stock %> ">
+                            <input type="number"
+                            id="stock"
+                            name="stock"
+                            placeholder="Ej: 6"
+                            class="form-input"
+                            value = "<%= locals.oldData ? oldData.stock : product.stock%> ">
                         </div>
+
+                        <% if (locals.errors && errors.stock) { %> 
+                            <div class ="text-danger">
+                                <%= errors.stock.msg %> 
+                            </div>
+                        <% } %> 
+
                         <div class="col-12 col-md-6">
                             <label for="shipping" class="form-label">Costo de envío:</label>
-                            <input type="number" id="shipping" name="shipping" placeholder="Ej: 56" class="form-input" value="<%= product.shipping %> ">
+                            <input type="number"
+                            id="shipping"
+                            name="shipping"
+                            placeholder="Ej: 56"
+                            class="form-input"
+                            value = "<%= locals.oldData ? oldData.shippinp : product.shippinp%> ">
                         </div>
+                                                    
+                        <% if (locals.errors && errors.shipping) { %> 
+                            <div class ="text-danger">
+                                <%= errors.shipping.msg %> 
+                            </div>
+                        <% } %> 
+
                         <div class="col-12 col-md-6">
                             <label for="payment" class="form-label">Cuotas:</label>
-                            <input type="number" id="payment" name="payment" placeholder="Ej: 150" class="form-input" value="<%= product.payment %> ">
+                            <input type="number"
+                            id="payment"
+                            name="payment"
+                            placeholder="Ej: 150"
+                            class="form-input"
+                            value = "<%= locals.oldData ? oldData.payment : product.payment%> ">
                         </div>
+                        
+                        <% if (locals.errors && errors.payment) { %> 
+                            <div class ="text-danger">
+                                <%= errors.payment.msg %> 
+                            </div>
+                        <% } %> 
+
                         <div class="col-12 col-md-6">
                             <label for="category" class="form-label">Categoria</label>
                             <select name="category" required>
@@ -53,6 +119,13 @@
                                 <% }); %>
                             </select>
                         </div>
+                      
+                        <% if (locals.errors && errors.category) { %> 
+                            <div class ="text-danger">
+                                <%= errors.category.msg %> 
+                            </div>
+                        <% } %>
+
                         <div class="col-12 col-md-6">
                             <label for="section" class="form-label">Sección en el index:</label>
                             <select name="section" required>
@@ -62,10 +135,24 @@
                                 <% }); %>
                             </select>
                         </div>
+                                                    
+                        <% if (locals.errors && errors.section) { %> 
+                            <div class ="text-danger">
+                                <%= errors.section.msg %> 
+                            </div>
+                        <% } %> 
+
                         <div class="col-12">
                             <label for="image" class="form-label">Imagen:</label>
                             <input type="file" name="image" id="image" class="form-input"  value="<%= product.image %>">
                         </div>
+
+                        <% if (locals.errors && errors.image) { %> 
+                            <div class ="text-danger">
+                                <%= errors.image.msg %> 
+                            </div>
+                        <% } %> 
+                        
                         <div class="col-12">
                             <label for="description" class="form-label">Descripción:</label>
                             <textarea name="description" id="description" class="form-input"  value="<%= product.description %>" ></textarea>
