@@ -19,7 +19,7 @@
             <div>
                     <h4>¿Querés editar un producto?</h4>
                     
-                    <form action="/product/<%=productToEdit.id%>/put?_method=PUT" method="POST" enctype="multipart/form-data">                       
+                    <form class="edit-form" action="/product/<%=productToEdit.id%>/put?_method=PUT" method="POST" enctype="multipart/form-data">                       
                          <div class="col-12 col-md-6">
                             <label for="name" class="form-label">Nombre del producto:</label>
                             <input type="text" id="name" name="name" placeholder="Ej: nombre del producto" class="form-input" value="<%= productToEdit.name %> ">
@@ -80,4 +80,5 @@
         </section>
     </main>
 </body>
+    <script src="/js/productEditValidator.js"></script>
 </html>
