@@ -1,3 +1,26 @@
+🔖 Weekly SPRINT 7 <br>
+
+1️⃣ ¿Qué he hecho desde la última reunión de sincronización para ayudar al equipo a cumplir su objetivo?<br>
+2️⃣ ¿Qué voy a hacer a partir de este momento para ayudar al equipo a cumplir su objetivo?<br>
+3️⃣ ¿Qué impedimentos tengo o voy a tener que nos impidan conseguir nuestro objetivo?<br>
+
+
+✅ Emanuel<br>
+1️⃣ <br>
+2️⃣ <br>
+3️⃣ <br>
+
+✅ Carla<br>
+1️⃣ Repasar los contenidos del curso.<br>
+2️⃣ Estar al día con mis tareas asignadas en Trello.<br>
+3️⃣ No surgieron impedimentos por el momento.<br>
+
+✅ Neri<br>
+1️⃣ <br>
+2️⃣ <br>
+3️⃣ <br>
+
+
 🔖 Weekly SPRINT 6<br>
 
 :heavy_exclamation_mark: ALERT equipo Docente! El PDF del Diagrama Entidad Relación se encuentra dentro de la carpeta Wireframe -> DiagramaER-HechoAmano.<br> 
