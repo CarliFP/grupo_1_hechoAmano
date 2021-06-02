@@ -1,3 +1,35 @@
+:three: RETROSPECTIVA SPRINT 6 <br>
+
+:bookmark: Método Starfish:<br>
+
+:exclamation: Start doing <br>
+<!--cosas innovadoras, aquellas que por curiosidad que queremos probar y/o soluciones comprobadas que deberíamos usar-->
+1.- Continuar enfocados con el trabajo en ramas y el trello.<br> 
+
+:exclamation: More of: <br>
+<!--practicas que creemos que requiere más refinamiento y que nos gustan mucho por ello hay que darles más-->
+1.-Estamos en el tramo final, debemos seguir refinando estar al día con las prácticas para agilizar el trabajo.<br>
+
+:exclamation: Keep Doing: <br>
+<!--aquello que venimos haciendo y nos brinda valor-->
+1.-Buena comunicación y uso de tablero de Trello.<br>
+
+:exclamation: Less of: <br>
+<!--aquello que no nos aporta el valor que esperábamos-->
+1.- No hay puntos a tratar.<br>
+
+:exclamation: Stop Doing: <br>
+<!--aquello que podemos eliminar-->
+1.- No tenemos prácticas a eliminar.<br>
+<!--aquello que podemos eliminar-->
+
+:white_check_mark: Conclusión: Retomar la modalidad y organización de los sprints anteriores donde estuvimos mejor organizados y comunicados.  <br>
+
+:star: Tablero para el Sprint 6: https://trello.com/b/0KsoyQla/sprint-7 <br>
+
+<br>
+<br>
+
 :three: RETROSPECTIVA SPRINT 5 <br>
 
 :bookmark: Método Starfish:<br>
