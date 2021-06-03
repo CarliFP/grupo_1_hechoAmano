@@ -120,5 +120,16 @@
   ],
   "pass": "$2a$10$2Ypx6Id4Ii8Zs9F/oplGJuo9PNK0hBTaM1AIRl2je/SRApcIkhsw2",
   "avatar": "1618330339996_img.jpg"
+ },
+ {
+  "id": 10,
+  "name": "aseqas",
+  "user": "sdadsa",
+  "email": "asda@sald.com",
+  "birth_date": "2000-12-14",
+  "address": "aaa 123 ",
+  "country": "Argentina",
+  "pass": "$2a$10$7XWKUjIRq6Hkr5xzLuKlDu0.0lYutS1YdV8uKpWbETlcF2cQ6/lYG",
+  "avatar": "1622677402798_img.jpg"
  }
 ]
