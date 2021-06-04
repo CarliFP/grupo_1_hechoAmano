@@ -9,9 +9,9 @@ Weekly 02-6-2021 19:00 horas<br>
 
 
 ✅ Emanuel<br>
-1️⃣ <br>
-2️⃣ <br>
-3️⃣ <br>
+1️⃣ Me esforze para poder terminar mis tareas, pese al atraso se pudo cumpli con el objetivo. <br>
+2️⃣ Ponerme al dia con el contenido de la cursada, especialmente ahora que es tramo final. <br>
+3️⃣ Lo mas seguro los cortos espacios de tiempo con los que se cuentan. <br>
 
 ✅ Carla<br>
 1️⃣ Repasar los contenidos del curso.<br>
