@@ -18,11 +18,14 @@
                     </div>
                     
                     <div class="container-personal-information">
-                        <input  class="personal-information-input"
+                        <input  class="personal-information-input name"
                                 type="text" 
                                 name="name" 
                                 placeholder="Nombre y apellido"
                                 value = "<%= locals.oldData ? oldData.name : null%>" >
+
+                    <div class="errors" style="display:none;" style="color:red;"></div>
+
 
                         <% if (locals.errors && errors.name) { %> 
                             <div class ="text-danger">
@@ -30,7 +33,7 @@
                             </div>
                         <% } %> 
 
-                        <input  class="personal-information-input is-invalid" 
+                        <input  class="personal-information-input is-invalid user" 
                                 type="text" 
                                 name="user" 
                                 placeholder="Nombre de usuario"
@@ -42,7 +45,7 @@
                             </div>
                         <% } %> 
 
-                        <input class="personal-information-input" 
+                        <input class="personal-information-input email" 
                                 type="email" 
                                 name="email" 
                                 placeholder="E-mail"
@@ -54,7 +57,7 @@
                             </div>
                         <% } %> 
 
-                        <input class="personal-information-input" 
+                        <input class="personal-information-input birthDate" 
                                 type="date" 
                                 name="birth_date" 
                                 id="birth_date" 
@@ -67,7 +70,7 @@
                             </div>
                         <% } %> 
 
-                        <input class="personal-information-input"
+                        <input class="personal-information-input adress"
                                  type="text" 
                                  name="address" 
                                  placeholder="Domicilio"
@@ -84,7 +87,7 @@
                         <select 
                             name="country"
                             id=""
-                            class = "personal-information-input">
+                            class = "personal-information-input country">
                             <option value="">Elegi un pais</option>
                             <%
                                 let countries = ['Argentina', 'Bolivia', 'Brasil', 'Colombia', 'Chile', 'Ecuador', 'Paraguay',
@@ -152,7 +155,7 @@
     
                     <div class = "file-upload">
                         <!-- esto hace que se oculte y se pueda customizar, sino reaparece-->
-                        <input type="file" name= 'avatar' id="actual-btn">
+                        <input type="file" name= 'avatar' id="actual-btn" class="avatar">
                         <!--boton custom-->
 
                         <% if (locals.errors && errors.avatar) { %> 
