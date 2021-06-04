@@ -1,14 +1,17 @@
 🔖 Weekly SPRINT 7 <br>
 
+<br>
+Weekly 02-6-2021 19:00 horas<br>
+
 1️⃣ ¿Qué he hecho desde la última reunión de sincronización para ayudar al equipo a cumplir su objetivo?<br>
 2️⃣ ¿Qué voy a hacer a partir de este momento para ayudar al equipo a cumplir su objetivo?<br>
 3️⃣ ¿Qué impedimentos tengo o voy a tener que nos impidan conseguir nuestro objetivo?<br>
 
 
 ✅ Emanuel<br>
-1️⃣ <br>
-2️⃣ <br>
-3️⃣ <br>
+1️⃣ Me esforze para poder terminar mis tareas, pese al atraso se pudo cumpli con el objetivo. <br>
+2️⃣ Ponerme al dia con el contenido de la cursada, especialmente ahora que es tramo final. <br>
+3️⃣ Lo mas seguro los cortos espacios de tiempo con los que se cuentan. <br>
 
 ✅ Carla<br>
 1️⃣ Repasar los contenidos del curso.<br>
@@ -36,7 +39,7 @@ Weekly 27-4-2021 19:00 horas<br>
 3️⃣ . <br>
 
 ✅ Carla<br>
-1️⃣ Desde la última reunión armé el DER (Diagrama Entidad Relación MySQL)
+1️⃣ Desde la última reunión armé el DER (Diagrama Entidad Relación MySQL) <br>
 2️⃣ Avanzar con la implementación de las relaciones en sequelize. <br>
 3️⃣ Me surgieron dudas puntualmente respecto de las órdenes de compra en el DER a partir de las sugerencias de Neri, aún no tengo claro cuál sería la solución más adecuada para implementar en nuestra aplicación, que sea también escalable a futuro, lo que evacuaremos con el equipo docente.<br>
 
