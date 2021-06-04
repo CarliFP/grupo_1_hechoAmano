@@ -1,5 +1,8 @@
 🔖 Weekly SPRINT 7 <br>
 
+<br>
+Weekly 02-6-2021 19:00 horas<br>
+
 1️⃣ ¿Qué he hecho desde la última reunión de sincronización para ayudar al equipo a cumplir su objetivo?<br>
 2️⃣ ¿Qué voy a hacer a partir de este momento para ayudar al equipo a cumplir su objetivo?<br>
 3️⃣ ¿Qué impedimentos tengo o voy a tener que nos impidan conseguir nuestro objetivo?<br>
