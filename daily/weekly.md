@@ -16,9 +16,9 @@
 3️⃣ No surgieron impedimentos por el momento.<br>
 
 ✅ Neri<br>
-1️⃣ <br>
-2️⃣ <br>
-3️⃣ <br>
+1️⃣ Poder empezar y desarrollar el javascript para el front<br>
+2️⃣ Poder poner en práctica lo aprendido en clases anteriores<br>
+3️⃣ Siento que mi vida laboral y/o personal esta consumiendo más tiempo y no se lo podré dedicar tanto al proyecto. Igualmente tenemos clases prácticas para compensar<br>
 
 
 🔖 Weekly SPRINT 6<br>
@@ -41,9 +41,9 @@ Weekly 27-4-2021 19:00 horas<br>
 3️⃣ Me surgieron dudas puntualmente respecto de las órdenes de compra en el DER a partir de las sugerencias de Neri, aún no tengo claro cuál sería la solución más adecuada para implementar en nuestra aplicación, que sea también escalable a futuro, lo que evacuaremos con el equipo docente.<br>
 
 ✅ Neri<br>
-1️⃣ <br>
-2️⃣ <br>
-3️⃣ <br>
+1️⃣ Entender cómo trabajar con tablas, ya sea para crear su estructura como para importarla con o sin datos<br>
+2️⃣ Voy a intentar solucionar los problemas que surjan en el equipo importando bases de datos<br>
+3️⃣ No es mi tema favorito, por lo que me cuesta más entenderlo<br>
 <br>
 1️⃣ ¿Qué he hecho desde la última reunión de sincronización para ayudar al equipo a cumplir su objetivo?<br>
 2️⃣ ¿Qué voy a hacer a partir de este momento para ayudar al equipo a cumplir su objetivo?<br>
@@ -62,9 +62,9 @@ Weekly 23-4-2021 18:30 horas<br>
 3️⃣ Resolver errores al vincular la  base de datos de MYSQL Workbench a  XAMPP (phpMyAdmin) que es el programa que utilizan mis compañeros.  <br>
 
 ✅ Neri<br>
-1️⃣ <br>
-2️⃣ <br>
-3️⃣ <br>
+1️⃣ Avanzar con mis tareas de TRELLO.<br>
+2️⃣ Voy a revisar de nuevo los conceptos para poder ser util más adelante<br>
+3️⃣ Hubo varios días que no pude ni asistir a la clase y me quedé atrás con el tema<br>
 
 
 🔖 Weekly SPRINT 5
