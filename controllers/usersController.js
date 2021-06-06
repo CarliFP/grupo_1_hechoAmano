@@ -49,23 +49,13 @@ const usersController = {
         const resultValidation = validationResult(req);
         //return res.send(resultValidation);
 
-        if (resultValidation.errors.length > 0) { //resultValidation es un objeto literal y errors su property
-            // res.send(req.body);
-            // res.send("Hay errores")
-            res.render('register',
-            {
-                errors: resultValidation.mapped(), // mapped convierte un array en un objeto literal con propiedades
-                oldData: req.body, // Ya que si se renueva el formulario porque falto un dato conserve el resto, value ver.  
-                categories, typeUsers, countries, tiendas              
-            })     
-        }
         // retorna error si el usuario ya se registró por mail
-        let userInDB = db.Users.findAll({
+        let userInDB = await db.Users.findAll({
             where:{
                 email:{[Op.like]:req.body.email}
             }
-        });
-        if (userInDB>0) {
+        }).catch(error => res.send(error));
+        if (userInDB.length>0) {
             // res.send(userInDB);
             // res.send("Este mail ya esta registrado");
             return res.render('register',
@@ -80,6 +70,16 @@ const usersController = {
             });
         }
 
+        if (resultValidation.errors.length > 0) { //resultValidation es un objeto literal y errors su property
+            // res.send(req.body);
+            // res.send("Hay errores")
+            res.render('register',
+            {
+                errors: resultValidation.mapped(), // mapped convierte un array en un objeto literal con propiedades
+                oldData: req.body, // Ya que si se renueva el formulario porque falto un dato conserve el resto, value ver.  
+                categories, typeUsers, countries, tiendas              
+            })     
+        }
 
         delete req.body.pass_confirm
 
@@ -100,8 +100,8 @@ const usersController = {
             //res.send(req.body)
             // req.session.userLogged = user;
             res.redirect("/users/login");
-        })
-        // /* ACÁ HAY QUE VER COMO CONFIRMAR LA CONTRASEÑA PORQUE TENEMOS PASS Y PASS_CONFIRM CON COMPARE? */
+        }).catch(error => res.send(error));
+        /* ACÁ HAY QUE VER COMO CONFIRMAR LA CONTRASEÑA PORQUE TENEMOS PASS Y PASS_CONFIRM CON COMPARE? */
 
         // console.log(user); 
 
