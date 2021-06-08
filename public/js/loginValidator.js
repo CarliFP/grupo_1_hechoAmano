@@ -2,10 +2,15 @@ window.onload = function(){
 
     let form = document.querySelector(".login-form")
 
+    let validacion = true;
+
     form.addEventListener("submit", function(){
-        event.preventDefault();
-        alert("noooo");
-    })
+        if (validacion == true){
+            console.log("Cumple con los campos!");
+        }else{
+            event.preventDefault();
+            
+        }
 
 
 }
