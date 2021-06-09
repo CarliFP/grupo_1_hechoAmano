@@ -131,5 +131,18 @@
   "country": "Argentina",
   "pass": "$2a$10$7XWKUjIRq6Hkr5xzLuKlDu0.0lYutS1YdV8uKpWbETlcF2cQ6/lYG",
   "avatar": "1622677402798_img.jpg"
+ },
+ {
+  "id": 11,
+  "name": "1231",
+  "user": "1231",
+  "email": "123@asd.ca",
+  "birth_date": "1023-02-10",
+  "address": "123",
+  "country": "Argentina",
+  "profile": "buy",
+  "interests": "accesorios",
+  "pass": "$2a$10$iZEp5D8Ocue..yzaqz7j2eJkww1SJ1CKwouxwer6p/FYgffbjLQEK",
+  "avatar": "1623276926936_img.jpg"
  }
 ]

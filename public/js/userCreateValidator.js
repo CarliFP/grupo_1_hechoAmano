@@ -14,55 +14,40 @@ window.onload = function(){
     var passwordVerify = document.querySelector(".passwordVerify-input")
 
 
-    var cumple = false; //Esto validará si los campos están correctos, en caso de que alguno de los campos NO cumpla con el requisito esto pasará a False.
-
-
-    var nameResult = false;
 
     name.addEventListener('keyup',function(){    
         if (name.value.length > 1) {
+
         var errorDiv = document.querySelector(".nameErrorDiv")
         errorDiv.style.display = "none";
-        var nameResult = true;
+
     }else{
         var errorDiv = document.querySelector(".nameErrorDiv")
         errorDiv.style.display = "block";
         errorDiv.innerHTML = "Tengo que tener al menos dos caracteres!"
+}
+})
 
-    }
-});
-    name.addEventListener('focusout', function(){
-        console.log(nameResult);
-    })
-
-    var userResult = false;
 
     user.addEventListener('keyup',function(){    
         if (user.value.length != 0) {
         var errorDiv = document.querySelector(".userErrorDiv")
         errorDiv.style.display = "none";
-        var userResult = true;
     }else{
         var errorDiv = document.querySelector(".userErrorDiv")
         errorDiv.style.display = "block";
         errorDiv.innerHTML = "No puedo estar vacío!"
-        var userResult = false;
 
     }});
-
-    var passwordResult = false;
 
     password.addEventListener('focusout',function(){   
         if (password.value.length > 7) {
         var errorDiv = document.querySelector(".passwordErrorDiv")
         errorDiv.style.display = "none";
-        var passwordResult = true;
     }else{
         var errorDiv = document.querySelector(".passwordErrorDiv")
         errorDiv.style.display = "block";
         errorDiv.innerHTML = "Tengo que tener al menos 8 caracteres!!"
-        var passwordResult = false;
-
     }});
 
     password.addEventListener('keyup',function(){               
@@ -70,46 +55,36 @@ window.onload = function(){
     if (password.value.length > 0) {
     var errorDiv = document.querySelector(".passwordErrorDiv")
     errorDiv.style.display = "none";
-    var passwordResult = true;
 }else{
     var errorDiv = document.querySelector(".passwordErrorDiv")
     errorDiv.style.display = "block";
     errorDiv.innerHTML = "No puedo estar vacio!!"
-    var passwordResult = false;
 }
 });
-
-    var passwordVerifyResult = false;
 
     passwordVerify.addEventListener('keyup',function(){   
         if (passwordVerify.value === password.value) {
         var errorDiv = document.querySelector(".passwordVerifyErrorDiv")
         errorDiv.style.display = "none";
-        var passwordVerifyResult = true;
     }else{
         var errorDiv = document.querySelector(".passwordVerifyErrorDiv")
         errorDiv.style.display = "block";
         errorDiv.innerHTML = "Tenemos que ser iguales!!"
-        var passwordVerifyResult = false;
 
     }});
 
-var emailResult = false;
+const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
 email.addEventListener('keyup',function(){   
-    if (email.value.indexOf("@") > 0) {
+    if (re.test(email.value)) {
     var errorDiv = document.querySelector(".emailErrorDiv")
-    errorDiv.style.display = "none";
-    var emailResult = true;
+    errorDiv.style.display = "none"
 }else{
     var errorDiv = document.querySelector(".emailErrorDiv")
     errorDiv.style.display = "block";
     errorDiv.innerHTML = "No soy un mail!"
-    var emailResult = false;
-
 }});
 
-var avatarResult = false;
 
     avatar.addEventListener('focusout',function(){  
     var fname = avatar.value;
@@ -118,83 +93,63 @@ var avatarResult = false;
         var errorDiv = document.querySelector(".avatarErrorDiv2")
         errorDiv.style.display = "block";
         errorDiv.innerHTML = "El formato de imagen no es válido!"
-        var avatarResult = false;
     }else{
      var errorDiv = document.querySelector(".avatarErrorDiv2")
         errorDiv.style.display = "none";
-     var avatarResult = true;
     }
-
-    });
+})
 
     avatar.addEventListener('focusout',function(){  
         if (avatar.value.length != 0) {
         var errorDiv = document.querySelector(".avatarErrorDiv")
         errorDiv.style.display = "none";
-        var avatarResult = true;
     }else{
         var errorDiv = document.querySelector(".avatarErrorDiv")
         errorDiv.style.display = "block";
         errorDiv.innerHTML = "No has seleccionado una imagen aún!"
-        var avatarResult = false;
-
     }});
-
-
-    var birthDateResult = false;
 
         birthDate.addEventListener('focusout',function(){  
         if (birthDate.value.length != 0) {
         var errorDiv = document.querySelector(".birthDateErrorDiv")
         errorDiv.style.display = "none";
-        var birthDateResult = true;
     }else{
         var errorDiv = document.querySelector(".birthDateErrorDiv")
-        errorDiv.style.display = "block";
+        errorDiv.style.display = "block"
         errorDiv.innerHTML = "No puedo estar incompvaro!"
-        var birthDateResult = false;
-
     }});
 
-
-    var adressResult = false;
 
         adress.addEventListener('keyup',function(){  
         if (adress.value.length != 0) {
         var errorDiv = document.querySelector(".adressErrorDiv")
         errorDiv.style.display = "none";
-        var adressResult = true;
     }else{
         var errorDiv = document.querySelector(".adressErrorDiv")
         errorDiv.style.display = "block";
         errorDiv.innerHTML = "No puedo estar vacío!"
-        var adressResult = false;
 
     }});
-
-        var countryResult = false;
 
     country.addEventListener('keyup',function(){  
     if (country.value.length != 0) {
     var errorDiv = document.querySelector(".countryErrorDiv")
     errorDiv.style.display = "none";
-    var countryResult = true;
 }else{
     var errorDiv = document.querySelector(".countryErrorDiv")
     errorDiv.style.display = "block";
     errorDiv.innerHTML = "No puedo quedar sin elegir!"
-    var countryResult = false;
 
 }});
-
-    var profileResult = false;
+// Las validaciones de profile e interests no están terminadas :(
     var profile1 = document.querySelector(".profile1")
     var profile2 = document.querySelector(".profile2")
 
-    profile1.addEventListener('click',function(){ 
-        var profileResult = true;
+    // profile1.addEventListener('click',function(){ 
+    //    var profileResult = true;
+//});
+//Esto no lo pude resolver :(
 
-});
 
     profile2.addEventListener('click',function(){ 
         var profileResult = true;        
@@ -244,30 +199,32 @@ var avatarResult = false;
 // interests
 ////////////////////////////////////////////////////////////////////////////////////
 
+
 var submitButton = document.querySelector(".submit-button")
 
-submitButton.addEventListener("mouseout", function(){
-
-        if (nameResult === true 
-          //  userResult === true &&
-          //  emailResult === true &&
-          //  birthDateResult === true &&
-          //  adressResult === true &&
-          //  countryResult === true &&
-          //  avatarDateResult === true &&
-          //  passwordResult === true &&            
-          //  profileDateResult === true &&
-         //   interestsResult === true
-        ){
+submitButton.addEventListener("click", function(){
+event.preventDefault();
+        if (
+            name.value.length > 1 &&
+            user.value.length > 1 &&
+            re.test(email) &&
+            birthDate.value.length > 1 &&
+            adress.value.length > 1 &&
+            country.value.length > 1 &&
+            avatar.value.length > 1 &&
+            password.value.length > 7 &&  
+            passwordVerify.value === password.value  
+         //   profileResult === true No pude validar esto :(  
+         //   interestsResult === true No pude validar esto :(  
+            ){
             var errorDiv = document.querySelector(".formErrorDiv")
             errorDiv.style.display = "none";
-
-            console.log("Pudimos!!")
+            form.submit();
         }
         else
         {            
             var errorDiv = document.querySelector(".formErrorDiv")
             errorDiv.style.display = "block";
-            errorDiv.innerHTML = "Por favor, revise los campos!"
+            errorDiv.innerHTML = "Por favor, revise los campos!";
     }
 })};
