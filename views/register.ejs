@@ -24,7 +24,6 @@
                                 placeholder="Nombre y apellido"
                                 value = "<%= locals.oldData ? oldData.name : null%>" >
 
-                    <div class="errors" style="display:none;" style="color:red; "></div>
 
 
                         <% if (locals.errors && errors.name) { %> 
@@ -32,6 +31,7 @@
                                 <%= errors.name.msg %> 
                             </div>
                         <% } %> 
+                            <div class="nameErrorDiv" style="display:none;" style="color:red; "></div>
 
                         <input  class="personal-information-input is-invalid user" 
                                 type="text" 
@@ -45,6 +45,8 @@
                             </div>
                         <% } %> 
 
+                             <div class="userErrorDiv" style="display:none;" style="color:red; "></div>
+
                         <input class="personal-information-input email" 
                                 type="email" 
                                 name="email" 
@@ -56,6 +58,9 @@
                                 <%= errors.email.msg %> 
                             </div>
                         <% } %> 
+
+                             <div class="emailErrorDiv" style="display:none;" style="color:red; "></div>
+
 
                         <input class="personal-information-input birthDate" 
                                 type="date" 
@@ -70,6 +75,8 @@
                             </div>
                         <% } %> 
 
+                             <div class="birthDateErrorDiv" style="display:none;" style="color:red; "></div>
+
                         <input class="personal-information-input adress"
                                  type="text" 
                                  name="address" 
@@ -81,6 +88,9 @@
                                 <%= errors.address.msg %> 
                             </div>
                         <% } %> 
+
+
+                             <div class="adressErrorDiv" style="display:none;" style="color:red; "></div>
 
                         
                         <!-- <label for="pais">Pais de nacimiento</label> -->
@@ -105,8 +115,10 @@
                                 <%= errors.country.msg %>
                             </div>
                         <% } %>
-                        
-                        
+
+
+                             <div class="countryErrorDiv" style="display:none;" style="color:red; "></div>                          
+                    
                     </div>
     
     
@@ -115,35 +127,38 @@
                         </div>
     
                         <div class="profile">
-                            <input type="radio" name="profile" value="buy" id="comprador">
+                            <input class ="profile1" type="radio" name="profile" value="buy" id="comprador">
                             <label for="comprador">Comprador</label>
-                            <input type="radio" name="profile" value="sell" id="vendedor">
+                            <input class ="profile2" type="radio" name="profile" value="sell" id="vendedor">
                             <label for="vendedor">Vendedor</label>
                         </div>
-    
+
+                             <div class="profileErrorDiv" style="display:none;" style="color:red; "></div>
+
+
                         <div class= "title">
                             <h4>Intereses</h4>
                         </div>
     
                         <div class="interests">
                             <div>
-                                <input type="checkbox" name="interests" value="accesorios" id="a">
+                                <input class="interests1" type="checkbox" name="interests" value="accesorios" id="a">
                                 <label for="a">Accesorios</label>
                             </div>
                             <div>
-                                <input  type="checkbox" name="interests" value="arte" id="b">
+                                <input class="interests2" type="checkbox" name="interests" value="arte" id="b">
                                 <label for="b">Arte</label>
                             </div>
                             <div>
-                                <input  type="checkbox" name="interests" value="hogar" id="c">
+                                <input class="interests3"  type="checkbox" name="interests" value="hogar" id="c">
                                 <label for="c">Hogar</label>
                             </div>
                             <div>
-                                <input  type="checkbox" name="interests" value="cosmética" id="d">
+                                <input class="interests4" type="checkbox" name="interests" value="cosmética" id="d">
                                 <label for="d">Cosmética</label>
                             </div>
                             <div>
-                                <input type="checkbox" name="interests" value="ropa y calzado" id="e">
+                                <input class="interests5" type="checkbox" name="interests" value="ropa y calzado" id="e">
                                 <label for="e">Ropa y calzado</label>
                             </div>
                         </div>
@@ -168,24 +183,35 @@
                         <!--advertencia de archivo no subido-->
                         <!--span id="file-chosen">No se eligió archivo</span> -->
                     </div>
-    
+                             <div class="avatarErrorDiv" style="display:none;" style="color:red; "></div> 
+                             <div class="avatarErrorDiv2" style="display:none;" style="color:red; "></div> 
+
+
                     <div class="password">
                         <input class="password-input" type="password" name="pass" placeholder="Elegí tu contraseña"> 
-                        <input class="password-input" type="password" name="pass_confirm" placeholder="Confirmá tu contraseña">
+
+                             <div class="passwordErrorDiv" style="display:none;" style="color:red; "></div> 
+
+                        <input class="passwordVerify-input" type="password" name="pass_confirm" placeholder="Confirmá tu contraseña">
+
+                             <div class="passwordVerifyErrorDiv" style="display:none;" style="color:red; "></div> 
+          
 
                         <% if (locals.errors && errors.pass) { %> 
                             <div class ="text-danger">
                                 <%= errors.pass.msg %> 
                             </div>
                         <% } %> 
-                        
+
+
+
                     </div>
     
                     <div class= "btn-submit">
-                        <input class= "submit-button" type="reset" value="Borrar">
+                        <input class= "reset-button" type="reset" value="Borrar">
                         <input class="submit-button action" type="submit" value="Enviar">
                     </div>
-    
+                             <div class="formErrorDiv" style="display:none;" style="color:red; "></div>     
                 </form>
             </main>
 
