@@ -14,11 +14,11 @@
                     <% for (let i = 0; i < product.length; i++) { %> 
                         <article class="product col">
                             <div class= "img-box">
-                                <a href="product/<%=product[i].id%>/detail">                               
+                                <a href="product/<%=product[i].idProducts%>/detail">                               
                                   <img  src= "/img/<%= product[i].image %> " alt="<%= product[i].name %> ">
                                 </a>    
                              </div>
-                             <div class="related-article1">
+                             <div class="main-article1">
                                 <h3 class="price">$ <%= product[i].price %> </h3>
                                 <h4 class="payment-method">Hasta <%= product[i].payment %>  cuotas</h4>
                                 <h4 class="description"><%= product[i].name %> </h4>

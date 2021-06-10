@@ -37,8 +37,14 @@ router.get('/logout', usersController.logout);
 //Perfil del usuario
 router.get('/profile', auth, usersController.profile); 
 
+//Formulario de edición de usuarios
+router.get('/:id/edit', validations, usersController.edit); // puede ser edith/id cuidado de no solaparse
+
+//Acción de edición (a donde se envía el formulario):
+router.put('/:id/put', uploadFile.single('avatar'), validations, usersController.update); 
+
 //Eliminar usuario
-router.post('/profile/delete', usersController.deleteUserById); 
+router.delete('/profile/delete', usersController.deleteUserById); 
 
 
 

@@ -14,7 +14,7 @@
 
         <section>
             <div class="productCategory">
-                <a href="/<%=product.category%> "><%= product.category %></a> > <a href="#"><%= product.name %> </a>
+                <a href="/<%=product.Categoria.name%> "><%= product.Categoria.name %></a> > <a href="#"><%= product.name %> </a>
             </div>
         </section>
 
@@ -105,11 +105,11 @@
 
         <div>
             <h4>SECCIÓN SOLO DISPONIBLE PARA EL ADMINISTRADOR</h4>
-            <a href="/product/<%= product.id %>/edit?_method=EDIT" class="action-button edit"><button style= "background: blue; color: white">EDITAR PRODUCTO</button></a>
-                            <form action="/product/<%= product.id %>/delete?_method=DELETE" method="POST" >
-                                <button style= "background: tomato; color: white" type="submit" class="action-button delete">ELIMINAR</button>
-                                <p>Atención! La acción de eliminar es irrreversible</p>
-                            </form>
+            <a href="/product/<%= product.idProducts %>/edit?_method=EDIT" class="action-button edit"><button style= "background: blue; color: white">EDITAR PRODUCTO</button></a>
+            <form action="/product/<%= product.idProducts %>/delete?_method=DELETE" method="POST" >
+                <button style= "background: tomato; color: white" type="submit" class="action-button delete">ELIMINAR</button>
+                <p>Atención! La acción de eliminar es irrreversible</p>
+            </form>
         </div>
         <!-- Productos relacionados -->
 
@@ -121,7 +121,7 @@
             <% for (let i = 0; i < (destacados.length > 4 ? 4 : destacados.length); i++) { %> 
                 <article class="relatedProduct col">
                     <div class= "img-box">
-                        <a href="product/<%=destacados[i].id%>/detail">                               
+                        <a href="/product/<%=destacados[i].idProducts%>/detail">                               
                           <img  src= "/img/<%= destacados[i].image %> " alt="<%= destacados[i].name %> ">
                         </a>    
                      </div>

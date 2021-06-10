@@ -13,7 +13,7 @@ module.exports = (sequelize, DataTypes) => {
       // define association here
 
       //Un producto pertenece a una categoria
-      this.hasOne(models.Categories,{
+      this.belongsTo(models.Categories,{
         as: 'Categoria',
         foreignKey: 'idCategory'
       });
@@ -42,6 +42,11 @@ module.exports = (sequelize, DataTypes) => {
 
   };
   Products.init({
+    idProducts: {
+      type: DataTypes.INTEGER,
+      primaryKey: true,
+      autoIncrement: true
+    },
     name: DataTypes.STRING,
     seller: DataTypes.STRING,
     price: DataTypes.DECIMAL(10,2),
@@ -57,6 +62,7 @@ module.exports = (sequelize, DataTypes) => {
   }, {
     sequelize,
     modelName: 'Products',
+    timestamps: false
   });
   return Products;
 };

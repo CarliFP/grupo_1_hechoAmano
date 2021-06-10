@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+        <head>
+            <%- include ('./partials/head') %>
+            <link href ="/css/stylesRegister.css" rel="stylesheet">   
+        </head>
+
+    <body>
+
+        <%- include ('./partials/header') %>
+
+            <main class="register">
+
+                <form class="main-form" action="/users/<%=user.idUsers%>/put?_method=PUT" method="POST" enctype="multipart/form-data">
+                    <div class= "title">
+                        <h4>Datos Personales</h4>
+                    </div>
+                    
+                    <div class="container-personal-information">
+                        <input  class="personal-information-input"
+                                type="text" 
+                                name="name" 
+                                placeholder="Nombre y apellido"
+                                value = "<%= locals.oldData ? oldData.name : user.name%>" >
+
+                        <% if (locals.errors && errors.name) { %> 
+                            <div class ="text-danger">
+                                <%= errors.name.msg %> 
+                            </div>
+                        <% } %> 
+
+                        <input  class="personal-information-input is-invalid" 
+                                type="text" 
+                                name="user" 
+                                placeholder="Nombre de usuario"
+                                value = "<%= locals.oldData ? oldData.user : user.user%>" >
+
+                        <% if (locals.errors && errors.user) { %> 
+                            <div class ="text-danger">
+                                <%= errors.user.msg %> 
+                            </div>
+                        <% } %> 
+
+                        <input class="personal-information-input" 
+                                type="email" 
+                                name="email" 
+                                placeholder="E-mail"
+                                value = "<%= locals.oldData ? oldData.email : user.email%>">
+
+                        <% if (locals.errors && errors.email) { %> 
+                            <div class ="text-danger">
+                                <%= errors.email.msg %> 
+                            </div>
+                        <% } %> 
+
+                        <input class="personal-information-input" 
+                                type="date" 
+                                name="birth_date" 
+                                id="birth_date" 
+                                max="2022-12-31"
+                                value = "<%= locals.oldData ? oldData.birth_date : user.birth_date%>">
+
+                        <% if (locals.errors && errors.birth_date) { %> 
+                            <div class ="text-danger">
+                                <%= errors.birth_date.msg %> 
+                            </div>
+                        <% } %> 
+
+                        <input class="personal-information-input"
+                                 type="text" 
+                                 name="address" 
+                                 placeholder="Domicilio"
+                                 value = "<%= locals.oldData ? oldData.address : user.address%>">
+                                 
+                        <% if (locals.errors && errors.address) { %> 
+                            <div class ="text-danger">
+                                <%= errors.address.msg %> 
+                            </div>
+                        <% } %> 
+
+                        
+                        <!-- <label for="pais">Pais de nacimiento</label> -->
+                        <select 
+                            name="country"
+                            id=""
+                            class = "personal-information-input">
+                            <option value="">Elegi un pais</option>
+                            <% for (const oneCountry of countries) { %>   
+                                <option
+                                    value="<%= oneCountry.idCountries %>"
+                                    <%= locals.oldData && (oneCountry.name === oldData.country) ? 'selected' : user.idCountry %>>
+                                    <%= oneCountry.name %>
+                                </option>
+                            <% } %>
+                        </select>
+
+                        <% if (locals.errors && errors.country) { %>
+                            <div class ="text-danger">
+                                <%= errors.country.msg %>
+                            </div>
+                        <% } %>
+                        
+                        
+                    </div>
+    
+    
+                    <div class= "title">
+                        <h4>Perfil del usuario</h4>
+                    </div>
+    
+                    <div class="profile">
+                            <% typeUsers.forEach(typeUser => { %>
+                            <input type="radio" name="profile" value="<%= typeUser.idTypeUser %>" id="<%= typeUser.name %>">
+                            <label for="<%= typeUser.idTypeUser %>"><%= typeUser.name %></label>
+                            <% }); %>
+                    </div>
+    
+                    <div class= "title">
+                        <h4>Intereses</h4>
+                    </div>
+    
+                    <div class="interests">
+
+                        <div>
+                            <% categories.forEach(category => { %>
+                            <input type="checkbox" name="interests" value="<%= category.idCategories %>" id="<%= category.name %>">
+                            <label for="<%= category.name %>"><%= category.name %></label>
+                            <% }); %>
+                        </div>
+
+                    </div>
+
+                    <select 
+                        name="tienda"
+                        id=""
+                        class = "personal-information-input">
+                        <option value="">Elegi tu tienda</option>
+                        <% for (const oneTienda of tiendas) { %>   
+                            <option
+                                value="<%= oneTienda.idTienda %>"
+                                <%= locals.oldData && (oneTienda.name === oldData.tienda) ? 'selected' : user.Tienda_idTienda %>>
+                                <%= oneTienda.name %>
+                            </option>
+                        <% } %>
+                    </select>
+
+    
+    
+                    <div class= "title">
+                        <h4>Elegi tu foto de usuario</h4>
+                    </div>
+    
+                    <div class = "file-upload">
+                        <!-- esto hace que se oculte y se pueda customizar, sino reaparece-->
+                        <input type="file" name= 'avatar' id="actual-btn">
+                        <!--boton custom-->
+
+                        <% if (locals.errors && errors.avatar) { %> 
+                            <div class ="text-danger">
+                                <%= errors.avatar.msg %>
+                            </div>
+                        <% } %> 
+
+                        <!--label class ="btn-file" for="actual-btn">Seleccionar avatar</label>-->
+                        <!--advertencia de archivo no subido-->
+                        <!--span id="file-chosen">No se eligió archivo</span> -->
+                    </div>
+    
+                    <div class="password">
+                        <input class="password-input" type="password" name="pass" placeholder="Elegí tu contraseña"> 
+                        <input class="password-input" type="password" name="pass_confirm" placeholder="Confirmá tu contraseña">
+
+                        <% if (locals.errors && errors.pass) { %> 
+                            <div class ="text-danger">
+                                <%= errors.pass.msg %> 
+                            </div>
+                        <% } %> 
+                        
+                    </div>
+    
+                    <div class= "btn-submit">
+                        <input class= "submit-button" type="reset" value="Borrar">
+                        <button type="submit" class= "submit-button">Guardar cambios</button>
+                    </div>
+    
+                </form>
+            </main>
+
+            <!--FOOTER-->
+            <%- include ('./partials/footer') %>    
+            
+        </body>
+</html>

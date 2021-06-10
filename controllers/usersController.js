@@ -1,58 +1,113 @@
 const express = require ("express");
 const path = require ("path");
-const {validationResult} = require('express-validator'); 
+const {validationResult, body} = require('express-validator'); 
 const User = require("../models/User");
 const bcryptjs = require('bcryptjs'); 
+const { Op } = require("sequelize");
 const { RSA_NO_PADDING } = require("constants");
+let db = require("../src/database/models");
 
 const usersController = {
 
     register:(req,res) => {
+
         // res.cookie('testing', 'Hola mundo', {maxAge: 1000 * 30});
-        res.render('register');
+        let pedidoCategories = db.Categories.findAll();
+
+        let pedidoTypeUsers = db.TypeUsers.findAll();
+        
+        let pedidoCountries = db.Countries.findAll();
+
+        let pedidoTiendas = db.Tienda.findAll();
+
+        Promise.all([pedidoCategories, pedidoTypeUsers, pedidoCountries, pedidoTiendas])
+            .then(function([categories, typeUsers, countries, tiendas]) {
+                // res.send(genres.name);
+                // res.send(genres[1].name);
+                res.render('register', {categories, typeUsers, countries, tiendas})
+				// res.send({categories, sections})
+            })
+
+		// db.Categories.findAll()
+		// .then(function(categories) {
+		// 	return res.render('productCreator', {categories})
+		// })
     },
 
-    processRegister:(req,res) => {
+    processRegister:async (req,res) => {
         //return res.send('viniste por post');
         //return res.send(req.body);
+
+        let categories = await db.Categories.findAll();
+
+        let typeUsers = await db.TypeUsers.findAll();
+        
+        let countries = await db.Countries.findAll();
+
+        let tiendas = await db.Tienda.findAll();
+
         const resultValidation = validationResult(req);
         //return res.send(resultValidation);
 
+        // retorna error si el usuario ya se registró por mail
+        let userInDB = await db.Users.findAll({
+            where:{
+                email:{[Op.like]:req.body.email}
+            }
+        }).catch(error => res.send(error));
+        if (userInDB.length>0) {
+            // res.send(userInDB);
+            // res.send("Este mail ya esta registrado");
+            return res.render('register',
+            {
+                errors: {
+                    email: {
+                        msg: 'Este email ya está registrado',
+                    }
+                },
+                oldData: req.body,
+                categories, typeUsers, countries, tiendas     
+            });
+        }
+
         if (resultValidation.errors.length > 0) { //resultValidation es un objeto literal y errors su property
-            return res.render('register', {
+            // res.send(req.body);
+            // res.send("Hay errores")
+            res.render('register',
+            {
                 errors: resultValidation.mapped(), // mapped convierte un array en un objeto literal con propiedades
-                oldData: req.body // xa que si se renueva el formulario porque falto un dato conserve el resto, value ver.
-                //ver no me funciona EN COUNTRY // Solucionado
+                oldData: req.body, // Ya que si se renueva el formulario porque falto un dato conserve el resto, value ver.  
+                categories, typeUsers, countries, tiendas              
             })     
         }
-            //retorna error si el usuario ya se registró por mail
-            let userInDB = User.findByField('email', req.body.email);
-            if (userInDB) {
-                return res.render('register', {
-                    errors: {
-                        email: {
-                            msg: 'Este email ya está registrado',
-                        }
-                    },
-                    oldData: req.body
-                });
-            }
 
+        delete req.body.pass_confirm
 
-            delete req.body.pass_confirm
+        //console.log(req.body, req.file); 
+        db.Users.create({
+            //...req.body,
+            name: req.body.name,
+            user: req.body.user,
+            email: req.body.email,
+            birth_date: req.body.birth_date,
+            address: req.body.address,
+            idCountry: req.body.country,
+            idTypeUser: req.body.profile,
+            Tienda_idTienda: req.body.tienda,
+            avatar: req.file.filename,
+            pass: bcryptjs.hashSync(req.body.pass, 10),
+        }).then(function() {
+            //res.send(req.body)
+            // req.session.userLogged = user;
+            res.redirect("/users/login");
+        }).catch(error => res.send(error));
+        /* ACÁ HAY QUE VER COMO CONFIRMAR LA CONTRASEÑA PORQUE TENEMOS PASS Y PASS_CONFIRM CON COMPARE? */
 
-            //console.log(req.body, req.file); 
-            let userToCreate = {
-                ...req.body,
-                avatar: req.file.filename,
-                pass: bcryptjs.hashSync(req.body.pass, 10),
-            }
-            /* ACÁ HAY QUE VER COMO CONFIRMAR LA CONTRASEÑA PORQUE TENEMOS PASS Y PASS_CONFIRM CON COMPARE? */
+        // console.log(user); 
 
-            console.log(userToCreate); 
-
-        let userCreated = User.create(userToCreate);
-        return res.redirect('/users/login'); 
+        // let userCreated = user;
+        // res.redirect('/users/login'); 
+        // res.send(req.body)
     },
 
     login:(req,res) => {
@@ -61,11 +116,14 @@ const usersController = {
         res.render('login');
     },
 
-    loginProcess: (req, res) => { //agregarle las validaciones como en el register.
+    loginProcess: async (req, res) => { //agregarle las validaciones como en el register.
 
         // return res.send(req.body);
 
-       let userToLogin = User.findByField('email', req.body.email); 
+       let userToLogin = await db.Users.findOne({
+        where:{
+            email:{[Op.like]:req.body.email}
+        }})
 
 
 
@@ -105,9 +163,84 @@ const usersController = {
         //console.log('estas en profile');
         //console.log('sesion');
         // console.log(req.cookies.userEmail);
+        // res.send(req.session.userLogged)
         return res.render('userProfile', {
             user: req.session.userLogged
         })
+
+    },
+
+    edit: (req, res) => {
+
+        let user = req.session.userLogged;
+
+        // res.send(user)
+
+        // res.cookie('testing', 'Hola mundo', {maxAge: 1000 * 30});
+        let pedidoCategories = db.Categories.findAll();
+
+        let pedidoTypeUsers = db.TypeUsers.findAll();
+                
+        let pedidoCountries = db.Countries.findAll();
+        
+        let pedidoTiendas = db.Tienda.findAll();
+        
+        Promise.all([pedidoCategories, pedidoTypeUsers, pedidoCountries, pedidoTiendas])
+            .then(function([categories, typeUsers, countries, tiendas]) {
+                // res.send(genres.name);
+                // res.send(genres[1].name);
+                res.render('userEdit', {categories, typeUsers, countries, tiendas, user})
+                // res.send({categories, sections})
+        })
+    },
+
+    update: async (req, res) => {
+
+        let user = req.session.userLogged;
+
+        let categories = await db.Categories.findAll();
+
+        let typeUsers = await db.TypeUsers.findAll();
+        
+        let countries = await db.Countries.findAll();
+
+        let tiendas = await db.Tienda.findAll();
+
+        const resultValidation = validationResult(req);
+        //return res.send(resultValidation);
+
+        if (resultValidation.errors.length > 0) { //resultValidation es un objeto literal y errors su property
+            // res.send(req.body);
+            // res.send("Hay errores")
+            res.render('userEdit',
+            {
+                errors: resultValidation.mapped(), // mapped convierte un array en un objeto literal con propiedades
+                oldData: req.body, // Ya que si se renueva el formulario porque falto un dato conserve el resto, value ver.  
+                categories, typeUsers, countries, tiendas, user             
+            })     
+        } else {
+                    //console.log(req.body, req.file); 
+        db.Users.update({
+            //...req.body,
+            name: req.body.name,
+            user: req.body.user,
+            email: req.body.email,
+            birth_date: req.body.birth_date,
+            address: req.body.address,
+            idCountry: req.body.country,
+            idTypeUser: req.body.profile,
+            Tienda_idTienda: req.body.tienda,
+            avatar: req.file.filename,
+            pass: bcryptjs.hashSync(req.body.pass, 10),
+        },
+        {   
+			where: {idUsers: req.params.id}
+		}).then(function() {
+        //res.send(req.body)
+        // req.session.userLogged = user;
+        res.redirect("/users/login");
+        })
+        }
 
     },
     
@@ -119,8 +252,15 @@ const usersController = {
     },
 
     deleteUserById: (req, res) => {
-        delete userToLogin; 
-		res.redirect('/'); 
+        // res.send(req.session.userLogged)
+        db.Users.destroy({
+            where: {
+                idUsers: req.session.userLogged.idUsers
+            }
+        })
+        res.clearCookie('userEmail');
+        req.session.destroy();
+        res.redirect("/");
     }
 
     }; 

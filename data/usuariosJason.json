@@ -123,26 +123,45 @@
  },
  {
   "id": 10,
-  "name": "aseqas",
-  "user": "sdadsa",
-  "email": "asda@sald.com",
-  "birth_date": "2000-12-14",
-  "address": "aaa 123 ",
-  "country": "Argentina",
-  "pass": "$2a$10$7XWKUjIRq6Hkr5xzLuKlDu0.0lYutS1YdV8uKpWbETlcF2cQ6/lYG",
-  "avatar": "1622677402798_img.jpg"
+  "name": "",
+  "user": "",
+  "email": "",
+  "birth_date": "",
+  "address": "",
+  "country": "",
+  "pass": "$2a$10$At6Lz0pfz63UOvMnm1NJA.mYEIt3KflUPWadaGDqrDMVvEDUicnTC",
+  "avatar": "1620874757978_img.jpg"
  },
  {
   "id": 11,
-  "name": "1231",
-  "user": "1231",
-  "email": "123@asd.ca",
-  "birth_date": "1023-02-10",
-  "address": "123",
-  "country": "Argentina",
-  "profile": "buy",
-  "interests": "accesorios",
-  "pass": "$2a$10$iZEp5D8Ocue..yzaqz7j2eJkww1SJ1CKwouxwer6p/FYgffbjLQEK",
-  "avatar": "1623276926936_img.jpg"
+  "name": "Josue Emanuel Mercado",
+  "user": "Emam16",
+  "email": "ema150798@gmail.com",
+  "birth_date": "1998-07-15",
+  "address": "Escobio",
+  "country": "1",
+  "profile": "2",
+  "interests": [
+   "3",
+   "4"
+  ],
+  "pass": "$2a$10$GSbSnX4P2qUbXfRfaP6QWOM/p.LSj4YIHRmglHO0DFODkxFYmR6Ne",
+  "avatar": "1620952983591_img.jpg"
+ },
+ {
+  "id": 12,
+  "name": "Josue Emanuel Mercado",
+  "user": "Emam16",
+  "email": "ema150798@gmail.com",
+  "birth_date": "1998-07-15",
+  "address": "Escobio",
+  "country": "1",
+  "profile": "2",
+  "interests": [
+   "3",
+   "4"
+  ],
+  "pass": "$2a$10$ZCHREGJWeewatZX9lpbq0evhAYBl1vyV4XtOZvFRhiHGUWahmg/Je",
+  "avatar": "1620953077601_img.jpg"
  }
 ]

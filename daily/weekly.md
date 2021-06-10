@@ -1,3 +1,29 @@
+🔖 Weekly SPRINT 7 <br>
+
+<br>
+Weekly 02-6-2021 19:00 horas<br>
+
+1️⃣ ¿Qué he hecho desde la última reunión de sincronización para ayudar al equipo a cumplir su objetivo?<br>
+2️⃣ ¿Qué voy a hacer a partir de este momento para ayudar al equipo a cumplir su objetivo?<br>
+3️⃣ ¿Qué impedimentos tengo o voy a tener que nos impidan conseguir nuestro objetivo?<br>
+
+
+✅ Emanuel<br>
+1️⃣ Me esforze para poder terminar mis tareas, pese al atraso se pudo cumpli con el objetivo. <br>
+2️⃣ Ponerme al dia con el contenido de la cursada, especialmente ahora que es tramo final. <br>
+3️⃣ Lo mas seguro los cortos espacios de tiempo con los que se cuentan. <br>
+
+✅ Carla<br>
+1️⃣ Repasar los contenidos del curso.<br>
+2️⃣ Estar al día con mis tareas asignadas en Trello.<br>
+3️⃣ No surgieron impedimentos por el momento.<br>
+
+✅ Neri<br>
+1️⃣ Poder empezar y desarrollar el javascript para el front<br>
+2️⃣ Poder poner en práctica lo aprendido en clases anteriores<br>
+3️⃣ Siento que mi vida laboral y/o personal esta consumiendo más tiempo y no se lo podré dedicar tanto al proyecto. Igualmente tenemos clases prácticas para compensar<br>
+
+
 🔖 Weekly SPRINT 6<br>
 
 :heavy_exclamation_mark: ALERT equipo Docente! El PDF del Diagrama Entidad Relación se encuentra dentro de la carpeta Wireframe -> DiagramaER-HechoAmano.<br> 
@@ -8,19 +34,19 @@
 Weekly 27-4-2021 19:00 horas<br>
 
 ✅ Emanuel<br>
-1️⃣ <br>
-2️⃣ <br>
-3️⃣ <br>
+1️⃣ Implementar proyectos paralelos para lograr asimilar todo el material. <br>
+2️⃣ Avanzar con mis tareas de TRELLO. <br>
+3️⃣ . <br>
 
 ✅ Carla<br>
-1️⃣ Desde la última reunión armé el DER (Diagrama Entidad Relación MySQL)
+1️⃣ Desde la última reunión armé el DER (Diagrama Entidad Relación MySQL) <br>
 2️⃣ Avanzar con la implementación de las relaciones en sequelize. <br>
 3️⃣ Me surgieron dudas puntualmente respecto de las órdenes de compra en el DER a partir de las sugerencias de Neri, aún no tengo claro cuál sería la solución más adecuada para implementar en nuestra aplicación, que sea también escalable a futuro, lo que evacuaremos con el equipo docente.<br>
 
 ✅ Neri<br>
-1️⃣ <br>
-2️⃣ <br>
-3️⃣ <br>
+1️⃣ Entender cómo trabajar con tablas, ya sea para crear su estructura como para importarla con o sin datos<br>
+2️⃣ Voy a intentar solucionar los problemas que surjan en el equipo importando bases de datos<br>
+3️⃣ No es mi tema favorito, por lo que me cuesta más entenderlo<br>
 <br>
 1️⃣ ¿Qué he hecho desde la última reunión de sincronización para ayudar al equipo a cumplir su objetivo?<br>
 2️⃣ ¿Qué voy a hacer a partir de este momento para ayudar al equipo a cumplir su objetivo?<br>
@@ -29,9 +55,9 @@ Weekly 27-4-2021 19:00 horas<br>
 Weekly 23-4-2021 18:30 horas<br>
 
 ✅ Emanuel<br>
-1️⃣ <br>
-2️⃣ <br>
-3️⃣ <br>
+1️⃣ Ponerme al dia con los ejercicios de playground. <br>
+2️⃣ Avanzar en paralelo con el aprendizaje e inplementacion de los modelos para llegar bien a mis tareas de Trello. <br>
+3️⃣ No lograr asimilar bien el conocimiento de los ejercicios, que no me permitan trabajar bien cuando llegue al CRUD. <br>
 
 ✅ Carla<br>
 1️⃣ Desde la retrospectiva, finalice el repaso de base de datos para poder avanzar con el sprint.  <br>
@@ -39,9 +65,9 @@ Weekly 23-4-2021 18:30 horas<br>
 3️⃣ Resolver errores al vincular la  base de datos de MYSQL Workbench a  XAMPP (phpMyAdmin) que es el programa que utilizan mis compañeros.  <br>
 
 ✅ Neri<br>
-1️⃣ <br>
-2️⃣ <br>
-3️⃣ <br>
+1️⃣ Avanzar con mis tareas de TRELLO.<br>
+2️⃣ Voy a revisar de nuevo los conceptos para poder ser util más adelante<br>
+3️⃣ Hubo varios días que no pude ni asistir a la clase y me quedé atrás con el tema<br>
 
 
 🔖 Weekly SPRINT 5

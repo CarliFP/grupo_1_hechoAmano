@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <%- include('./partials/header') %> 
+            <h1>Listado de countries</h1>
+            <nav>
+                <p>Mi sitio</p>
+                <ul>
+                    <li>
+                        <a href="/product/crear">Crear Countrie</a>
+                    </li>
+                    <li>
+                        <a href="/product/list">Ver Countries</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul>
+                <% for (let i = 0; i < countries.length; i++) { %>
+                    <li>
+                        <a href="/product/<%= countries[i].idCountries %>">
+                            <%= countries[i].name %>
+                        </a>      
+                    </li>
+                <% } %>  
+            </ul>
+        <%- include('./partials/footer') %> 

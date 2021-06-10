@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <%- include('./partials/header') %> 
+            <h1>Listado de countries</h1>
+            <nav>
+                <p>Mi sitio</p>
+                <ul>
+                    <li>
+                        <a href="/product/crear">Crear Countrie</a>
+                    </li>
+                    <li>
+                        <a href="/product/list">Ver Countries</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul>
+            <h1>Editar peliculas</h1>
+            <form action="/product/editar/<%=countries.idCountries%>" method="POST">
+                <div>
+                    <label for="">Nombre</label>
+                    <input type="text" name="name" required value="<%=countries.name%>">
+                </div>
+                <button type="submit">Editar</button>
+            </form>
+        <%- include('./partials/footer') %> 

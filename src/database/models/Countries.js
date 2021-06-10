@@ -14,10 +14,17 @@ module.exports = (sequelize, DataTypes) => {
     }
   };
   Countries.init({
+    idCountries: {
+      type: DataTypes.INTEGER,
+      primaryKey: true,
+      autoIncrement: true
+    },
     name: DataTypes.STRING
   }, {
     sequelize,
     modelName: 'Countries',
+    timestamps: false
   });
   return Countries;
 };
+
