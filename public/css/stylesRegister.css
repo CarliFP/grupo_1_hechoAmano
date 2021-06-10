@@ -65,7 +65,7 @@ h4 {
     text-align: right;
 }
 
-.password-input {
+.password-input, .passwordVerify-input {
     width: 100%;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -76,7 +76,7 @@ h4 {
 }
 
 
-.submit-button {
+.submit-button, .reset-button {
     min-width: 20vw;
     max-width: 20%;
     margin-top: 10px;

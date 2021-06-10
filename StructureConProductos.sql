@@ -242,13 +242,13 @@ INSERT INTO `Tienda` VALUES (1,'Jose Lopez','platinium','Argentina');
 UNLOCK TABLES;
 
 --
--- Table structure for table `TypeUser`
+-- Table structure for table `TypeUsers`
 --
 
-DROP TABLE IF EXISTS `TypeUser`;
+DROP TABLE IF EXISTS `TypeUsers`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `TypeUser` (
+CREATE TABLE `TypeUsers` (
   `idTypeUser` int NOT NULL AUTO_INCREMENT,
   `name` varchar(100) NOT NULL,
   PRIMARY KEY (`idTypeUser`)
@@ -256,13 +256,13 @@ CREATE TABLE `TypeUser` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `TypeUser`
+-- Dumping data for table `TypeUsers`
 --
 
-LOCK TABLES `TypeUser` WRITE;
-/*!40000 ALTER TABLE `TypeUser` DISABLE KEYS */;
-INSERT INTO `TypeUser` VALUES (1,'sell'),(2,'buy');
-/*!40000 ALTER TABLE `TypeUser` ENABLE KEYS */;
+LOCK TABLES `TypeUsers` WRITE;
+/*!40000 ALTER TABLE `TypeUsers` DISABLE KEYS */;
+INSERT INTO `TypeUsers` VALUES (1,'sell'),(2,'buy');
+/*!40000 ALTER TABLE `TypeUsers` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -285,12 +285,12 @@ CREATE TABLE `Users` (
   `pass` varchar(200) NOT NULL,
   `Tienda_idTienda` int NOT NULL,
   PRIMARY KEY (`idUsers`),
-  KEY `FK_Users_TypeUser_idTypeUser_idx` (`idTypeUser`),
+  KEY `FK_Users_TypeUsers_idTypeUser_idx` (`idTypeUser`),
   KEY `FK_Users_Countries_idCountry_idx` (`idCountry`),
   KEY `fk_Users_Tienda1_idx` (`Tienda_idTienda`),
   CONSTRAINT `FK_Users_Countries_idCountry` FOREIGN KEY (`idCountry`) REFERENCES `Countries` (`idCountries`),
   CONSTRAINT `fk_Users_Tienda1` FOREIGN KEY (`Tienda_idTienda`) REFERENCES `Tienda` (`idTienda`),
-  CONSTRAINT `FK_Users_TypeUser_idTypeUser` FOREIGN KEY (`idTypeUser`) REFERENCES `TypeUser` (`idTypeUser`)
+  CONSTRAINT `FK_Users_TypeUsers_idTypeUser` FOREIGN KEY (`idTypeUser`) REFERENCES `TypeUsers` (`idTypeUser`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
