@@ -19,16 +19,16 @@
                     </div>
                     
                     <div class= "pic-profile">
-                        <img src="../img/avatar/<%= user.avatar %> ">
+                        <img src="../img/avatar/<%= userToLogin.avatar %> ">
                     </div>
 
                     <div class="container-personal-information">
-                        <p class= "personal-information-input"> <%= user.name %>  </p> 
-                        <p class= "personal-information-input"> <%= user.user %>  </p> 
-                        <p class= "personal-information-input"> <%= user.email %>  </p> 
-                        <p class= "personal-information-input"> <%= user.birth_date %>  </p> 
-                        <p class= "personal-information-input"> <%= user.address %>  </p> 
-                        <p class= "personal-information-input"> <%= user.country %>  </p> 
+                        <p class= "personal-information-input"> <%= userToLogin.name %>  </p> 
+                        <p class= "personal-information-input"> <%= userToLogin.user %>  </p> 
+                        <p class= "personal-information-input"> <%= userToLogin.email %>  </p> 
+                        <p class= "personal-information-input"> <%= userToLogin.birth_date %>  </p> 
+                        <p class= "personal-information-input"> <%= userToLogin.address %>  </p> 
+                        <p class= "personal-information-input"> <%= userToLogin.country %>  </p> 
 
     
                         <div class= "title">
@@ -36,7 +36,7 @@
                         </div>
     
                         <div class="profile">
-                            <p class= "personal-information-input"> <%= user.profile %>  </p> 
+                            <p class= "personal-information-input"> <%= userToLogin.profile %>  </p> 
                         </div>
     
                         <!--muestra solo si es comprador-->
@@ -45,7 +45,7 @@
                         </div>
     
                         <div class="interests">
-                            <p class="peronal-information-input"><%= user.interestes%> </p>
+                            <p class="peronal-information-input"><%= userToLogin.interestes%> </p>
                         </div>
     
     
@@ -70,7 +70,7 @@
                                 <input class= "submit-button" type="reset" value="Cerrar sesión">
                             </a>
 
-                            <a href="/users/<%= user.idUsers %>/edit?_method=EDIT"><button class="submit-button action" >EDITAR</button></a>
+                            <a href="/users/<%= userToLogin.idUsers %>/edit?_method=EDIT"><button class="submit-button action" >EDITAR</button></a>
 
                             <a href ="/product/create">
                                 <input class= "submit-button" type="reset" value="CREAR PROFUCTO">
