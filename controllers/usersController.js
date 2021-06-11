@@ -1,7 +1,7 @@
 const express = require ("express");
 const path = require ("path");
 const {validationResult, body} = require('express-validator'); 
-const User = require("../models/User");
+// const User = require("../models/User");
 const bcryptjs = require('bcryptjs'); 
 const { Op } = require("sequelize");
 const { RSA_NO_PADDING } = require("constants");
@@ -128,15 +128,15 @@ const usersController = {
 
 
        if (userToLogin) {
-           let isOkpass = bcryptjs.compareSync(req.body.pass, userToLogin.pass)
+           let isOkpass = bcryptjs.compareSync(req.body.pass, userToLogin.pass);
 
            if (isOkpass) {
-               delete userToLogin.pass; // se elimina por seguridad
-               req.session.userLogged = userToLogin;   //sesion se destruye solo si cierro navegador
+               delete userToLogin.pass; // Se elimina por seguridad.
+               req.session.userLogged = userToLogin;   // Sesion se destruye solo si cierro navegador.
                if(req.body.remember) {
-                res.cookie('userEmail', req.body.email, { maxAge: (1000 * 60) * 2})
+                   res.cookie('userEmail', req.body.email, { maxAge: (1000 * 60) * 2})
                }
-                return res.redirect('/users/profile'); // vista de perfil de usuario
+               return res.render('userProfile', {userToLogin}); // Vista de perfil de usuario.
            }
            return res.render ('login', {
                errors: {
@@ -160,12 +160,12 @@ const usersController = {
     },   
 
     profile: (req, res) => {
-        //console.log('estas en profile');
-        //console.log('sesion');
+        // console.log('estas en profile');
+        // console.log('sesion');
         // console.log(req.cookies.userEmail);
         // res.send(req.session.userLogged)
         return res.render('userProfile', {
-            user: req.session.userLogged
+            userToLogin: req.session.userLogged
         })
 
     },

@@ -12,25 +12,28 @@
 
             <main class="register">
 
-                <form class="main-form" action="/users/register" method="POST" enctype="multipart/form-data">
+                <form class="main-form" action="/users/register" method="POST" enctype="multipart/form-data" id="form">
                     <div class= "title">
                         <h4>Datos Personales</h4>
                     </div>
                     
                     <div class="container-personal-information">
-                        <input  class="personal-information-input"
+                        <input  class="personal-information-input name"
                                 type="text" 
                                 name="name" 
                                 placeholder="Nombre y apellido"
                                 value = "<%= locals.oldData ? oldData.name : null%>" >
+
+
 
                         <% if (locals.errors && errors.name) { %> 
                             <div class ="text-danger">
                                 <%= errors.name.msg %> 
                             </div>
                         <% } %> 
+                            <div class="nameErrorDiv" style="display:none;" style="color:red; "></div>
 
-                        <input  class="personal-information-input is-invalid" 
+                        <input  class="personal-information-input is-invalid user" 
                                 type="text" 
                                 name="user" 
                                 placeholder="Nombre de usuario"
@@ -42,7 +45,9 @@
                             </div>
                         <% } %> 
 
-                        <input class="personal-information-input" 
+                             <div class="userErrorDiv" style="display:none;" style="color:red; "></div>
+
+                        <input class="personal-information-input email" 
                                 type="email" 
                                 name="email" 
                                 placeholder="E-mail"
@@ -54,7 +59,10 @@
                             </div>
                         <% } %> 
 
-                        <input class="personal-information-input" 
+                             <div class="emailErrorDiv" style="display:none;" style="color:red; "></div>
+
+
+                        <input class="personal-information-input birthDate" 
                                 type="date" 
                                 name="birth_date" 
                                 id="birth_date" 
@@ -67,7 +75,9 @@
                             </div>
                         <% } %> 
 
-                        <input class="personal-information-input"
+                             <div class="birthDateErrorDiv" style="display:none;" style="color:red; "></div>
+
+                        <input class="personal-information-input adress"
                                  type="text" 
                                  name="address" 
                                  placeholder="Domicilio"
@@ -79,12 +89,15 @@
                             </div>
                         <% } %> 
 
+
+                             <div class="adressErrorDiv" style="display:none;" style="color:red; "></div>
+
                         
                         <!-- <label for="pais">Pais de nacimiento</label> -->
                         <select 
                             name="country"
                             id=""
-                            class = "personal-information-input">
+                            class = "personal-information-input country">
                             <option value="">Elegi un pais</option>
                             <% for (const oneCountry of countries) { %>   
                                 <option
@@ -100,8 +113,10 @@
                                 <%= errors.country.msg %>
                             </div>
                         <% } %>
-                        
-                        
+
+
+                             <div class="countryErrorDiv" style="display:none;" style="color:red; "></div>                          
+                    
                     </div>
     
     
@@ -159,7 +174,7 @@
     
                     <div class = "file-upload">
                         <!-- esto hace que se oculte y se pueda customizar, sino reaparece-->
-                        <input type="file" name= 'avatar' id="actual-btn">
+                        <input type="file" name= 'avatar' id="actual-btn" class="avatar">
                         <!--boton custom-->
 
                         <% if (locals.errors && errors.avatar) { %> 
@@ -172,24 +187,35 @@
                         <!--advertencia de archivo no subido-->
                         <!--span id="file-chosen">No se eligió archivo</span> -->
                     </div>
-    
+                             <div class="avatarErrorDiv" style="display:none;" style="color:red; "></div> 
+                             <div class="avatarErrorDiv2" style="display:none;" style="color:red; "></div> 
+
+
                     <div class="password">
                         <input class="password-input" type="password" name="pass" placeholder="Elegí tu contraseña"> 
-                        <input class="password-input" type="password" name="pass_confirm" placeholder="Confirmá tu contraseña">
+
+                             <div class="passwordErrorDiv" style="display:none;" style="color:red; "></div> 
+
+                        <input class="passwordVerify-input" type="password" name="pass_confirm" placeholder="Confirmá tu contraseña">
+
+                             <div class="passwordVerifyErrorDiv" style="display:none;" style="color:red; "></div> 
+          
 
                         <% if (locals.errors && errors.pass) { %> 
                             <div class ="text-danger">
                                 <%= errors.pass.msg %> 
                             </div>
                         <% } %> 
-                        
+
+
+
                     </div>
     
                     <div class= "btn-submit">
-                        <input class= "submit-button" type="reset" value="Borrar">
+                        <input class= "reset-button" type="reset" value="Borrar">
                         <input class="submit-button action" type="submit" value="Enviar">
                     </div>
-    
+                             <div class="formErrorDiv" style="display:none;" style="color:red; "></div>     
                 </form>
             </main>
 
@@ -197,4 +223,5 @@
             <%- include ('./partials/footer') %>    
             
         </body>
+    <script src="/js/userCreateValidator.js"></script>
 </html>
