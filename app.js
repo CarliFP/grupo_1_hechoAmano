@@ -68,15 +68,15 @@ app.use ('/users', routesUsers);
 //app.use ('/productCreator', routesProductCreator);
 //routes
 
-/*app.listen (8001, () => {
+app.listen (8001, () => {
     console.log ("Levantando un servidor con Express: Puerto 8001")
-});*/
+});
 /*app.listen (3000, () => {
     console.log ("Levantando un servidor con Express: Puerto 3000")
 });*/
-app.listen(process.env.PORT || 8001, function() {
+/*app.listen(process.env.PORT || 8001, function() {
     console.log('Servidor corriendo en puerto 8001'); 
-})
+})*/
 //app.get('/', (req, res) => {
     //res.sendFile(path.join(__dirname, '/views/index.html'));
     //res.sendFile(path.resolve('./views/index.html'));
