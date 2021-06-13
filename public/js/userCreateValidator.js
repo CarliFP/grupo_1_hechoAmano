@@ -8,7 +8,9 @@ window.onload = function(){
     var birthDate = document.querySelector(".birthDate")
     var adress = document.querySelector(".adress")
     var country = document.querySelector(".country")
-    // Dentro de la validación definimos los Porfile e Interests!!
+    var profile = document.querySelectorAll(".profilecb"); var profileDiv = document.querySelector(".profile")
+    var interests = document.querySelector(".interests");
+    var tienda = document.querySelector(".tienda")
     var avatar =  document.querySelector(".avatar")
     var password = document.querySelector(".password-input")
     var passwordVerify = document.querySelector(".passwordVerify-input")
@@ -24,8 +26,7 @@ window.onload = function(){
     }else{
         var errorDiv = document.querySelector(".nameErrorDiv")
         errorDiv.style.display = "block";
-        errorDiv.innerHTML = "Tengo que tener al menos dos caracteres!";
-
+        errorDiv.innerHTML = "Tengo que tener al menos dos caracteres!"
 }
 })
 
@@ -86,7 +87,6 @@ email.addEventListener('focusout',function(){
     errorDiv.innerHTML = "No soy un mail!"
 }});
 
-
     avatar.addEventListener('focusout',function(){  
     var fname = avatar.value;
     var re = /(\.jpg|\.jpeg|\.gif|\.png)$/i;
@@ -117,7 +117,7 @@ email.addEventListener('focusout',function(){
     }else{
         var errorDiv = document.querySelector(".birthDateErrorDiv")
         errorDiv.style.display = "block"
-        errorDiv.innerHTML = "No puedo estar incompvaro!"
+        errorDiv.innerHTML = "No puedo estar incompleto!!"
     }});
 
 
@@ -132,7 +132,7 @@ email.addEventListener('focusout',function(){
 
     }});
 
-    country.addEventListener('keyup',function(){  
+    country.addEventListener('focusout',function(){  
     if (country.value.length != 0) {
     var errorDiv = document.querySelector(".countryErrorDiv")
     errorDiv.style.display = "none";
@@ -141,69 +141,32 @@ email.addEventListener('focusout',function(){
     errorDiv.style.display = "block";
     errorDiv.innerHTML = "No puedo quedar sin elegir!"
 
-}});
-// Las validaciones de profile e interests no están terminadas :(
-    var profile1 = document.querySelector(".profile1")
-    var profile2 = document.querySelector(".profile2")
+}})
+tienda.addEventListener('focusout',function(){  
+    if (tienda.value.length != 0) {
+    var errorDiv = document.querySelector(".tiendaErrorDiv")
+    errorDiv.style.display = "none";
+}else{
+    var errorDiv = document.querySelector(".tiendaErrorDiv")
+    errorDiv.style.display = "block";
+    errorDiv.innerHTML = "No puedo quedar sin elegir!"
 
-    // profile1.addEventListener('click',function(){ 
-    //    var profileResult = true;
-//});
-//Esto no lo pude resolver :(
+}})
+profileDiv.addEventListener('focusout', function(){
+    console.log(profile[0].checked, profile[1].checked)
+    if(profile[0].checked === false && profile[1] === false){
+        let errorDiv = document.querySelector(".profileErrorDiv")
+            errorDiv.style.display = "block";
+            errorDiv.innerHTML = "Tenemos que ser iguales!!";
+  }else{
+      var errorDiv = document.querySelector(".profileErrorDiv")
+          errorDiv.style.display = "none";
+  };
+})
 
-
-    profile2.addEventListener('click',function(){ 
-        var profileResult = true;        
-});
-
-
-    var interestsResult = false;
-    var interests1 = document.querySelector(".interests1");
-    var interests2 = document.querySelector(".interests2");
-    var interests3 = document.querySelector(".interests3");
-    var interests4 = document.querySelector(".interests4");
-    var interests5 = document.querySelector(".interests5");
-
-
-    interests1.addEventListener('click',function(){ 
-        var interestsResult = true;     
-});
-
-    interests2.addEventListener('click',function(){ 
-        var interestsResult = true;        
-});
-
-    interests3.addEventListener('click',function(){ 
-        var interestsResult = true;        
-});
-
-    interests4.addEventListener('click',function(){ 
-        var interestsResult = true;
-
-});
-
-    interests5.addEventListener('click',function(){ 
-        var interestsResult = true;        
-});
-
-/////////////////////Como recordatorio, estos son todos los campos/////////////////////
-// name
-// user
-// email
-// birthDate
-// adress
-// country
-// avatar
-// password
-// passwordVerify
-// profile
-// interests
-////////////////////////////////////////////////////////////////////////////////////
-
-
-form.addEventListener("submit", e=>{
-e.preventDefault();
-if (
+form.addEventListener("submit", e=> {
+    e.preventDefault();
+            if (
             name.value.length > 0 &&
             user.value.length > 0 &&
             re.test(email.value) &&
@@ -217,11 +180,10 @@ if (
             var errorDiv = document.querySelector(".formErrorDiv")
             errorDiv.style.display = "none";
             form.submit();
-        }
-        else
-        {            
+        }else{            
             var errorDiv = document.querySelector(".formErrorDiv")
             errorDiv.style.display = "block";
             errorDiv.innerHTML = "Por favor, revise los campos!";
     }
-})};
+})
+}
