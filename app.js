@@ -12,11 +12,15 @@ const cookieParser = require('cookie-parser');
 //const logger = require('morgan');
 const methodOverride =  require('method-override'); // Pasar poder usar los métodos PUT y DELETE
 
-//routes
+// routes
 const routesMain = require ('./routes/main.js');
 const routesProduct = require ('./routes/product.js');
 const routesCart = require ('./routes/productCart.js');
 const routesUsers = require ('./routes/users.js');
+
+// API
+const apiProductRouter = require('./routes/api/product');
+const apiUsersRouter = require('./routes/api/users');
 
 //temporal
 //const routesProductDetail = require ('./routes/productDetail.js');
@@ -57,6 +61,10 @@ app.use ('/', routesMain);
 app.use ('/product', routesProduct);
 app.use ('/productCart', routesCart);
 app.use ('/users', routesUsers);
+
+// APIS
+app.use('/api/product', apiProductRouter);
+app.use('/api/users', apiUsersRouter);
 
 // app.use(recordameMiddleware); //SOLO FUNCIONA DESPUES DE SESSION PORQUE LA EXISTENCIA O NO DE recordame DEPENDE DE SESSION
 
