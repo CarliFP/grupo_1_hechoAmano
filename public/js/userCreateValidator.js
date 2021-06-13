@@ -121,7 +121,7 @@ email.addEventListener('focusout',function(){
     }});
 
 
-        adress.addEventListener('keyup',function(){  
+        adress.addEventListener('focusout',function(){  
         if (adress.value.length != 0) {
         var errorDiv = document.querySelector(".adressErrorDiv")
         errorDiv.style.display = "none";
@@ -180,23 +180,18 @@ profileDiv.addEventListener('mouseout', function(){
 ////////////////////////////////////////////////////////////////////////////////////
 
 
-var submitButton = document.querySelector(".submit-button")
-
-submitButton.addEventListener("click", () =>{
-event.preventDefault();
-
+form.addEventListener("submit", e=>{
+e.preventDefault();
 if (
-            name.value.length > 1 &&
-            user.value.length > 1 &&
-            re.test(email) &&
-            birthDate.value.length > 1 &&
-            adress.value.length > 1 &&
-            country.value.length > 1 &&
-            avatar.value.length > 1 &&
+            name.value.length > 0 &&
+            user.value.length > 0 &&
+            re.test(email.value) &&
+            birthDate.value.length > 0 &&
+            adress.value.length > 0 &&
+            country.value.length > 0 &&
+            avatar.value.length > 0 &&
             password.value.length > 7 &&  
-            passwordVerify.value == password.value && 
-            profileResult === true &&
-            tienda.value > 1
+            passwordVerify.value == password.value
             ){
             var errorDiv = document.querySelector(".formErrorDiv")
             errorDiv.style.display = "none";

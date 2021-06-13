@@ -19,7 +19,7 @@
             <div>
                     <h4>¿Querés editar un producto?</h4>
                     
-                    <form action="/product/<%=product.idProducts%>/put?_method=PUT" method="POST" enctype="multipart/form-data">                       
+                    <form action="/product/<%=product.idProducts%>/put?_method=PUT" method="POST" enctype="multipart/form-data" id="form">                       
                          <div class="col-12 col-md-6">
                             <label for="name" class="form-label">Nombre del producto:</label>
                             <input type="text"
@@ -34,6 +34,8 @@
                                 <%= errors.name.msg %> 
                             </div>
                         <% } %> 
+                        <div class="nameErrorDiv" style="display:none;" style="color:red; "></div> 
+
 
                         <div class="col-12 col-md-6">
                             <label for="seller" class="form-label">Vendedor:</label>
@@ -45,6 +47,8 @@
                                 <%= errors.seller.msg %> 
                             </div>
                         <% } %> 
+                        <div class="sellerErrorDiv" style="display:none;" style="color:red; "></div> 
+
 
                         <div class="col-12 col-md-6">
                             <label for="price" class="form-label">Precio del producto:</label>
@@ -61,6 +65,7 @@
                                 <%= errors.price.msg %> 
                             </div>
                         <% } %> 
+                        <div class="priceErrorDiv" style="display:none;" style="color:red; "></div> 
 
                         <div class="col-12 col-md-6">
                             <label for="stock" class="form-label">Stock:</label>
@@ -77,6 +82,8 @@
                                 <%= errors.stock.msg %> 
                             </div>
                         <% } %> 
+                        <div class="stockErrorDiv" style="display:none;" style="color:red; "></div> 
+
 
                         <div class="col-12 col-md-6">
                             <label for="shipping" class="form-label">Costo de envío:</label>
@@ -93,6 +100,8 @@
                                 <%= errors.shipping.msg %> 
                             </div>
                         <% } %> 
+                        <div class="shippingErrorDiv" style="display:none;" style="color:red; "></div> 
+
 
                         <div class="col-12 col-md-6">
                             <label for="payment" class="form-label">Cuotas:</label>
@@ -126,7 +135,7 @@
                             </div>
                         <% } %>
 
-                        <div class="col-12 col-md-6">
+                        <div class="col-12 col-md-6 sectionDiv">
                             <label for="section" class="form-label">Sección en el index:</label>
                             <select name="section" required>
                                 <option value="">Elegí</option>

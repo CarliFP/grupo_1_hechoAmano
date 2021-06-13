@@ -1,8 +1,8 @@
 module.exports = {
   "development": {
     "username": "root",
-    "password": "88042222",
-    "database": "hechoAmanoDB",
+    "password": "",
+    "database": "structureconproductos",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },

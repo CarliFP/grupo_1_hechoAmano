@@ -58,6 +58,9 @@
                                     <%= errors.seller.msg %> 
                                 </div>
                             <% } %> 
+                            <div class="sellerErrorDiv" style="display:none;" style="color:red; "></div> 
+
+
                         
                             <div class="col-12 col-md-6">
                                 <label for="price" class="form-label">Precio del producto:</label>
@@ -74,6 +77,9 @@
                                     <%= errors.price.msg %> 
                                 </div>
                             <% } %> 
+                            <div class="priceErrorDiv" style="display:none;" style="color:red; "></div> 
+
+
 
                             <div class="col-12 col-md-6">
                                 <label for="stock" class="form-label">Stock:</label>
@@ -90,6 +96,9 @@
                                     <%= errors.stock.msg %> 
                                 </div>
                             <% } %> 
+                            <div class="stockErrorDiv" style="display:none;" style="color:red; "></div> 
+
+
 
                             <div class="col-12 col-md-6">
                                 <label for="shipping" class="form-label">Costo de envío:</label>
@@ -106,6 +115,8 @@
                                     <%= errors.shipping.msg %> 
                                 </div>
                             <% } %> 
+                            <div class="shippingErrorDiv" style="display:none;" style="color:red; "></div> 
+
 
                             <div class="col-12 col-md-6">
                                 <label for="payment" class="form-label">Cuotas:</label>
@@ -122,11 +133,14 @@
                                     <%= errors.payment.msg %> 
                                 </div>
                             <% } %> 
+                            <div class="paymentErrorDiv" style="display:none;" style="color:red; "></div> 
 
-                            <div class="col-12 col-md-6">
+
+
+                            <div class="col-12 col-md-6 categoryDiv">
                                 <label for="category" class="form-label">Categoria</label>
                                 <select name="category" required>
-                                    <option value="">Elegí</option>
+                                    <option class ="category" value="">Elegí</option>
                                     <% categories.forEach(categorie => { %>
                                     <option value="<%= categorie.idCategories %>">
                                         <%= categorie.name %>
@@ -140,10 +154,13 @@
                                     <%= errors.category.msg %> 
                                 </div>
                             <% } %>
+                            <div class="categoryErrorDiv" style="display:none;" style="color:red; "></div> 
 
-                            <div class="col-12 col-md-6">
+
+
+                            <div class="col-12 col-md-6 sectionDiv">
                                 <label for="section" class="form-label">Sección en el index:</label>
-                                <select name="section" required>
+                                <select class="section" name="section" required>
                                     <option value="">Elegí</option>
                                     <% sections.forEach(section => { %>
                                     <option value="<%= section.idSections %>"><%= section.name %></option>
@@ -156,6 +173,9 @@
                                     <%= errors.section.msg %> 
                                 </div>
                             <% } %> 
+                            <div class="sectionErrorDiv" style="display:none;" style="color:red; "></div> 
+
+
 
                             <div class="col-12">
                                 <label for="image" class="form-label">Imagen:</label>
@@ -167,15 +187,25 @@
                                     <%= errors.image.msg %> 
                                 </div>
                             <% } %> 
+                            <div class="imageErrorDiv" style="display:none;" style="color:red; "></div> 
+
+
 
                             <div class="col-12">
                                 <label for="description" class="form-label">Descripción:</label>
                                 <textarea name="description" id="description" class="form-input"></textarea>
                             </div>
+                            <div class="descriptionErrorDiv" style="display:none;" style="color:red; "></div> 
+
+
 
                             <div class="col-12">
                                 <button type="submit" class="buy-now-button">Guardar producto</button>
                             </div>
+                            <div class="formErrorDiv" style="display:none;" style="color:red; "></div> 
+
+
+                            
                         </div>
                     </form>
                 </div>
@@ -185,3 +215,4 @@
 </body>
     <script src="/js/productCreatorValidator.js"></script>
 </html>
+
