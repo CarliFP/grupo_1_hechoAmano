@@ -22,7 +22,7 @@
 
 
 
-                    <form action="/product" method="POST" enctype="multipart/form-data">
+                    <form action="/product" method="POST" enctype="multipart/form-data" id="form">
                         <div class="row product-detail">
                             <div class="col-12 col-md-6">
                                 <label for="name" class="form-label">Nombre del producto:</label>
@@ -39,6 +39,9 @@
                                     <%= errors.name.msg %> 
                                 </div>
                             <% } %> 
+                            <div class="nameErrorDiv" style="display:none;" style="color:red; "></div> 
+
+
 
                             <div class="col-12 col-md-6">
                                 <label for="seller" class="form-label">Vendedor:</label>
