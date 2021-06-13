@@ -8,9 +8,7 @@ window.onload = function(){
     var birthDate = document.querySelector(".birthDate")
     var adress = document.querySelector(".adress")
     var country = document.querySelector(".country")
-    var profile = document.querySelectorAll(".profilecb"); var profileDiv = document.querySelector(".profile")
-    var interests = document.querySelector(".interests");
-    var tienda = document.querySelector(".tienda")
+    // Dentro de la validación definimos los Porfile e Interests!!
     var avatar =  document.querySelector(".avatar")
     var password = document.querySelector(".password-input")
     var passwordVerify = document.querySelector(".passwordVerify-input")
@@ -77,7 +75,7 @@ window.onload = function(){
 
 const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
-email.addEventListener('focusout',function(){   
+email.addEventListener('keyup',function(){   
     if (re.test(email.value)) {
     var errorDiv = document.querySelector(".emailErrorDiv")
     errorDiv.style.display = "none"
@@ -86,6 +84,7 @@ email.addEventListener('focusout',function(){
     errorDiv.style.display = "block";
     errorDiv.innerHTML = "No soy un mail!"
 }});
+
 
     avatar.addEventListener('focusout',function(){  
     var fname = avatar.value;
@@ -117,7 +116,7 @@ email.addEventListener('focusout',function(){
     }else{
         var errorDiv = document.querySelector(".birthDateErrorDiv")
         errorDiv.style.display = "block"
-        errorDiv.innerHTML = "No puedo estar incompleto!!"
+        errorDiv.innerHTML = "No puedo estar incompvaro!"
     }});
 
 
@@ -132,7 +131,7 @@ email.addEventListener('focusout',function(){
 
     }});
 
-    country.addEventListener('mouseout',function(){  
+    country.addEventListener('keyup',function(){  
     if (country.value.length != 0) {
     var errorDiv = document.querySelector(".countryErrorDiv")
     errorDiv.style.display = "none";
@@ -141,29 +140,50 @@ email.addEventListener('focusout',function(){
     errorDiv.style.display = "block";
     errorDiv.innerHTML = "No puedo quedar sin elegir!"
 
-}})
-tienda.addEventListener('mouseout',function(){  
-    if (tienda.value.length != 0) {
-    var errorDiv = document.querySelector(".tiendaErrorDiv")
-    errorDiv.style.display = "none";
-}else{
-    var errorDiv = document.querySelector(".tiendaErrorDiv")
-    errorDiv.style.display = "block";
-    errorDiv.innerHTML = "No puedo quedar sin elegir!"
+}});
+// Las validaciones de profile e interests no están terminadas :(
+    var profile1 = document.querySelector(".profile1")
+    var profile2 = document.querySelector(".profile2")
 
-}})
-profileDiv.addEventListener('mouseout', function(){
-    console.log(profile[0].checked, profile[1].checked)
-    if(profile[0].checked === false && profile[1] === false){
-        let errorDiv = document.querySelector(".profileErrorDiv")
-            errorDiv.style.display = "block";
-            errorDiv.innerHTML = "Tenemos que ser iguales!!";
-  }else{
-      var errorDiv = document.querySelector(".profileErrorDiv")
-          errorDiv.style.display = "none";
-  };
+    // profile1.addEventListener('click',function(){ 
+    //    var profileResult = true;
+//});
+//Esto no lo pude resolver :(
+
+
+    profile2.addEventListener('click',function(){ 
+        var profileResult = true;        
 });
 
+
+    var interestsResult = false;
+    var interests1 = document.querySelector(".interests1");
+    var interests2 = document.querySelector(".interests2");
+    var interests3 = document.querySelector(".interests3");
+    var interests4 = document.querySelector(".interests4");
+    var interests5 = document.querySelector(".interests5");
+
+
+    interests1.addEventListener('click',function(){ 
+        var interestsResult = true;     
+});
+
+    interests2.addEventListener('click',function(){ 
+        var interestsResult = true;        
+});
+
+    interests3.addEventListener('click',function(){ 
+        var interestsResult = true;        
+});
+
+    interests4.addEventListener('click',function(){ 
+        var interestsResult = true;
+
+});
+
+    interests5.addEventListener('click',function(){ 
+        var interestsResult = true;        
+});
 
 /////////////////////Como recordatorio, estos son todos los campos/////////////////////
 // name
@@ -196,7 +216,9 @@ if (
             var errorDiv = document.querySelector(".formErrorDiv")
             errorDiv.style.display = "none";
             form.submit();
-        }else{            
+        }
+        else
+        {            
             var errorDiv = document.querySelector(".formErrorDiv")
             errorDiv.style.display = "block";
             errorDiv.innerHTML = "Por favor, revise los campos!";

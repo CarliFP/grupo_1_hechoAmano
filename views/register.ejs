@@ -96,6 +96,7 @@
                         <!-- <label for="pais">Pais de nacimiento</label> -->
                         <select 
                             name="country"
+                            id=""
                             class = "personal-information-input country">
                             <option value="">Elegi un pais</option>
                             <% for (const oneCountry of countries) { %>   
@@ -125,12 +126,10 @@
     
                     <div class="profile">
                             <% typeUsers.forEach(typeUser => { %>
-                            <input class="profilecb" type="radio" name="profile" value="<%= typeUser.idTypeUser %>" id="<%= typeUser.name %>">
+                            <input type="radio" name="profile" value="<%= typeUser.idTypeUser %>" id="<%= typeUser.name %>">
                             <label for="<%= typeUser.idTypeUser %>"><%= typeUser.name %></label>
                             <% }); %>
                     </div>
-                    <div class="profileErrorDiv" style="color:red; "></div> 
-
     
                     <div class= "title">
                         <h4>Intereses</h4>
@@ -149,7 +148,8 @@
 
                     <select 
                         name="tienda"
-                        class = "personal-information-input tienda">
+                        id=""
+                        class = "personal-information-input">
                         <option value="">Elegi tu tienda</option>
                         <% for (const oneTienda of tiendas) { %>   
                             <option
@@ -159,9 +159,6 @@
                             </option>
                         <% } %>
                     </select>
-                    <div class="tiendaErrorDiv" style="display:none;" style="color:red; "></div> 
-
-
 
                     <% if (locals.errors && errors.tienda) { %>
                         <div class ="text-danger">
