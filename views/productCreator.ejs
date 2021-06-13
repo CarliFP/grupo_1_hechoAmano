@@ -11,10 +11,6 @@
            <section>   
             <div class="title">
                 <img src ="../img/logoEn-amarillo-.png">
-                <h1>FORMULARIO DE CREACIÓN DE PRODUCTO</h1>   
-                <h4>Ingreso exclusivo con clave administrador</h4>
-                <input type="password" class="login-field" value="" placeholder="Contraseña" id="login-pass" required>
-                <input class="submit-button" type="submit" value="Enviar">
 
 
                 <div>
@@ -39,6 +35,9 @@
                                     <%= errors.name.msg %> 
                                 </div>
                             <% } %> 
+                            <div class="nameErrorDiv errorDiv" style="display:none;" style="color:red; "></div> 
+
+
 
                             <div class="col-12 col-md-6">
                                 <label for="seller" class="form-label">Vendedor:</label>
@@ -55,7 +54,7 @@
                                     <%= errors.seller.msg %> 
                                 </div>
                             <% } %> 
-                            <div class="sellerErrorDiv" style="display:none;" style="color:red; "></div> 
+                            <div class="sellerErrorDiv errorDiv" style="display:none;" style="color:red; "></div> 
 
 
                         
@@ -74,7 +73,7 @@
                                     <%= errors.price.msg %> 
                                 </div>
                             <% } %> 
-                            <div class="priceErrorDiv" style="display:none;" style="color:red; "></div> 
+                            <div class="priceErrorDiv errorDiv" style="display:none;" style="color:red; "></div> 
 
 
 
@@ -93,7 +92,7 @@
                                     <%= errors.stock.msg %> 
                                 </div>
                             <% } %> 
-                            <div class="stockErrorDiv" style="display:none;" style="color:red; "></div> 
+                            <div class="stockErrorDiv errorDiv" style="display:none;" style="color:red; "></div> 
 
 
 
@@ -112,7 +111,7 @@
                                     <%= errors.shipping.msg %> 
                                 </div>
                             <% } %> 
-                            <div class="shippingErrorDiv" style="display:none;" style="color:red; "></div> 
+                            <div class="shippingErrorDiv errorDiv" style="display:none;" style="color:red; "></div> 
 
 
                             <div class="col-12 col-md-6">
@@ -130,7 +129,7 @@
                                     <%= errors.payment.msg %> 
                                 </div>
                             <% } %> 
-                            <div class="paymentErrorDiv" style="display:none;" style="color:red; "></div> 
+                            <div class="paymentErrorDiv errorDiv" style="display:none;" style="color:red; "></div> 
 
 
 
@@ -151,7 +150,7 @@
                                     <%= errors.category.msg %> 
                                 </div>
                             <% } %>
-                            <div class="categoryErrorDiv" style="display:none;" style="color:red; "></div> 
+                            <div class="categoryErrorDiv errorDiv" style="display:none;" style="color:red; "></div> 
 
 
 
@@ -170,7 +169,7 @@
                                     <%= errors.section.msg %> 
                                 </div>
                             <% } %> 
-                            <div class="sectionErrorDiv" style="display:none;" style="color:red; "></div> 
+                            <div class="sectionErrorDiv errorDiv" style="display:none;" style="color:red; "></div> 
 
 
 
@@ -184,7 +183,7 @@
                                     <%= errors.image.msg %> 
                                 </div>
                             <% } %> 
-                            <div class="imageErrorDiv" style="display:none;" style="color:red; "></div> 
+                            <div class="imageErrorDiv errorDiv" style="display:none;" style="color:red; "></div> 
 
 
 
@@ -192,14 +191,14 @@
                                 <label for="description" class="form-label">Descripción:</label>
                                 <textarea name="description" id="description" class="form-input"></textarea>
                             </div>
-                            <div class="descriptionErrorDiv" style="display:none;" style="color:red; "></div> 
+                            <div class="descriptionErrorDiv errorDiv" style="display:none;" style="color:red; "></div> 
 
 
 
                             <div class="col-12">
                                 <button type="submit" class="buy-now-button">Guardar producto</button>
                             </div>
-                            <div class="formErrorDiv" style="display:none;" style="color:red; "></div> 
+                            <div class="formErrorDiv errorDiv" style="display:none;" style="color:red; "></div> 
 
 
                             

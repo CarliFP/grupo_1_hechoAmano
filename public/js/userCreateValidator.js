@@ -24,7 +24,8 @@ window.onload = function(){
     }else{
         var errorDiv = document.querySelector(".nameErrorDiv")
         errorDiv.style.display = "block";
-        errorDiv.innerHTML = "Tengo que tener al menos dos caracteres!"
+        errorDiv.innerHTML = "Tengo que tener al menos dos caracteres!";
+
 }
 })
 
@@ -75,7 +76,7 @@ window.onload = function(){
 
 const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
-email.addEventListener('keyup',function(){   
+email.addEventListener('focusout',function(){   
     if (re.test(email.value)) {
     var errorDiv = document.querySelector(".emailErrorDiv")
     errorDiv.style.display = "none"

@@ -75,7 +75,9 @@ h4 {
     border-bottom:1px solid #666666; 
 }
 
-
+.errorDiv {
+  color: tomato;
+}
 .submit-button, .reset-button {
     min-width: 20vw;
     max-width: 20%;

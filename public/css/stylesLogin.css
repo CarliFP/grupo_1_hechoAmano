@@ -130,6 +130,10 @@ main {
   margin-bottom: 15px;
 }
 
+.errorDiv {
+  color: tomato;
+}
+
 
 @media (min-width: 361px) {
     .login-screen {

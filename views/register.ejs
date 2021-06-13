@@ -31,7 +31,7 @@
                                 <%= errors.name.msg %> 
                             </div>
                         <% } %> 
-                            <div class="nameErrorDiv" style="display:none;" style="color:red; "></div>
+                            <div class="nameErrorDiv errorDiv" style="display:none;"></div>
 
                         <input  class="personal-information-input is-invalid user" 
                                 type="text" 
@@ -45,7 +45,7 @@
                             </div>
                         <% } %> 
 
-                             <div class="userErrorDiv" style="display:none;" style="color:red; "></div>
+                             <div class="userErrorDiv errorDiv" style="display:none;" style="color:red; "></div>
 
                         <input class="personal-information-input email" 
                                 type="email" 
@@ -59,7 +59,7 @@
                             </div>
                         <% } %> 
 
-                             <div class="emailErrorDiv" style="display:none;" style="color:red; "></div>
+                             <div class="emailErrorDiv errorDiv" style="display:none;" style="color:red; "></div>
 
 
                         <input class="personal-information-input birthDate" 
@@ -75,7 +75,7 @@
                             </div>
                         <% } %> 
 
-                             <div class="birthDateErrorDiv" style="display:none;" style="color:red; "></div>
+                             <div class="birthDateErrorDiv errorDiv" style="display:none;" style="color:red; "></div>
 
                         <input class="personal-information-input adress"
                                  type="text" 
@@ -90,7 +90,7 @@
                         <% } %> 
 
 
-                             <div class="adressErrorDiv" style="display:none;" style="color:red; "></div>
+                             <div class="adressErrorDiv errorDiv" style="display:none;" style="color:red; "></div>
 
                         
                         <!-- <label for="pais">Pais de nacimiento</label> -->
@@ -115,7 +115,7 @@
                         <% } %>
 
 
-                             <div class="countryErrorDiv" style="display:none;" style="color:red; "></div>                          
+                             <div class="countryErrorDiv errorDiv" style="display:none;" style="color:red; "></div>                          
                     
                     </div>
     
@@ -187,18 +187,18 @@
                         <!--advertencia de archivo no subido-->
                         <!--span id="file-chosen">No se eligió archivo</span> -->
                     </div>
-                             <div class="avatarErrorDiv" style="display:none;" style="color:red; "></div> 
-                             <div class="avatarErrorDiv2" style="display:none;" style="color:red; "></div> 
+                             <div class="avatarErrorDiv errorDiv" style="display:none;" style="color:red; "></div> 
+                             <div class="avatarErrorDiv2 errorDiv" style="display:none;" style="color:red; "></div> 
 
 
                     <div class="password">
                         <input class="password-input" type="password" name="pass" placeholder="Elegí tu contraseña"> 
 
-                             <div class="passwordErrorDiv" style="display:none;" style="color:red; "></div> 
+                             <div class="passwordErrorDiv errorDiv" style="display:none;" style="color:red; "></div> 
 
                         <input class="passwordVerify-input" type="password" name="pass_confirm" placeholder="Confirmá tu contraseña">
 
-                             <div class="passwordVerifyErrorDiv" style="display:none;" style="color:red; "></div> 
+                             <div class="passwordVerifyErrorDiv errorDiv" style="display:none;" style="color:red; "></div> 
           
 
                         <% if (locals.errors && errors.pass) { %> 
@@ -215,7 +215,7 @@
                         <input class= "reset-button" type="reset" value="Borrar">
                         <input class="submit-button action" type="submit" value="Enviar">
                     </div>
-                             <div class="formErrorDiv" style="display:none;" style="color:red; "></div>     
+                             <div class="formErrorDiv errorDiv" style="display:none;" style="color:red; "></div>     
                 </form>
             </main>
 

@@ -83,6 +83,9 @@ main input {
     color: #DD4B39;
     font-weight: bold; 
 }
+.errorDiv {
+    color: tomato;
+  }
 
 @media (min-width: 460px){
  .sendButton, .eraseButton {
