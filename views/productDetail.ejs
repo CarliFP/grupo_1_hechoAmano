@@ -88,22 +88,25 @@
                 <form class="questionField-form" id="questionZone" action="/" method="POST">
 
                     <label class ="label-detail" for="email"> Correo electronico</label>
-                    <input class ="input-detail" type="email" name="email" placeholder="juan@soto.com">
+                    <input class ="input-detail email" type="email" name="email" placeholder="juan@soto.com">
+                    <div class="emailErrorDiv errorDiv" style="display:none;" style="color:red; "></div>     
 
                     <label class ="label-detail" for="question">¿Quieres personalizar tu producto?</label>
                     <input class ="input-detail questionBox" type="text" name="question" placeholder="Lo haremos especial para vos...">
+                    <div class="commentErrorDiv errorDiv" style="display:none;" style="color:red; "></div>     
 
 
                     <div class= "buttom">
-                        <buttom class= "submit-button" id="submit-button" type="submit">Borrar</buttom>
+                        <buttom class= "submit-button" type="submit">Borrar</buttom>
                         <button class="questionBoxButton" id="questionZone" type="submit" >Enviar</button>
                     </div>
+                    <div class="formErrorDiv errorDiv" style="display:none;" style="color:red; "></div>     
 
                 </form>
             </div>
         </section>
 
-        <div>
+        <div id="adminOnly" style="display:none">
             <h4>SECCIÓN SOLO DISPONIBLE PARA EL ADMINISTRADOR</h4>
             <a href="/product/<%= product.idProducts %>/edit?_method=EDIT" class="action-button edit"><button style= "background: blue; color: white">EDITAR PRODUCTO</button></a>
             <form action="/product/<%= product.idProducts %>/delete?_method=DELETE" method="POST" >
@@ -152,5 +155,6 @@
     
         <!--FOOTER-->
         <%- include ('./partials/footer') %>
+        <script src="/js/productEditAdmin.js"></script>
       </body>
     </html>

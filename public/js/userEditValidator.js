@@ -1,6 +1,6 @@
 window.onload = function(){
 
-    var form = document.getElementById("form")
+    var form = document.querySelector(".main-form")
 
     var name = document.querySelector(".name")
     var user = document.querySelector(".user")
@@ -8,11 +8,11 @@ window.onload = function(){
     var birthDate = document.querySelector(".birthDate")
     var adress = document.querySelector(".adress")
     var country = document.querySelector(".country")
-    var profile = document.querySelectorAll(".profilecb")
+    var profile = document.querySelectorAll(".profilecb");
     var profileDiv = document.querySelector(".profile")
     var tienda = document.querySelector(".tienda")
     var avatar =  document.querySelector(".avatar")
-    var password = document.getElementsByName("#name")
+    var password = document.querySelector(".password-input")
     var passwordVerify = document.querySelector(".passwordVerify-input")
 
 
@@ -173,7 +173,6 @@ form.addEventListener("submit", e=> {
             birthDate.value.length > 0 &&
             adress.value.length > 0 &&
             country.value.length > 0 &&
-            avatar.value.length > 0 &&
             password.value.length > 7 &&  
             passwordVerify.value == password.value
             ){

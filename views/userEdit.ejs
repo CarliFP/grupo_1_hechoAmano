@@ -18,7 +18,7 @@
                     </div>
                     
                     <div class="container-personal-information">
-                        <input  class="personal-information-input"
+                        <input  class="personal-information-input name"
                                 type="text" 
                                 name="name" 
                                 placeholder="Nombre y apellido"
@@ -29,8 +29,9 @@
                                 <%= errors.name.msg %> 
                             </div>
                         <% } %> 
+                        <div class="nameErrorDiv errorDiv" style="display:none;" style="color:tomato; "></div>
 
-                        <input  class="personal-information-input is-invalid" 
+                        <input  class="personal-information-input is-invalid user" 
                                 type="text" 
                                 name="user" 
                                 placeholder="Nombre de usuario"
@@ -41,8 +42,10 @@
                                 <%= errors.user.msg %> 
                             </div>
                         <% } %> 
+                        <div class="userErrorDiv errorDiv" style="display:none;" style="color:red; "></div>
 
-                        <input class="personal-information-input" 
+
+                        <input class="personal-information-input email" 
                                 type="email" 
                                 name="email" 
                                 placeholder="E-mail"
@@ -53,8 +56,10 @@
                                 <%= errors.email.msg %> 
                             </div>
                         <% } %> 
+                        <div class="emailErrorDiv errorDiv" style="display:none;" style="color:red; "></div>
 
-                        <input class="personal-information-input" 
+
+                        <input class="personal-information-input birthDate" 
                                 type="date" 
                                 name="birth_date" 
                                 id="birth_date" 
@@ -66,8 +71,10 @@
                                 <%= errors.birth_date.msg %> 
                             </div>
                         <% } %> 
+                        <div class="birthDateErrorDiv errorDiv" style="display:none;" style="color:red; "></div>
 
-                        <input class="personal-information-input"
+
+                        <input class="personal-information-input adress"
                                  type="text" 
                                  name="address" 
                                  placeholder="Domicilio"
@@ -78,13 +85,14 @@
                                 <%= errors.address.msg %> 
                             </div>
                         <% } %> 
+                        <div class="adressErrorDiv errorDiv" style="display:none;" style="color:red; "></div>
 
                         
                         <!-- <label for="pais">Pais de nacimiento</label> -->
                         <select 
                             name="country"
                             id=""
-                            class = "personal-information-input">
+                            class = "personal-information-input country">
                             <option value="">Elegi un pais</option>
                             <% for (const oneCountry of countries) { %>   
                                 <option
@@ -100,7 +108,8 @@
                                 <%= errors.country.msg %>
                             </div>
                         <% } %>
-                        
+                             <div class="countryErrorDiv errorDiv" style="display:none;" style="color:red; "></div>                          
+             
                         
                     </div>
     
@@ -111,11 +120,12 @@
     
                     <div class="profile">
                             <% typeUsers.forEach(typeUser => { %>
-                            <input type="radio" name="profile" value="<%= typeUser.idTypeUser %>" id="<%= typeUser.name %>">
+                            <input class="profilecb" type="radio" name="profile" value="<%= typeUser.idTypeUser %>" id="<%= typeUser.name %>">
                             <label for="<%= typeUser.idTypeUser %>"><%= typeUser.name %></label>
                             <% }); %>
                     </div>
-    
+                    <div class="profileErrorDiv errorDiv" style="color:red; "></div> 
+
                     <div class= "title">
                         <h4>Intereses</h4>
                     </div>
@@ -134,7 +144,7 @@
                     <select 
                         name="tienda"
                         id=""
-                        class = "personal-information-input">
+                        class = "personal-information-input tienda">
                         <option value="">Elegi tu tienda</option>
                         <% for (const oneTienda of tiendas) { %>   
                             <option
@@ -144,6 +154,7 @@
                             </option>
                         <% } %>
                     </select>
+                    <div class="tiendaErrorDiv errorDiv" style="display:none;" style="color:red; "></div> 
 
     
     
@@ -151,7 +162,7 @@
                         <h4>Elegi tu foto de usuario</h4>
                     </div>
     
-                    <div class = "file-upload">
+                    <div class = "file-upload avatar">
                         <!-- esto hace que se oculte y se pueda customizar, sino reaparece-->
                         <input type="file" name= 'avatar' id="actual-btn">
                         <!--boton custom-->
@@ -161,6 +172,8 @@
                                 <%= errors.avatar.msg %>
                             </div>
                         <% } %> 
+                        <div class="avatarErrorDiv errorDiv" style="display:none;" style="color:red; "></div> 
+                        <div class="avatarErrorDiv2 errorDiv" style="display:none;" style="color:red; "></div> 
 
                         <!--label class ="btn-file" for="actual-btn">Seleccionar avatar</label>-->
                         <!--advertencia de archivo no subido-->
@@ -169,23 +182,29 @@
     
                     <div class="password">
                         <input class="password-input" type="password" name="pass" placeholder="Elegí tu contraseña"> 
-                        <input class="password-input" type="password" name="pass_confirm" placeholder="Confirmá tu contraseña">
+                        <div class="passwordErrorDiv errorDiv" style="display:none;" style="color:red; "></div> 
+
+                        <input class="password-input passwordVerify-input" type="password" name="pass_confirm" placeholder="Confirmá tu contraseña">
+                        <div class="passwordVerifyErrorDiv errorDiv" style="display:none;" style="color:red; "></div> 
 
                         <% if (locals.errors && errors.pass) { %> 
                             <div class ="text-danger">
                                 <%= errors.pass.msg %> 
                             </div>
                         <% } %> 
+
                         
                     </div>
     
                     <div class= "btn-submit">
                         <input class= "submit-button" type="reset" value="Borrar">
                         <button type="submit" class= "submit-button">Guardar cambios</button>
+                        <div class="formErrorDiv errorDiv" style="display:none;" style="color:red; "></div>     
                     </div>
     
                 </form>
             </main>
+            <script src="/js/userEditValidator.js"></script>
 
             <!--FOOTER-->
             <%- include ('./partials/footer') %>    
