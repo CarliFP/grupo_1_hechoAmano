@@ -594,7 +594,6 @@ footer {
     color: #696969;
 }
 
-
 .footer-buttom {
     width: 100%;
     margin: 0 auto;
@@ -796,6 +795,10 @@ footer .text-footer-black:hover {
         color: #FACD48; 
 
     }
+}
+
+.red-social-container a{
+    margin: 0px 20px 0px 20px;
 }
 
 /* Desktop */

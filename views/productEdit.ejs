@@ -12,9 +12,6 @@
             <div class="title">
                 <img src ="/img/logoEn-amarillo-.png">
                 <h1>FORMULARIO DE EDICIÓN DE PRODUCTO</h1>   
-                <h4>Ingreso exclusivo con clave administrador</h4>
-                <input type="password" class="login-field" value="" placeholder="Contraseña" id="login-pass" required>
-                <input class="submit-button" type="submit" value="Enviar">
             </div>
             <div>
                     <h4>¿Querés editar un producto?</h4>
@@ -118,10 +115,12 @@
                                 <%= errors.payment.msg %> 
                             </div>
                         <% } %> 
+                        <div class="paymentErrorDiv errorDiv" style="display:none;" style="color:red; "></div> 
 
-                        <div class="col-12 col-md-6">
+
+                        <div class="col-12 col-md-6 categoryDiv">
                             <label for="category" class="form-label">Categoria</label>
-                            <select name="category" required>
+                            <select class="category" name="category" required>
                                 <option value="">Elegí</option>
                                 <% categories.forEach(categorie => { %>
                                 <option value="<%= categorie.idCategories %>"><%= categorie.name %></option>
@@ -134,6 +133,8 @@
                                 <%= errors.category.msg %> 
                             </div>
                         <% } %>
+                        <div class="categoryErrorDiv errorDiv" style="display:none;" style="color:red; "></div> 
+
 
                         <div class="col-12 col-md-6 sectionDiv">
                             <label for="section" class="form-label">Sección en el index:</label>
@@ -150,6 +151,8 @@
                                 <%= errors.section.msg %> 
                             </div>
                         <% } %> 
+                        <div class="sectionErrorDiv errorDiv" style="display:none;" style="color:red; "></div> 
+
 
                         <div class="col-12">
                             <label for="image" class="form-label">Imagen:</label>
@@ -161,11 +164,15 @@
                                 <%= errors.image.msg %> 
                             </div>
                         <% } %> 
+                        <div class="imageErrorDiv errorDiv" style="display:none;" style="color:red; "></div> 
+
                         
                         <div class="col-12">
                             <label for="description" class="form-label">Descripción:</label>
                             <textarea name="description" id="description" class="form-input"  value="<%= product.description %>" ></textarea>
                         </div>
+                        <div class="descriptionErrorDiv errorDiv" style="display:none;" style="color:red; "></div> 
+
                         <div class="col-12">
                             <button type="submit" class="buy-now-button">Guardar producto</button>
                         </div>

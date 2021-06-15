@@ -88,16 +88,19 @@
                 <form class="questionField-form" id="questionZone" action="/" method="POST">
 
                     <label class ="label-detail" for="email"> Correo electronico</label>
-                    <input class ="input-detail adminCheck" type="email" name="email" placeholder="juan@soto.com">
+                    <input class ="input-detail email" type="email" name="email" placeholder="juan@soto.com">
+                    <div class="emailErrorDiv errorDiv" style="display:none;" style="color:red; "></div>     
 
                     <label class ="label-detail" for="question">¿Quieres personalizar tu producto?</label>
                     <input class ="input-detail questionBox" type="text" name="question" placeholder="Lo haremos especial para vos...">
+                    <div class="commentErrorDiv errorDiv" style="display:none;" style="color:red; "></div>     
 
 
                     <div class= "buttom">
-                        <buttom class= "submit-button" id="submit-button" type="submit">Borrar</buttom>
+                        <buttom class= "submit-button" type="submit">Borrar</buttom>
                         <button class="questionBoxButton" id="questionZone" type="submit" >Enviar</button>
                     </div>
+                    <div class="formErrorDiv errorDiv" style="display:none;" style="color:red; "></div>     
 
                 </form>
             </div>
