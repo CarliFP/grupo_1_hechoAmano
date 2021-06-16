@@ -628,8 +628,13 @@ footer .text-footer-black:hover {
     transition: color 0.8s linear 0.2s;
 }
 
+.cart-menu {
+    background: #fff; 
+}
 
-  
+.cart-container {
+    background: #fff; 
+}
 
 /* Tablets */
 
