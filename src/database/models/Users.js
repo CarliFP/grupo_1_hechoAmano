@@ -10,26 +10,26 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
-      //Un usuario pertenece a una tienda
+      // Un usuario pertenece a una tienda
       this.belongsTo(models.Tienda,{
         as: 'Tienda',
         foreignKey: 'Tienda_idTienda'
       });
 
-      //Un usuario pertenece a un tipo de usuario
+      // Un usuario pertenece a un tipo de usuario
       this.belongsTo(models.TypeUsers,{
           as: 'TypeUsers',
           foreignKey: 'idTypeUser'
       });
 
-      //Un usuario pertenece a un país
+      // Un usuario pertenece a un país
       this.belongsTo(models.Countries,{
         as: 'Countries',
         foreignKey: 'idCountry'
     });
 
 
-      //Un usuario tiene muchas categorias de interes
+      // Un usuario tiene muchas categorias de interes
       this.belongsToMany(models.Categories, { 
         through: 'CategoriesUsers',
         foreignKey: 'idUsers',

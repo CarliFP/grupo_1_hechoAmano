@@ -252,15 +252,18 @@ const usersController = {
     },
 
     deleteUserById: (req, res) => {
-        // res.send(req.session.userLogged)
+        // res.send(req.session.userLogged);
+        // res.json(req.session.userLogged);
+
         db.Users.destroy({
             where: {
                 idUsers: req.session.userLogged.idUsers
             }
+        }).then(function() {
+            res.clearCookie('userEmail');
+            req.session.destroy();
+            res.redirect("/");
         })
-        res.clearCookie('userEmail');
-        req.session.destroy();
-        res.redirect("/");
     }
 
     }; 
