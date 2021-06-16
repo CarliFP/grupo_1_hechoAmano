@@ -55,14 +55,14 @@ p {
     font-size: 12px; 
 }
 
-
 /*MAIN*/
 
 main {
     width: 90%;
     margin: 0 auto;  
     padding-top: 40px;
-    padding-bottom: 100px
+    padding-bottom: 100px; 
+    min-height: 100vh; 
 }
 
 .subtitle {
@@ -574,7 +574,7 @@ a.link-categ:hover {
 /*FOOTER*/
 
 footer {
-    text-align: justify;
+    text-align: center;
     width: 100%;
     display: flex; 
     background: white;
@@ -628,35 +628,33 @@ footer .text-footer-black:hover {
     transition: color 0.8s linear 0.2s;
 }
 
-/*LOGO WHATSAPP*/
-.whatsapp {
-    position:fixed;
-    width:60px;
-    height:60px;
-    bottom:40px;
-    right:40px;
-    background-color:#25d366;
-    color:#FFF;
-    border-radius:50px;
-    text-align:center;
-    font-size:30px;
-    z-index:100;
-  }
-  
-  .whatsapp-icon {
-    margin-top:13px;
-  }
-
 
   
 
 /* Tablets */
 
-
-
 /*col y row*/
-@media (min-width: 460px){
+@media (min-width: 460px) {
 
+    .whatsapp {
+        position:fixed;
+        width:60px;
+        height:60px;
+        bottom:40px;
+        right:40px;
+        background-color:#25d366;
+        color:#FFF;
+        border-radius:50px;
+        text-align:center;
+        font-size:30px;
+        z-index:100;
+       
+      }
+      
+      .whatsapp-icon {
+        margin-top: 13px;
+        
+      }
  /*FIRT NAVBAR a partir de tablet*/
 
    .first-navbar {
