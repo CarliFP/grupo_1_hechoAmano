@@ -13,7 +13,7 @@ const usersAPIcontroller = {
                 meta: {
                     status : 200,
                     total: users.length,
-                    url: 'api/product'
+                    url: 'api/users'
                 },
                 data: users
             }

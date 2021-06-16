@@ -4,6 +4,8 @@ const path = require ("path");
 const usersController = require("../controllers/usersController");
 const router = express.Router ();
 
+router.get('/integrantes', mainController.integrantes);
+
 router.get('/', mainController.index);
 
 router.get('/search', mainController.search);

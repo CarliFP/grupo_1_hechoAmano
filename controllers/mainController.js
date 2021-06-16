@@ -10,6 +10,10 @@ const { Op } = require("sequelize");
 // const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
 const mainController = {
+  integrantes: (req, res) => {
+    res.render('integrantes');
+  },
+
 	index: async (req, res) => {
     let vendidos = await db.Products.findAll(
       {where: {

@@ -1,5 +1,5 @@
 import React, {useEffect,useState} from 'react';
-import imagenFondo from '../assets/images/pintura.png'
+// import imagenFondo from '../assets/images/pintura.png'
 
 function ContentRowTop(){
 	const urlProduct = "/api/product"
