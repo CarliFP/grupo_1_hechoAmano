@@ -12,7 +12,7 @@ window.onload = function(){
     var profileDiv = document.querySelector(".profile")
     var tienda = document.querySelector(".tienda")
     var avatar =  document.querySelector(".avatar")
-    var password = document.getElementsByName("#name")
+    var password = document.querySelector(".passwordVerify-input")
     var passwordVerify = document.querySelector(".passwordVerify-input")
 
 
@@ -53,16 +53,14 @@ window.onload = function(){
     }});
 
     password.addEventListener('keyup',function(){               
-    
     if (password.value.length > 0) {
     var errorDiv = document.querySelector(".passwordErrorDiv")
     errorDiv.style.display = "none";
 }else{
     var errorDiv = document.querySelector(".passwordErrorDiv")
     errorDiv.style.display = "block";
-    errorDiv.innerHTML = "No puedo estar vacio!!"
-}
-});
+    errorDiv.innerHTML = "No puedo estar vacio!!"}
+})
 
     passwordVerify.addEventListener('keyup',function(){   
         if (passwordVerify.value === password.value) {
@@ -153,15 +151,23 @@ tienda.addEventListener('focusout',function(){
 
 }})
 profileDiv.addEventListener('focusout', function(){
-    console.log(profile[0].checked, profile[1].checked)
-    if(profile[0].checked === false && profile[1] === false){
-        let errorDiv = document.querySelector(".profileErrorDiv")
-            errorDiv.style.display = "block";
-            errorDiv.innerHTML = "Tenemos que ser iguales!!";
-  }else{
+    if(profile[0].checked || profile[1].checked ){        
       var errorDiv = document.querySelector(".profileErrorDiv")
-          errorDiv.style.display = "none";
+      errorDiv.style.display = "none";
+console.log(profile[0].checked, profile[1].checked)
+
+  }else{        
+      let errorDiv = document.querySelector(".profileErrorDiv")
+  errorDiv.style.display = "block";
+  errorDiv.innerHTML = "Tenes que elegir uno!";
   };
+})
+
+profile[1].addEventListener('click', e => {
+    tienda.style.display = "block";
+})
+profile[0].addEventListener('click', e => {
+    tienda.style.display = "none";
 })
 
 form.addEventListener("submit", e=> {

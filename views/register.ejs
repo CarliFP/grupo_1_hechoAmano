@@ -14,6 +14,41 @@
 
                 <form class="main-form" action="/users/register" method="POST" enctype="multipart/form-data" id="form">
                     <div class= "title">
+                        <h4>Perfil del usuario</h4>
+                    </div>
+    
+                    <div class="profile">
+                            <% typeUsers.forEach(typeUser => { %>
+                            <input class="profilecb" type="radio" name="profile" value="<%= typeUser.idTypeUser %>" id="<%= typeUser.name %>">
+                            <label for="<%= typeUser.idTypeUser %>"><%= typeUser.name %></label>
+                            <% }); %>
+                    </div>
+                    <div class="profileErrorDiv errorDiv" style="color:red; "></div> 
+
+                    <select 
+                    style="display: none;"
+                    name="tienda"
+                    class = "personal-information-input tienda">
+                    <option value="">Elegi tu tienda</option>
+                    <% for (const oneTienda of tiendas) { %>   
+                        <option
+                            value="<%= oneTienda.idTienda %>"
+                            <%= locals.oldData && (oneTienda.name === oldData.tienda) ? 'selected' : null %>>
+                            <%= oneTienda.name %>
+                        </option>
+                    <% } %>
+                </select>
+                <div class="tiendaErrorDiv errorDiv" style="display:none;" style="color:red; "></div> 
+
+
+
+                <% if (locals.errors && errors.tienda) { %>
+                    <div class ="text-danger">
+                        <%= errors.tienda.msg %>
+                    </div>
+                <% } %>
+
+                    <div class= "title">
                         <h4>Datos Personales</h4>
                     </div>
                     
@@ -119,18 +154,6 @@
                     </div>
     
     
-                    <div class= "title">
-                        <h4>Perfil del usuario</h4>
-                    </div>
-    
-                    <div class="profile">
-                            <% typeUsers.forEach(typeUser => { %>
-                            <input class="profilecb" type="radio" name="profile" value="<%= typeUser.idTypeUser %>" id="<%= typeUser.name %>">
-                            <label for="<%= typeUser.idTypeUser %>"><%= typeUser.name %></label>
-                            <% }); %>
-                    </div>
-                    <div class="profileErrorDiv errorDiv" style="color:red; "></div> 
-
     
                     <div class= "title">
                         <h4>Intereses</h4>
@@ -150,28 +173,6 @@
                     <!-- <input class="personal-information-input tienda" 
                     name="tienda" 
                     value = "<%= locals.oldData ? oldData.tienda : null%>"> -->
-
-                    <select 
-                        name="tienda"
-                        class = "personal-information-input tienda">
-                        <option value="">Elegi tu tienda</option>
-                        <% for (const oneTienda of tiendas) { %>   
-                            <option
-                                value="<%= oneTienda.idTienda %>"
-                                <%= locals.oldData && (oneTienda.name === oldData.tienda) ? 'selected' : null %>>
-                                <%= oneTienda.name %>
-                            </option>
-                        <% } %>
-                    </select>
-                    <div class="tiendaErrorDiv errorDiv" style="display:none;" style="color:red; "></div> 
-
-
-
-                    <% if (locals.errors && errors.tienda) { %>
-                        <div class ="text-danger">
-                            <%= errors.tienda.msg %>
-                        </div>
-                    <% } %>
 
     
     
