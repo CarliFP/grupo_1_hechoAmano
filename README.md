@@ -1,6 +1,6 @@
 # grupo_1_hechoAmano
 
-<img src="https://img.shields.io/github/license/carlifp/grupo_1_hechoAmano.svg">
+<img src="![APM](https://img.shields.io/apm/l/license/CarliFP/grupo_1_hechoAmano?style=for-the-badge)">
 
 **HECHO A :hand:**
  
